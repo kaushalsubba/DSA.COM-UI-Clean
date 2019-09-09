@@ -5712,3 +5712,512 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.sprite {
+  background-image: url(../images/sprit.png?v2); }
+
+i {
+  display: inline-block;
+  vertical-align: middle; }
+
+.icon-africaMap {
+  width: 31px;
+  height: 31px;
+  background-position: 0 0; }
+  .icon-africaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -31px 0; }
+
+.icon-asiaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -62px 0; }
+  .icon-asiaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -93px 0; }
+
+.icon-asian-allianceMap {
+  width: 31px;
+  height: 31px;
+  background-position: -124px 0; }
+  .icon-asian-allianceMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -155px 0; }
+
+.icon-chinaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -186px 0; }
+  .icon-chinaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -217px 0; }
+
+.icon-culturaldiver {
+  width: 31px;
+  height: 31px;
+  background-position: -248px 0; }
+
+.icon-dashboard {
+  width: 111px;
+  height: 72px;
+  background-position: -279px 0; }
+
+.icon-diligence {
+  width: 31px;
+  height: 31px;
+  background-position: -390px 0; }
+
+.icon-download {
+  width: 41px;
+  height: 41px;
+  background-position: -421px 0; }
+  .icon-download:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -548px 0; }
+
+.icon-downloadbanner {
+  width: 86px;
+  height: 86px;
+  background-position: -462px 0; }
+
+.icon-ethics {
+  width: 31px;
+  height: 31px;
+  background-position: -589px 0; }
+
+.icon-europeMap {
+  width: 31px;
+  height: 31px;
+  background-position: -620px 0; }
+  .icon-europeMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -651px 0; }
+
+.icon-facebook {
+  width: 32px;
+  height: 32px;
+  background-position: -682px 0; }
+
+.icon-flag-american {
+  width: 41px;
+  height: 41px;
+  background-position: -714px 0; }
+
+.icon-flag-chinese {
+  width: 41px;
+  height: 41px;
+  background-position: -755px 0; }
+
+.icon-flag-french {
+  width: 41px;
+  height: 41px;
+  background-position: -796px 0; }
+
+.icon-flag-german {
+  width: 41px;
+  height: 41px;
+  background-position: -837px 0; }
+
+.icon-flag-italian {
+  width: 41px;
+  height: 41px;
+  background-position: -878px 0; }
+
+.icon-flag-russian {
+  width: 41px;
+  height: 41px;
+  background-position: -919px 0; }
+
+.icon-flag-spanish {
+  width: 41px;
+  height: 41px;
+  background-position: -960px 0; }
+
+.icon-flag-australian {
+  width: 41px;
+  height: 41px;
+  background-position: -124px -31px; }
+
+.icon-flag-UK-Ireland {
+  width: 41px;
+  height: 41px;
+  background-position: -565px -40px; }
+
+.icon-germanMap {
+  width: 31px;
+  height: 31px;
+  background-position: -1001px 0; }
+  .icon-germanMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -1032px 0; }
+
+.icon-globe {
+  width: 41px;
+  height: 41px;
+  background-position: -1063px 0; }
+  .icon-globe:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -1104px 0; }
+
+.icon-hong-kongMap {
+  width: 31px;
+  height: 31px;
+  background-position: -1145px 0; }
+  .icon-hong-kongMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -1176px 0; }
+
+.icon-indiaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -1207px 0; }
+  .icon-indiaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -1238px 0; }
+
+.icon-indonesiaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -1269px 0; }
+  .icon-indonesiaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -1300px 0; }
+
+.icon-innoCreat {
+  width: 31px;
+  height: 31px;
+  background-position: -1331px 0; }
+
+.icon-italyMap {
+  width: 31px;
+  height: 31px;
+  background-position: -1362px 0; }
+  .icon-italyMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -1393px 0; }
+
+.icon-ksp {
+  width: 96px;
+  height: 90px;
+  background-position: -1424px 0; }
+
+.icon-latinandsouthamericaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -1535px 0; }
+  .icon-latinandsouthamericaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -1566px 0; }
+
+.icon-linkedin {
+  width: 32px;
+  height: 32px;
+  background-position: -1597px 0; }
+
+.icon-login {
+  width: 41px;
+  height: 41px;
+  background-position: -1629px 0; }
+  .icon-login:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -1670px 0; }
+
+.icon-malaysiaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -1711px 0; }
+  .icon-malaysiaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -1742px 0; }
+
+.iconMap {
+  width: 41px;
+  height: 41px;
+  background-position: -1773px 0; }
+  .iconMap:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -1814px 0; }
+
+.icon-marker {
+  width: 14px;
+  height: 17px;
+  background-position: -1855px 0; }
+
+.icon-middleeastMap {
+  width: 31px;
+  height: 31px;
+  background-position: -1869px 0; }
+  .icon-middleeastMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -1900px 0; }
+
+.icon-news {
+  width: 111px;
+  height: 79px;
+  background-position: -1931px 0; }
+
+.icon-northamericaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -2042px 0; }
+  .icon-northamericaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -2073px 0; }
+
+.icon-oceaniaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -2104px 0; }
+  .icon-oceaniaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -2135px 0; }
+
+.icon-perseverance {
+  width: 31px;
+  height: 31px;
+  background-position: -2166px 0; }
+
+.icon-philippinesMap {
+  width: 31px;
+  height: 31px;
+  background-position: -2197px 0; }
+  .icon-philippinesMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -2228px 0; }
+
+.icon-prudence {
+  width: 31px;
+  height: 31px;
+  background-position: -2259px 0; }
+
+.icon-publications {
+  width: 111px;
+  height: 81px;
+  background-position: -2290px 0; }
+
+.icon-search {
+  width: 41px;
+  height: 41px;
+  background-position: -2401px 0; }
+  .icon-search:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -2442px 0; }
+
+.icon-singaporeMap {
+  width: 31px;
+  height: 31px;
+  background-position: -2483px 0; }
+  .icon-singaporeMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -2514px 0; }
+
+.icon-subscribe {
+  width: 86px;
+  height: 86px;
+  background-position: -2545px 0; }
+
+.icon-thailandMap {
+  width: 31px;
+  height: 31px;
+  background-position: -2631px 0; }
+  .icon-thailandMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -2661px 0; }
+
+.icon-twitter {
+  width: 32px;
+  height: 32px;
+  background-position: -2693px 0; }
+
+.icon-usaMap {
+  width: 31px;
+  height: 31px;
+  background-position: -2725px 0; }
+  .icon-usaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -2756px 0; }
+
+.icon-vietnamMap {
+  width: 31px;
+  height: 31px;
+  background-position: -2785px 0; }
+  .icon-vietnamMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -2816px 0; }
+
+.icon-weixin {
+  width: 32px;
+  height: 32px;
+  background-position: -2849px 0; }
+
+.icon-youtube {
+  width: 32px;
+  height: 32px;
+  background-position: -2881px 0; }
+
+.icon-russiaMap {
+  width: 31px;
+  height: 31px;
+  background-position: 0 -31px; }
+  .icon-russiaMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -31px -31px; }
+
+.icon-slikroadMap {
+  width: 31px;
+  height: 31px;
+  background-position: -62px -31px; }
+  .icon-slikroadMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -93px -31px; }
+
+.icon-globalMap {
+  width: 31px;
+  height: 31px;
+  background-position: -166px -31px; }
+  .icon-globalMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -196px -31px; }
+
+.icon-uk-irelandMap {
+  width: 31px;
+  height: 31px;
+  background-position: -2042px -32px; }
+  .icon-uk-irelandMap:hover {
+    width: 31px;
+    height: 31px;
+    background-position: -2073px -32px; }
+
+@media (min--moz-device-pixel-ratio: 1.5) {
+  .sprite-retina {
+    background-image: url(../images/sprit-2X.png?v2);
+    background-size: 2913px 90px; } }
+
+@media (-o-min-device-pixel-ratio: 3 / 2) {
+  .sprite-retina {
+    background-image: url(../images/sprit-2X.png?v2);
+    background-size: 2913px 90px; } }
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  .sprite-retina {
+    background-image: url(../images/sprit-2X.png?v2);
+    background-size: 2913px 90px; } }
+
+@media (min-device-pixel-ratio: 1.5) {
+  .sprite-retina {
+    background-image: url(../images/sprit-2X.png?v2);
+    background-size: 2913px 90px; } }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .sprite-retina {
+    background-image: url(../images/sprit-2X.png?v2);
+    background-size: 2913px 90px; } }
+
+.dark-blue-bg {
+  background: #1a2940; }
+
+.pt-7 {
+  padding-top: 70px; }
+
+.pb-7 {
+  padding-bottom: 70px; }
+
+.pt-5 {
+  padding-top: 50px; }
+
+.pb-5 {
+  padding-bottom: 50px; }
+
+.footer {
+  color: #fff; }
+  .footer .footer-menu ul.list-inline {
+    padding: 0;
+    margin: 0 0 0px; }
+    .footer .footer-menu ul.list-inline li {
+      padding-left: 20px;
+      padding-right: 20px; }
+      .footer .footer-menu ul.list-inline li:first-child {
+        padding-left: 0; }
+      .footer .footer-menu ul.list-inline li a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400; }
+  .footer .footer-social ul.list-inline {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .footer .footer-social ul.list-inline li {
+    padding: 0 5px;
+    margin: 0;
+    color: #94a2ad; }
+  .footer .footer-social ul.list-inline li:first-child {
+    padding-left: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    vertical-align: bottom; }
+  .footer .footer-note {
+    font-size: 12px;
+    color: #94a2ad;
+    margin: 0;
+    border-bottom: solid 1px #94a2ad; }
+  .footer .footer-copyright {
+    color: #94a2ad; }
+    .footer .footer-copyright .copyright {
+      font-size: 11px; }
+    .footer .footer-copyright .links ul.list-inline {
+      padding: 0;
+      margin: 0;
+      text-align: right; }
+      .footer .footer-copyright .links ul.list-inline li {
+        padding: 0;
+        margin: 0;
+        border-right: solid 1px #94a2ad;
+        padding-left: 10px;
+        padding-right: 10px; }
+        .footer .footer-copyright .links ul.list-inline li:last-child {
+          border: 0;
+          padding-right: 0; }
+        .footer .footer-copyright .links ul.list-inline li a {
+          color: #94a2ad;
+          font-size: 11px;
+          font-weight: 400; }
+  .footer .footer-signup-block .footer-signup-block .input-group-lg > .form-control,
+  .footer .footer-signup-block .input-group-lg > .input-group-addon {
+    border-radius: 0;
+    border: 0;
+    background-color: #3c495c;
+    color: #95a3b0;
+    font-style: italic;
+    height: 47px; }
+  .footer .footer-signup-block .footer-signup-block .input-group-lg > .input-group-btn > .btn {
+    border-radius: 0;
+    width: 122px;
+    line-height: 30px; }
