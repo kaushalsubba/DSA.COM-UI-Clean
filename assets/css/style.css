@@ -6144,17 +6144,85 @@ i {
 .dark-blue-bg {
   background: #1a2940; }
 
+.dark-light-blue-bg {
+  background: #344c70; }
+
+.gray-light-bg {
+  background: #807878; }
+
 .pt-7 {
   padding-top: 70px; }
 
 .pb-7 {
   padding-bottom: 70px; }
 
+.pb-6 {
+  padding-bottom: 60px; }
+
+.pt-6 {
+  padding-top: 60px; }
+
 .pt-5 {
   padding-top: 50px; }
 
 .pb-5 {
   padding-bottom: 50px; }
+
+.mb-2 {
+  margin-bottom: 20px; }
+
+.mt-2 {
+  margin-top: 20px; }
+
+.mr-2 {
+  margin-right: 20px; }
+
+.ml-2 {
+  margin-left: 20px; }
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .list li {
+    padding: 18px;
+    border-bottom: solid 1px #e7e7e7; }
+    .list li a {
+      color: #344c70;
+      font-weight: 400; }
+
+.list-hover li {
+  background-color: #ebebeb; }
+  .list-hover li:hover {
+    background-color: #f1f1f1;
+    border-bottom: solid 1px #fff; }
+
+.section-title {
+  border-top: 3px solid #1a2940;
+  border-bottom: 1px solid #e6e7e8;
+  line-height: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 12px 18px;
+  color: #58595b;
+  font-weight: 400; }
+
+.logo {
+  padding-bottom: 14px;
+  padding-top: 14px; }
+
+.header-right-block .connectdevelop {
+  margin: 20px 10px 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #666;
+  outline: 0;
+  float: left; }
+
+.header-right-block #accordion {
+  width: 67%;
+  margin-top: 20px; }
 
 .footer {
   color: #fff; }
@@ -6209,7 +6277,7 @@ i {
           color: #94a2ad;
           font-size: 11px;
           font-weight: 400; }
-  .footer .footer-signup-block .footer-signup-block .input-group-lg > .form-control,
+  .footer .footer-signup-block .input-group-lg > .form-control,
   .footer .footer-signup-block .input-group-lg > .input-group-addon {
     border-radius: 0;
     border: 0;
@@ -6217,7 +6285,7 @@ i {
     color: #95a3b0;
     font-style: italic;
     height: 47px; }
-  .footer .footer-signup-block .footer-signup-block .input-group-lg > .input-group-btn > .btn {
+  .footer .footer-signup-block .input-group-lg > .input-group-btn > .btn {
     border-radius: 0;
     width: 122px;
     line-height: 30px; }

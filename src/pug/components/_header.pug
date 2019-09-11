@@ -1,11 +1,12 @@
 #header.navbar-fixed-top
   .container
     .row
-      .col-sm-5.col-md-4.paddTopBottom.align-center
+      .col-sm-5.col-md-4
         // logo
-        a#logo(href='https://www.dezshira.com/', data-target='#logoDownload')
-          img.mrg-left40.logo.margin4Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png?v2', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png?v2 2x')
-      .col-sm-7.col-md-8.borderTop
+        .logo.align-center
+          a#logo(href='https://www.dezshira.com/', data-target='#logoDownload')
+            img.mt-4.mb-4(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png?v2', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png?v2 2x')
+      .col-sm-7.col-md-8
         // hedare top right side links
         .top-right-links
           #accordion
@@ -51,13 +52,13 @@
                   li
                     a(href='https://www.dezshira.com/international-desk/australian.html')
                       i.sprite.sprite-retina.icon-flag-australian
-          a.connectdevelop.marginLeftRight_none(href='#', data-toggle='modal', data-target='#Loginpopup')
+          a.connectdevelop(href='#', data-toggle='modal', data-target='#Loginpopup')
             i.sprite.sprite-retina.icon-login(data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Subscribe/Login')
           a.connectdevelop(href='https://www.dezshira.com/brochure', data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Download Brochure')
             i.sprite.sprite-retina.icon-download
-          a.btn.btn-lg.btn-outline.pull-right(href='https://www.dezshira.com/contact')
+          a.btn.btn-default.pull-right(href='https://www.dezshira.com/contact')
             span.hidden-xs Contact Us
-            <i class="fa fa-envelope hidden-md  hidden-sm hidden-lg marginTop8"></i>
+            i.fa.fa-envelope.hidden-md.hidden-sm.hidden-lg
   // navigation bar
   #navbar
     nav.navbar.navbar-inverse.navbar-static-top(role='navigation')
@@ -71,8 +72,8 @@
         #navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown') About Us
-              ul.dropdown-menu(style='margin-top: 0px;')
+              a.dropdown-toggle(href='#', data-toggle='dropdown', aria-expanded='false') About Us
+              ul.dropdown-menu
                 li
                   a(href='https://www.dezshira.com/about-us/our-firm.html') Overview
                 li
@@ -92,8 +93,8 @@
                 li
                   a(href='https://www.dezshira.com/international-desk') International Desks
             li.dropdown
-              a.dropdown-toggle(href='https://www.dezshira.com/services', data-toggle='dropdown') Services
-              ul.dropdown-menu(style='margin-top: 0px;')
+              a.dropdown-toggle(href='https://www.dezshira.com/services', data-toggle='dropdown', aria-expanded='false') Services
+              ul.dropdown-menu
                 li
                   a(href='https://www.dezshira.com/services/business-intelligence-solutions') Business Intelligence
                 li
@@ -113,8 +114,8 @@
                 li
                   a(href='https://www.dezshira.com/services/outbound-direct-investment') Outbound Direct Investment
             li.dropdown
-              a.dropdown-toggle(href='https://www.dezshira.com/industries', data-toggle='dropdown') Industries
-              ul.dropdown-menu(style='margin-top: 0px;')
+              a.dropdown-toggle(href='https://www.dezshira.com/industries', data-toggle='dropdown', aria-expanded='false') Industries
+              ul.dropdown-menu
                 li
                   a(href='https://www.dezshira.com/industries/education') Education
                 li
@@ -136,8 +137,8 @@
                 li
                   a(href='https://www.dezshira.com/industries/trade-and-e-commerce') Trade and E-commerce
             li.dropdown.mega-dropdown
-              a.dropdown-toggle(href='https://www.dezshira.com/office', data-toggle='dropdown') locations
-              ul.dropdown-menu.mega-dropdown-menu(style='margin-top: 0px;')
+              a.dropdown-toggle(href='https://www.dezshira.com/office', data-toggle='dropdown', aria-expanded='false') locations
+              ul.dropdown-menu.mega-dropdown-menu
                 li.col-sm-6
                   ul
                     li
@@ -181,7 +182,7 @@
                     li
                       a(href='https://www.dezshira.com/office/united-states.html') United States Liaison Office
             li.dropdown
-              a.dropdown-toggle(href='https://www.dezshira.com/library', data-toggle='dropdown') Investor Resources
+              a.dropdown-toggle(href='https://www.dezshira.com/library', data-toggle='dropdown', aria-expanded='false') Investor Resources
               ul.dropdown-menu(style='min-width: 100%; margin-top: 0px;')
                 li
                   a(href='https://www.dezshira.com/library') Asiapedia
@@ -190,20 +191,18 @@
           ul.nav.navbar-nav.navbar-right
             li
               a(href='https://twitter.com/dezanshira', target='_blank')
-                <i class="fab fa-twitter"></i>
+                i.fab.fa-twitter
             li
               a(href='https://www.linkedin.com/company/51688', target='_blank')
-                <i class="fab fa-linkedin-in"></i>
+                i.fab.fa-linkedin-in
             li
               a(href='https://www.facebook.com/DezanShira', target='_blank')
-                <i class="fab fa-facebook-f"></i>
-            li
-              a(href='https://www.youtube.com/channel/UCDuNrJ3qUVmxinM5i6trjtA', target='_blank')
-                <i class="fab fa-youtube"></i>
+                i.fab.fa-youtube
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown')
-                <i class="fab fa-weixin"></i>
+                i.fab.fa-weixin
               ul.dropdown-menu(style='margin-top: 0px;')
                 li
                   a(href='#')
                     img(alt='', src='https://www.dezshira.com/themes/dsa/images/WeChat-QR-code.jpg', width='115')
+      // /.navbar-collapse
