@@ -23,7 +23,7 @@ var paths = {
 	},
 
 	html: {
-		src: ['src/pug/**/*.pug','!src/pug/**/components/*','!src/pug/**/templates/*'],
+		src: ['src/pug/**/*.pug','src/pug/**/components/*','src/pug/**/templates/*'],
 		dest: './'
 	},
 	
@@ -34,7 +34,7 @@ var paths = {
 
 	img: {
 		src: './src/img/**',
-		dest: './dist/images'
+		dest: './assets/images'
 	},
 
 	watch: {
