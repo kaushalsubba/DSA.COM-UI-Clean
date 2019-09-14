@@ -8,6 +8,18 @@
         border-color: #314d77;
     
     }
+    &:active {
+		&:hover {
+			color: #fff;
+			background-color: #314d77;
+			border-color: #314d77;
+		}
+		&:focus {
+			color: #fff;
+			background-color: #314d77;
+			border-color: #314d77;
+		}
+	}
 }
 .btn-outline-primary {
     color: #1a2940;

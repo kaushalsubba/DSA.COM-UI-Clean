@@ -7,6 +7,10 @@
 .pt-6{ padding-top: 60px;}
 .pt-5{ padding-top: 50px;}
 .pb-5{ padding-bottom: 50px;}
+.pt-4{ padding-top: 40px;}
+.pb-4{ padding-bottom: 40px;}
+.pt-3{ padding-top: 30px;}
+.pb-3{ padding-bottom: 30px;}
 .mb-2{margin-bottom: 20px;}
 .mt-2{ margin-top: 20px;}
 .mr-2{margin-right: 20px;}
@@ -43,4 +47,10 @@
 	color: #58595b;
 	font-weight: 400;
 	
+}
+.thumb_block {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 10px;
 }

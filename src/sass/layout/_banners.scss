@@ -1,0 +1,99 @@
+// home page top main carousel
+#HomeBannerSlide{
+.carousel-inner {
+	>.item {
+		>img {
+			background-size: cover;
+            width: 100%; 
+            height: 400px;
+		}
+		>a {
+			>img {
+				background-size: cover;
+                width: 100%;
+                height: 400px;
+			}
+		}
+    }
+    .carousel-caption{
+        color: #fff;
+        text-align: left;
+        left: 14%;
+        right: 14%;
+        a { color: #fff;
+        &:hover { text-decoration: none;}
+    }
+    }
+}
+.carousel-indicators{
+    left: 16%;
+}
+}
+
+// home page resource carousel
+.featureResources {
+	.carousel-inner {
+		>.item {
+			height: 569px;
+			>a {
+				img {
+					padding: 30px 64px;
+					background-color: #ebebeb;
+				}
+			}
+		}
+	}
+	.carousel-caption {
+		width: 100%;
+		text-align: left;
+		left: 0;
+		right: 0;
+		bottom: 47px;
+		text-shadow: none;
+		padding: 0 18px;
+		border-bottom: solid 1px #e7e7e7;
+		color: #58595b;
+	}
+	.carousel-indicators {
+		bottom: 0;
+		margin-left: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		li {
+			background-color: #b7b7b7;
+			border: 0;
+			width: 12px;
+			height: 12px;
+			margin: 2px;
+		}
+		.active {
+			background-color: #d5d5d5;
+			border: 0;
+			margin-top: 0;
+		}
+	}
+}
+
+//inner page top main banner
+
+section.TopBanner {
+	position: relative;
+	overflow: hidden;
+	height: 340px;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	img {
+		position: absolute;
+		background-size: cover;
+		width: 100%;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+	}
+	.BannerCaption {
+		vertical-align: middle;
+        margin-top: 180px;
+        color: #fff;
+	}
+}

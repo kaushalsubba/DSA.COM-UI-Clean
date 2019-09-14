@@ -1,0 +1,63 @@
+.asiapedia_homepage {
+	.list-inline {
+		margin-left: 0;
+        text-align: center;
+        li{
+        padding-left: 1px; 
+        padding-right: 1px;}
+	}
+}
+.multimediaSmallThumbnail {
+	width: 282px;
+	height: 158px;
+	position: relative;
+	.icon_player {
+		position: absolute;
+		left: 45%;
+		top: 40%;
+		z-index: 1;
+		width: 20px;
+		height: 20px;
+		color: #FFF;
+		position: absolute;
+		left: 45%;
+		top: 40%;
+		z-index: 1;
+		width: 20px;
+		height: 20px;
+		color: #FFF;
+	}
+	img {
+		width: 100%;
+		height: 156px;
+	}
+}
+.multimediaLargeThumbnail {
+	.icon_player {
+		position: absolute;
+		left: 45%;
+		top: 40%;
+		z-index: 1;
+		width: 20px;
+		height: 20px;
+		color: #FFF;
+	}
+}
+.hoverImage {
+	overflow: hidden;
+	overflow: hidden;
+	figure {
+		img {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			-webkit-transition: .5s ease-in-out;
+			transition: .5s ease-in-out;
+		}
+		&:hover {
+			img {
+				-webkit-transform: scale(1.1);
+				transform: scale(1.1);
+			}
+		}
+	}
+}
