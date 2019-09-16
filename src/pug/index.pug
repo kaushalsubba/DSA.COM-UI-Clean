@@ -65,7 +65,7 @@ block content
                     | Meet our HR and payroll team to streamline admin and implement best local practices.
 
     // resource section
-    section.resource
+    section.resource.pt-7
       .container
         .row
           .col-sm-4.col-md-4.col-lg-4
@@ -214,18 +214,19 @@ block content
     section.brochure.pt-7.pb-7
       .container
         .row
-          .gray-light-bg
+          .gray-light-bg.mr-15.ml-15
             .col-sm-6.col-md-6.col-lg-6
-              .brochureCaption
+              .brochureCaption.pd-4.pt-4.pl-3
                 .downloadIcon
                   a(href=' https://www.dezshira.com/brochure')
                     img(alt='', src='https://www.dezshira.com/themes/dsa/images/downloadIcon.png?v1', srcset='https://www.dezshira.com/themes/dsa/images/downloadIcon.png?v1 2x', width='85px')
-                h3
-                  a(href='https://www.dezshira.com/brochure') ABOUT US
-                h2
-                  a(href='https://www.dezshira.com/brochure')
-                    | Learn more about how we can support your business in Asia by downloading our company brochures.
-                a.btn.btn-default(href='https://www.dezshira.com/brochure')  DOWNLOAD 
+                .about-us
+                  h3
+                    a(href='https://www.dezshira.com/brochure') ABOUT US
+                  h2
+                    a(href='https://www.dezshira.com/brochure')
+                      | Learn more about how we can support your business in Asia by downloading our company brochures.
+                  a.btn.btn-primary.mt-2(href='https://www.dezshira.com/brochure')  DOWNLOAD 
             .col-sm-6.col-md-6.col-lg-6
               img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/brochure-img.jpg', srcset='https://www.dezshira.com/themes/dsa/images/brochure-img.jpg 2x')
           .clearfix
@@ -240,7 +241,7 @@ block content
               | Asiapedia is a collection of resources based on what we have learned about doing business in Asia. 
               br
               | It&rsquo;s the product of more than 300 team members collaborating across 25 offices in Asia, Europe, and North America.
-            a.btn.btn-default(href='//www.dezshira.com/library') Visit Business Library 
+            a.btn.btn-primary(href='//www.dezshira.com/library') Visit Business Library 
         ul.mt-2.list-inline
           li
             .multimediaSmallThumbnail
@@ -278,7 +279,33 @@ block content
                 figure
                   a(href='//www.dezshira.com/library/video/setting-up-a-business-in-china-7575.html')
                     img.img-responsive(alt='Setting up a Business in China by Thibaut Minot', src='//www.dezshira.com/themes/dsa/images/setting-up-a-business-in-china.png')
-    
+    //home page services section
+    section.dark-light-blue-bg.pt-7.pb-7
+      .container
+        .row
+          .col-sm-4.col-md-4.col-lg-4
+            h2
+              a(href='//www.dezshira.com/services') Services
+            .content-max-height
+              p
+                | Dezan Shira &amp; Associates is a multidisciplinary professional services firm. Local experts at the firm provide services tailored to the unique challenges facing international businesses in Asia.
+            a.btn.btn-outline-white.mb-2(href='//www.dezshira.com/services') Show Me More  &gt; 
+          .col-sm-4.col-md-4.col-lg-4
+            h2
+              a(href='//www.dezshira.com/events') Events
+            .content-max-height
+              p
+                | Our team is on the move. Plan to join our next event so that we can collaborate.
+            a.btn.btn-outline-white.mb-2(href='//www.dezshira.com/events') Show Me More  &gt; 
+          .col-sm-4.col-md-4.col-lg-4
+            h2
+              a(href='//www.dezshira.com/career') Careers
+            .content-max-height
+              p
+                | Working at Dezan Shira &amp; Associates is about growth. That means developing skills, making a difference, and achieving goals to help colleagues and clients reach new heights.
+            a.btn.btn-outline-white.mb-2(href='//www.dezshira.com/career') Show Me More  &gt; 
+
+   
     // End modal
 block js
     |

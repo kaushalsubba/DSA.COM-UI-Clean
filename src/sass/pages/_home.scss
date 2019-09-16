@@ -25,7 +25,9 @@
 		z-index: 1;
 		width: 20px;
 		height: 20px;
-		color: #FFF;
+		a { 
+			color: #FFF;
+		}
 	}
 	img {
 		width: 100%;
@@ -61,3 +63,28 @@
 		}
 	}
 }
+.brochure {
+	.gray-light-bg{
+		overflow: hidden;
+	}
+	.downloadIcon {
+	float: left;
+    height: 170px;
+    margin-right: 25px;
+    width: 76px;
+
+}
+	.about-us{
+		float: left;
+		width: 80%;
+		h2{ color: #344c70;
+			font-size: 22px;
+			font-weight: bold;
+		a{color: #344c70;}
+	}
+		h3{ color: #1a2940;
+			font-size: 18px;
+		a{color: #1a2940;}
+		}
+	}
+	}
