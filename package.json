@@ -20,6 +20,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.2.0",
+    "gulp-image": "^5.1.0",
     "gulp-plumber": "^1.2.1",
     "stylelint": "^10.1.0"
   },

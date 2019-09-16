@@ -81,7 +81,7 @@ gulp.task('minifyImg', function(){
 		.pipe(imagemin())
 		.pipe(gulp.dest(paths.img.dest))
 });
-
+// images copy src folder to assets
 gulp.task('image', function () {
 	gulp.src(paths.img.src)
 	  .pipe(image())
