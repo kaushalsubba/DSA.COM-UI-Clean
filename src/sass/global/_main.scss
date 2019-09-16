@@ -1,3 +1,6 @@
+a { color: #344c70;
+	&:hover{ text-decoration: none;}
+}
 .dark-blue-bg{ background: #1a2940;}
 .dark-light-blue-bg{ background: #344c70;
 color: #fff;
@@ -24,6 +27,8 @@ color: #fff;
 .mt-2{ margin-top: 20px;}
 .mr-2{margin-right: 20px;}
 .ml-2{ margin-left: 20px;}
+.mr-1{margin-right: 10px;}
+.ml-1{ margin-left: 10px;}
 .mr-15{margin-right: 15px;}
 .ml-15{ margin-left: 15px;}
 .list {
@@ -42,9 +47,10 @@ color: #fff;
 .list-hover {
 	li {
 		background-color: #ebebeb;
+		border-bottom: solid 1px #fff;
 		&:hover {
 			background-color: #f1f1f1;
-			border-bottom: solid 1px #fff;
+			
 		}
 	}
 }
@@ -57,12 +63,27 @@ color: #fff;
 	padding: 12px 18px;
 	color: #58595b;
 	font-weight: 400;
+	margin-bottom: 0px;
+	margin-bottom: 0px;
 	
 }
 .thumb_block {
     width: 80px;
     height: 80px;
     float: left;
-    margin-right: 10px;
+	margin-right: 10px;
+	img{
+		width: 100%;
+		height: 80px;
+		object-fit: cover;
+	}
+}
+.item-title{ font-size: 14px;}
+.date {
+    margin-top: 6px;
+    display: block;
+	color: #aaa;
+	font-size: 14px;
+
 }
 .content-max-height{height: 100px; overflow: hidden;}

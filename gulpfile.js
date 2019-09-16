@@ -8,6 +8,7 @@ var uglify = require('gulp-uglify');
 var clean = require('gulp-clean-css');
 var babel = require('gulp-babel');
 var plumber = require('gulp-plumber');
+var image = require('gulp-image');
 
 
 // Paths and directories
@@ -34,7 +35,7 @@ var paths = {
 
 	img: {
 		src: './src/img/**',
-		dest: './assets/images'
+		dest: './assets/img'
 	},
 
 	watch: {
@@ -81,6 +82,12 @@ gulp.task('minifyImg', function(){
 		.pipe(gulp.dest(paths.img.dest))
 });
 
+gulp.task('image', function () {
+	gulp.src(paths.img.src)
+	  .pipe(image())
+	  .pipe(gulp.dest(paths.img.dest))
+  });
+
 // Minifies the javascript
 gulp.task('minifyJs', function() {
 	return gulp
@@ -122,6 +129,7 @@ gulp.task('watch', function () {
 	gulp.watch(paths.img.src, gulp.series('minifyImg', 'reloadBrowser'));
 	gulp.watch(paths.css.src, gulp.series('minifyCss', 'reloadBrowser'));
 	gulp.watch(paths.js.src, gulp.series('minifyJs', 'reloadBrowser'));
+	gulp.watch(paths.img.src, gulp.series('image', 'reloadBrowser'));
 });
 
 // Starts the development server

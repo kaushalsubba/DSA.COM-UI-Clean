@@ -5713,6 +5713,9 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -6194,6 +6197,11 @@ i {
     background-image: url(../images/sprit-2X.png?v2);
     background-size: 2913px 90px; } }
 
+a {
+  color: #344c70; }
+  a:hover {
+    text-decoration: none; }
+
 .dark-blue-bg {
   background: #1a2940; }
 
@@ -6256,6 +6264,12 @@ i {
 .ml-2 {
   margin-left: 20px; }
 
+.mr-1 {
+  margin-right: 10px; }
+
+.ml-1 {
+  margin-left: 10px; }
+
 .mr-15 {
   margin-right: 15px; }
 
@@ -6274,10 +6288,10 @@ i {
       font-weight: 400; }
 
 .list-hover li {
-  background-color: #ebebeb; }
+  background-color: #ebebeb;
+  border-bottom: solid 1px #fff; }
   .list-hover li:hover {
-    background-color: #f1f1f1;
-    border-bottom: solid 1px #fff; }
+    background-color: #f1f1f1; }
 
 .section-title {
   border-top: 3px solid #1a2940;
@@ -6287,13 +6301,29 @@ i {
   text-transform: uppercase;
   padding: 12px 18px;
   color: #58595b;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-bottom: 0px; }
 
 .thumb_block {
   width: 80px;
   height: 80px;
   float: left;
   margin-right: 10px; }
+  .thumb_block img {
+    width: 100%;
+    height: 80px;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.item-title {
+  font-size: 14px; }
+
+.date {
+  margin-top: 6px;
+  display: block;
+  color: #aaa;
+  font-size: 14px; }
 
 .content-max-height {
   height: 100px;
@@ -6592,7 +6622,6 @@ i {
   bottom: 47px;
   text-shadow: none;
   padding: 0 18px;
-  border-bottom: solid 1px #e7e7e7;
   color: #58595b; }
 
 .featureResources .carousel-indicators {
@@ -6600,13 +6629,18 @@ i {
   margin-left: 0;
   left: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  border-bottom: solid 1px #e7e7e7;
+  border-top: solid 1px #e7e7e7;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px; }
   .featureResources .carousel-indicators li {
     background-color: #b7b7b7;
     border: 0;
     width: 12px;
     height: 12px;
-    margin: 2px; }
+    margin: 0px 2px; }
   .featureResources .carousel-indicators .active {
     background-color: #d5d5d5;
     border: 0;
@@ -6702,3 +6736,18 @@ section.TopBanner {
     font-size: 18px; }
     .brochure .about-us h3 a {
       color: #1a2940; }
+
+.resource .event-block .item-title {
+  height: 35px;
+  overflow: hidden;
+  margin-bottom: 0px; }
+
+.resource .event-block li:last-child {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background: transparent;
+  border-bottom: solid 1px #e7e7e7; }
+
+.resource .latest-news-block li:last-child {
+  padding-bottom: 5px;
+  padding-top: 5px; }

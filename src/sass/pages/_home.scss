@@ -88,3 +88,22 @@
 		}
 	}
 	}
+
+	.resource{
+
+		.event-block{
+			.item-title{ height: 35px; overflow: hidden; margin-bottom: 0px;}
+			li{
+				&:last-child{ padding-bottom: 5px; padding-top: 5px; background: transparent;
+				border-bottom: solid 1px #e7e7e7;}
+			}
+			
+
+		}
+		.latest-news-block{
+			li{
+				&:last-child{ padding-bottom: 5px; padding-top: 5px; }
+				
+			}
+		}
+	}
