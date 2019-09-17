@@ -5745,6 +5745,9 @@ h5, .h5 {
 h6, .h6 {
   font-size: 14px; }
 
+p {
+  margin-bottom: 2rem; }
+
 .lead {
   font-size: 17.5px;
   font-weight: 300; }
@@ -5770,7 +5773,7 @@ h6, .h6 {
   line-height: 1.1; }
 
 .sprite {
-  background-image: url(../images/sprit.png?v2); }
+  background-image: url(https://www.dezshira.com/themes/dsa/images/sprit.png?v2); }
 
 i {
   display: inline-block;
@@ -6205,6 +6208,9 @@ a {
 .dark-blue-bg {
   background: #1a2940; }
 
+.light-blue-bg {
+  background: #316aa3; }
+
 .dark-light-blue-bg {
   background: #344c70;
   color: #fff; }
@@ -6257,6 +6263,12 @@ a {
 
 .mt-2 {
   margin-top: 20px; }
+
+.mb-7 {
+  margin-bottom: 70px; }
+
+.mt-7 {
+  margin-top: 70px; }
 
 .mr-2 {
   margin-right: 20px; }
@@ -6328,6 +6340,87 @@ a {
 .content-max-height {
   height: 100px;
   overflow: hidden; }
+
+.breadcrumbBlock {
+  background-color: #f5f5f5; }
+  .breadcrumbBlock .breadcrumb {
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-bottom: 0px; }
+    .breadcrumbBlock .breadcrumb li + li::before {
+      padding: 0 5px;
+      color: #ccc;
+      content: "\003e "; }
+
+.rightBlockSection {
+  width: 100%; }
+
+.contactUs {
+  background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
+  width: auto;
+  height: 420px;
+  background-size: cover; }
+  .contactUs .BannerCaption {
+    padding: 30px; }
+    .contactUs .BannerCaption h3 {
+      margin: 0;
+      padding: 30px 20px 0 0;
+      color: #FFF;
+      font-size: 22px;
+      font-style: normal; }
+      .contactUs .BannerCaption h3 a {
+        color: #fff; }
+    .contactUs .BannerCaption p {
+      margin: 0;
+      padding: 20px 18px 0 0;
+      color: #fff; }
+      .contactUs .BannerCaption p a {
+        color: #fff; }
+
+.light-blue-bg {
+  background-color: #316aa3;
+  color: #FFF; }
+  .light-blue-bg .BannerCaption {
+    padding: 30px 29px 30px 30px; }
+    .light-blue-bg .BannerCaption h3 {
+      margin: 0;
+      padding: 10px 0 0;
+      color: #FFF;
+      font-weight: 400;
+      font-size: 16px;
+      font-style: normal; }
+    .light-blue-bg .BannerCaption p {
+      margin: 0;
+      padding: 10px 0 0;
+      color: #fff;
+      font-size: 22px;
+      line-height: 1.3;
+      font-weight: 700; }
+    .light-blue-bg .BannerCaption a {
+      color: #fff; }
+
+.contactBlockSmall .BannerCaption {
+  padding: 30px 29px 30px 30px; }
+
+section.blue {
+  background-color: #316aa3;
+  padding: 35px 0;
+  color: #FFF;
+  line-height: 36px; }
+  section.blue h5 {
+    font-size: 18px;
+    color: #FFF;
+    line-height: 20px;
+    font-weight: 400; }
+  section.blue h1 {
+    color: white; }
+    section.blue h1 a {
+      color: white; }
+
+.listRightContent {
+  padding-left: 150px; }
 
 .btn {
   border-radius: 0px; }
@@ -6477,7 +6570,7 @@ a {
         #header #accordion .panel.active .panelTab .icon-globe {
           background-position: -1104px 0; }
   #header .top-right-links #accordion {
-    width: 61%; }
+    width: 40%; }
     #header .top-right-links #accordion .panel.active {
       float: right; }
   #header .panelContent {
@@ -6599,7 +6692,9 @@ a {
   color: #fff;
   text-align: left;
   left: 14%;
-  right: 14%; }
+  right: 14%;
+  bottom: 20%;
+  width: 40%; }
   #HomeBannerSlide .carousel-inner .carousel-caption a {
     color: #fff; }
     #HomeBannerSlide .carousel-inner .carousel-caption a:hover {
@@ -6663,6 +6758,76 @@ section.TopBanner {
     vertical-align: middle;
     margin-top: 180px;
     color: #fff; }
+
+@font-face {
+  font-family: 'NimbusSanL';
+  src: url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Reg.otf") format("opentype"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype"), url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NimbusSanL';
+  src: url("../fonts/NimbusSanL-Bol.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Bol.otf") format("opentype"), url("../fonts/NimbusSanL-Bol.woff") format("woff"), url("../fonts/NimbusSanL-Bol.ttf") format("truetype"), url("../fonts/NimbusSanL-Bol.svg#NimbusSanL-Bol") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.otf") format("opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Semibold.otf") format("opentype"), url("../fonts/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.otf") format("opentype"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Light.otf") format("opentype"), url("../fonts/MyriadPro-Light.woff") format("woff"), url("../fonts/MyriadPro-Light.ttf") format("truetype"), url("../fonts/MyriadPro-Light.svg#MyriadPro-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+/* hind-regular - latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/hind-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Hind Regular"), local("Hind-Regular"), url("../fonts/hind-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/hind-v8-latin-regular.woff2") format("woff2"), url("../fonts/hind-v8-latin-regular.woff") format("woff"), url("../fonts/hind-v8-latin-regular.ttf") format("truetype"), url("../fonts/hind-v8-latin-regular.svg#Hind") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
 
 .asiapedia_homepage .list-inline {
   margin-left: 0;

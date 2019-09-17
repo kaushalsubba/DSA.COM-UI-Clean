@@ -8,7 +8,8 @@ var uglify = require('gulp-uglify');
 var clean = require('gulp-clean-css');
 var babel = require('gulp-babel');
 var plumber = require('gulp-plumber');
-var image = require('gulp-image');
+
+
 
 
 // Paths and directories
@@ -36,6 +37,11 @@ var paths = {
 	img: {
 		src: './src/img/**',
 		dest: './assets/img'
+	},
+
+	fonts: {
+		src: './src/fonts/**',
+		dest: './assets/fonts'
 	},
 
 	watch: {
@@ -77,16 +83,16 @@ gulp.task('compileHTML', function(){
 // Optimizes images
 gulp.task('minifyImg', function(){
 	return gulp
-		.src(paths.img.src)
+		.src('src/img/**/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest(paths.img.dest))
+		.pipe(gulp.dest('assets/img'))
 });
-// images copy src folder to assets
-gulp.task('image', function () {
-	gulp.src(paths.img.src)
-	  .pipe(image())
-	  .pipe(gulp.dest(paths.img.dest))
-  });
+
+// Fonts
+gulp.task('copy', function() {
+    return gulp.src('src/fonts/**/*')
+            .pipe(gulp.dest('assets/fonts'))
+});
 
 // Minifies the javascript
 gulp.task('minifyJs', function() {
@@ -129,7 +135,7 @@ gulp.task('watch', function () {
 	gulp.watch(paths.img.src, gulp.series('minifyImg', 'reloadBrowser'));
 	gulp.watch(paths.css.src, gulp.series('minifyCss', 'reloadBrowser'));
 	gulp.watch(paths.js.src, gulp.series('minifyJs', 'reloadBrowser'));
-	gulp.watch(paths.img.src, gulp.series('image', 'reloadBrowser'));
+	gulp.watch(paths.fonts.src, gulp.series('copy', 'reloadBrowser'));
 });
 
 // Starts the development server

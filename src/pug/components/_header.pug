@@ -5,60 +5,62 @@
         // logo
         .logo.align-center
           a#logo(href='https://www.dezshira.com/', data-target='#logoDownload')
-            img.mt-4.mb-4(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png?v2', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png?v2 2x')
+            img.img-responsive.mt-4.mb-4(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png?v2', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png?v2 2x')
       .col-sm-7.col-md-8
         // hedare top right side links
-        .top-right-links
-          #accordion
-            .panel.search
-              .panelTab(data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Search')
-                a.disable-links(href='javascript:;')
-                  i.sprite.sprite-retina.icon-search
-              .panelContent.searchtab
-                form.form-inline(action='https://www.dezshira.com/library')
-                  .form-group
-                    input#SearchInput.form-control(type='text', placeholder='Search', name='s')
-                    i
-            .panel
-              .panelTab(data-toggle='tooltip', data-placement='bottom', title='', data-original-title='International Desks')
-                a.disable-links(href='javascript:;')
-                  i.sprite.sprite-retina.icon-globe
-              .panelContent.globtab
-                ul.list-inline
-                  li
-                    a(href='https://www.dezshira.com/international-desk/north-american.html')
-                      i.sprite.sprite-retina.icon-flag-american
-                  li
-                    a(href='https://www.dezshira.com/international-desk/uk-ireland.html')
-                      i.sprite.sprite-retina.icon-flag-UK-Ireland
-                  li
-                    a(href='https://www.dezshira.com/international-desk/french.html')
-                      i.sprite.sprite-retina.icon-flag-french
-                  li
-                    a(href='https://www.dezshira.com/international-desk/german.html')
-                      i.sprite.sprite-retina.icon-flag-german
-                  li
-                    a(href='https://www.dezshira.com/international-desk/italian.html')
-                      i.sprite.sprite-retina.icon-flag-italian
-                  li
-                    a(href='https://www.dezshira.com/international-desk/russian.html')
-                      i.sprite.sprite-retina.icon-flag-russian
-                  li
-                    a(href='https://www.dezshira.com/international-desk/spanish.html')
-                      i.sprite.sprite-retina.icon-flag-spanish
-                  li
-                    a(href='https://www.dezshira.com/cn')
-                      i.sprite.sprite-retina.icon-flag-chinese
-                  li
-                    a(href='https://www.dezshira.com/international-desk/australian.html')
-                      i.sprite.sprite-retina.icon-flag-australian
-          a.connectdevelop(href='#', data-toggle='modal', data-target='#Loginpopup')
+      .top-right-links
+        a.btn.btn-primary.pull-right(href='https://www.dezshira.com/contact')
+          span.hidden-xs Contact Us
+          i.fa.fa-envelope.hidden-md.hidden-sm.hidden-lg
+        .loginBrochure_block.mt-2
+          a.connectdevelop.marginLeftRight_none(href='#', data-toggle='modal', data-target='#Loginpopup')
             i.sprite.sprite-retina.icon-login(data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Subscribe/Login')
           a.connectdevelop(href='https://www.dezshira.com/brochure', data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Download Brochure')
             i.sprite.sprite-retina.icon-download
-          a.btn.btn-primary.pull-right(href='https://www.dezshira.com/contact')
-            span.hidden-xs Contact Us
-            i.fa.fa-envelope.hidden-md.hidden-sm.hidden-lg
+        #accordion.pull-right
+          .panel
+            .panelTab(data-toggle='tooltip', data-placement='bottom', title='', data-original-title='International Desks')
+              a.disable-links(href='javascript:;')
+                i.sprite.sprite-retina.icon-globe
+            .panelContent.globtab
+              ul.list-inline
+                li
+                  a(href='https://www.dezshira.com/international-desk/north-american.html')
+                    i.sprite.sprite-retina.icon-flag-american
+                li
+                  a(href='https://www.dezshira.com/international-desk/uk-ireland.html')
+                    i.sprite.sprite-retina.icon-flag-UK-Ireland
+                li
+                  a(href='https://www.dezshira.com/international-desk/french.html')
+                    i.sprite.sprite-retina.icon-flag-french
+                li
+                  a(href='https://www.dezshira.com/international-desk/german.html')
+                    i.sprite.sprite-retina.icon-flag-german
+                li
+                  a(href='https://www.dezshira.com/international-desk/italian.html')
+                    i.sprite.sprite-retina.icon-flag-italian
+                li
+                  a(href='https://www.dezshira.com/international-desk/russian.html')
+                    i.sprite.sprite-retina.icon-flag-russian
+                li
+                  a(href='https://www.dezshira.com/international-desk/spanish.html')
+                    i.sprite.sprite-retina.icon-flag-spanish
+                li
+                  a(href='https://www.dezshira.com/cn')
+                    i.sprite.sprite-retina.icon-flag-chinese
+                li
+                  a(href='https://www.dezshira.com/international-desk/australian.html')
+                    i.sprite.sprite-retina.icon-flag-australian
+          .panel.search
+                .panelTab(data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Search')
+                  a.disable-links(href='javascript:;')
+                    i.sprite.sprite-retina.icon-search
+                .panelContent.searchtab
+                  form.form-inline(action='https://www.dezshira.com/library')
+                    .form-group
+                      input#SearchInput.form-control(type='text', placeholder='Search', name='s')
+                      i
+
   // navigation bar
   #navbar
     nav.navbar.navbar-inverse.navbar-static-top(role='navigation')

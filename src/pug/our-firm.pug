@@ -12,20 +12,19 @@ block content
         .BannerCaption
             .container
                 .row
-                    .col-sm-12.col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1.text-center
+                    .col-sm-12.col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1
                         h1.text-left Overview
 
     section.breadcrumbBlock
-        nav(aria-label='breadcrumb')
-            .container
-                .row
-                    .col-sm-12.col-md-12.col-lg-12
-                        ol.breadcrumb
-                            li.breadcrumb-item
-                                a(href='#') About Us
-                            li.breadcrumb-item.active(aria-current='page') Overview
+        .container
+            .row
+                .col-sm-12.col-md-12.col-lg-12
+                    ol.breadcrumb
+                        li
+                            a(href='#') About Us
+                        li.active(aria-current='page') Overview
 
-    section
+    section.pt-7.pb-7
         .container
             .row
                 .col-sm-8.col-md-8.col-lg-8.col-xl-8.mt-5.mb-5
@@ -62,7 +61,7 @@ block content
                     ul.list-unstyled.list
                         li
                             a(href='http://www.leadingedgealliance.com/', target='_blank')
-                                img.img-fluid.float-left.mr-4(src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/Screen_Shot_2013-05-06_at_09.54.41.png', scale='0',)
+                                img.img-responsive.pull-left.mr-2(src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/Screen_Shot_2013-05-06_at_09.54.41.png', scale='0',)
                             .listRightContent
                                 h4
                                     a.name(href='http://www.leadingedgealliance.com/', target='_blank',) Leading Edge Alliance
@@ -73,7 +72,7 @@ block content
                                     | , the worlds second largest global network of 226 accounting practices including 620 offices in 110 countries. Dezan Shira &amp; Associates won the Alliance&acute;s &quot;Most Innovative Practice&quot; &ndash; its highest award &ndash; and the &quot;Recognition of Excellence&quot; award in 2013, the prestigious &ldquo;Edge Award&rdquo; in 2014, as well as the &ldquo;Outstanding Marketing Award&rdquo; in 2016.
                         li
                             a(href='http://www.leadingedgealliance.com/', target='_blank')
-                                img.img-fluid.float-left.mr-4(src='https://www.dezshira.com/userfiles/image/partners/IR%20Global%20logo.png', scale='0',)
+                                img.img-responsive.pull-left.mr-2(src='https://www.dezshira.com/userfiles/image/partners/IR%20Global%20logo.png', scale='0',)
                             .listRightContent
                                 h4
                                     a.name(href='http://www.leadingedgealliance.com/', target='_blank',) IR Global
@@ -87,13 +86,13 @@ block content
 
                 .col-sm-4.col-md-4.col-lg-4.col-lg-4.mt-5.mb-5
                     .rightBlockSection
-                        .contactUs.mb-4
+                        .contactUs.mb-2
                             .BannerCaption
                                 h3 To learn more about how we can support you, contact one of our local experts.
                                 p
                                     | We provide professional services tailored to Asia´s business environment across the full business cycle.
-                                a.btn.btn-outline-light.mt-4.mb-4(href='https://www.dezshira.com/personnel') Talk to experts 
-                        .blueBg.mt-4.mb-4
+                                a.btn.btn-outline-white.mb-2.mt-2(href='https://www.dezshira.com/personnel') Talk to experts 
+                        .light-blue-bg.mt-2.mb-2
                             .BannerCaption.min
                                 a(href='https://www.dezshira.com/brochure')
                                     img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Download.png', srcset='https://www.dezshira.com/themes/dsa/images/icons/Download@2x.png 2x')
@@ -124,7 +123,7 @@ block content
     section.blue.pt-5.pb-5
         .container
             .row
-                .col-sm-2.col-md-2.col-lg-2.offset-sm-1.offset-md-1.offset-lg-1.text-right
+                .col-sm-2.col-md-2.col-lg-2.col-sm-offset-1.col-md-offset-1.col-lg-offset-1.text-right
                     a(href='http://dezshira.in/register.html')
                     img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Subscribe.png', srcset='https://www.dezshira.com/themes/dsa/images/icons/Subscribe@2x.png 2x')
                 .col-sm-8.col-md-8.col-lg-8
