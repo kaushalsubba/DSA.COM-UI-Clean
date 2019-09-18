@@ -92,7 +92,8 @@
 	.resource{
 
 		.event-block{
-			.item-title{ height: 35px; overflow: hidden; margin-bottom: 0px;}
+			.item-title{ height: 27px; overflow: hidden; margin-bottom: 0px; margin-top: 10px;}
+			.date{ margin-top: 0px;}
 			li{
 				&:last-child{ padding-bottom: 5px; padding-top: 5px; background: transparent;
 				border-bottom: solid 1px #e7e7e7;}
@@ -105,5 +106,6 @@
 				&:last-child{ padding-bottom: 5px; padding-top: 5px; }
 				
 			}
+			.item-title{ height: 52px; overflow: hidden; line-height: 18px;}
 		}
 	}

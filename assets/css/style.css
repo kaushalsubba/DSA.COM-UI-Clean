@@ -1055,7 +1055,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1449,7 +1449,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 code {
   padding: 2px 4px;
@@ -5114,7 +5114,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857;
@@ -5219,7 +5219,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857;
@@ -5714,7 +5714,7 @@ button.close {
     display: none !important; } }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -5723,7 +5723,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #4A4A4A;
   text-align: left;
   letter-spacing: 0.03em; }
@@ -5731,31 +5731,13 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: "Hind", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
     color: inherit; }
-
-h1, .h1 {
-  font-size: 28px; }
-
-h2, .h2 {
-  font-size: 25.2px; }
-
-h3, .h3 {
-  font-size: 23.8px; }
-
-h4, .h4 {
-  font-size: 21px; }
-
-h5, .h5 {
-  font-size: 17.5px; }
-
-h6, .h6 {
-  font-size: 14px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -5768,30 +5750,6 @@ p {
   font-size: inherit;
   font-family: inherit;
   padding: 0; }
-
-.lead {
-  font-size: 17.5px;
-  font-weight: 300; }
-
-.display-1 {
-  font-size: 6rem;
-  font-weight: 300;
-  line-height: 1.1; }
-
-.display-2 {
-  font-size: 5.5rem;
-  font-weight: 300;
-  line-height: 1.1; }
-
-.display-3 {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 1.1; }
-
-.display-4 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.1; }
 
 .sprite {
   background-image: url(https://www.dezshira.com/themes/dsa/images/sprit.png?v2); }
@@ -6363,7 +6321,8 @@ a {
   overflow: hidden; }
 
 .breadcrumbBlock {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  border-bottom: solid 1px #ebebeb; }
   .breadcrumbBlock .breadcrumb {
     margin-top: 0;
     padding-bottom: 10px;
@@ -6725,7 +6684,7 @@ section.blue {
   left: 16%; }
 
 .featureResources .carousel-inner > .item {
-  height: 569px; }
+  height: 629px; }
   .featureResources .carousel-inner > .item > a img {
     padding: 30px 64px;
     background-color: #ebebeb; }
@@ -6735,7 +6694,7 @@ section.blue {
   text-align: left;
   left: 0;
   right: 0;
-  bottom: 47px;
+  bottom: 80px;
   text-shadow: none;
   padding: 0 18px;
   color: #58595b; }
@@ -6781,40 +6740,19 @@ section.TopBanner {
     color: #fff; }
 
 @font-face {
-  font-family: 'NimbusSanL';
-  src: url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Reg.otf") format("opentype"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype"), url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");
-  font-weight: normal;
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'NimbusSanL';
-  src: url("../fonts/NimbusSanL-Bol.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Bol.otf") format("opentype"), url("../fonts/NimbusSanL-Bol.woff") format("woff"), url("../fonts/NimbusSanL-Bol.ttf") format("truetype"), url("../fonts/NimbusSanL-Bol.svg#NimbusSanL-Bol") format("svg");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.otf") format("opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url("../fonts/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Semibold.otf") format("opentype"), url("../fonts/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.otf") format("opentype"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url("../fonts/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Light.otf") format("opentype"), url("../fonts/MyriadPro-Light.woff") format("woff"), url("../fonts/MyriadPro-Light.ttf") format("truetype"), url("../fonts/MyriadPro-Light.svg#MyriadPro-Light") format("svg");
-  font-weight: 300;
-  font-style: normal; }
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/hind-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Hind Regular"), local("Hind-Regular"), url("../fonts/hind-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/hind-v8-latin-regular.woff2") format("woff2"), url("../fonts/hind-v8-latin-regular.woff") format("woff"), url("../fonts/hind-v8-latin-regular.ttf") format("truetype"), url("../fonts/hind-v8-latin-regular.svg#Hind") format("svg");
+  /* Legacy iOS */ }
 
 .asiapedia_homepage .list-inline {
   margin-left: 0;
@@ -6890,9 +6828,13 @@ section.TopBanner {
       color: #1a2940; }
 
 .resource .event-block .item-title {
-  height: 35px;
+  height: 27px;
   overflow: hidden;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  margin-top: 10px; }
+
+.resource .event-block .date {
+  margin-top: 0px; }
 
 .resource .event-block li:last-child {
   padding-bottom: 5px;
@@ -6903,3 +6845,8 @@ section.TopBanner {
 .resource .latest-news-block li:last-child {
   padding-bottom: 5px;
   padding-top: 5px; }
+
+.resource .latest-news-block .item-title {
+  height: 52px;
+  overflow: hidden;
+  line-height: 18px; }
