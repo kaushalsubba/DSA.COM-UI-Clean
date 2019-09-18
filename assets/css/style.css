@@ -6402,6 +6402,9 @@ section.blue {
 .listRightContent {
   padding-left: 150px; }
 
+.greyLeftBorder {
+  border-left: solid 1px #e1e1e1; }
+
 .btn {
   border-radius: 0px; }
 
@@ -6478,6 +6481,16 @@ section.blue {
     color: #fff;
     background-color: #1D74CE;
     border-color: #1D74CE; }
+
+.form-control {
+  border-radius: 0px; }
+
+.input-group-addon {
+  border-radius: 0px;
+  background-color: transparent;
+  color: #0D2338;
+  border-right: none;
+  padding-right: 0px; }
 
 #header {
   padding: 0;
@@ -6850,3 +6863,53 @@ section.TopBanner {
   height: 52px;
   overflow: hidden;
   line-height: 18px; }
+
+#logoDownload .modal-content, #Loginpopup .modal-content {
+  border-radius: 0px; }
+
+#logoDownload .modal-header, #Loginpopup .modal-header {
+  border: 0px; }
+  #logoDownload .modal-header .close, #Loginpopup .modal-header .close {
+    color: #1a2940;
+    outline: 0;
+    opacity: inherit; }
+
+#logoDownload .fa-cloud-download-alt, #Loginpopup .fa-cloud-download-alt {
+  color: #d3d3d3; }
+
+#Loginpopup .modal-header {
+  border-top: solid 3px #0D2338; }
+
+#Loginpopup .modal-title {
+  color: #0D2338; }
+
+#Loginpopup .subscriptionBlock .carousel .item {
+  min-height: 260px;
+  text-align: center; }
+
+#Loginpopup .subscriptionBlock .carousel .carousel-caption {
+  color: #404040;
+  text-shadow: none;
+  width: 90%;
+  right: 5%;
+  left: 5%; }
+  #Loginpopup .subscriptionBlock .carousel .carousel-caption p {
+    padding-top: 20px; }
+
+#Loginpopup .subscriptionBlock .carousel-indicators {
+  bottom: 0; }
+  #Loginpopup .subscriptionBlock .carousel-indicators .active {
+    background-color: #b7b8bb; }
+  #Loginpopup .subscriptionBlock .carousel-indicators li {
+    background-color: #d6d6d6;
+    height: 12px;
+    width: 12px;
+    margin: 0; }
+
+#loginForm {
+  padding: 0px 10px 0px 10px; }
+  #loginForm .form-control {
+    border-left: 0px;
+    box-shadow: none; }
+    #loginForm .form-control:focus {
+      border-color: #ccc; }

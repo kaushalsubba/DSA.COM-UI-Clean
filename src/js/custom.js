@@ -1,4 +1,5 @@
-$(document).ready(function(){					   
+$(document).ready(function(){	
+    //accordion top right side heade				   
 	if($('body').hasClass('non_mobile')){
     $("#accordion .panelTab").on('click', function() {
     if (!$(this).parents('.panel').is('.active')) {
@@ -18,4 +19,12 @@ $(document).ready(function(){
     }
     }); 
     };
+
+	//logo popup
+	$("a#logo").on("contextmenu", function(e) {
+        e.preventDefault();
+        var targetModal = $(this).data('target');
+        $(targetModal).modal("show");
+      })
+
     });

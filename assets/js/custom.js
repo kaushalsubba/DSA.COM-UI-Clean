@@ -1,1 +1,4 @@
-$(document).ready(function(){$("body").hasClass("non_mobile")&&$("#accordion .panelTab").on("click",function(){$(this).parents(".panel").is(".active")?$("#accordion .panel").removeClass("active").animate({width:"35px"},419):$(this).parents(".panel").animate({width:"419px"},500,function(){$(this).hasClass("search")&&$("input#SearchInput").focus()}).addClass("active").siblings(".panel").animate({width:"35px"},500).removeClass("active")})});
+$(document).ready(function(){
+//accordion top right side heade				   
+$("body").hasClass("non_mobile")&&$("#accordion .panelTab").on("click",function(){$(this).parents(".panel").is(".active")?$("#accordion .panel").removeClass("active").animate({width:"35px"},419):$(this).parents(".panel").animate({width:"419px"},500,function(){$(this).hasClass("search")&&$("input#SearchInput").focus()}).addClass("active").siblings(".panel").animate({width:"35px"},500).removeClass("active")}),//logo popup
+$("a#logo").on("contextmenu",function(a){a.preventDefault();var n=$(this).data("target");$(n).modal("show")})});

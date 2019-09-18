@@ -109,3 +109,51 @@
 			.item-title{ height: 52px; overflow: hidden; line-height: 18px;}
 		}
 	}
+	#logoDownload,#Loginpopup{
+		.modal-content{ border-radius: $border-radius-none;
+			
+		}
+		.modal-header{ border: $border-none;
+			.close {				
+				color: #1a2940;
+				outline: 0;
+				opacity: inherit;
+			
+			}
+		}
+		.fa-cloud-download-alt {			
+			color: #d3d3d3;
+		
+		}
+	}
+	#Loginpopup{
+		.modal-header{ border-top: solid 3px $bluedark; }
+		.modal-title{ color: $bluedark;}
+		.subscriptionBlock {
+			.carousel  {
+				.item {
+					min-height: 260px; text-align: center;
+			}
+			.carousel-caption{ color: #404040; text-shadow: none; width: 90%; right: 5%; left: 5%;;
+				p{ padding-top: 20px;}
+			}
+		}
+		.carousel-indicators  { bottom: 0;
+			.active {
+				background-color: #b7b8bb;
+				}
+			li {
+				background-color: #d6d6d6;
+				height: 12px;
+				width: 12px;
+				margin: 0;
+			}
+		
+		}
+	}
+	}
+	#loginForm{ padding: 0px 10px 0px 10px;
+		.form-control{ border-left: 0px;box-shadow:none;
+		&:focus{ border-color: #ccc;}
+		}
+	}

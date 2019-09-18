@@ -340,7 +340,7 @@ block modal
                 .modal-body
                     .row
                         .col-sm-6.col-md-6.col-lg-6
-                            h4#myModalLabel.modal-title.text-center Log In
+                            h4#myModalLabel.modal-title.text-center.mb-2 Log In
                             form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
                                 input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
                                 .form-group.input-group
@@ -359,7 +359,7 @@ block modal
                                     a(href='http://www.asiabriefing.com/customer/forgot-password')
                                         small Forgot Password?
                                 .form-group.text-center
-                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                    input.btn.btn-primary(type='submit', value='LOGIN')
                                 .form-group.text-center
                                     small
                                         | Don't have an account? 
@@ -376,23 +376,23 @@ block modal
                                     // Wrapper for carousel items
                                     .carousel-inner
                                         .item.next.left
-                                            h4.modal-title.text-center Publication
+                                            h4.modal-title.text-center.mb-2 Publication
                                             i.sprite.sprite-retina.icon-publications
                                             .carousel-caption
                                                 p Download our FREE magazines and guides
                                         .item
-                                            h4.modal-title.text-center News 
+                                            h4.modal-title.text-center.mb-2 News 
                                             i.sprite.sprite-retina.icon-news
                                             .carousel-caption
                                                 p
                                                     | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
                                         .item
-                                            h4.modal-title.text-center Multimedia
+                                            h4.modal-title.text-center.mb-2 Multimedia
                                             i.sprite.sprite-retina.icon-ksp
                                             .carousel-caption
                                                 p Access presentations, webinars, podcasts, reports, Q&As and more
                                         .item.active.left
-                                            h4.modal-title.text-center Dashboard
+                                            h4.modal-title.text-center.mb-2 Dashboard
                                             i.sprite.sprite-retina.icon-dashboard
                                             .carousel-caption
                                                 p Track paid orders and connect with our support team
@@ -416,54 +416,48 @@ block modal
                                 td.lightgreyColor 254KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
                                 td.lightgreyColor 14KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
                                 td.lightgreyColor 566KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
                                 td.lightgreyColor 49KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
                                 td.lightgreyColor 305KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
                                 td.lightgreyColor 18KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                       
+                                        <i class="fas fa-cloud-download-alt"></i>
 
 
     // End modal
