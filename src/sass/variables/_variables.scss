@@ -41,11 +41,12 @@ $spacer: 1rem !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
+// stylelint-disable value-keyword-case
 $font-path:                   "../fonts/" !default;
-$font-family-sans-serif:      "Roboto", sans-serif !default;
+$font-family-sans-serif:      'Myriad Pro', Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
-$font-family-head:            "Hind",sans-serif !default;
+$font-family-head:            'NimbusSanL', Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 // stylelint-enable value-keyword-case
 $lead-font-size:              ($font-size-base * 1.25) !default;
 $lead-font-weight:            300 !default;
