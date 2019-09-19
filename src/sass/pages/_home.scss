@@ -92,8 +92,14 @@
 	.resource{
 
 		.event-block{
-			.item-title{ height: 27px; overflow: hidden; margin-bottom: 0px; margin-top: 10px;}
-			.date{ margin-top: 0px;}
+			.item-title{ height: 29px; overflow: hidden; margin-bottom: 0px; margin-top: 5px;
+			a{ color: #2f3238;}}
+			.date{ margin-top: 0px; color: #344c70; 
+				font-size: 16px; 
+				font-family:$font-family-base;
+				line-height: 18px; 
+			a{ color: #344c70;}
+		}
 			li{
 				&:last-child{ padding-bottom: 5px; padding-top: 5px; background: transparent;
 				border-bottom: solid 1px #e7e7e7;}
@@ -102,11 +108,13 @@
 
 		}
 		.latest-news-block{
-			li{
+			li{ padding-top: 14px; padding-bottom: 14px;
 				&:last-child{ padding-bottom: 5px; padding-top: 5px; }
 				
 			}
-			.item-title{ height: 52px; overflow: hidden; line-height: 18px;}
+			.item-title{ height: 55px; overflow: hidden; line-height: 18px;
+			a{ color: #2f3238;}
+			}
 		}
 	}
 	#logoDownload,#Loginpopup{
@@ -156,4 +164,8 @@
 		.form-control{ border-left: 0px;box-shadow:none;
 		&:focus{ border-color: #ccc;}
 		}
+	}
+	.sec-block{
+
+		h2{ font-size: 24px;}
 	}

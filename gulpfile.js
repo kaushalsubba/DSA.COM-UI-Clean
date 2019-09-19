@@ -90,7 +90,7 @@ gulp.task('minifyImg', function(){
 
 // Fonts
 gulp.task('copy', function() {
-    return gulp.src('src/fonts/**/*')
+	return gulp.src('src/fonts/**/*')
             .pipe(gulp.dest('assets/fonts'))
 });
 

@@ -6,6 +6,7 @@
             li {
                 padding-left: 20px;
                 padding-right: 20px;
+                font-family: $font-family-base;
                 &:first-child {
                     padding-left: 0;
                 }
@@ -17,7 +18,7 @@
             }
         }
     }
-    .footer-social{
+    .footer-social{ padding-top: 70px;
         ul.list-inline {
             padding:0;
             margin:0;

@@ -1,13 +1,17 @@
 extends layouts/_layout_default
 
 block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
     - title = "Dezan shira"
 
 
 
 block content
     // Start Content
-    section.TopBanner.TopInnerBanner
+    section.TopBanner
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/services/banner-business-intelligence-solutions.jpg')
         .BannerCaption
             .container

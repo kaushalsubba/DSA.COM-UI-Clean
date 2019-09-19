@@ -1,2 +1,4 @@
-.form-control{ border-radius:$border-radius-none; }
+.form-control{ border-radius:$border-radius-none; box-shadow: none;
+    &:focus{ box-shadow: none;}
+}
 .input-group-addon{ border-radius:$border-radius-none; background-color: transparent; color: $bluedark; border-right: none; padding-right: 0px; }

@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0; // 1
-  font-family: $font-family-base;
+  font-family:$font-family-head;
   color: $body-color;
   text-align: left; // 3
   letter-spacing: 0.03em;}
@@ -45,9 +45,30 @@ p {
   font-size: inherit;
   font-family: inherit;
   padding: 0;
+  font-family: $font-family-base;
 }
 
-
+// Type display classes
+.display-1 {
+  font-size: $display1-size;
+  font-weight: $display1-weight;
+  line-height: $display-line-height;
+}
+.display-2 {
+  font-size: $display2-size;
+  font-weight: $display2-weight;
+  line-height: $display-line-height;
+}
+.display-3 {
+  font-size: $display3-size;
+  font-weight: $display3-weight;
+  line-height: $display-line-height;
+}
+.display-4 {
+  font-size: $display4-size;
+  font-weight: $display4-weight;
+  line-height: $display-line-height;
+}
 
 
 

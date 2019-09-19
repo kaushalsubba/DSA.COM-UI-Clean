@@ -10,62 +10,60 @@ block content
     // Banner section
     section.bannerSlide
       #HomeBannerSlide.carousel.slide(data-ride='carousel', data-interval='5000')
-        // Indicators
-        .container
-          ol.carousel-indicators
-            li.active(data-target='#HomeBannerSlide', data-slide-to='0')
-            li(data-target='#HomeBannerSlide', data-slide-to='1')
-            li(data-target='#HomeBannerSlide', data-slide-to='2')
-            li(data-target='#HomeBannerSlide', data-slide-to='3')
-            li(data-target='#HomeBannerSlide', data-slide-to='4')
+
+        ol.carousel-indicators
+          li.active(data-target='#HomeBannerSlide', data-slide-to='0')
+          li(data-target='#HomeBannerSlide', data-slide-to='1')
+          li(data-target='#HomeBannerSlide', data-slide-to='2')
+          li(data-target='#HomeBannerSlide', data-slide-to='3')
+          li(data-target='#HomeBannerSlide', data-slide-to='4')
         // Wrapper for slides
         .carousel-inner(role='listbox')
           .item.active
             img.fill(src='https://www.dezshira.com/themes/dsa/images/home-banners-slide/An-award-winning-professional-services-firm-in-Asia.jpg', alt='An award winning professional services firm in Asia.')
-            .container
-              .carousel-caption
-                h1.display-4
-                  a(href='https://www.dezshira.com/about-us/our-firm.html')
-                    | An award winning professional services firm in Asia.
-                h4
-                  a(href='https://www.dezshira.com/about-us/our-firm.html') Independent legal, tax, and advisory services since 1992.
+            .carousel-caption
+              h1.display-4
+                a(href='https://www.dezshira.com/about-us/our-firm.html')
+                  | An award winning professional services firm in Asia.
+              h4
+                a(href='https://www.dezshira.com/about-us/our-firm.html') Independent legal, tax, and advisory services since 1992.
           .item
             img.fill(src='https://www.dezshira.com/themes/dsa/images/home-banners-slide/Need-to-set-up-a-business-in-Asia.jpg', alt='Need to set up a business in Asia?')
-            .container
-              .carousel-caption
-                h1.display-4
-                  a(href='https://www.dezshira.com/services/business-advisory')
-                    | Need to set up a business in Asia?
-                h4
-                  a(href='https://www.dezshira.com/services/business-advisory')
-                    | Talk to our lawyers and tax advisors to find the most effective corporate structure for your needs.
+            
+            .carousel-caption
+              h1.display-4
+                a(href='https://www.dezshira.com/services/business-advisory')
+                  | Need to set up a business in Asia?
+              h4
+                a(href='https://www.dezshira.com/services/business-advisory')
+                  | Talk to our lawyers and tax advisors to find the most effective corporate structure for your needs.
           .item
             img.fill(src='https://www.dezshira.com/themes/dsa/images/home-banners-slide/Looking-at-new-developing-markets.jpg', alt='Is your company managing taxes in multiple jurisdictions?')
-            .container
-              .carousel-caption
-                h1.display-4
-                  a(href='https://www.dezshira.com/services/tax') Is your company managing taxes in multiple jurisdictions?
-                h4
-                  a(href='https://www.dezshira.com/services/tax')
-                    | Consult our tax experts about maximizing revenue and minimizing unnecessary costs for your business.
+            
+            .carousel-caption
+              h1.display-4
+                a(href='https://www.dezshira.com/services/tax') Is your company managing taxes in multiple jurisdictions?
+              h4
+                a(href='https://www.dezshira.com/services/tax')
+                  | Consult our tax experts about maximizing revenue and minimizing unnecessary costs for your business.
           .item
             img.fill(src='https://www.dezshira.com/themes/dsa/images/home-banners-slide/Your-reporting-requirements-taking-too-much-time.jpg', alt='Are your reporting requirements taking too much time?')
-            .container
-              .carousel-caption
-                h1.display-4
-                  a(href='https://www.dezshira.com/services/accounting-reporting') Are your reporting requirements taking too much time?
-                h4
-                  a(href='https://www.dezshira.com/services/accounting-reporting')
-                    | Talk with our accounting team about managing country-specific and international standards.
+            
+            .carousel-caption
+              h1.display-4
+                a(href='https://www.dezshira.com/services/accounting-reporting') Are your reporting requirements taking too much time?
+              h4
+                a(href='https://www.dezshira.com/services/accounting-reporting')
+                  | Talk with our accounting team about managing country-specific and international standards.
           .item
             img.fill(src='https://www.dezshira.com/themes/dsa/images/home-banners-slide/Do-you-need-to-improve-employee-engagement-and-retention.jpg', alt='Do you need to improve employee engagement and retention?')
-            .container
-              .carousel-caption
-                h1.display-4
-                  a(href='https://www.dezshira.com/services/payroll-human-resource-administration') Do you need to improve employee engagement and retention?
-                h4
-                  a(href='https://www.dezshira.com/services/payroll-human-resource-administration')
-                    | Meet our HR and payroll team to streamline admin and implement best local practices.
+            
+            .carousel-caption
+              h1.display-4
+                a(href='https://www.dezshira.com/services/payroll-human-resource-administration') Do you need to improve employee engagement and retention?
+              h4
+                a(href='https://www.dezshira.com/services/payroll-human-resource-administration')
+                  | Meet our HR and payroll team to streamline admin and implement best local practices.
 
     // resource section
     section.resource.pt-7
@@ -115,7 +113,7 @@ block content
                     a(href='https://www.dezshira.com/events/details/navigating-asia-s-business-landscape-how-vietnam-could-complement-your-china-operation-8385.html')
                       | NAVIGATING ASIA&rsquo;S BUSINESS LANDSCAPE: HOW VIETNAM COULD COMPLEMENT YOUR EXPANSION STRATEGY IN ASIA
                 li
-                  a.btn.btn-link(href='//www.dezshira.com/events/')
+                  a.btn.btn-link.text-uppercase(href='//www.dezshira.com/events/')
                     strong  Show Me More &gt;
           .col-sm-4.col-md-4.col-lg-4
             // latest news section
@@ -158,7 +156,7 @@ block content
                   .date August 19, 2019
                   .clearfix
                 li
-                  a.btn.btn-link(href='http://www.dezshira.com/updates/')
+                  a.btn.btn-link.text-uppercase(href='http://www.dezshira.com/updates/')
                     strong Show Me More &gt;
           .col-sm-4.col-md-4.col-lg-4
             // resources section
@@ -244,7 +242,7 @@ block content
               | Asiapedia is a collection of resources based on what we have learned about doing business in Asia. 
               br
               | It&rsquo;s the product of more than 300 team members collaborating across 25 offices in Asia, Europe, and North America.
-            a.btn.btn-primary.mt-2.mb-2(href='//www.dezshira.com/library') Visit Business Library 
+            a.btn.btn-primary.mt-2.mb-2.text-uppercase(href='//www.dezshira.com/library') Visit Business Library 
         ul.mt-2.list-inline
           li
             .multimediaSmallThumbnail
@@ -283,7 +281,7 @@ block content
                   a(href='//www.dezshira.com/library/video/setting-up-a-business-in-china-7575.html')
                     img.img-responsive(alt='Setting up a Business in China by Thibaut Minot', src='//www.dezshira.com/themes/dsa/images/setting-up-a-business-in-china.png')
     //home page services section
-    section.dark-light-blue-bg.pt-7.pb-7
+    section.dark-light-blue-bg.pt-7.pb-7.sec-block
       .container
         .row
           .col-sm-4.col-md-4.col-lg-4
@@ -292,21 +290,21 @@ block content
             .content-max-height
               p
                 | Dezan Shira &amp; Associates is a multidisciplinary professional services firm. Local experts at the firm provide services tailored to the unique challenges facing international businesses in Asia.
-            a.btn.btn-outline-white.mb-2(href='//www.dezshira.com/services') Show Me More  &gt; 
+            a.btn.btn-outline-white.mb-2.text-uppercase(href='//www.dezshira.com/services') Show Me More  &gt; 
           .col-sm-4.col-md-4.col-lg-4
             h2
               a(href='//www.dezshira.com/events') Events
             .content-max-height
               p
                 | Our team is on the move. Plan to join our next event so that we can collaborate.
-            a.btn.btn-outline-white.mb-2(href='//www.dezshira.com/events') Show Me More  &gt; 
+            a.btn.btn-outline-white.mb-2.text-uppercase(href='//www.dezshira.com/events') Show Me More  &gt; 
           .col-sm-4.col-md-4.col-lg-4
             h2
               a(href='//www.dezshira.com/career') Careers
             .content-max-height
               p
                 | Working at Dezan Shira &amp; Associates is about growth. That means developing skills, making a difference, and achieving goals to help colleagues and clients reach new heights.
-            a.btn.btn-outline-white.mb-2(href='//www.dezshira.com/career') Show Me More  &gt; 
+            a.btn.btn-outline-white.mb-2.text-uppercase(href='//www.dezshira.com/career') Show Me More  &gt; 
 
    
     // End modal
