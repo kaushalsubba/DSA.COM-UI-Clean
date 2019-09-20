@@ -8,6 +8,7 @@ var uglify = require('gulp-uglify');
 var clean = require('gulp-clean-css');
 var babel = require('gulp-babel');
 var plumber = require('gulp-plumber');
+var gulpCopy = require('gulp-copy');
 
 
 
@@ -89,7 +90,7 @@ gulp.task('minifyImg', function(){
 });
 
 // Fonts
-gulp.task('copy', function() {
+gulp.task('gulpcopy', function() {
 	return gulp.src('src/fonts/**/*')
             .pipe(gulp.dest('assets/fonts'))
 });
@@ -135,7 +136,7 @@ gulp.task('watch', function () {
 	gulp.watch(paths.img.src, gulp.series('minifyImg', 'reloadBrowser'));
 	gulp.watch(paths.css.src, gulp.series('minifyCss', 'reloadBrowser'));
 	gulp.watch(paths.js.src, gulp.series('minifyJs', 'reloadBrowser'));
-	gulp.watch(paths.fonts.src, gulp.series('copy', 'reloadBrowser'));
+	gulp.watch(paths.fonts.src, gulp.series('gulpcopy', 'reloadBrowser'));
 });
 
 // Starts the development server

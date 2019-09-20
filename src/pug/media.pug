@@ -1,0 +1,424 @@
+extends layouts/_layout_default
+
+block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
+    - title = "Dezan shira"
+
+
+
+block content
+    // Start Content
+    section.TopBanner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/DSA-Media-banner.jpg')
+        .BannerCaption
+            .container
+                .row
+                    .col-sm-12.col-md-10.col-lg-10
+                        h1.text-left Media
+
+    section.breadcrumbBlock
+        .container
+            .row
+                .col-sm-12.col-md-12.col-lg-12
+                    ol.breadcrumb
+                        li
+                            a(href='#') About Us
+                        li.active(aria-current='page') Media
+
+    section.pt-7.pb-7
+        .container
+            .row
+                .col-sm-8.col-md-8.col-lg-8.col-xl-8
+                    p
+                         Dezan Shira & Associates specializes in assisting foreign invested companies operate in emerging Asia. While our primary focus is serving our clients, we also believe it is important to engage with the communities in which we do business. Our staff regularly participates in service projects and each regional office of Dezan Shira & Associates organizes its own projects to engage with the local community. These projects have included fundraising, pro bono accounting, orphanage visits, organizing in-kind donations and more.
+                    p
+                         | Dezan Shira & Associates is also able to use our more than 20 years of expertise to advise non-profit and non-governmental organizations on setting up and operating in China and emerging Asia.
+                    p
+                        | For inquiries, please contact us with 
+                        a(href='mailto:media@dezshira.com') media@dezshira.com
+                    
+                    #socialMedia.panel-group
+                        .panel.panel-default
+                            .panel-heading
+                                      h4.panel-title
+                                        a(data-toggle='collapse', data-parent='#socialMedia', href='#facebook')
+                                            i
+                                                img(src='https://www.dezshira.com/themes/dsa/images/icons/facebook-square.png', alt='', srcset='https://www.dezshira.com/themes/dsa/images/icons/facebook-square@2x.png 2x')
+                                            |  Facebook 
+                                            span.fas.fa-chevron-right.pull-right.mt-1
+                            #facebook.panel-collapse.collapse.in
+                                    .panel-body
+                                         table.table.table-striped
+                                            tbody
+                                                tr  
+                                                tr
+                                                    td Dezan Shira &amp; Associates
+                                                    td
+                                                        a(href='https://www.facebook.com/DezanShira/', target='_blank') www.facebook.com/DezanShira/
+                                                tr
+                                                    td Asia Briefing
+                                                    td
+                                                        a(href='https://www.facebook.com/AsiaBriefingMedia', target='_blank') www.facebook.com/AsiaBriefingMedia
+                                                tr
+                                                    td Italian Desk
+                                                    td
+                                                        a(href='https://www.facebook.com/DezanShiraIT/', target='_blank') www.facebook.com/DezanShiraIT/
+                                                tr
+                                                    td Spanish Desk
+                                                    td
+                                                        a(href='https://www.facebook.com/AsiaBriefingES/', target='_blank') www.facebook.com/AsiaBriefingES/
+                                                tr
+                                                    td ASEAN Briefing
+                                                    td
+                                                        a(href=' https://www.facebook.com/ASEAN-Briefing-503093453144624', target='_blank')  www.facebook.com/ASEAN-Briefing-503093453144624
+                                                tr
+                                                    td China Briefing
+                                                    td
+                                                        a(href='https://www.facebook.com/ChinaBriefing99', target='_blank') www.facebook.com/ChinaBriefing99
+                                                tr
+                                                    td India Briefing
+                                                    td
+                                                        a(href='https://www.facebook.com/India-Briefing-1431228477109464', target='_blank') www.facebook.com/India-Briefing-1431228477109464
+                                                tr
+                                                    td Indonesia Briefing
+                                                    td
+                                                        a(href='https://www.facebook.com/IndonesiaBriefing', target='_blank') www.facebook.com/IndonesiaBriefing
+                                                tr
+                                                    td Vietnam Briefing
+                                                    td
+                                                        a(href='https://www.facebook.com/Vietnam-Briefing-608357362552095/', target='_blank') www.facebook.com/Vietnam-Briefing-608357362552095/
+                                                tr  
+   
+                        .panel.panel-default
+                            .panel-heading
+                                h4.panel-title
+                                    a(data-toggle='collapse', data-parent='#socialMedia', href='#twitter')
+                                        i
+                                            img(src='https://www.dezshira.com/themes/dsa/images/icons/twitter-square.png', alt='', srcset='https://www.dezshira.com/themes/dsa/images/icons/twitter-square@2x.png 2x')
+                                        |  Twitter 
+                                        span.fas.fa-chevron-right.pull-right.mt-1
+                            #twitter.panel-collapse.collapse.in
+                                    .panel-body
+                                        table.table.table-striped
+                                            tbody
+                                                tr
+                                                    td Dezan Shira &amp; Associates
+                                                    td
+                                                        a(href='https://twitter.com/dezanshira', target='_blank') www.twitter.com/dezanshira
+                                                tr
+                                                    td Asia Briefing
+                                                    td
+                                                        a(href='https://twitter.com/asiabriefing', target='_blank') www.twitter.com/asiabriefing
+                                                tr
+                                                    td Italian Desk
+                                                    td
+                                                        a(href='https://twitter.com/asiabriefingIT', target='_blank') www.twitter.com/asiabriefingIT
+                                                tr
+                                                    td UK And Ireland Desk
+                                                    td
+                                                        a(href='https://twitter.com/UK_Ireland_Desk', target='_blank') www.twitter.com/UK_Ireland_Desk
+                                                tr
+                                                    td North America Desk
+                                                    td
+                                                        a(href='https://twitter.com/dsa_usa', target='_blank') www.twitter.com/dsa_usa
+                                                tr
+                                                    td Russian Desk
+                                                    td
+                                                        a(href='https://twitter.com/RussianDesk', target='_blank') www.twitter.com/RussianDesk
+                                                tr
+                                                    td ASEAN Briefing
+                                                    td
+                                                        a(href='https://twitter.com/aseanbriefing', target='_blank') www.twitter.com/aseanbriefing
+                                                tr
+                                                    td China Briefing
+                                                    td
+                                                        a(href='https://twitter.com/chinabriefing', target='_blank') www.twitter.com/chinabriefing
+                                                tr
+                                                    td India Briefing
+                                                    td
+                                                        a(href='https://twitter.com/indiabriefing', target='_blank') www.twitter.com/indiabriefing
+                                                tr
+                                                    td Vietnam Briefing
+                                                    td
+                                                        a(href='https://twitter.com/vietnambriefing', target='_blank') www.twitter.com/vietnambriefing
+                                                tr
+                                                    td Indonesia Briefing
+                                                    td
+                                                        a(href='https://twitter.com/indonesiabrfg', target='_blank') www.twitter.com/indonesiabrfg
+                        .panel.panel-default
+                            .panel-heading
+                                h4.panel-title
+                                    a(data-toggle='collapse', data-parent='#socialMedia', href='#linkedin')
+                                        i
+                                            img(src='https://www.dezshira.com/themes/dsa/images/icons/linkedin-square.png', alt='', srcset='https://www.dezshira.com/themes/dsa/images/icons/linkedin-square@2x.png 2x')
+                                        |  Linkedin 
+                                        span.fas.fa-chevron-right.pull-right.mt-1
+                            #linkedin.panel-collapse.collapse.in
+                                .panel-body
+                                    table.table.table-striped
+                                        tbody
+                                            tr
+                                                td Dezan Shira &amp; Associates
+                                                td
+                                                    a(href='https://www.linkedin.com/company/51688', target='_blank') www.linkedin.com/company/51688
+                                            tr
+                                                td Asia Briefing
+                                                td
+                                                    a(href='https://www.linkedin.com/company/3656465', target='_blank') www.linkedin.com/company/3656465
+                                            tr
+                                                td German Desk Group
+                                                td
+                                                    a(href='https://www.linkedin.com/groups/5162231', target='_blank') www.linkedin.com/groups/5162231
+                                            tr
+                                                td Italian Desk Group
+                                                td
+                                                    a(href='https://www.linkedin.com/groups/6723724', target='_blank') www.linkedin.com/groups/6723724
+                                            tr
+                                                td Spanish Desk Group
+                                                td
+                                                    a(href='https://www.linkedin.com/groups/10378295/', target='_blank') www.linkedin.com/groups/10378295
+                        .panel.panel-default
+                            .panel-heading
+                                h4.panel-title
+                                    a(data-toggle='collapse', data-parent='#socialMedia', href='#yoututbe')
+                                        i
+                                            img(src='https://www.dezshira.com/themes/dsa/images/icons/youtube-square.png', alt='', srcset='https://www.dezshira.com/themes/dsa/images/icons/youtube-square@2x.png 2x')
+                                        |  Yoututbe 
+                                        span.fas.fa-chevron-right.pull-right.mt-1
+                            #yoututbe.panel-collapse.collapse.in
+                                .panel-body
+                                    table.table.table-striped
+                                        tbody
+                                            tr
+                                                td Dezan Shira &amp; Associates
+                                                td
+                                                    a(href='https://www.youtube.com/channel/UCDuNrJ3qUVmxinM5i6trjtA', target='_blank') www.youtube.com/channel/UCDuNrJ3qUVmxinM5i6trjtA
+                                            tr
+                                                td Asia Briefing
+                                                td
+                                                    a(href='https://www.youtube.com/user/asiabriefing', target='_blank') www.youtube.com/user/asiabriefing
+
+                .col-sm-4.col-md-4.col-lg-4.col-lg-4
+                                            .rightBlockSection                               
+                                                h4.section-title Briefing websites
+                                                ul.list
+                                                    li.p-0
+                                                        a(href='http://www.asiabriefing.com/', target='_blank')
+                                                            img.img-fluid(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/AB-logo-withURL.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/AB-logo-withURL-2x.png 2x')
+                                                    li.p-0
+                                                        a(href='https://www.aseanbriefing.com', target='_blank')
+                                                            img.img-fluid(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/asean-logo-withURL.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/asean-logo-withURL-2x.png 2x')
+                                                    li.p-0
+                                                        a(href='http://www.china-briefing.com', target='_blank')
+                                                            img.img-fluid(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/cb-logo-withURL.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/cb-logo-withURL-2x.png 2x')
+                                                    li.p-0
+                                                        a(href='https://www.india-briefing.com', target='_blank')
+                                                            img.img-fluid(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/ib-logo-withURL.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/ib-logo-withURL-2x.png 2x')
+                                                    li.p-0
+                                                        a(href='http://www.indonesiabriefing.com', target='_blank')
+                                                            img.img-fluid(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/indo-logo-withURL.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/indo-logo-withURL-2x.png 2x')
+                                                    li.p-0
+                                                        a(href='http://www.vietnam-briefing.com/', target='_blank')
+                                                            img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/vb-logo-withURL.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/vb-logo-withURL-2x.png 2x')
+                                                    li.p-0
+                                                        a(href='http://russia-briefing.com/', target='_blank')
+                                                            img.img-fluid(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/rb-logo-withURL.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/rb-logo-withURL-2x.png 2x')
+                                                    li.p-0
+                                                        a(href='https://www.silkroadbriefing.com/', target='_blank')
+                                                            img.img-fluid(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/srb-logo-withURL.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/srb-logo-withURL-2x.png 2x')
+
+            // /col
+            // /row
+
+    
+
+   
+    
+
+
+    
+        // /container
+        
+    section.gray-light-bg.pt-5.pb-5
+        .container
+            .row
+                .col-sm-12
+                     ul.text-center.mt-5.list-inline
+                        li.list-inline-item
+                            img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/news-logo/SOUTH-CHINA-MORNING-POST-logo.png', width='120')
+                        li.list-inline-item
+                            img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/news-logo/Reuters-logo.png', width='120')
+                        li.list-inline-item
+                            img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/news-logo/BBC.png', width='120')
+                        li.list-inline-item
+                            img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/news-logo/ft-logo.png', width='120')
+                        li.list-inline-item
+                            img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/news-logo/The_New_York_Times_logo.png', width='120')
+                        li.list-inline-item
+                            img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/news-logo/cnbc-logo.png', width='120')
+            .row
+                .text-center.col-sm-10.col-md-6.col-lg-6.col-md-offset-3col-sm-offset-3.col-lg-offset-3
+                    p
+                        | Dezan Shira &amp; Associates professionals operate from over 25 offices across the world. Our professionals routinely advise decision makers on business critical developments in Asia &ndash; as well as the leading online, print, and television media.
+    // End Content
+
+block js
+    |
+    |
+    script(src='https://www.dezshira.com/themes/dsa/js/fontawesome-all.min.js')
+
+block modal
+    |
+    |
+    // Start modal
+    #quickViewModal.modal.fade(role='dialog', tabindex='-1', aria-labelledby='gridModalLabel')
+        .modal-dialog(role='document')
+            .modal-content.radius-none
+                .modal-header.section-title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#gridSystemModalLabel.modal-title Our Regional Publications
+                .modal-body.top-bg-contain.book-detail-bg-banner
+                    #iframeContainer
+
+    #Loginpopup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog.modal-md
+            .modal-content
+                .modal-header.text-center
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    a(href='https://www.dezshira.com/library')
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-center A place to share knowledge and better understand Asia
+                .modal-body
+                    .row
+                        .col-sm-6.col-md-6.col-lg-6
+                            h4#myModalLabel.modal-title.text-center Log In
+                            form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        svg.svg-inline--fa.fa-envelope.fa-w-16(aria-hidden='true', data-prefix='far', data-icon='envelope', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 512 512', data-fa-i2svg='')
+                                            path(fill='currentColor', d='M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z')
+                                        // <i class="far fa-envelope"></i>
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        svg.svg-inline--fa.fa-lock.fa-w-14(aria-hidden='true', data-prefix='fas', data-icon='lock', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 448 512', data-fa-i2svg='')
+                                            path(fill='currentColor', d='M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z')
+                                        // <i class="fas fa-lock"></i>
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                        small Forgot Password?
+                                .form-group.text-center
+                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                .form-group.text-center
+                                    small
+                                        | Don't have an account? 
+                                        a(href='https://www.dezshira.com/register') Sign Up
+                        .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                            .subscriptionBlock
+                                #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                        li(data-target='#subscriptionCarousel', data-slide-to='0')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                        .item.next.left
+                                            h4.modal-title.text-center Publication
+                                            i.sprite.sprite-retina.icon-publications
+                                            .carousel-caption
+                                                p Download our FREE magazines and guides
+                                        .item
+                                            h4.modal-title.text-center News 
+                                            i.sprite.sprite-retina.icon-news
+                                            .carousel-caption
+                                                p
+                                                    | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                        .item
+                                            h4.modal-title.text-center Multimedia
+                                            i.sprite.sprite-retina.icon-ksp
+                                            .carousel-caption
+                                                p Access presentations, webinars, podcasts, reports, Q&As and more
+                                        .item.active.left
+                                            h4.modal-title.text-center Dashboard
+                                            i.sprite.sprite-retina.icon-dashboard
+                                            .carousel-caption
+                                                p Track paid orders and connect with our support team
+                                    // Carousel controls
+
+    #logoDownload.modal.fade.logoDownload(role='dialog')
+        .modal-dialog
+            // Modal content
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal') ×
+                    a(href='https://www.dezshira.com/')
+                        img.logo.center-block.margin20Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png 2x')
+                .modal-body
+                    h4.section-title Dezan Shira & Associates logos
+                    table.table.table-striped
+                        tbody
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank') Dezan Shira & Associates logo_vertical(EPS)
+                                td.lightgreyColor 254KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
+                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
+                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
+                                        // <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
+                                td.lightgreyColor 14KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
+                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
+                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
+                                        // <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
+                                td.lightgreyColor 566KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
+                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
+                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
+                                        // <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
+                                td.lightgreyColor 49KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
+                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
+                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
+                                        // <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
+                                td.lightgreyColor 305KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
+                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
+                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
+                                        // <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
+                                td.lightgreyColor 18KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
+                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
+                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
+                                        // <i class="fas fa-cloud-download-alt"></i>
+
+
+    // End modal
