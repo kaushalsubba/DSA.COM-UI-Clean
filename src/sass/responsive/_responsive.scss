@@ -153,7 +153,9 @@
 			height: 100%;
 		}
 		.BannerCaption {
-			margin-top: 90px;
+			margin-top: 0px;
+			padding-top:30px;
+			padding-bottom:30px;
 		}
 	}
 	.panelTab {
@@ -202,5 +204,16 @@
 		padding-bottom: 20px;
 	}
 
-	
+	//career page
+	.internship, .fullTime{ padding-left: 15px; padding-right: 15px;}
+
+	.MeetOurPeople {
+		p{ padding-right: 15px;}
+
+		.carousel-inner{
+		.item {
+			img{ height: auto;}
+		}
+			}
+	}
 }

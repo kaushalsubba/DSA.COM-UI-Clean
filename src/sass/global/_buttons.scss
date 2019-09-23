@@ -67,6 +67,17 @@
     }
 }
 
+.btn-outline-secondary {
+    color: #1D74CE;
+    background-color: transparent;
+    border-color: #1D74CE;
+    &:hover {
+        color: #fff;
+        background-color: #1D74CE;
+        border-color: #1D74CE;
+    }
+}
+
 .btn-gray {
     color: #fff;
     background-color: #6c757d;
@@ -88,4 +99,12 @@
         border-color: #1D74CE;
     
     }
+}
+.btn-label-default{
+    color: #343a40;
+    background-color: transparent;
+    background-image: none;
+    border: #343a40 1px solid;
+    padding: 6px 12px;
+    display: inline-block;
 }

@@ -1,0 +1,503 @@
+extends layouts/_layout_default
+
+block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
+    - title = "Dezan shira"
+
+
+
+block content
+    // Start Content
+    section.TopBanner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg')
+        .BannerCaption
+            .container
+                .row
+                    .col-sm-12.col-md-10.col-lg-10
+                        h1.text-left Careers
+                        h4 Working at Dezan Shira & Associates is about growth. That means developing skills, making a difference, and achieving goals to help colleagues and clients reach new heights.
+
+    section.pb-5.pt-5
+        .container
+            .row
+                .col-sm-8.col-md-8.col-lg-8.col-xl-8
+                    h4.section-title open positions
+                    form.WebsiteForm(action='https://www.dezshira.com/events/search', method='GET')
+                    .pt-3.pb-3.pr-3.pl-3.mb-2.border
+                        .row
+                            .col-sm-3
+                                .form-group
+                                    label Location
+                                    select.form-control(id='', name='location')
+                                        option(value='', selected='selected') Location
+                                        option(value='asia') Asia
+                                        option(value='china') China
+                                        option(value='india') India
+                                        option(value='vietnam') Vietnam
+                                        option(value='hong-kong') Hong Kong
+                                        option(value='singapore') Singapore
+                                        option(value='europe') Europe
+                                        option(value='north-america') North America
+                                        option(value='central-and-latin-america') Central &amp; Latin America
+                                        option(value='oceania') Oceania
+                                        option(value='middle-east') Middle East
+                                        option(value='africa') Africa
+                            .col-sm-3
+                                .form-group
+                                    label Function
+                                    select.form-control(name='function')
+                                        option(value='') All
+                                        option(value='Asia Briefing Editorial') Asia Briefing Editorial
+                                        option(value='International Business Advisory') International Business Advisory
+                                        option(value='Marketing') Marketing
+                                        option(value='Business Advisory Services') Business Advisory Services
+                                        option(value='Corporate Accounting Services') Corporate Accounting Services
+                                        option(value='IT') IT
+                                        option(value='HR & Administration') HR &amp; Administration
+                            .col-sm-3
+                                .form-group
+                                    label Role
+                                    select.form-control(name='role')
+                                        option(value='') Any
+                                        option(value='Assistant (Intern)') Assistant (Intern)
+                                        option(value='Associate') Associate
+                                        option(value='Manager') Manager
+                                        option(value='Director') Director
+                                        option(value='Research & Editorial') Research &amp; Editorial
+                            .col-sm-3
+                                .form-group
+                                    label Type
+                                    select.form-control.radius-none(name='role')
+                                        option(value='') Any
+                                        option(value='Assistant (Intern)') Assistant (Intern)
+                                        option(value='Associate') Associate
+                                        option(value='Manager') Manager
+                                        option(value='Director') Director
+                                        option(value='Research & Editorial') Research &amp; Editorial
+                            .col-sm-12
+                                .form-group
+                                    button.btn.btn-primary.pull-right(type='submit')
+                                        <i class="fa fa-search"></i> 
+                                        | Search
+                    ul.list.mt-4
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/singapore/junior-company-secretary-178.html') Junior Company Secretary
+                            .expertise Associate | Business Advisory Services
+                            .country Singapore | Singapore
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/india/graphic-designer-asia-briefing-175.html') Graphic Designer, Asia Briefing
+                            .expertise Associate | Marketing
+                            .country Delhi | India
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/india/crm-data-process-coordinator-173.html') CRM Data and Process Coordinator
+                            .expertise Associate | Marketing
+                            .country New Delhi | India
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/-174.html')
+                                | Senior Associate / Assistant Manager of International Business Advisory (Native French)
+                            .expertise Associate | International Business Advisory
+                            .country Shanghai | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/project-accountant-168.html') Project Accountant
+                            .expertise Associate | Corporate Accounting Services
+                            .country Shanghai | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                            a(href='https://www.dezshira.com/career/details/china/international-business-advisory-senior-associate-assistant-manager-169.html') International Business Advisory Senior Associate / Assistant Manager
+                            .expertise Manager | International Business Advisory
+                            .country Guangzhou, Shenzhen, Hongkong | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/senior-marketing-manager-170.html') Senior Marketing Manager
+                            .expertise Manager | Marketing
+                            .country Shanghai, Hongkong | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/specialist-of-business-advisory-services-department-165.html') Specialist of Business Advisory Services Department &#x6CD5;&#x5F8B;&#x90E8;&#x4E13;&#x5458;
+                            .expertise Associate | Business Advisory Services
+                            .country Shanghai | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/india/dynamics-365-crm--sr-developer-166.html') Dynamics 365 CRM - Sr. Developer
+                            .expertise Associate | Marketing
+                            .country Delhi | India
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/marketing-associate-at-uk-ireland-desk-159.html') Marketing Associate at UK and Ireland Desk
+                            .expertise Associate | Marketing
+                            .country Shanghai | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                            a(href='https://www.dezshira.com/career/details/china/junior-associate-business-advisory-service-160.html') Junior Associate, Business Advisory Service
+                            .expertise Associate | Business Advisory Services
+                            .country Shanghai | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/senior-associate-business-advisory-service-161.html') Senior Associate, Business Advisory Service
+                            .expertise Associate | Business Advisory Services
+                            .country Shanghai | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/vietnam/assistant-manager-business-intelligence-157.html') Assistant Manager, Business Intelligence
+                            .duration Manager | Business Intelligence
+                            .country Ho Chi Minh City | Vietnam
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/senior-accounting-tax-manager-134.html') Senior Accounting &amp; Tax Manager
+                            .expertise Manager | Corporate Accounting Services
+                            .country Shanghai | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/associate-of-corporate-accounting-services-91.html') Associate of Corporate Accounting Services
+                            .expertise Associate | Corporate Accounting Services
+                            .country Shanghai | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/junior-accounting-associate-97.html') Junior Accounting Associate
+                            .expertise Associate | Corporate Accounting Services
+                            .country Suzhou | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/china/accounting-associate-102.html') Accounting Associate
+                            .expertise Associate | Corporate Accounting Services
+                            .country Beijing | China
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/other-regions/associate-data-journalism-analysis-144.html') Associate, Data Journalism and Analysis
+                            .expertise Associate | Asia Briefing Editorial
+                            .country Dalian, Shanghai, Ho Chi Minh City, Mumbai | Other-regions
+                        li
+                            a.btn.btn-outline-primary.pull-right(href='#', role='button') Full time
+                            .designation
+                                a(href='https://www.dezshira.com/career/details/other-regions/freelance-editors-researchers-analysts-106.html') Contributing Editors, Researchers and Analysts
+                            .expertise Research &amp; Editorial | Asia Briefing Editorial
+                            .country All Offices | Other-regions
+
+
+
+                    
+       
+
+                .col-sm-4.col-md-4.col-lg-4.col-lg-4
+                    .rightBlockSection
+                        h4.section-title FEATURED POSITIONS  
+                        ul.list
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/business-development-intern-17.html') Global Business Development Assistant role (Shanghai)
+                                .expertise Assistant (Intern) | International Business Advisory
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/singapore/editorial-assistant-singapore-124.html') Editorial Assistant (Singapore)
+                                .expertise Assistant (Intern) | Asia Briefing Editorial
+                                .country Singapore | Singapore
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/editorial-assistant-china-128.html') Editorial Assistant (China)
+                                .expertise Assistant (Intern) | Asia Briefing Editorial
+                                .country Dalian/Beijing/Shanghai/Shenzhen | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/immediate-opening-of-global-business-development-assistant-shanghai-russian-speaking-129.html') Global Business Development Assistant role (Shanghai), Russian speaking
+                                .expertise Assistant (Intern) | 
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/marketing-operation-assistant-133.html') Marketing &amp; Operation Assistant (China)
+                                .expertise Assistant (Intern) | Marketing
+                                .country Beijing, Shanghai, Shenzhen, Guangzhou | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/senior-accounting-tax-manager-134.html') Senior Accounting &amp; Tax Manager
+                                .duration Manager | Corporate Accounting Services
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/other-regions/associate-data-journalism-analysis-144.html') Associate, Data Journalism and Analysis
+                                .expertise Associate | Asia Briefing Editorial
+                                .country Dalian, Shanghai, Ho Chi Minh City, Mumbai | Other-regions
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/international-business-advisory-assistant-french-speaking-145.html') International Business Advisory Assistant (French Speaking)
+                                .expertise Assistant (Intern) | Asia Briefing Editorial
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/international-business-advisory-assistant-italian-speaking-153.html') International Business Advisory Assistant (Italian speaking)
+                                .expertise Assistant (Intern) | International Business Advisory
+                                .country Shanghai/Guangzhou | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/vietnam/marketing-assistant-spanish-desk-155.html') Marketing Assistant, Spanish Desk
+                                .expertise Assistant (Intern) | Marketing
+                                .country  | Vietnam
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/vietnam/assistant-manager-business-intelligence-157.html') Assistant Manager, Business Intelligence
+                                .duration Manager | Business Intelligence
+                                .country Ho Chi Minh City | Vietnam
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/marketing-associate-at-uk-ireland-desk-159.html') Marketing Associate at UK and Ireland Desk
+                                .expertise Associate | Marketing
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/junior-associate-business-advisory-service-160.html') Junior Associate, Business Advisory Service
+                                .expertise Associate | Business Advisory Services
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/senior-associate-business-advisory-service-161.html') Senior Associate, Business Advisory Service
+                                .expertise Associate | Business Advisory Services
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/international-business-advisory-intern-german-speaking-162.html') International Business Advisory Intern (German Speaking)
+                                .duration Assistant (Intern) | International Business Advisory
+                                .country Shanghai, Beijing, Qingdao | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/specialist-of-business-advisory-services-department-165.html') Specialist of Business Advisory Services Department &#x6CD5;&#x5F8B;&#x90E8;&#x4E13;&#x5458;
+                                .expertise Associate | Business Advisory Services
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/india/dynamics-365-crm--sr-developer-166.html') Dynamics 365 CRM - Sr. Developer
+                                .expertise Associate | Marketing
+                                .country Delhi | India
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/vietnam/international-business-advisory-intern-167.html') International Business Advisory Intern
+                                .expertise Assistant (Intern) | International Business Advisory
+                                .country HCMC | Vietnam
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/project-accountant-168.html') Project Accountant
+                                .expertise Associate | Corporate Accounting Services
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/international-business-advisory-senior-associate-assistant-manager-169.html') International Business Advisory Senior Associate / Assistant Manager
+                                .expertise Manager | International Business Advisory
+                                .country Guangzhou, Shenzhen, Hongkong | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/senior-marketing-manager-170.html') Senior Marketing Manager
+                                .expertise Manager | Marketing
+                                .country Shanghai, Hongkong | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/marketing-operation-assistant-china-171.html') Marketing  Assistant
+                                .expertise Assistant (Intern) | Marketing
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/international-business-advisory-intern-172.html') International Business Advisory Intern
+                                .expertise Assistant (Intern) | International Business Advisory
+                                .country Beijing | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/india/crm-data-process-coordinator-173.html') CRM Data and Process Coordinator
+                                .expertise Associate | Marketing
+                                .country New Delhi | India
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/china/-174.html')
+                                    | Senior Associate / Assistant Manager of International Business Advisory (Native French)
+                                .expertise Associate | International Business Advisory
+                                .country Shanghai | China
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/india/graphic-designer-asia-briefing-175.html') Graphic Designer, Asia Briefing
+                                .expertise Associate | Marketing
+                                .country Delhi | India
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/vietnam/business-intelligence-intern-176.html') Business Intelligence Intern
+                                .expertise Assistant (Intern) | Business Intelligence
+                                .country HCMC / Hanoi | Vietnam
+                            li
+                                .designation
+                                    a(href='https://www.dezshira.com/career/details/singapore/junior-company-secretary-178.html') Junior Company Secretary
+                                .expertise Associate | Business Advisory Services
+                                .country Singapore | Singapore
+
+    // End Content
+
+block js
+    |
+    |
+    script(src='https://www.dezshira.com/themes/dsa/js/fontawesome-all.min.js')
+
+block modal
+    |
+    |
+    // Start modal
+    #quickViewModal.modal.fade(role='dialog', tabindex='-1', aria-labelledby='gridModalLabel')
+        .modal-dialog(role='document')
+            .modal-content.radius-none
+                .modal-header.section-title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#gridSystemModalLabel.modal-title Our Regional Publications
+                .modal-body.top-bg-contain.book-detail-bg-banner
+                    #iframeContainer
+
+    #Loginpopup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog.modal-md
+            .modal-content
+                .modal-header.text-center
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    a(href='https://www.dezshira.com/library')
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-center A place to share knowledge and better understand Asia
+                .modal-body
+                    .row
+                        .col-sm-6.col-md-6.col-lg-6
+                            h4#myModalLabel.modal-title.text-center Log In
+                            form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="far fa-envelope"></i>
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="fas fa-lock"></i>
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                        small Forgot Password?
+                                .form-group.text-center
+                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                .form-group.text-center
+                                    small
+                                        | Don't have an account? 
+                                        a(href='https://www.dezshira.com/register') Sign Up
+                        .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                            .subscriptionBlock
+                                #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                        li(data-target='#subscriptionCarousel', data-slide-to='0')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                        .item.next.left
+                                            h4.modal-title.text-center Publication
+                                            i.sprite.sprite-retina.icon-publications
+                                            .carousel-caption
+                                                p Download our FREE magazines and guides
+                                        .item
+                                            h4.modal-title.text-center News 
+                                            i.sprite.sprite-retina.icon-news
+                                            .carousel-caption
+                                                p
+                                                    | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                        .item
+                                            h4.modal-title.text-center Multimedia
+                                            i.sprite.sprite-retina.icon-ksp
+                                            .carousel-caption
+                                                p Access presentations, webinars, podcasts, reports, Q&As and more
+                                        .item.active.left
+                                            h4.modal-title.text-center Dashboard
+                                            i.sprite.sprite-retina.icon-dashboard
+                                            .carousel-caption
+                                                p Track paid orders and connect with our support team
+                                    // Carousel controls
+
+    #logoDownload.modal.fade.logoDownload(role='dialog')
+        .modal-dialog
+            // Modal content
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal') ×
+                    a(href='https://www.dezshira.com/')
+                        img.logo.center-block.margin20Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png 2x')
+                .modal-body
+                    h4.section-title Dezan Shira & Associates logos
+                    table.table.table-striped
+                        tbody
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank') Dezan Shira & Associates logo_vertical(EPS)
+                                td.lightgreyColor 254KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
+                                td.lightgreyColor 14KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
+                                td.lightgreyColor 566KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
+                                td.lightgreyColor 49KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
+                                td.lightgreyColor 305KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
+                                td.lightgreyColor 18KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+
+
+    // End modal

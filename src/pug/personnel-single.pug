@@ -11,103 +11,289 @@ block setting
 
 block content
     // Start Content
-    section.TopBanner
-        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/DSA-Our-team-banner.jpg')
-        .BannerCaption
-            .container
-                .row
-                    .col-sm-12.col-md-10
-                        h1.text-left Our Global Partners
-                        h4 We partner with organisations across the world to give us a truly global presence. Discover each of our regions’ key partners below.
 
 
-    section.pt-7.pb-7
+    section.pb-5.pt-5
         .container
             .row
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/china-beijing')
-                                .title China
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/china.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                     .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/india-delhi')
-                                .title India
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/India.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/vietnam-hanoi')
-                                .title Vietnam
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/Vietnam.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                     .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/singapore')
-                                .title Singapore
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/Singapore.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/hong-kong')
-                                .title Hong Kong
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/HK.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/indonesia')
-                                .title Indonesia
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/Jakarta.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                        .locationThumbnail
-                            .hoverImage
-                                a(href='https://www.dezshira.com/personnel/tag/german')
-                                    .title Germany Liaison Office
-                                    figure
-                                        img(src='https://www.dezshira.com/themes/dsa/images/personnel/Germany.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                        .locationThumbnail
-                            .hoverImage
-                                 a(href='https://www.dezshira.com/personnel/tag/asean')
-                                    .title ASEAN Alliance Members
-                                    figure
-                                        img(src='https://www.dezshira.com/themes/dsa/images/personnel/asean.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .locationThumbnail
-                        .hoverImage
-                        a(href='https://www.dezshira.com/personnel/tag/italy')
-                            .title Italian Liaison Office
-                            figure
-                                img(src='https://www.dezshira.com/themes/dsa/images/personnel/Italy.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/usa')
-                                .title USA Liaison Office
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/USA.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/russia')
-                                .title Russia
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/russia.jpg', alt='')
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .locationThumbnail
-                        .hoverImage
-                            a(href='https://www.dezshira.com/personnel/tag/silk-road')
-                                .title The New Silk Belt &amp; Road
-                                figure
-                                    img(src='https://www.dezshira.com/themes/dsa/images/personnel/Silk-Road.jpg', alt='')
+                .col-sm-4.col-md-4.col-lg-4.col-lg-4
+                    h4.section-title CHOOSE REGION
+                    #sidebarnav.block.no-padding
+                        ul.collapsible
+                            li.level2.active
+                                a.main-menu(href='https://www.dezshira.com/personnel/location/china')
+                                    i.sprite.sprite-retina.icon-chinaMap
+                                    |  China 
+                                    i.fas.fa-angle-down
+                                    span.sprit.dropdown
+                                ul(style='display: none;')
+                                    li.level3.active
+                                        a(href='https://www.dezshira.com/personnel/tag/china-beijing') Beijing
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-dalian') Dalian
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-dongguan') Dongguan
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-guangzhou') Guangzhou
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-hangzhou') Hangzhou
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-ningbo') Ningbo
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-qingdao') Qingdao
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-shanghai') Shanghai
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-shenzhen') Shenzhen
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-suzhou') Suzhou
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-tianjin') Tianjin
+                                    li.level3
+                                        a(href='https://www.dezshira.com/personnel/tag/china-zhongshan') Zhongshan
+                                li.level2
+                                    a.main-menu(href='https://www.dezshira.com/personnel/location/india')
+                                        i.sprite.sprite-retina.icon-indiaMap
+                                        |  India 
+                                        i.fas.fa-angle-down
+                                        span.sprit.dropdown
+                                    ul(style='display: none;')
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/india-bangalore') Bengaluru
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/india-delhi') Delhi
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/india-mumbai') Mumbai
+                                li.level2
+                                    a.main-menu(href='https://www.dezshira.com/personnel/location/vietnam')
+                                        i.sprite.sprite-retina.icon-vietnamMap
+                                        |  Vietnam 
+                                        i.fas.fa-angle-down
+                                        span.sprit.dropdown
+                                    ul(style='display: none;')
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/') Danang
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/vietnam-hanoi') Hanoi
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/vietnam-ho-chi-minh-city') Ho Chi Minh City
+                                li.level2
+                                    a.main-menu(href='https://www.dezshira.com/personnel/tag/singapore')
+                                        i.sprite.sprite-retina.icon-singaporeMap
+                                        |  Singapore
+                                li.level2
+                                    a.main-menu(href='https://www.dezshira.com/personnel/tag/hong-kong')
+                                        i.sprite.sprite-retina.icon-hong-kongMap
+                                        |  Hong Kong
+                                li.level2
+                                    a.main-menu(href='https://www.dezshira.com/personnel/tag/indonesia')
+                                        i.sprite.sprite-retina.icon-indonesiaMap
+                                        |  Indonesia
+                                li.level2
+                                    a.main-menu(href='https://www.dezshira.com/personnel/tag/italy')
+                                        i.sprite.sprite-retina.icon-italyMap
+                                        |  Italian Liaison Office 
+                                        i.fas.fa-angle-down
+                                        span.sprit.dropdown
+                                    ul(style='display: none;')
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/italy-conegliano') Conegliano
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/italy-udine') Udine
+                                li.level2
+                                    a.main-menu(href='https://www.dezshira.com/personnel/tag/usa')
+                                        i.sprite.sprite-retina.icon-usaMap
+                                        |  USA Liaison Office 
+                                        i.fas.fa-angle-down
+                                        span.sprit.dropdown
+                                    ul(style='display: none;')
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/usa') Boston
+                                        li.level3
+                                            a(href='https://www.dezshira.com/personnel/tag/usa') Salt Lake City
+                                li.level2
+                                    a.main-menu(href='https://www.dezshira.com/personnel/tag/german')
+                                        i.sprite.sprite-retina.icon-germanMap
+                                        |  Germany Liaison Office
+                                li.level1
+                                    a.main-menu(href='#')
+                                        i.sprite.sprite-retina.icon-asian-allianceMap
+                                        | Asian Alliance Members 
+                                        i.fas.fa-angle-down
+                                        span.sprit.dropdown
+                                    ul(style='display: none;')
+                                        li.level2
+                                            a(href='http://www.dezshira.com/personnel/tag/malaysia') Malaysia
+                                        li.level2
+                                            a(href='http://www.dezshira.com/personnel/tag/philippines') Philippines
+                                        li.level2
+                                            a(href='http://www.dezshira.com/personnel/tag/thailand') Thailand
+
+                .col-sm-8.col-md-8.col-lg-8.col-xl-8
+                    h4.section-title Contact Personnel in China – Beijing
+                    ul.list-unstyled.list
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Sabrina-200x200_awb8i4csv81c.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                                a.ml-2(href='http://cn.linkedin.com/pub/sabrina-zhang/35/7a2/595', target='_blank')
+                                    i.fab.fa-linkedin-in
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/sabrina-zhang.html') Sabrina Zhang 
+                            .dec
+                                | Partner
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Hannah_Feng200200.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/hannah-feng.html') Hannah Feng 
+                            .dec
+                                | Partner
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/David_Niu.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/david-niu.html') David Niu 
+                            .dec
+                                | Senior Manager, Human Resources
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/tammy-tian.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                                a.ml-2(href='https://www.linkedin.com/profile/view?id', target='_blank')
+                                    i.fab.fa-linkedin-in
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/tammy-tian.html') Tammy Tian 
+                            .dec
+                                | Senior Manager, Corporate Accounting Services
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Kyle_Freeman_200x200.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                                a.ml-2(href='https://cn.linkedin.com/pub/kyle-freeman/27/aba/77', target='_blank')
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/kyle-freeman.html') Kyle Freeman 
+                            .dec
+                                | Manager, International Business Advisory
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Fanny_Zhang.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/fanny-zhang.html') Fanny Zhang 
+                            .dec
+                                | Manager, Business Advisory Services
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Vivian_Geng200200.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/vivian-geng.html') Vivian Geng 
+                            .dec
+                                | Assistant Manager, Corporate Accounting Services
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Edith_Jia_-_Personnel_Profile.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/edith-jia.html') Edith Jia 
+                            .dec
+                                | Assistant Manager, Corporate Accounting Services
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Lisa_Li_-_BJ.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/lisa-li.html') Lisa Li 
+                            .dec
+                                | Assistant Manager, IT
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Monica_Li200200.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/monica-li.html') Monica Li 
+                            .dec
+                                | Assistant Manager, Business Advisory Services
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Ines_200x200.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                                a.ml-2(href='https://www.linkedin.com/in/inesliu/', target='_blank')
+                                    i.fab.fa-linkedin-in
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/ines-liu.html') Ines Liu 
+                            .dec
+                                | Assistant Manager, International Business Advisory
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Lucy_Lu200200.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/lucy-lu.html') Lucy Lu 
+                            .dec
+                                | Assistant Manager, Business Intelligence
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Angela_Zhang200200.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/angela-zhang.html') Angela Zhang 
+                            .dec
+                                | Assistant Manager, Payroll
+                                br
+                            .clearfix
+                        li
+                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Marco200200.jpg', width='120')
+                            .social_media.pull-right
+                                a(href='https://www.dezshira.com/contact')
+                                    i.fa.fa-envelope
+                                a.ml-2(href='https://www.linkedin.com/in/mdfoerster/', target='_blank')
+                                    i.fab.fa-linkedin-in
+                            .name.mt-2
+                                a(href='https://www.dezshira.com/personnel/marco-foerster.html') Marco F&ouml;rster 
+                            .dec
+                                | Associate, International Business Advisory
+                                br
+                            .clearfix
 
     // End Content
 
@@ -146,15 +332,13 @@ block modal
                                 input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
                                 .form-group.input-group
                                     span.input-group-addon
-                                        svg.svg-inline--fa.fa-envelope.fa-w-16(aria-hidden='true', data-prefix='far', data-icon='envelope', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 512 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z')
-                                        // <i class="far fa-envelope"></i>
+                                        
+                                        <i class="far fa-envelope"></i>
                                     input.form-control(type='text', name='email', placeholder='email')
                                 .form-group.input-group
                                     span.input-group-addon
-                                        svg.svg-inline--fa.fa-lock.fa-w-14(aria-hidden='true', data-prefix='fas', data-icon='lock', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 448 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z')
-                                        // <i class="fas fa-lock"></i>
+                                        
+                                        <i class="fas fa-lock"></i>
                                     input.form-control(type='password', name='password', placeholder='password')
                                 p.text-right
                                     a(href='http://www.asiabriefing.com/customer/forgot-password')
@@ -217,54 +401,48 @@ block modal
                                 td.lightgreyColor 254KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
                                 td.lightgreyColor 14KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
                                 td.lightgreyColor 566KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
                                 td.lightgreyColor 49KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
                                 td.lightgreyColor 305KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
                             tr
                                 td
                                     a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
                                 td.lightgreyColor 18KB
                                 td
                                     a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
-                                        svg.svg-inline--fa.fa-cloud-download-alt.fa-w-20(aria-hidden='true', data-prefix='fas', data-icon='cloud-download-alt', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 640 512', data-fa-i2svg='')
-                                            path(fill='currentColor', d='M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z')
-                                        // <i class="fas fa-cloud-download-alt"></i>
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
 
 
     // End modal

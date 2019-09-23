@@ -6246,6 +6246,12 @@ a {
 .pb-4 {
   padding-bottom: 40px; }
 
+.pr-4 {
+  padding-right: 40px; }
+
+.pl-4 {
+  padding-left: 40px; }
+
 .pt-3 {
   padding-top: 30px; }
 
@@ -6291,6 +6297,18 @@ a {
 .mb-4 {
   margin-bottom: 40px; }
 
+.mr-3 {
+  margin-right: 30px; }
+
+.ml-3 {
+  margin-left: 30px; }
+
+.mt-3 {
+  margin-top: 30px; }
+
+.mb-3 {
+  margin-bottom: 30px; }
+
 .mr-1 {
   margin-right: 10px; }
 
@@ -6308,6 +6326,21 @@ a {
 
 .ml-15 {
   margin-left: 15px; }
+
+.mt-25 {
+  margin-top: 25px; }
+
+.mb-25 {
+  margin-bottom: 25px; }
+
+.border {
+  border: 1px solid #dee2e6; }
+
+.borderTopDarkblue {
+  border-top: solid 3px #1a2940 !important; }
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important; }
 
 .list {
   padding: 0;
@@ -6401,6 +6434,17 @@ a {
       .contactUs .BannerCaption p a {
         color: #fff; }
 
+.contactUs.contact-Us-Small {
+  background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background-small.jpg) no-repeat top left;
+  height: 290px; }
+  .contactUs.contact-Us-Small h3 {
+    padding-top: 20px;
+    padding-right: 0px;
+    font-size: 16px; }
+  .contactUs.contact-Us-Small p {
+    padding-top: 10px;
+    padding-right: 0px; }
+
 .light-blue-bg {
   background-color: #316aa3;
   color: #FFF; }
@@ -6489,6 +6533,21 @@ figure {
   .social_media a {
     color: #d1d3d4 !important; }
 
+.expertise {
+  color: #58595b;
+  font-weight: 600; }
+
+.designation {
+  color: #344c70;
+  font-size: 18px;
+  font-weight: 500; }
+  .designation a {
+    font-weight: 500; }
+
+.country {
+  color: #939598;
+  font-size: 13px; }
+
 .btn {
   border-radius: 0px;
   font-family: "Hind", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -6550,6 +6609,15 @@ figure {
     background-color: #1D74CE;
     border-color: #1D74CE; }
 
+.btn-outline-secondary {
+  color: #1D74CE;
+  background-color: transparent;
+  border-color: #1D74CE; }
+  .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #1D74CE;
+    border-color: #1D74CE; }
+
 .btn-gray {
   color: #fff;
   background-color: #6c757d;
@@ -6568,6 +6636,14 @@ figure {
     color: #fff;
     background-color: #1D74CE;
     border-color: #1D74CE; }
+
+.btn-label-default {
+  color: #343a40;
+  background-color: transparent;
+  background-image: none;
+  border: #343a40 1px solid;
+  padding: 6px 12px;
+  display: inline-block; }
 
 .form-control {
   border-radius: 0px;
@@ -6959,6 +7035,18 @@ section.TopBanner {
     section.TopBanner .BannerCaption h1, section.TopBanner .BannerCaption h4 {
       font-weight: normal; }
 
+.carousel-indicators li {
+  background-color: #b7b7b7;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  margin: 0px 2px; }
+
+.carousel-indicators .active {
+  background-color: #d5d5d5;
+  border: 0;
+  margin-top: 0; }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
@@ -7338,6 +7426,390 @@ section.TopBanner.services-banner .BannerCaption {
     text-transform: uppercase;
     margin-bottom: 20px; }
 
+#featuredOffers {
+  padding-bottom: 80px;
+  padding-top: 80px; }
+  #featuredOffers .display-4 {
+    color: #000; }
+
+.boxContent {
+  border-top: solid 3px #2f2f46 !important;
+  min-height: 170px;
+  vertical-align: top;
+  padding: 15px;
+  width: 100%; }
+  .boxContent h4, .boxContent h5, .boxContent h6 {
+    font-weight: normal; }
+  .boxContent h4 {
+    font-size: 18px;
+    color: #344c70; }
+    .boxContent h4 a {
+      color: #344c70; }
+  .boxContent h5 {
+    font-size: 16px; }
+  .boxContent h6 {
+    font-size: 12px; }
+
+.internship {
+  background-color: #c1c1ba;
+  padding: 80px 80px 80px 165px; }
+
+#jobs h2 {
+  color: #FFF;
+  padding-bottom: 20px;
+  margin: 0; }
+
+#jobs p {
+  color: #FFF;
+  padding-bottom: 20px;
+  margin: 0; }
+
+.fullTime {
+  background-image: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg);
+  padding: 80px 165px 80px 80px; }
+
+#OurCoreValues {
+  padding-bottom: 30px;
+  padding-top: 80px; }
+  #OurCoreValues p {
+    padding-bottom: 50px;
+    color: #808285;
+    padding-bottom: 50px;
+    margin-bottom: 0; }
+  #OurCoreValues h2 {
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 24px; }
+  #OurCoreValues .heading {
+    color: #000; }
+
+.MeetOurPeople {
+  background-color: #f5f5f5;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .MeetOurPeople h2 {
+    margin-bottom: 20px;
+    margin-top: 0; }
+  .MeetOurPeople p {
+    padding-bottom: 30px;
+    padding-right: 100px; }
+  .MeetOurPeople .heading {
+    color: #000; }
+
+section.TopBanner.get-in-touch .BannerCaption {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  section.TopBanner.get-in-touch .BannerCaption .btn {
+    min-width: 100px; }
+
+#testimonial {
+  padding-bottom: 70px;
+  padding-top: 70px; }
+  #testimonial .media {
+    position: relative;
+    padding: 0 0 0 20px; }
+    #testimonial .media img {
+      width: 75px;
+      height: 75px;
+      display: block;
+      border-radius: 50%; }
+  #testimonial .testimonial-wrapper {
+    padding: 0; }
+  #testimonial .testimonial {
+    color: #77787b;
+    position: relative;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 14px;
+    min-height: 205px; }
+    #testimonial .testimonial::after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      display: block;
+      background: #fff;
+      border: 1px solid #e1e1e1;
+      border-width: 0 0 1px 1px;
+      position: absolute;
+      bottom: -8px;
+      left: 46px;
+      transform: rotateZ(-46deg); }
+    #testimonial .testimonial a {
+      font-size: 11px;
+      text-align: right;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-style: normal; }
+  #testimonial .star-rating li {
+    padding: 0 2px; }
+  #testimonial .star-rating i {
+    font-size: 14px;
+    color: #ffdc12; }
+  #testimonial .overview {
+    padding: 3px 0 0 15px; }
+    #testimonial .overview .details {
+      padding: 5px 0 8px; }
+    #testimonial .overview b {
+      color: #231f20; }
+  #testimonial .media-body {
+    padding-left: 0; }
+  #testimonial .media-left {
+    background: #FFF;
+    padding: 0; }
+
+.event_block {
+  width: 100%;
+  display: block;
+  overflow: hidden; }
+  .event_block .date_block {
+    width: 132px;
+    height: 132px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 48px;
+    background-color: #344c70;
+    float: left; }
+    .event_block .date_block .date {
+      font-size: 14px;
+      display: block;
+      padding-top: 36px;
+      color: #FFF;
+      text-transform: uppercase; }
+      .event_block .date_block .date span {
+        font-size: 36px;
+        display: block;
+        padding-top: 5px;
+        font-weight: 400;
+        line-height: 18px; }
+  .event_block:hover .date_block {
+    background-color: #486b9a; }
+  .event_block .dec_block {
+    overflow: hidden; }
+    .event_block .dec_block .title {
+      font-size: 18px;
+      line-height: 24px;
+      color: #000;
+      padding: 0;
+      margin: 0; }
+      .event_block .dec_block .title a {
+        color: #000; }
+    .event_block .dec_block .dec {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      margin: 0;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px; }
+    .event_block .dec_block .date_time {
+      padding: 0;
+      margin: 0 0 20px;
+      margin-bottom: 20px;
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 20px; }
+
+.eventsBlock {
+  background-color: #1a2940;
+  min-height: 200px;
+  color: #fff; }
+  .eventsBlock .dateEvent {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .eventsBlock .timeEvent span {
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px; }
+
+.asiapedia.flyersBrochures {
+  margin-top: 0;
+  margin-bottom: 25px;
+  position: relative; }
+  .asiapedia.flyersBrochures .eventBody {
+    padding-bottom: 0;
+    position: absolute;
+    top: 80px; }
+    .asiapedia.flyersBrochures .eventBody h4 {
+      min-height: inherit;
+      margin-bottom: 10px; }
+      .asiapedia.flyersBrochures .eventBody h4 a {
+        color: #FFF; }
+  .asiapedia.flyersBrochures .downloadflyersBrochures {
+    margin: 0 20px; }
+    .asiapedia.flyersBrochures .downloadflyersBrochures .list-unstyled {
+      padding-top: 20px; }
+
+.rightBlockSection .asiapedia.flyersBrochures {
+  margin-top: 20px; }
+  .rightBlockSection .asiapedia.flyersBrochures .eventBody {
+    top: 72px; }
+
+.seeMoreLink {
+  border-top: solid 1px #e6e7e8;
+  text-transform: uppercase; }
+  .seeMoreLink a {
+    font-size: 11px;
+    font-weight: 700; }
+
+.downloadflyersBrochures .list-unstyled li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 0; }
+  .downloadflyersBrochures .list-unstyled li a span {
+    padding-right: 10px;
+    width: 90%;
+    display: inline-block; }
+  .downloadflyersBrochures .list-unstyled li a .fa-cloud-download-alt {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 2px; }
+
+.asiapedia.servicesFlyers .moreBtn .dropdown-menu li a span {
+  padding-right: 10px;
+  width: 90%;
+  display: inline-block; }
+
+.asiapedia.servicesFlyers .moreBtn .dropdown-menu li a .fa-cloud-download-alt {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 2px; }
+
+.asiapediaResources {
+  height: 400px;
+  margin-top: 0; }
+  .asiapediaResources .asiapedia {
+    margin-top: 0; }
+  .asiapediaResources .active > div {
+    display: block; }
+  .asiapediaResources .carousel-inner > .item {
+    height: 360px; }
+  .asiapediaResources .carousel-indicators {
+    bottom: 0;
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; }
+    .asiapediaResources .carousel-indicators li {
+      background-color: #b7b7b7;
+      border: 0;
+      width: 12px;
+      height: 12px; }
+    .asiapediaResources .carousel-indicators .active {
+      background-color: #d5d5d5;
+      border: 0;
+      margin-top: 0; }
+
+.featureResources .active > div {
+  display: block; }
+
+.featureResources .carousel-indicators {
+  bottom: 0;
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; }
+  .featureResources .carousel-indicators li {
+    background-color: #b7b7b7;
+    border: 0;
+    width: 12px;
+    height: 12px; }
+  .featureResources .carousel-indicators .active {
+    background-color: #d5d5d5;
+    border: 0;
+    margin-top: 0; }
+
+.asiapedia {
+  min-height: 200px;
+  display: block;
+  vertical-align: top;
+  margin: 25px 0 0;
+  border: solid 1px #e6e7e8; }
+  .asiapedia .eventBody {
+    padding: 20px 20px 10px;
+    text-align: left; }
+    .asiapedia .eventBody h4 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 18px;
+      min-height: 60px;
+      line-height: 22px;
+      color: #000;
+      font-style: normal;
+      font-weight: 300; }
+      .asiapedia .eventBody h4 a {
+        color: #000;
+        font-weight: 400; }
+  .asiapedia .ThumbBlock {
+    position: relative;
+    background-color: #e6e7e8; }
+    .asiapedia .ThumbBlock .eventLable {
+      position: absolute;
+      z-index: 1;
+      padding: 2px 20px;
+      color: #FFF;
+      bottom: 25px;
+      left: 15px;
+      background-color: #1a2940;
+      font-size: 13px; }
+    .asiapedia .ThumbBlock .pediashare {
+      position: absolute;
+      z-index: 1;
+      padding: 2px 0;
+      bottom: 25px;
+      right: 15px;
+      font-size: 18px;
+      color: #e7ebf5; }
+      .asiapedia .ThumbBlock .pediashare a {
+        color: #FFF; }
+      .asiapedia .ThumbBlock .pediashare .saveFavourite {
+        color: #f5454b; }
+  .asiapedia .hoverImage {
+    height: 146px; }
+  .asiapedia .credit {
+    border-top: solid 1px #e6e7e8;
+    padding: 5px 20px;
+    font-size: 11px;
+    text-transform: uppercase; }
+
+.L1 {
+  background-color: #ebebeb;
+  font-size: 10px;
+  padding: 4px 5px;
+  text-align: center;
+  float: right;
+  line-height: 10px; }
+
+.L2 {
+  background-color: #e7ebf5;
+  font-size: 10px;
+  padding: 4px 5px;
+  text-align: center;
+  float: right;
+  line-height: 10px; }
+
+.L3 {
+  background-color: #dbf2e6;
+  font-size: 10px;
+  padding: 4px 5px;
+  text-align: center;
+  float: right;
+  line-height: 10px; }
+
+.L4 {
+  background-color: #f5f0dd;
+  font-size: 10px;
+  padding: 4px 5px;
+  text-align: center;
+  float: right;
+  line-height: 10px; }
+
 div#sidebarnav {
   background-color: #fff;
   min-height: 430px; }
@@ -7534,7 +8006,9 @@ div#sidebarnav ul > li.level1.active, div#sidebarnav ul > li.level2.active, div#
     section.TopBanner img {
       height: 100%; }
     section.TopBanner .BannerCaption {
-      margin-top: 90px; }
+      margin-top: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px; }
   .panelTab a.disable-links {
     pointer-events: auto; }
   .multimediaLargeThumbnail {
@@ -7563,7 +8037,14 @@ div#sidebarnav ul > li.level1.active, div#sidebarnav ul > li.level2.active, div#
       padding-bottom: 35px; }
   .international-desks {
     min-height: 100%;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+  .internship, .fullTime {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .MeetOurPeople p {
+    padding-right: 15px; }
+  .MeetOurPeople .carousel-inner .item img {
+    height: auto; } }
 
 .asiapedia_homepage .list-inline {
   margin-left: 0;

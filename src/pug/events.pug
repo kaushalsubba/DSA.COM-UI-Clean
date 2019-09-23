@@ -1,0 +1,593 @@
+extends layouts/_layout_default
+
+block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
+    - title = "Dezan shira"
+
+
+
+block content
+    // Start Content
+    section.TopBanner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/das-events-banner.jpg')
+        .BannerCaption
+            .container
+                .row
+                    .col-sm-12.col-md-10.col-lg-10
+                        h1.text-left Events
+
+    section.breadcrumbBlock
+        .container
+            .row
+                .col-sm-12.col-md-12.col-lg-12
+                    ol.breadcrumb
+                    
+                        
+                        li.active(aria-current='page') Events
+
+    section.pb-5.pt-5
+        .container
+            .row
+                .col-sm-8.col-md-8.col-lg-8.col-xl-8
+                    h4.section-title Events Filter
+                    form.WebsiteForm(action='https://www.dezshira.com/events/search', method='GET')
+                    .pt-3.pb-3.pr-3.pl-3.border.mb-4
+                        .row
+                            .col-sm-4
+                                .form-group
+                                label Location
+                                select.form-control.radius-none(id='', name='location')
+                                    option(value='', selected='selected') Location
+                                    option(value='asia') Asia
+                                    option(value='china') China
+                                    option(value='india') India
+                                    option(value='vietnam') Vietnam
+                                    option(value='hong-kong') Hong Kong
+                                    option(value='singapore') Singapore
+                                    option(value='europe') Europe
+                                    option(value='north-america') North America
+                                    option(value='central-and-latin-america') Central &amp; Latin America
+                                    option(value='oceania') Oceania
+                                    option(value='middle-east') Middle East
+                                    option(value='africa') Africa
+                            .col-sm-3
+                                .form-group
+                                label Language
+                                select.form-control.radius-none(id='', name='language')
+                                    option(value='', selected='selected') Language
+                                    option(value='english') English
+                                    option(value='german') German
+                                    option(value='italian') Italian
+                                    option(value='spanish') Spanish
+                                    option(value='french') French
+                                    option(value='chinese') chinese
+                            .col-sm-3
+                                .form-group
+                                label Status
+                                select.form-control.radius-none(id='', name='status')
+                                    option(value='all') All
+                                    option(value='upcoming') Upcoming
+                                    option(value='past') Past
+                            .col-sm-2
+                                .form-group
+                                button.btn.btn-primary.mt-25(type='submit')
+                                    <i class="fa fa-search"></i> 
+                                    | Search
+                    ul.list-unstyled.list
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 04
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/eastern-economic-forum-2019-8318.html') Eastern Economic Forum  2019
+                                    .dec
+                                        | Chris Devonshire-Ellis, Chairman &amp; Founding Partner 
+                                        br
+                                        | Maria Kotova, Head of UK and Ireland Business Development 
+                                        br
+                                    .date_time
+                                        small
+                                            | Vladivostok | 4-6 September, 2019
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 05
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/create-a-competitive-salary-package-and-retention-strategy-8280.html') Create a Competitive Salary Package and Retention Strategy
+                                    .dec
+                                        | Ellen Yin, Assistant Manager 
+                                    br
+                                    .date_time
+                                        small
+                                            | Nanjing, China | 5th September 2019 | 3PM-5PM CST 
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 06
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/meeting-with-eu-energy-businesses-8393.html') Valeria&apos;s Meeting with EU energy businesses
+                                    .dec
+                                        | Valeria Manunza, Assistant Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Bruxelles, Belgium
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 10
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/maria-kotova-s-trip-to-uk-8383.html') Meet DSA in London, Leeds, and Manchester
+                                    .dec
+                                        | Maria Kotova, Head of UK and Ireland Business Development 
+                                        br
+                                    .date_time
+                                        small
+                                            | United Kingdom | 10th - 28th September 2019
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 12
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/global-business-expo-2019-8320.html') Global Business Expo 2019
+                                    .dec
+                                        | Maria Kotova, Head of UK and Ireland Business Development 
+                                        br
+                                    .date_time
+                                        small
+                                            | Leeds, England | 12 September, 2019
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 12
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/how-to-register-a-foreign-invested-entity-in-china-8327.html') How to Register a Foreign-invested Entity in China
+                                    
+                                    .date_time
+                                        small
+                                            | Webinar | 12th September 2019 | 2:00 PM-3:00 PM CST 
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 17
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/us-china-trade-war-mitigating-risk-in-uncertain-times-8369.html') US-China Trade War: Mitigating Risk in Uncertain Times
+                                    .dec
+                                        | Kyle Freeman, Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Webinar l 17th September 2019 l 4:00 PM - 5:00 PM China Time
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 17
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/navigating-asia-s-business-landscape-how-vietnam-could-complement-your-china-operation-8384.html')
+                                        | NAVIGATING ASIA&rsquo;S BUSINESS LANDSCAPE: HOW VIETNAM COULD COMPLEMENT YOUR CHINA OPERATION
+                                    .dec
+                                        | Trent Davies, Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | 8.45AM to 12.00PM | September 17 | Guangzhou, China
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 18
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/navigating-asia-s-business-landscape-how-vietnam-could-complement-your-china-operation-8385.html')
+                                        | NAVIGATING ASIA&rsquo;S BUSINESS LANDSCAPE: HOW VIETNAM COULD COMPLEMENT YOUR EXPANSION STRATEGY IN ASIA
+                                    .dec
+                                        | Trent Davies, Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | 13.45PM to 16.00PM | September 18, 2019 | Shenzhen, China
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 19
+                                .dec_block
+                                    .title
+                                    a(href='https://www.dezshira.com/events/details/foreign-investment-law-briefing-8387.html') Foreign Investment Law Briefing - Beijing
+                                    .dec
+                                        | Ines Liu, Assistant Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Beijing l 19th September l 4:30 PM - 6:00 PM
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 24
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/doing-business-in-indonesia-2019-8398.html') Doing Business in Indonesia 2019
+                                    .dec
+                                        | Melisa , Senior Associate 
+                                        br
+                                    .date_time
+                                        small
+                                            | 3pm Indonesia time
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 24
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/foreign-investment-law-briefing-8390.html') Foreign Investment Law Briefing - Shanghai 
+                                    .dec
+                                        | Allan Xu, Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Dezan Shira Shanghai Office | 24th September 2019 |1:30 PM - 4:00 PM China Time
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 25
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/ines-liu-s-trip-to-sydney-australia-8388.html') Ines Liu&apos;s Trip to Sydney, Australia
+                                    .dec
+                                        | Ines Liu, Assistant Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Sydney, Australia l September 25 - October 13, 2019
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 26
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/digitalization-in-tax-compliance-process-in-china-8287.html') Digitalization in Tax Compliance Process in China
+                                    .dec
+                                        | Hannah Feng, Partner 
+                                        br
+                                    .date_time
+                                        small
+                                            | Hong Kong l 9:00 AM - 9:30 AM
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Sep
+                                        br
+                                        span 26
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/major-investment-destinations-in-india-8411.html') Major Investment Destinations in India
+                                    .dec
+                                        | Koushan Das, Assistant Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Webinar | 26th September 2019 | 10:30 AM - 11:30 AM IST 
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Oct
+                                        br
+                                        span 03
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/us-china-trade-war-mitigating-risk-in-uncertain-times-8373.html') US-China Trade War: Mitigating Risk in Uncertain Times
+                                    .dec
+                                        | Kyle Freeman, Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Webinar | 3rd of October 2019 | 2PM EST / 11AM PST
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Oct
+                                        br
+                                        span 23
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/hr-audit-compliance-and-risk-avoidance-in-hiring-process-8413.html')  HR Audit, Compliance and Risk Avoidance in Hiring Process 
+                                    .dec
+                                        | Ellen Yin, Assistant Manager 
+                                        br
+                                        | Allan Xu, Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Dezan Shira Shanghai Office | 23rd October 2019 | 1:45 PM &ndash; 3:30 PM China Time
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Oct
+                                        br
+                                        span 30
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/china-s-new-foreign-investment-law-briefing-shanghai-8412.html') China&rsquo;s New Foreign Investment Law Briefing - Shanghai
+                                    .dec
+                                        | Lorena Miera Ruiz, Senior Associate 
+                                        br
+                                    .date_time
+                                        small
+                                            | Shanghai | 30th October 2019 | 8:00 AM - 10:30 AM China Time
+                                            br
+                        li
+                            .event_block
+                                .date_block
+                                    .date
+                                        | Nov
+                                        br
+                                        span 07
+                                .dec_block
+                                    .title
+                                        a(href='https://www.dezshira.com/events/details/doing-business-in-china-hr-audit-compliance-and-risk-avoidance-in-the-hiring-process-8415.html')
+                                        | Doing Business in China: HR Audit, Compliance, and Risk Avoidance in the Hiring Process
+                                    .dec
+                                        | David Niu, Senior Manager 
+                                        br
+                                        | Ellen Yin, Assistant Manager 
+                                        br
+                                    .date_time
+                                        small
+                                            | Beijing l November 7, 2019 l 2:00 PM - 3:30 PM
+                                            br
+
+                    
+       
+
+                .col-sm-4.col-md-4.col-lg-4.col-lg-4
+                    .rightBlockSection
+                        h4.section-title JOIN OUR COMMUNITY
+                        a.twitter-timeline(data-height='600', href='https://twitter.com/DezanShira?ref_src=twsrc%5Etfw') Tweets by DezanShira
+                        script(async='', src='https://platform.twitter.com/widgets.js', charset='utf-8')
+                        a(name='mini_contact_form')
+            // /col
+            // /row
+
+    
+
+   
+    
+
+
+    
+        // /container
+        
+    section.blue.pt-5.pb-5
+        .container
+            .row
+                .col-sm-2.col-md-2.col-lg-2.col-sm-offset-1.col-md-offset-1.col-lg-offset-1.text-right
+                    a(href='http://dezshira.in/register.html')
+                    img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Subscribe.png', srcset='https://www.dezshira.com/themes/dsa/images/icons/Subscribe@2x.png 2x')
+                .col-sm-8.col-md-8.col-lg-8
+                    h5 SUBSCRIBE
+                    h1
+                        a(href='https://www.dezshira.com/register.html') Join over thousands of people who receive weekly foreign investment news in Asia
+
+    // End Content
+
+block js
+    |
+    |
+    script(src='https://www.dezshira.com/themes/dsa/js/fontawesome-all.min.js')
+
+block modal
+    |
+    |
+    // Start modal
+    #quickViewModal.modal.fade(role='dialog', tabindex='-1', aria-labelledby='gridModalLabel')
+        .modal-dialog(role='document')
+            .modal-content.radius-none
+                .modal-header.section-title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#gridSystemModalLabel.modal-title Our Regional Publications
+                .modal-body.top-bg-contain.book-detail-bg-banner
+                    #iframeContainer
+
+    #Loginpopup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog.modal-md
+            .modal-content
+                .modal-header.text-center
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    a(href='https://www.dezshira.com/library')
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-center A place to share knowledge and better understand Asia
+                .modal-body
+                    .row
+                        .col-sm-6.col-md-6.col-lg-6
+                            h4#myModalLabel.modal-title.text-center Log In
+                            form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="far fa-envelope"></i>
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="fas fa-lock"></i>
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                        small Forgot Password?
+                                .form-group.text-center
+                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                .form-group.text-center
+                                    small
+                                        | Don't have an account? 
+                                        a(href='https://www.dezshira.com/register') Sign Up
+                        .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                            .subscriptionBlock
+                                #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                        li(data-target='#subscriptionCarousel', data-slide-to='0')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                        .item.next.left
+                                            h4.modal-title.text-center Publication
+                                            i.sprite.sprite-retina.icon-publications
+                                            .carousel-caption
+                                                p Download our FREE magazines and guides
+                                        .item
+                                            h4.modal-title.text-center News 
+                                            i.sprite.sprite-retina.icon-news
+                                            .carousel-caption
+                                                p
+                                                    | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                        .item
+                                            h4.modal-title.text-center Multimedia
+                                            i.sprite.sprite-retina.icon-ksp
+                                            .carousel-caption
+                                                p Access presentations, webinars, podcasts, reports, Q&As and more
+                                        .item.active.left
+                                            h4.modal-title.text-center Dashboard
+                                            i.sprite.sprite-retina.icon-dashboard
+                                            .carousel-caption
+                                                p Track paid orders and connect with our support team
+                                    // Carousel controls
+
+    #logoDownload.modal.fade.logoDownload(role='dialog')
+        .modal-dialog
+            // Modal content
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal') ×
+                    a(href='https://www.dezshira.com/')
+                        img.logo.center-block.margin20Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png 2x')
+                .modal-body
+                    h4.section-title Dezan Shira & Associates logos
+                    table.table.table-striped
+                        tbody
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank') Dezan Shira & Associates logo_vertical(EPS)
+                                td.lightgreyColor 254KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
+                                td.lightgreyColor 14KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
+                                td.lightgreyColor 566KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
+                                td.lightgreyColor 49KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
+                                td.lightgreyColor 305KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
+                                td.lightgreyColor 18KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+
+
+    // End modal

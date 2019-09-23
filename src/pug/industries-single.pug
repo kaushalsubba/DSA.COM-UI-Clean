@@ -11,115 +11,182 @@ block setting
 
 block content
     // Start Content
-    section.TopBanner
-        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/International-desks_banner.jpg')
+    section.TopBanner.services-banner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/industries/banner-education.jpg')
         .BannerCaption
             .container
                 .row
-                    .col-sm-12.col-md-10.col-lg-10
-                        h1.text-left International Desks
-                        h4 Our clients are as diverse as our team. We can help investors find their way in Asia in a variety languages and business cultures.
+                    .col-sm-12.col-md-12.col-lg-12
+                        h1 Industries
+                        h4 The education industry is growing rapidly across Asia to meet high market demand. However, investors often need to manage restrictive investment caps and fast evolving regulations in many markets.
+                       
 
     section.breadcrumbBlock
         .container
             .row
                 .col-sm-12.col-md-12.col-lg-12
                     ol.breadcrumb
-                       
-                        
-                        li.active(aria-current='page') International Desk
+                        li
+                            a(href='#') Industries
+                        li.active(aria-current='page') Education
 
-    section.pt-5.pb-5
+    section.pt-7.pb-7
+        .container
+          .row
+            .col-sm-3.col-md-3.col-lg-3
+              .leftBlockSection
+                h4.section-title industries
+                #sidebarnav.block.no-padding
+                  ul.collapsible
+                    li.level2.active
+                      a(href='https://www.dezshira.com/industries/education') Education
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/entertainment-sports') Entertainment and Sports
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/environment-cleantech') Environment and Cleantech
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/food-beverage') Food and Beverage
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/healthcare') Healthcare
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/information-technology') Information Technology
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/manufacturing') Manufacturing
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/non-governmental-organizations') Non-Governmental Organizations
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/professional-services') Professional services
+                    li.level2
+                      a(href='https://www.dezshira.com/industries/trade-and-e-commerce') Trade and E-commerce
+            .col-sm-5.col-md-6.col-lg-6
+              p
+                | The market for reliable, high-quality schools, universities, and training is growing rapidly across Asia. The region&rsquo;s demographic dividend, upwardly mobile middle-class, and increasingly competitive labor environment has placed a premium on quality educational experiences. The market is well established in many tier one cities across Asia, but it continues to expand to keep pace with growing economies, while emerging markets in lower tier and developing regions continue to record high levels of growth.
+              p
+                | Despite this high market demand, foreign investors still need to manage a number of challenges. Many countries in Asia place restrictive investment caps on the education industry, which affect business structures, planning, and service offerings. Meanwhile, regulations for the industry are rapidly evolving in response to higher levels of private sector investment, increasingly high-demands of consumers, and the need to incentivize subsectors that help countries meet development goals.
+              p
+                | Dezan Shira &amp; Associates has helped a wide-array of foreign investors successfully enter the education market in Asia: from studying the market, managing investments, and structuring the business model at the pre-investment phase to managing statutory compliances and maintaining best practices once operational. Dezan Shira &amp; Associates is well-acquainted with the industry on a country-to-country basis, and positioned to help you manage your investment in this growing industry.
+              a.btn.btn-outline-dark.mt-25.mb-25(href='https://www.dezshira.com/industries') &lt; Back To Industries 
+              h4.section-title INDUSTRY SPECIALIST
+              ul.list-unstyled.list
+                li
+                  a(href='https://www.dezshira.com/personnel/ines-liu.html')
+                    img.img-circle.img-thumbnail.pull-left.mr-3(src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Ines_200x200.jpg', alt='Ines Liu', width='120', height='120')
+                  .social_media.pull-right
+                    a.marginleft(href='mailto:ines.liu@dezshira.com')
+                      i.far.fa-envelope
+                  .name
+                    a(href='https://www.dezshira.com/personnel/ines-liu.html')  Ines Liu 
+                  .duration
+                    p
+                      | Assistant Manager
+                      br
+                      |               International Business Advisory
+                  .clearfix
+            // /col
+            .col-sm-4.col-md-3.col-lg-3
+              .rightBlockSection
+                .asiapediaResources
+                  h4.section-title Asiapedia
+                  #asiapediaResourcesCarousel.carousel.slide(data-ride='carousel')
+                    // Carousel indicators
+                    ol.carousel-indicators
+                      li(data-target='#asiapediaResourcesCarousel', data-slide-to='0')
+                      li.active(data-target='#asiapediaResourcesCarousel', data-slide-to='1')
+                      li(data-target='#asiapediaResourcesCarousel', data-slide-to='2')
+                      li(data-target='#asiapediaResourcesCarousel', data-slide-to='3')
+                    // Wrapper for carousel items
+                    .carousel-inner
+                      .item
+                        .asiapedia
+                          .ThumbBlock.hoverImage
+                            figure
+                              img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/asiapedia/thumb-article.jpg', itemprop='image')
+                            .eventLable article
+                            .pediashare
+                          .eventBody
+                            h4
+                              a(title='Case Study: Education Sector in China', href='https://www.dezshira.com/library/article/case-study-education-sector-china.html') Case Study: Education Sector in China
+                            .dateTime August 2019
+                          .credit
+                            strong FREE
+                      // /.item
+                      .item.active
+                        .asiapedia
+                          .ThumbBlock.hoverImage
+                            figure
+                              img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/asiapedia/thumb-infographic.jpg', itemprop='image')
+                            .eventLable infographic
+                            .pediashare
+                          .eventBody
+                            h4
+                              a(title="China's Education Industry at a Glance", href='https://www.dezshira.com/library/infographic/china-s-education-industry-at-a-glance-6324.html') China&apos;s Education Industry at a Glance
+                            .dateTime August 2016
+                          .credit
+                            strong FREE
+                            i.fas.fa-lock.pull-right.mt-1(title='Requires Login to Access This Resource')
+                      // /.item
+                      .item
+                        .asiapedia
+                          .ThumbBlock.hoverImage
+                            figure
+                              img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/asiapedia/thumb-infographic.jpg', itemprop='image')
+                            .eventLable infographic
+                            .pediashare
+                          .eventBody
+                            h4
+                              a(title="Comparison of the Paths for Foreign Investors to Operate in China's Education Sector", href='https://www.dezshira.com/library/infographic/comparison-of-the-paths-for-foreign-investors-to-operate-in-china-s-education-sector-6327.html') Comparison of the Paths for Foreign Investors...
+                            .dateTime August 2016
+                          .credit
+                            strong FREE
+                      // /.item
+                      .item
+                        .asiapedia
+                          .ThumbBlock.hoverImage
+                            figure
+                              img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/asiapedia/thumb-qa.jpg', itemprop='image')
+                            .eventLable Q&amp;A
+                            .pediashare
+                          .eventBody
+                            h4
+                              a(title='How is the current education market in China?', href='https://www.dezshira.com/library/qa/how-is-the-current-education-market-in-china-6330.html') How is the current education market in China?
+                            .dateTime August 2016
+                          .credit
+                            strong FREE
+                      // /.item
+                .light-blue-bg.mt-2.mb-2
+                  .BannerCaption.min
+                    a(href='https://www.dezshira.com/brochure')
+                      img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Download.png', srcset='https://www.dezshira.com/themes/dsa/images/icons/Download@2x.png 2x')
+                    h3
+                      a(href='https://www.dezshira.com/brochure') DOWNLOAD BROCHURE
+                    p
+                      a(href='https://www.dezshira.com/brochure') Learn more about how we can support your business in Asia
+          // /col
+
+
+
+
+    
+
+   
+    
+
+
+    
+        // /container
+        
+    section.blue.pt-5.pb-5
         .container
             .row
-                .col-xs-12.col-sm-6.col-md-4.col-lg-4
-                    .international-desks
-                        .ThumbBlock.hoverImage
-                            figure
-                                a(href='https://www.dezshira.com/international-desk/north-american.html')
-                                    img(src='https://www.dezshira.com/themes/dsa/images/international-desk/thumb-north-american.jpg')
-                        .eventBody
-                            h3.pt-3
-                                a(href='https://www.dezshira.com/international-desk/north-american.html') North American Desk
-                            p
-                                | Dezan Shira &amp; Associates has over 20 years of on-the-ground experience in Asia, and has grown into one of the region&acute;s most versatile full-service consultancies. As over 45% of our clientele is from North America, Dezan Shira &amp; Associates has pulled together a dedicated platform to specifically service those businesses and investors in North America.
-                .col-xs-12.col-sm-6.col-md-4.col-lg-4
-                    .international-desks
-                        .ThumbBlock.hoverImage
-                            figure
-                                a(href='https://www.dezshira.com/international-desk/uk-ireland.html')
-                                    img(src='https://www.dezshira.com/themes/dsa/images/international-desk/thumb-UK-Ireland.jpg')
-                        .eventBody
-                            h3.pt-3
-                                a(href='https://www.dezshira.com/international-desk/uk-ireland.html') UK and Ireland Desk
-                            p
-                                | Dezan Shira &amp; Associates has a long history serving British and Irish clients in Asia. Our UK and Ireland Desk aims to support investors in defining and executing the best strategies for structuring their international investments in the region. Our blended service solutions were designed to unify the local expertise of each Asian jurisdiction with understanding of UK and Ireland standards and business objectives.
-                .col-xs-12.col-sm-6.col-md-4.col-lg-4
-                    .international-desks
-                        .ThumbBlock.hoverImage
-                            figure
-                                a(href='https://www.dezshira.com/international-desk/german.html')
-                                    img(src='https://www.dezshira.com/themes/dsa/images/international-desk/thumb-german.jpg')
-                        .eventBody
-                            h3.pt-3
-                                a(href='https://www.dezshira.com/international-desk/german.html') German Desk
-                            p
-                                | Wir bei Dezan Shira &amp; Associates sehen es als unsere Mission an, ausl&auml;ndischen Unternehmen bei allen Fragen rund um die Gr&uuml;ndung, den Betrieb und die Weiterentwicklung ihres Asiengesch&auml;fts zur Seite zu stehen und sie sicher durch das Dickicht sich st&auml;ndig &auml;ndernder Bestimmungen zu f&uuml;hren. &Uuml;ber 20 Jahre Erfahrung vor Ort und ein professionelles Team kompetenter Berater machen uns zu einem verl&auml;sslichen Partner f&uuml;r Ihre Investitionst&auml;tigkeit in Asien.
-                .col-xs-12.col-sm-6.col-md-4.col-lg-4
-                    .international-desks
-                        .ThumbBlock.hoverImage
-                            figure
-                                a(href='https://www.dezshira.com/international-desk/italian.html')
-                                    img(src='https://www.dezshira.com/themes/dsa/images/international-desk/thumb-italian.jpg')
-                        .eventBody
-                            h3.pt-3
-                                a(href='https://www.dezshira.com/international-desk/italian.html') Italian Desk
-                            p
-                                | Dezan Shira &amp; Associates &egrave; specializzata nell&rsquo;assistenza agli investimenti diretti esteri. A mezzo di un Desk Italia offre supporto in lingua e anche in Italia. Specificatamente offriamo consulenza strategica all&rsquo;investimento, costituzione societaria, consulenza fiscale, contabilit&agrave; e revisione dei conti, amministrazione tesoreria, verifica contabile e adempimento degli obblighi fiscali, gestione dei libri paga e del personale, controllo di gestione, due diligence, deposito marchi, consulenza informatica.
-                .col-xs-12.col-sm-6.col-md-4.col-lg-4
-                    .international-desks
-                        .ThumbBlock.hoverImage
-                            figure
-                                a(href='https://www.dezshira.com/international-desk/french.html')
-                                    img(src='https://www.dezshira.com/themes/dsa/images/international-desk/thumb-french.jpg')
-                        .eventBody
-                             h3.pt-3
-                                a(href='https://www.dezshira.com/international-desk/french.html') French Desk
-                             p
-                                | Dezan Shira &amp; Associates est une soci&eacute;t&eacute; de conseil sp&eacute;cialis&eacute;e dans l&apos;investissement direct &eacute;tranger en Asie. Nos services comprennent, entre autres, les proc&eacute;dures d&apos;implantation, de gestion juridique, de fusions et d&acute;acquisitions, de fiscalit&eacute; et de comptabilit&eacute; pour toute entreprise &eacute;trang&eacute;re d&eacute;sirant s&apos;implanter et poursuivre ses op&eacute;rations en Asie.
-                .col-xs-12.col-sm-6.col-md-4.col-lg-4
-                    .international-desks
-                        .ThumbBlock.hoverImage
-                            figure
-                                a(href='https://www.dezshira.com/international-desk/russian.html')
-                                    img(src='https://www.dezshira.com/themes/dsa/images/international-desk/thumb-russian.jpg')
-                        .eventBody
-                            h3.pt-3
-                                a(href='https://www.dezshira.com/international-desk/russian.html') Russian Desk
-                            p
-                                | &Ocy;&scy;&ncy;&ocy;&vcy;&ycy;&vcy;&acy;&yacy;&scy;&softcy; &bcy;&ocy;&lcy;&iecy;&iecy; &chcy;&iecy;&mcy; &ncy;&acy; 20 &gcy;&ocy;&dcy;&acy;&khcy; &pcy;&rcy;&acy;&kcy;&tcy;&icy;&chcy;&iecy;&scy;&kcy;&ocy;&gcy;&ocy; &ocy;&pcy;&ycy;&tcy;&acy; &vcy; &scy;&tcy;&rcy;&acy;&ncy;&acy;&khcy; &Acy;&zcy;&icy;&icy;, Dezan Shira &amp; Associates &pcy;&rcy;&iecy;&vcy;&rcy;&acy;&tcy;&icy;&lcy;&acy;&scy;&softcy; &vcy; &ocy;&dcy;&ncy;&ucy; &icy;&zcy; &scy;&acy;&mcy;&ycy;&khcy; &ucy;&ncy;&icy;&vcy;&iecy;&rcy;&scy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &rcy;&iecy;&gcy;&icy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &kcy;&ocy;&ncy;&scy;&acy;&lcy;&tcy;&icy;&ncy;&gcy;&ocy;&vcy;&ycy;&khcy; &kcy;&ocy;&mcy;&pcy;&acy;&ncy;&icy;&jcy; &scy; &pcy;&ocy;&lcy;&ncy;&ycy;&mcy; &scy;&pcy;&iecy;&kcy;&tcy;&rcy;&ocy;&mcy; &ucy;&scy;&lcy;&ucy;&gcy;.
-                .col-xs-12.col-sm-6.col-md-4.col-lg-4
-                     .international-desks
-                        .ThumbBlock.hoverImage
-                            figure
-                                a(href='https://www.dezshira.com/international-desk/spanish.html')
-                                    img(src='https://www.dezshira.com/themes/dsa/images/international-desk/thumb-spanish.jpg')
-                        .eventBody
-                            h3.pt-3
-                                a(href='https://www.dezshira.com/international-desk/spanish.html') Spanish Desk
-                            p
-                                | Dezan Shira &amp; Associates es una firma especializada en el apoyo de la inversi&oacute;n directa extranjera en Asia. A trav&eacute;s de nuestro Spanish Desk ofrecemos apoyo en espa&ntilde;ol para nuestros clientes hispanohablantes. Espec&iacute;ficamente, ofrecemos asesoramiento en inversi&oacute;n estrat&eacute;gica, constituci&oacute;n de empresas, asesoramiento fiscal, contabilidad y auditor&iacute;a, gesti&oacute;n de tesorer&iacute;a, cumplimiento de obligaciones fiscales, recursos humanos y gesti&oacute;n de n&oacute;minas, due diligence y registro de marcas entre otros.
-                .col-xs-12.col-sm-6.col-md-4.col-lg-4
-                    .international-desks
-                        .ThumbBlock.hoverImage
-                            figure
-                                a(href='https://www.dezshira.com/international-desk/australian.html')
-                                    img(src='https://www.dezshira.com/themes/dsa/images/international-desk/thumb-australian.jpg')
-                        .eventBody
-                            h3.pt-3
-                                a(href='https://www.dezshira.com/international-desk/australian.html') Australian Desk
-                            p
-                                | Dezan Shira &amp; Associates is a multi-disciplinary professional services firm operating throughout the Asia-pacific (APAC) region providing tax, legal, audit, accounting and advisory services. Of the total foreign investment we have facilitated over the years, a significant and valuable proportion has been from Australian businesses, making Dezan Shira &amp; Associates a long term, proven, and trusted advisor to Australian companies and individuals.
+                .col-sm-2.col-md-2.col-lg-2.col-sm-offset-1.col-md-offset-1.col-lg-offset-1.text-right
+                    a(href='http://dezshira.in/register.html')
+                    img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Subscribe.png', srcset='https://www.dezshira.com/themes/dsa/images/icons/Subscribe@2x.png 2x')
+                .col-sm-8.col-md-8.col-lg-8
+                    h5 SUBSCRIBE
+                    h1
+                        a(href='https://www.dezshira.com/register.html') Join over thousands of people who receive weekly foreign investment news in Asia
+
+
 
 
     // End Content

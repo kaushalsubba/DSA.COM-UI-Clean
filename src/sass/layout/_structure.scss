@@ -446,3 +446,474 @@ section.TopBanner.services-banner{
         .btn-secondary{ padding: 15px 20px; text-transform: uppercase; margin-bottom: 20px;}
     }
 } 
+
+//career page
+#featuredOffers {
+    padding-bottom: 80px;
+	padding-top: 80px;
+	.display-4{ color: #000;}
+}
+.boxContent {
+    border-top: solid 3px #2f2f46 !important;
+    min-height: 170px;
+    vertical-align: top;
+    padding: 15px;
+	width: 100%;
+	h4, h5, h6{ font-weight: normal}
+	h4{ font-size: 18px; color: #344c70;
+		a{ color: #344c70; }
+	}
+	h5{ font-size: 16px; }
+	h6{  font-size: 12px;}
+}
+.internship {
+	background-color: #c1c1ba;
+	padding: 80px 80px 80px 165px;
+}
+#jobs {
+	h2 {
+		color: #FFF;
+		padding-bottom: 20px;
+		margin: 0;
+	}
+	p {
+		color: #FFF;
+		padding-bottom: 20px;
+		margin: 0;
+	}
+}
+.fullTime {
+	background-image: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg);
+	padding: 80px 165px 80px 80px;
+}
+#OurCoreValues {
+	padding-bottom: 30px;
+	padding-top: 80px;
+	p {
+		padding-bottom: 50px;
+		color: #808285;
+		padding-bottom: 50px;
+		margin-bottom: 0;
+	}
+	h2 {
+		font-style: normal;
+		font-weight: 500;
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+	.heading{ color: #000;}
+}
+.MeetOurPeople {
+	background-color: #f5f5f5;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	h2 {
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+	p {
+		padding-bottom: 30px;
+		padding-right: 100px;
+	}
+	.heading{ color: #000;}
+}
+
+section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 80px;
+.btn{ min-width:  100px;}
+}
+#testimonial {
+	padding-bottom: 70px;
+	padding-top: 70px;
+	.media {
+		position: relative;
+		padding: 0 0 0 20px;
+		img {
+			width: 75px;
+			height: 75px;
+			display: block;
+			border-radius: 50%;
+		}
+	}
+	.testimonial-wrapper {
+		padding: 0;
+	}
+	.testimonial {
+		color: #77787b;
+		position: relative;
+		padding: 25px;
+		background: #fff;
+		border: 1px solid #e1e1e1;
+		border-radius: 3px;
+		margin-bottom: 15px;
+		font-style: italic;
+		font-size: 14px;
+		min-height: 205px;
+		&::after {
+			content: "";
+			width: 15px;
+			height: 15px;
+			display: block;
+			background: #fff;
+			border: 1px solid #e1e1e1;
+			border-width: 0 0 1px 1px;
+			position: absolute;
+			bottom: -8px;
+			left: 46px;
+			transform: rotateZ(-46deg);
+		}
+		a {
+			font-size: 11px;
+			text-align: right;
+			display: block;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-style: normal;
+		}
+	}
+	.star-rating {
+		li {
+			padding: 0 2px;
+		}
+		i {
+			font-size: 14px;
+			color: #ffdc12;
+		}
+	}
+	.overview {
+		padding: 3px 0 0 15px;
+		.details {
+			padding: 5px 0 8px;
+		}
+		b {
+			color: #231f20;
+		}
+	}
+	.media-body {
+		padding-left: 0;
+	}
+	.media-left {
+		background: #FFF;
+		padding: 0;
+	}
+}
+
+//event apge
+.event_block {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	.date_block {
+		width: 132px;
+		height: 132px;
+		text-align: center;
+		vertical-align: middle;
+		margin-right: 48px;
+		background-color: #344c70;
+		float: left;
+		.date {
+			font-size: 14px;
+			display: block;
+			padding-top: 36px;
+			color: #FFF;
+			text-transform: uppercase;
+			span {
+				font-size: 36px;
+				display: block;
+				padding-top: 5px;
+				font-weight: 400;
+				line-height: 18px;
+			}
+		}
+	}
+	&:hover {
+		.date_block {
+			background-color: #486b9a;
+		}
+	}
+	.dec_block {
+		overflow: hidden;
+		.title {
+			font-size: 18px;
+			line-height: 24px;
+			color: #000;
+			padding: 0;
+			margin: 0;
+			a {
+				color: #000;
+			}
+		}
+		.dec {
+			padding-bottom: 10px;
+			padding-top: 10px;
+			margin: 0;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 20px;
+		}
+		.date_time {
+			padding: 0;
+			margin: 0 0 20px;
+			margin-bottom: 20px;
+			margin-bottom: 0;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+
+.eventsBlock {
+    background-color: #1a2940;
+    min-height: 200px;
+    color: #fff;
+	.dateEvent {
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	.timeEvent {
+		span {
+			color: #999;
+			display: block;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+	}
+}
+
+//Asiapedia stuff
+.asiapedia.flyersBrochures {
+	margin-top: 0;
+	margin-bottom: 25px;
+	position: relative;
+	.eventBody {
+		h4 {
+			min-height: inherit;
+			margin-bottom: 10px;
+			a {
+				color: #FFF;
+			}
+		}
+		padding-bottom: 0;
+		position: absolute;
+		top: 80px;
+	}
+	.downloadflyersBrochures {
+		margin: 0 20px;
+		.list-unstyled {
+			padding-top: 20px;
+		}
+	}
+}
+.rightBlockSection {
+	.asiapedia.flyersBrochures {
+		margin-top: 20px;
+		.eventBody {
+			top: 72px;
+		}
+	}
+}
+.seeMoreLink {
+	border-top: solid 1px #e6e7e8;
+	text-transform: uppercase;
+	a {
+		font-size: 11px;
+		font-weight: 700;
+	}
+}
+.downloadflyersBrochures {
+	.list-unstyled {
+		li {
+			position: relative;
+			margin-bottom: 10px;
+			padding-bottom: 0;
+			a {
+				span {
+					padding-right: 10px;
+					width: 90%;
+					display: inline-block;
+				}
+				.fa-cloud-download-alt {
+					height: 20px;
+					line-height: 20px;
+					margin-top: 2px;
+				}
+			}
+		}
+	}
+}
+.asiapedia.servicesFlyers {
+	.moreBtn {
+		.dropdown-menu {
+			li {
+				a {
+					span {
+						padding-right: 10px;
+						width: 90%;
+						display: inline-block;
+					}
+					.fa-cloud-download-alt {
+						height: 20px;
+						line-height: 20px;
+						margin-top: 2px;
+					}
+				}
+			}
+		}
+	}
+}
+.asiapediaResources {
+	height: 400px;
+	margin-top: 0;
+	.asiapedia {
+		margin-top: 0;
+	}
+	.active {
+		>div {
+			display: block;
+		}
+	}
+	.carousel-inner {
+		>.item {
+			height: 360px;
+		}
+	}
+	.carousel-indicators {
+		bottom: 0;
+		margin-left: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		li {
+			background-color: #b7b7b7;
+			border: 0;
+			width: 12px;
+			height: 12px;
+		}
+		.active {
+			background-color: #d5d5d5;
+			border: 0;
+			margin-top: 0;
+		}
+	}
+}
+.featureResources {
+	.active {
+		>div {
+			display: block;
+		}
+	}
+	.carousel-indicators {
+		bottom: 0;
+		margin-left: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		li {
+			background-color: #b7b7b7;
+			border: 0;
+			width: 12px;
+			height: 12px;
+		}
+		.active {
+			background-color: #d5d5d5;
+			border: 0;
+			margin-top: 0;
+		}
+	}
+}
+.asiapedia {
+	min-height: 200px;
+	display: block;
+	vertical-align: top;
+	margin: 25px 0 0;
+	border: solid 1px #e6e7e8;
+	.eventBody {
+		padding: 20px 20px 10px;
+		text-align: left;
+		h4 {
+			a {
+				color: #000;
+				font-weight: 400;
+			}
+			margin-top: 0;
+			margin-bottom: 20px;
+			font-size: 18px;
+			min-height: 60px;
+			line-height: 22px;
+			color: #000;
+			font-style: normal;
+			font-weight: 300;
+		}
+	}
+	.ThumbBlock {
+		position: relative;
+		background-color: #e6e7e8;
+		.eventLable {
+			position: absolute;
+			z-index: 1;
+			padding: 2px 20px;
+			color: #FFF;
+			bottom: 25px;
+			left: 15px;
+			background-color: #1a2940;
+			font-size: 13px;
+		}
+		.pediashare {
+			position: absolute;
+			z-index: 1;
+			padding: 2px 0;
+			bottom: 25px;
+			right: 15px;
+			font-size: 18px;
+			color: #e7ebf5;
+			a {
+				color: #FFF;
+			}
+			.saveFavourite {
+				color: #f5454b;
+			}
+		}
+	}
+	.hoverImage {
+		height: 146px;
+	}
+	.credit {
+		border-top: solid 1px #e6e7e8;
+		padding: 5px 20px;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+}
+.L1 {
+	background-color: #ebebeb;
+	font-size: 10px;
+	padding: 4px 5px;
+	text-align: center;
+	float: right;
+	line-height: 10px;
+}
+.L2 {
+	background-color: #e7ebf5;
+	font-size: 10px;
+	padding: 4px 5px;
+	text-align: center;
+	float: right;
+	line-height: 10px;
+}
+.L3 {
+	background-color: #dbf2e6;
+	font-size: 10px;
+	padding: 4px 5px;
+	text-align: center;
+	float: right;
+	line-height: 10px;
+}
+.L4 {
+	background-color: #f5f0dd;
+	font-size: 10px;
+	padding: 4px 5px;
+	text-align: center;
+	float: right;
+	line-height: 10px;
+}
+
