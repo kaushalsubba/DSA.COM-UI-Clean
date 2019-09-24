@@ -1,0 +1,654 @@
+extends layouts/_layout_default
+
+block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
+    - title = "Dezan shira"
+
+
+
+block content
+    // Start Content
+    section.TopBanner.asiapedia-banner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/banner-asiapedia.jpg')
+        .BannerCaption
+            .container
+                .row
+                    .col-sm-12.col-md-12.col-lg-12.text-center
+                        h1 When we say we want to help businesses grow in Asia, we mean it. 
+                        h4 Asiapedia is our collection of resources based on what we have learned on the ground.
+                        a.btn.btn-secondary.mt-3.mr-1(href='https://www.dezshira.com/register') SUBSCRIBE
+                        a.btn.btn-white.mt-3.mr-1(href='https://www.dezshira.com/brochure')  DOWNLOAD BROCHURE
+
+    section.dark-blue-bg.asiapedia_page.pt-3.pb-3
+      .container
+        .row
+          form#resourcesSearchForm(action='', method='GET', onsubmit='return false;')
+            .col-sm-3.col-md-3.col-lg-3
+              .form-group
+                input#asiapediaKeyword.form-control.search_addon(type='text', name='s', value='', placeholder='Search by keywords', onkeypress='return trackKeywordSubmit(event)', data-toggle='tooltip', data-placement='top', title='', data-original-title='Press Enter to Search')
+            .col-sm-2.col-md-2.col-lg-2
+              .form-group
+                select#asiapediaLocation.form-control.radius-none(name='location')
+                  option(value='') Countries
+                  option(value='')  -- Any -- 
+                  option(value='426')  Silk Road 
+                  option(value='110')  Asia 
+                  option(value='390')  &nbsp; Azerbaijan 
+                  option(value='325')  &nbsp; Bahrain 
+                  option(value='335')  &nbsp; Bangladesh 
+                  option(value='389')  &nbsp; China - Macao 
+                  option(value='326')  &nbsp; Japan 
+                  option(value='366')  &nbsp; Kazakhstan 
+                  option(value='359')  &nbsp; Kyrgyzstan 
+                  option(value='382')  &nbsp; Nepal 
+                  option(value='339')  &nbsp; North Korea 
+                  option(value='329')  &nbsp; Pakistan 
+                  option(value='331')  &nbsp; Philippines 
+                  option(value='330')  &nbsp; South Korea 
+                  option(value='345')  &nbsp; Sri Lanka 
+                  option(value='383')  &nbsp; Taipei 
+                  option(value='349')  &nbsp; Taiwan 
+                  option(value='387')  &nbsp; Tajikistan 
+                  option(value='393')  &nbsp; Turkmenistan 
+                  option(value='354')  &nbsp; Uzbekistan 
+                  option(value='38')  &nbsp; ASEAN 
+                  option(value='147')  &nbsp;  &nbsp; Burma 
+                  option(value='76')  &nbsp;  &nbsp; Brunei 
+                  option(value='77')  &nbsp;  &nbsp; Cambodia 
+                  option(value='72')  &nbsp;  &nbsp; Indonesia 
+                  option(value='78')  &nbsp;  &nbsp; Laos 
+                  option(value='73')  &nbsp;  &nbsp; Malaysia 
+                  option(value='43')  &nbsp;  &nbsp; Myanmar 
+                  option(value='35')  &nbsp;  &nbsp; Singapore 
+                  option(value='75')  &nbsp;  &nbsp; Thailand 
+                  option(value='74')  &nbsp;  &nbsp; The Philippines 
+                  option(value='34')  &nbsp;  &nbsp; Vietnam 
+                  option(value='32')  &nbsp; China 
+                  option(value='59')  &nbsp;  &nbsp; China &ndash; Central &amp; West China 
+                  option(value='57')  &nbsp;  &nbsp; China &ndash; East China 
+                  option(value='56')  &nbsp;  &nbsp; China &ndash; North China 
+                  option(value='58')  &nbsp;  &nbsp; China &ndash; South China 
+                  option(value='39')  &nbsp; Hong Kong 
+                  option(value='33')  &nbsp; India 
+                  option(value='69')  &nbsp;  &nbsp; India - Hyderabad 
+                  option(value='70')  &nbsp;  &nbsp; India - Kolkata 
+                  option(value='60')  &nbsp;  &nbsp; India - Mumbai 
+                  option(value='67')  &nbsp;  &nbsp; India &ndash; Bangalore 
+                  option(value='68')  &nbsp;  &nbsp; India &ndash; Chennai 
+                  option(value='61')  &nbsp;  &nbsp; India &ndash; Delhi 
+                  option(value='37')  &nbsp; Mongolia 
+                  option(value='81')  Europe 
+                  option(value='364')  &nbsp; Albania 
+                  option(value='384')  &nbsp; Armenia 
+                  option(value='144')  &nbsp; Austria 
+                  option(value='386')  &nbsp; Belarus 
+                  option(value='145')  &nbsp; Belgium 
+                  option(value='409')  &nbsp; Bosnia 
+                  option(value='371')  &nbsp; Bosnia and Herzegovina 
+                  option(value='146')  &nbsp; Bulgaria 
+                  option(value='148')  &nbsp; Croatia 
+                  option(value='149')  &nbsp; Cyprus 
+                  option(value='150')  &nbsp; Czech Republic 
+                  option(value='392')  &nbsp; Czechoslovakia 
+                  option(value='151')  &nbsp; Denmark 
+                  option(value='152')  &nbsp; Estonia 
+                  option(value='153')  &nbsp; Finland 
+                  option(value='378')  &nbsp; Georgia 
+                  option(value='154')  &nbsp; Greece 
+                  option(value='155')  &nbsp; Hungary 
+                  option(value='385')  &nbsp; Iceland 
+                  option(value='156')  &nbsp; Ireland 
+                  option(value='157')  &nbsp; Latvia 
+                  option(value='158')  &nbsp; Lithuania 
+                  option(value='159')  &nbsp; Luxembourg 
+                  option(value='160')  &nbsp; Malta 
+                  option(value='162')  &nbsp; Netherlands 
+                  option(value='340')  &nbsp; Norway 
+                  option(value='163')  &nbsp; Poland 
+                  option(value='164')  &nbsp; Portugal 
+                  option(value='165')  &nbsp; Romania 
+                  option(value='166')  &nbsp; Slovakia 
+                  option(value='167')  &nbsp; Slovenia 
+                  option(value='347')  &nbsp; Sweden 
+                  option(value='333')  &nbsp; Switzerland 
+                  option(value='353')  &nbsp; Ukraine 
+                  option(value='111')  &nbsp; United Kingdom 
+                  option(value='79')  &nbsp; France 
+                  option(value='66')  &nbsp; Germany 
+                  option(value='65')  &nbsp; Italy 
+                  option(value='429')  &nbsp;  &nbsp; Italy Conegliano 
+                  option(value='420')  &nbsp;  &nbsp; Italy Treviso 
+                  option(value='421')  &nbsp;  &nbsp; Italy Udine 
+                  option(value='36')  &nbsp; Russia 
+                  option(value='80')  &nbsp; Spain 
+                  option(value='105')  North America 
+                  option(value='141')  &nbsp; Canada 
+                  option(value='64')  &nbsp; USA 
+                  option(value='108')  Africa 
+                  option(value='334')  &nbsp; Algeria 
+                  option(value='396')  &nbsp; Benin 
+                  option(value='394')  &nbsp; Botswana 
+                  option(value='400')  &nbsp; Cameroun 
+                  option(value='401')  &nbsp; Cote d&apos;Ivoire 
+                  option(value='398')  &nbsp; Djibouti 
+                  option(value='336')  &nbsp; Egypt 
+                  option(value='372')  &nbsp; Ethiopia 
+                  option(value='373')  &nbsp; Ghana 
+                  option(value='407')  &nbsp; Kenya 
+                  option(value='380')  &nbsp; Libya 
+                  option(value='402')  &nbsp; Madagascar 
+                  option(value='368')  &nbsp; Mauritius 
+                  option(value='360')  &nbsp; Morocco 
+                  option(value='361')  &nbsp; Mozambique 
+                  option(value='369')  &nbsp; Namibia 
+                  option(value='377')  &nbsp; Nigeria 
+                  option(value='343')  &nbsp; Seychelles 
+                  option(value='344')  &nbsp; South Africa 
+                  option(value='346')  &nbsp; Sudan 
+                  option(value='404')  &nbsp; Trinidad and Tobago 
+                  option(value='350')  &nbsp; Tunisia 
+                  option(value='403')  &nbsp; Uganda 
+                  option(value='395')  &nbsp; Zambia 
+                  option(value='363')  &nbsp; Zimbabwe 
+                  option(value='106')  Central &amp; Latin America 
+                  option(value='356')  &nbsp; Argentina 
+                  option(value='391')  &nbsp; Barbados 
+                  option(value='397')  &nbsp; Bolivia 
+                  option(value='376')  &nbsp; Brazil 
+                  option(value='357')  &nbsp; Chile 
+                  option(value='406')  &nbsp; Colombia 
+                  option(value='388')  &nbsp; Costa Rica 
+                  option(value='332')  &nbsp; Cuba 
+                  option(value='405')  &nbsp; Ecuador 
+                  option(value='399')  &nbsp; Guyana 
+                  option(value='358')  &nbsp; Jamaica 
+                  option(value='161')  &nbsp; Mexico 
+                  option(value='381')  &nbsp; Panama 
+                  option(value='374')  &nbsp; Peru 
+                  option(value='408')  &nbsp; Tanzania 
+                  option(value='375')  &nbsp; Uruguay 
+                  option(value='355')  &nbsp; Venezuela 
+                  option(value='109')  Middle East 
+                  option(value='337')  &nbsp; Iran 
+                  option(value='379')  &nbsp; Israel 
+                  option(value='338')  &nbsp; Jordan 
+                  option(value='327')  &nbsp; Kuwait 
+                  option(value='367')  &nbsp; Lebanon 
+                  option(value='328')  &nbsp; Oman 
+                  option(value='341')  &nbsp; Qatar 
+                  option(value='342')  &nbsp; Saudi Arabia 
+                  option(value='348')  &nbsp; Syria 
+                  option(value='351')  &nbsp; Turkey 
+                  option(value='352')  &nbsp; United Arab Emirates 
+                  option(value='362')  &nbsp; Yemen 
+                  option(value='107')  Oceania 
+                  option(value='142')  &nbsp; Australia 
+                  option(value='365')  &nbsp; Fiji 
+                  option(value='143')  &nbsp; New Zealand 
+                  option(value='370')  &nbsp; Papua New Guinea 
+                  option(value='71')  Regional Focus - ASEAN 
+            .col-sm-2.col-md-2.col-lg-2
+              .form-group
+                select#asiapediaTopic.form-control.radius-none(name='topic')
+                  option(value='')  Topics 
+                  option(value='')  --Any-- 
+                  option(value='41')  Market Entry 
+                  option(value='168')  Business Intelligence 
+                  option(value='201')  Audit 
+                  option(value='211')  HR &amp; Payroll 
+                  option(value='245')  Taxation 
+                  option(value='256')  Legal 
+                  option(value='259')  Due Diligence 
+                  option(value='264')  Corporate Establishment 
+                  option(value='294')  Accounting 
+                  option(value='321')  Technology 
+            .col-sm-2.col-md-2.col-lg-2
+              .form-group
+                select#asiapediaType.form-control.radius-none(name='type', onchange="if(this.value=='investor_tools') window.location = 'https://www.dezshira.com/library/investor_tools/';")
+                  option(value='') Type
+                  option(value='article') Article
+                  option(value='qa') Q&amp;A 
+                  option(value='infographic') Infographic
+                  option(value='presentation') Presentation
+                  option(value='videographic') Videographic
+                  option(value='video') Video
+                  option(value='publications') Magazines and Guides
+                  option(value='treaties') Treaties
+                  option(value='industry-profile') Industry Profile
+                  option(value='investor_tools') Investor Tools
+            .col-sm-2.col-md-2.col-lg-2
+              .form-group
+                select#asiapediaLanguage.form-control.radius-none(name='language')
+                  option(value='') Language
+                  option(value='15') EN
+                  option(value='112') CN
+                  option(value='21') FR
+                  option(value='19') DE
+                  option(value='20') ES
+                  option(value='120') RU
+                  option(value='18') IT
+            .col-sm-1.col-md-1.col-lg-1
+              button.btn.btn-secondary(onclick='searchResource();')
+                i.fa.fa-search(aria-hidden='true')
+        .row
+          .col-sm-12.col-md-12.col-lg-12
+            ul.services_link
+              li
+                a(href='https://www.dezshira.com/library/search?services=168') Business Intelligence
+              li
+                a(href='https://www.dezshira.com/library/search?services=264') Corporate Establisment and Structuring
+              li
+                a(href='https://www.dezshira.com/library/search?services=423') Due Diligence
+              li
+                a(href='https://www.dezshira.com/library/search?services=178') Accounting
+              li
+                a(href='https://www.dezshira.com/library/search?services=201') HR and Payroll
+              li
+                a(href='https://www.dezshira.com/library/search?services=8') Tax
+              li
+                a(href='https://www.dezshira.com/library/search?services=178') Audit and Risk Advisory
+              li
+                a(href='https://www.dezshira.com/library/search?services=210') Technology
+              li
+                a(href='#') Outbound Direct Investment
+        .container
+          .row
+            h3.text-center.pb-4.pt-6 Pick a Region to Explore
+            ul.list-inline
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=32')
+                      .title China
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/china.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=39')
+                      .title Hong Kong
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/hong-kong.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=34')
+                      .title Vietnam
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/vietnam.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=35')
+                      .title Singapore
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/singapore.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=43')
+                      .title Myanmar
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/myanmar.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=72')
+                      .title Indonesia
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/indonesia.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=73')
+                      .title Malaysia
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/malaysia.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=75')
+                      .title Thailand
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/thailand.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=76')
+                      .title Brunei
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/brunei.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=77')
+                      .title Cambodia
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/cambodia.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=78')
+                      .title Laos
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/laos.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=331')
+                      .title Philippines
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/philippines.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=33')
+                      .title India
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/india.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=36')
+                      .title Russia
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/russia.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=426')
+                      .title Silk Road
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/silk-road.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=111')
+                      .title United Kingdom
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/united-kingdom.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=80')
+                      .title Spain
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/spain.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=79')
+                      .title France
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/france.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=66')
+                      .title Germany
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/germany.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=65')
+                      .title Italy
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/italy.jpg', alt='')
+              li
+                .locationThumbnail
+                  .hoverImage
+                    a(href='https://www.dezshira.com/library/search?location=141')
+                      .title Canada
+                      figure
+                        img(src='https://www.dezshira.com/userfiles/resources/countries/canada.jpg', alt='')
+            .text-center
+              a.btn.btn-outline-secondary.mt-4.b-4(href='//www.dezshira.com/library/countries') More Countries
+    
+    section.gray-light-bg.asiapedia_homepage.pt-5.pb-5
+      .container
+        h2.text-center.mb-4.mt-2
+          strong Featured Resources
+        .row.asiapedia-resources
+          .col-xs-12.col-lg-3.col-md-3.col-sm-4
+            .asiapedia-desks
+              .ThumbBlock.hoverImage
+                figure
+                  a(href='https://www.dezshira.com/library/presentation/leveraging-vietnam-free-trade-agreements.html')
+                    img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/asiapedia/thumb-presentation.jpg')
+              .eventBody
+                h3.mt-2.mb-1
+                  a(href='https://www.dezshira.com/library/presentation/leveraging-vietnam-free-trade-agreements.html')
+                    strong Leveraging Vietnam&apos;s Free Trade Agreements
+                .dateTime
+                  i.far.fa-calendar-alt
+                  |  August 2019
+                p
+                  | On August 22, our Business Intelligence Manager, Maxfield Brown, hosted a webinar discussing Vietnam&rsquo;s free trade agreement network and how to leverage the country&rsquo;s rules of origin to reduce tariffs.
+              .credit
+                strong FREE
+                ul.list-inline.pull-right
+                  li(data-toggle='tooltip', data-placement='top', title='', data-original-title='Presentation')
+                    i.fas.fa-book
+          .col-xs-12.col-lg-3.col-md-3.col-sm-4
+            .asiapedia-desks
+              .ThumbBlock.hoverImage
+                figure
+                  a(href='https://www.dezshira.com/library/article/case-study-education-sector-china.html')
+                    img.img-responsive(src='https://resource.dezshira.com/resize/650x400/Resources/8400/China-Briefing-Investing-in-ChinaCus-Economic-Development-Zones.jpg')
+              .eventBody
+                h3.mt-2.mb-1
+                  a(href='https://www.dezshira.com/library/article/case-study-education-sector-china.html')
+                    strong Case Study: Education Sector in China
+                .dateTime
+                  i.far.fa-calendar-alt
+                  |  August 2019
+                p
+                  | For foreign investors in the education industry, there are a number of restrictions on investments; many organizations operate in the market through joint-ventures or programs with local partners. It is not uncommon for this reliance on external shar...
+              .credit
+                strong FREE
+                ul.list-inline.pull-right
+                  li(data-toggle='tooltip', data-placement='top', title='', data-original-title='Articles')
+                    i.fas.fa-newspaper
+          .col-xs-12.col-lg-3.col-md-3.col-sm-4
+            .asiapedia-desks
+              .ThumbBlock.hoverImage
+                figure
+                  a(href='https://www.dezshira.com/multimedia/view/market-entry-options-foreign-companies-india.html')
+                    img.img-responsive(src='https://resource.dezshira.com/resize/650x400/Multimedia/8401/India-Briefing-Special-Economic-Zones-in-Mumbai-Navi-Mumbai-and-Thane-3.jpg')
+              .eventBody
+                h3.mt-2.mb-1
+                  a(href='https://www.dezshira.com/multimedia/view/market-entry-options-foreign-companies-india.html')
+                    strong Market Entry Options for Foreign Companies in India 
+                .dateTime
+                  i.far.fa-calendar-alt
+                  |  August 2019
+                p
+                  | Watch this webinar to understand the different entity models available to structure your India business and the recent regulatory reforms that have taken place to improve the ease of doing business in India.
+              .credit
+                strong FREE
+                ul.list-inline.pull-right
+                  li(data-toggle='tooltip', data-placement='top', title='', data-original-title='Webinar')
+                    i.fas.fa-play-circle
+                  li(data-toggle='tooltip', data-placement='top', title='', data-original-title='Login to access')
+                    i.fa.fa-lock
+          .col-xs-12.col-lg-3.col-md-3.col-sm-4
+            .asiapedia-desks
+              .ThumbBlock.hoverImage
+                figure
+                  a(href='https://www.dezshira.com/multimedia/view/china-regulatory-watch-FTZ-new-customs-declarations.html')
+                    img.img-responsive(src='https://resource.dezshira.com/resize/650x400/Multimedia/8416/China_Regulatory_Watch_-_September_2_2019.jpg')
+              .eventBody
+                h3.mt-2.mb-1
+                  a(href='https://www.dezshira.com/multimedia/view/china-regulatory-watch-FTZ-new-customs-declarations.html')
+                    strong China Regulatory Watch &ndash; September 2, 2019
+                .dateTime
+                  i.far.fa-calendar-alt
+                  |  September 2019
+                p
+                  | This week&apos;s episode will cover the naming of 6 new free trade zone locations, a two-step customs declaration and a few more headlines that caught our attention.
+              .credit
+                strong FREE
+                ul.list-inline.pull-right
+                  li(data-toggle='tooltip', data-placement='top', title='', data-original-title='Podcast')
+                    i.fas.fa-play-circle
+    
+    
+          // /row
+
+
+
+    // End Content
+
+block js
+    |
+    |
+    script(src='https://www.dezshira.com/themes/dsa/js/fontawesome-all.min.js')
+
+block modal
+    |
+    |
+    // Start modal
+    #quickViewModal.modal.fade(role='dialog', tabindex='-1', aria-labelledby='gridModalLabel')
+        .modal-dialog(role='document')
+            .modal-content.radius-none
+                .modal-header.section-title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#gridSystemModalLabel.modal-title Our Regional Publications
+                .modal-body.top-bg-contain.book-detail-bg-banner
+                    #iframeContainer
+
+    #Loginpopup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog.modal-md
+            .modal-content
+                .modal-header.text-center
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    a(href='https://www.dezshira.com/library')
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-center A place to share knowledge and better understand Asia
+                .modal-body
+                    .row
+                        .col-sm-6.col-md-6.col-lg-6
+                            h4#myModalLabel.modal-title.text-center Log In
+                            form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="far fa-envelope"></i>
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="fas fa-lock"></i>
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                        small Forgot Password?
+                                .form-group.text-center
+                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                .form-group.text-center
+                                    small
+                                        | Don't have an account? 
+                                        a(href='https://www.dezshira.com/register') Sign Up
+                        .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                            .subscriptionBlock
+                                #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                        li(data-target='#subscriptionCarousel', data-slide-to='0')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                        .item.next.left
+                                            h4.modal-title.text-center Publication
+                                            i.sprite.sprite-retina.icon-publications
+                                            .carousel-caption
+                                                p Download our FREE magazines and guides
+                                        .item
+                                            h4.modal-title.text-center News 
+                                            i.sprite.sprite-retina.icon-news
+                                            .carousel-caption
+                                                p
+                                                    | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                        .item
+                                            h4.modal-title.text-center Multimedia
+                                            i.sprite.sprite-retina.icon-ksp
+                                            .carousel-caption
+                                                p Access presentations, webinars, podcasts, reports, Q&As and more
+                                        .item.active.left
+                                            h4.modal-title.text-center Dashboard
+                                            i.sprite.sprite-retina.icon-dashboard
+                                            .carousel-caption
+                                                p Track paid orders and connect with our support team
+                                    // Carousel controls
+
+    #logoDownload.modal.fade.logoDownload(role='dialog')
+        .modal-dialog
+            // Modal content
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal') ×
+                    a(href='https://www.dezshira.com/')
+                        img.logo.center-block.margin20Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png 2x')
+                .modal-body
+                    h4.section-title Dezan Shira & Associates logos
+                    table.table.table-striped
+                        tbody
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank') Dezan Shira & Associates logo_vertical(EPS)
+                                td.lightgreyColor 254KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
+                                td.lightgreyColor 14KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
+                                td.lightgreyColor 566KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
+                                td.lightgreyColor 49KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
+                                td.lightgreyColor 305KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
+                                td.lightgreyColor 18KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+
+
+    // End modal

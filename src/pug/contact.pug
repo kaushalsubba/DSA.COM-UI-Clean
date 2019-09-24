@@ -1,0 +1,656 @@
+extends layouts/_layout_default
+
+block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
+    - title = "Dezan shira"
+
+
+
+block content
+    // Start Content
+    section.TopBanner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/contactUSBanner.jpg')
+        .BannerCaption
+            .container
+                .row
+                    .col-sm-12.col-md-10.col-lg-10
+                        h1.text-left Contact Us
+                        h4 We want to help you and your team succeed in our neighborhood – Asia. Please introduce yourself so that our team can connect with you.
+
+    section.pb-5.pt-5
+        .container
+          .row
+            .col-sm-9.col-md-9.col-lg-9
+              h4.section-title.mb-2  Contact  - Dezan Shira &amp; Associates
+              form#entry_contacts(name='entry_contacts', method='post', action='https://www.dezshira.com/contact?action=post_form')
+                input(type='hidden', name='dsa_contact_token', value='82bd93fc03d504e597accaf582041ae72587347d1a10d4ff1e17ff1074f987ec')
+                input(type='hidden', name='to', value='info@dezshira.com')
+                input(type='hidden', name='request_uri', value='https://www.dezshira.com/services/business-intelligence-solutions')
+                input(type='hidden', name='validation', value='')
+                .kform.mt-2
+                  .row
+                    .col-md-4
+                      .form-group
+                        label(for='fname')
+                          span.required-field *
+                          |  First Name
+                        input#fname.form-control.radius-none.required(type='text', name='fname', value='')
+                    .col-md-4
+                      .form-group
+                        label(for='lname')
+                          span.required-field *
+                          |  Last Name
+                        input#lname.form-control.radius-none.required(type='text', name='lname', value='')
+                    .col-md-4
+                      .form-group
+                        label(for='email_address')
+                          span.required-field *
+                          |  Email Address
+                        input#email_address.form-control.radius-none.required.email(type='text', name='email_address', value='')
+                  .row
+                    .col-md-12
+                      .form-group
+                        label(for='organization')
+                          span.required-field *
+                          |  Organisation / Company
+                        input#organization.form-control.radius-none.required(type='text', name='organization', value='')
+                  .row
+                    .col-md-4
+                      .form-group
+                        label(for='telephone')
+                          span.required-field *
+                          |  Telephone
+                        input#telephone.form-control.radius-none.required(type='text', name='telephone', value='')
+                    .col-md-4
+                      .form-group
+                        label(for='company_website')
+                          span.required-field *
+                          |  Company Website
+                        input#company_website.form-control.radius-none.required(type='text', name='company_website', value='')
+                    .col-md-4
+                      .form-group
+                        label(for='country') Country/Territory
+                        select#country.form-control.radius-none(name='country')
+                          option(value='', selected='selected') --Please Select an Option--
+                          option(value='Belt & Road Initiative') Belt &amp; Road Initiative
+                          option(value='Afghanistan, Islamic State') Afghanistan, Islamic State
+                          option(value='Åland Islands') &angst;land Islands
+                          option(value='Albania') Albania
+                          option(value='Algeria') Algeria
+                          option(value='American Samoa') American Samoa
+                          option(value='Andorra, Principality of') Andorra, Principality of
+                          option(value='Angola') Angola
+                          option(value='Anguilla') Anguilla
+                          option(value='Antarctica') Antarctica
+                          option(value='Antigua and Barbuda') Antigua and Barbuda
+                          option(value='Argentina') Argentina
+                          option(value='Armenia') Armenia
+                          option(value='Aruba') Aruba
+                          option(value='Australia') Australia
+                          option(value='Austria') Austria
+                          option(value='Azerbaijan') Azerbaijan
+                          option(value='Bahamas') Bahamas
+                          option(value='Bahrain') Bahrain
+                          option(value='Bangladesh') Bangladesh
+                          option(value='Barbados') Barbados
+                          option(value='Belarus') Belarus
+                          option(value='Belgium') Belgium
+                          option(value='Belize') Belize
+                          option(value='Benin') Benin
+                          option(value='Bermuda') Bermuda
+                          option(value='Bhutan') Bhutan
+                          option(value='Bolivia') Bolivia
+                          option(value='Bosnia-Herzegovina') Bosnia-Herzegovina
+                          option(value='Botswana') Botswana
+                          option(value='Bouvet Island') Bouvet Island
+                          option(value='Brazil') Brazil
+                          option(value='British Indian Ocean Terr.') British Indian Ocean Terr.
+                          option(value='Brunei Darussalam') Brunei Darussalam
+                          option(value='Bulgaria') Bulgaria
+                          option(value='Burkina Faso') Burkina Faso
+                          option(value='Burundi') Burundi
+                          option(value='Cambodia, Kingdom of') Cambodia, Kingdom of
+                          option(value='Cameroon') Cameroon
+                          option(value='Canada') Canada
+                          option(value='Cape Verde') Cape Verde
+                          option(value='Cayman Islands') Cayman Islands
+                          option(value='Central African Republic') Central African Republic
+                          option(value='Chad') Chad
+                          option(value='Chile') Chile
+                          option(value='China') China
+                          option(value='Taiwan') Taiwan
+                          option(value='Christmas Island') Christmas Island
+                          option(value='Cocos (Keeling) Islands') Cocos (Keeling) Islands
+                          option(value='Colombia') Colombia
+                          option(value='Comoros') Comoros
+                          option(value='Congo') Congo
+                          option(value='Cook Islands') Cook Islands
+                          option(value='Costa Rica') Costa Rica
+                          option(value='Croatia') Croatia
+                          option(value='Cuba') Cuba
+                          option(value='Curaçao') Cura&ccedil;ao
+                          option(value='Cyprus') Cyprus
+                          option(value='Czech Republic') Czech Republic
+                          option(value='Congo, Democratic Republic') Congo, Democratic Republic
+                          option(value='Denmark') Denmark
+                          option(value='Djibouti') Djibouti
+                          option(value='Dominica') Dominica
+                          option(value='Dominican Republic') Dominican Republic
+                          option(value='East Timor') East Timor
+                          option(value='Ecuador') Ecuador
+                          option(value='Egypt') Egypt
+                          option(value='El Salvador') El Salvador
+                          option(value='Equatorial Guinea') Equatorial Guinea
+                          option(value='Eritrea') Eritrea
+                          option(value='Estonia') Estonia
+                          option(value='Ethiopia') Ethiopia
+                          option(value='Falkland Islands') Falkland Islands
+                          option(value='Faroe Islands') Faroe Islands
+                          option(value='Fiji') Fiji
+                          option(value='Finland') Finland
+                          option(value='France') France
+                          option(value='French Guyana') French Guyana
+                          option(value='French Polynesia') French Polynesia
+                          option(value='French Southern Territories') French Southern Territories
+                          option(value='Gabon') Gabon
+                          option(value='Gambia') Gambia
+                          option(value='Georgia') Georgia
+                          option(value='Germany') Germany
+                          option(value='Ghana') Ghana
+                          option(value='Gibraltar') Gibraltar
+                          option(value='Greece') Greece
+                          option(value='Greenland') Greenland
+                          option(value='Grenada') Grenada
+                          option(value='Guadeloupe (French)') Guadeloupe (French)
+                          option(value='Guam (USA)') Guam (USA)
+                          option(value='Guatemala') Guatemala
+                          option(value='Guernsey') Guernsey
+                          option(value='Guinea') Guinea
+                          option(value='Guinea Bissau') Guinea Bissau
+                          option(value='Guyana') Guyana
+                          option(value='Haiti') Haiti
+                          option(value='Heard and McDonald Islands') Heard and McDonald Islands
+                          option(value='Holy See (Vatican City)') Holy See (Vatican City)
+                          option(value='Honduras') Honduras
+                          option(value='Hong Kong') Hong Kong
+                          option(value='Hungary') Hungary
+                          option(value='Iceland') Iceland
+                          option(value='India') India
+                          option(value='Indonesia') Indonesia
+                          option(value='Iran') Iran
+                          option(value='Iraq') Iraq
+                          option(value='Ireland') Ireland
+                          option(value='Isle of Man') Isle of Man
+                          option(value='Israel') Israel
+                          option(value='Italy') Italy
+                          option(value="Ivory Coast (Cote D'Ivoire)") Ivory Coast (Cote D&apos;Ivoire)
+                          option(value='Jamaica') Jamaica
+                          option(value='Japan') Japan
+                          option(value='Jersey') Jersey
+                          option(value='Jordan') Jordan
+                          option(value='Kazakhstan') Kazakhstan
+                          option(value='Kenya') Kenya
+                          option(value='Kiribati') Kiribati
+                          option(value='Kuwait') Kuwait
+                          option(value='Kyrgyz Republic (Kyrgyzstan)') Kyrgyz Republic (Kyrgyzstan)
+                          option(value='Laos') Laos
+                          option(value='Latvia') Latvia
+                          option(value='Lebanon') Lebanon
+                          option(value='Lesotho') Lesotho
+                          option(value='Liberia') Liberia
+                          option(value='Libya') Libya
+                          option(value='Liechtenstein') Liechtenstein
+                          option(value='Lithuania') Lithuania
+                          option(value='Luxembourg') Luxembourg
+                          option(value='Macau') Macau
+                          option(value='Macedonia') Macedonia
+                          option(value='Madagascar') Madagascar
+                          option(value='Malawi') Malawi
+                          option(value='Malaysia') Malaysia
+                          option(value='Maldives') Maldives
+                          option(value='Mali') Mali
+                          option(value='Malta') Malta
+                          option(value='Marshall Islands') Marshall Islands
+                          option(value='Martinique') Martinique
+                          option(value='Mauritania') Mauritania
+                          option(value='Mauritius') Mauritius
+                          option(value='Mayotte') Mayotte
+                          option(value='Mexico') Mexico
+                          option(value='Micronesia') Micronesia
+                          option(value='Moldavia') Moldavia
+                          option(value='Monaco') Monaco
+                          option(value='Mongolia') Mongolia
+                          option(value='Montenegro') Montenegro
+                          option(value='Montserrat') Montserrat
+                          option(value='Morocco') Morocco
+                          option(value='Mozambique') Mozambique
+                          option(value='Myanmar') Myanmar
+                          option(value='Namibia') Namibia
+                          option(value='Nauru') Nauru
+                          option(value='Nepal') Nepal
+                          option(value='Netherlands') Netherlands
+                          option(value='New Caledonia (French)') New Caledonia (French)
+                          option(value='New Zealand') New Zealand
+                          option(value='Nicaragua') Nicaragua
+                          option(value='Niger') Niger
+                          option(value='Nigeria') Nigeria
+                          option(value='Niue') Niue
+                          option(value='Norfolk Island') Norfolk Island
+                          option(value='North Korea') North Korea
+                          option(value='Northern Mariana Islands') Northern Mariana Islands
+                          option(value='Norway') Norway
+                          option(value='Oman') Oman
+                          option(value='Other') Other
+                          option(value='Pakistan') Pakistan
+                          option(value='Palau') Palau
+                          option(value='Palestine, State of') Palestine, State of
+                          option(value='Panama') Panama
+                          option(value='Papua New Guinea') Papua New Guinea
+                          option(value='Paraguay') Paraguay
+                          option(value='Peru') Peru
+                          option(value='Philippines') Philippines
+                          option(value='Pitcairn Island') Pitcairn Island
+                          option(value='Poland') Poland
+                          option(value='Portugal') Portugal
+                          option(value='Puerto Rico') Puerto Rico
+                          option(value='Qatar') Qatar
+                          option(value='Reunion (French)') Reunion (French)
+                          option(value='Romania') Romania
+                          option(value='Russia') Russia
+                          option(value='Rwanda') Rwanda
+                          option(value='S. Georgia & S. Sandwich Is.') S. Georgia &amp; S. Sandwich Is.
+                          option(value='Saint Barthélemy') Saint Barth&eacute;lemy
+                          option(value='Saint Helena') Saint Helena
+                          option(value='Saint Kitts & Nevis Anguilla') Saint Kitts &amp; Nevis Anguilla
+                          option(value='Saint Lucia') Saint Lucia
+                          option(value='Saint Martin') Saint Martin
+                          option(value='Saint Pierre and Miquelon') Saint Pierre and Miquelon
+                          option(value='Saint Tome (Sao Tome)') Saint Tome (Sao Tome)
+                          option(value='Saint Vincent & Grenadines') Saint Vincent &amp; Grenadines
+                          option(value='Samoa') Samoa
+                          option(value='San Marino') San Marino
+                          option(value='Saudi Arabia') Saudi Arabia
+                          option(value='Senegal') Senegal
+                          option(value='Serbia') Serbia
+                          option(value='Seychelles') Seychelles
+                          option(value='Sierra Leone') Sierra Leone
+                          option(value='Singapore') Singapore
+                          option(value='Slovak Republic') Slovak Republic
+                          option(value='Slovenia') Slovenia
+                          option(value='Solomon Islands') Solomon Islands
+                          option(value='Somalia') Somalia
+                          option(value='South Africa') South Africa
+                          option(value='South Korea') South Korea
+                          option(value='South Sudan') South Sudan
+                          option(value='Spain') Spain
+                          option(value='Sri Lanka') Sri Lanka
+                          option(value='Sudan') Sudan
+                          option(value='Suriname') Suriname
+                          option(value='Svalbard and Jan Mayen Is.') Svalbard and Jan Mayen Is.
+                          option(value='Swaziland') Swaziland
+                          option(value='Sweden') Sweden
+                          option(value='Switzerland') Switzerland
+                          option(value='Syria') Syria
+                          option(value='Tadjikistan') Tadjikistan
+                          option(value='Tanzania') Tanzania
+                          option(value='Thailand') Thailand
+                          option(value='Togo') Togo
+                          option(value='Tokelau') Tokelau
+                          option(value='Tonga') Tonga
+                          option(value='Trinidad and Tobago') Trinidad and Tobago
+                          option(value='Tunisia') Tunisia
+                          option(value='Turkey') Turkey
+                          option(value='Turkmenistan') Turkmenistan
+                          option(value='Turks and Caicos Islands') Turks and Caicos Islands
+                          option(value='Tuvalu') Tuvalu
+                          option(value='Uganda') Uganda
+                          option(value='Ukraine') Ukraine
+                          option(value='United Arab Emirates') United Arab Emirates
+                          option(value='United Kingdom') United Kingdom
+                          option(value='United States') United States
+                          option(value='Uruguay') Uruguay
+                          option(value='USA Minor Outlying Islands') USA Minor Outlying Islands
+                          option(value='Uzbekistan') Uzbekistan
+                          option(value='Vanuatu') Vanuatu
+                          option(value='Venezuela') Venezuela
+                          option(value='Vietnam') Vietnam
+                          option(value='Virgin Islands (British)') Virgin Islands (British)
+                          option(value='Virgin Islands (USA)') Virgin Islands (USA)
+                          option(value='Wallis and Futuna Islands') Wallis and Futuna Islands
+                          option(value='Western Sahara') Western Sahara
+                          option(value='Yemen') Yemen
+                          option(value='Yugoslavia (former)') Yugoslavia (former)
+                          option(value='Zambia') Zambia
+                          option(value='Zimbabwe') Zimbabwe
+                  .row
+                    .col-md-6
+                      .form-group
+                        label(for='investment_destination')
+                          span.required-field *
+                          |  Investment Destination Of Interest
+                        select#investment_destination.form-control.radius-none.required(name='investment_destination')
+                          option(value='', selected='selected') --Please Select an Option--
+                          option(value='Belt & Road Initiative') Belt &amp; Road Initiative
+                          option(value='China') China
+                          option(value='Hong Kong') Hong Kong
+                          option(value='India') India
+                          option(value='Indonesia') Indonesia
+                          option(value='Malaysia') Malaysia
+                          option(value='Philippines') Philippines
+                          option(value='Russia') Russia
+                          option(value='Singapore') Singapore
+                          option(value='Thailand') Thailand
+                          option(value='Vietnam') Vietnam
+                    .col-md-6
+                      .form-group
+                        label(for='other_investment_destination') Specify Other Investment Destination Of Interest 
+                        input#other_investment_destination.form-control.radius-none(type='text', name='other_investment_destination', value='')
+                  .row
+                    .col-md-6
+                      .form-group
+                        label(for='type_service_required')
+                          span.required-field *
+                          |  Type of Service Required
+                        select#type_service_required.form-control.radius-none.required(name='type_service_required')
+                          option(value='', selected='selected') --Please Select an Option--
+                          option(value='Accounting, Financial Reporting & Review') Accounting, Financial Reporting &amp; Review
+                          option(value='Audit and risk advisory') Audit and risk advisory
+                          option(value='Country Comparison / Site Selection') Country Comparison / Site Selection
+                          option(value='Corporate Establishment and Governance') Corporate Establishment and Governance
+                          option(value='Legal Services') Legal Services
+                          option(value='Due Diligence') Due Diligence
+                          option(value='HR Advisory and Payroll') HR Advisory and Payroll
+                          option(value='Intellectual Property') Intellectual Property
+                          option(value='Joint Ventures and Match making') Joint Ventures and Match making
+                          option(value='Mergers and Acquisitions') Mergers and Acquisitions
+                          option(value='Market Research and Business Intelligence') Market Research and Business Intelligence
+                          option(value='Recruitment') Recruitment
+                          option(value='Transfer Pricing') Transfer Pricing
+                          option(value='Visa & Work Permits') Visa &amp; Work Permits
+                          option(value='Tax Advisory & Planning') Tax Advisory &amp; Planning
+                          option(value='Technology, IT and ERP Services') Technology, IT and ERP Services
+                          option(value='Other') Other
+                    .col-md-6
+                      .form-group
+                        label(for='other_type_service_required') Specify Other Type of Service Required 
+                        input#other_type_service_required.form-control.radius-none(type='text', name='other_type_service_required', value='')
+                  .row
+                    .col-md-6
+                      .form-group
+                        label(for='reference')
+                          span.required-field *
+                          |  How did you hear about us?
+                        select#reference.form-control.radius-none.required(name='reference')
+                          option(value='', selected='selected') --Please Select an Option--
+                          option(value='Alliance - ETL') Alliance - ETL
+                          option(value='Alliance - IBA') Alliance - IBA
+                          option(value='Alliance - IR Global') Alliance - IR Global
+                          option(value='Alliance - LEA') Alliance - LEA
+                          option(value='Asia Briefing') Asia Briefing
+                          option(value='Clients') Clients
+                          option(value='Embassy, Consulate, Chamber') Embassy, Consulate, Chamber
+                          option(value='Internal') Internal
+                          option(value='Networking') Networking
+                          option(value='Other') Other
+                          option(value='Other AB Partner') Other AB Partner
+                          option(value='Personal') Personal
+                          option(value='Referral - Affiliate') Referral - Affiliate
+                          option(value='Referral - Informal') Referral - Informal
+                          option(value='YPO') YPO
+                          option(value='Alliance - Integra') Alliance - Integra
+                    .col-md-6
+                      .form-group
+                        label(for='other_reference') Specify Other Source Where You Found Us 
+                        input#other_reference.form-control.radius-none(type='text', name='other_reference', value='')
+                  .row
+                    .col-md-12
+                      .form-group
+                        label(for='comments') Message
+                        textarea#comments.form-control.radius-none(name='comments', rows='15')
+                  .row
+                    .col-md-12
+                      .row
+                        .col-md-6
+                          p
+                            strong Security Check
+                            br
+                            br
+                            img#siimage(src='https://www.dezshira.com/includes/modules/securimage/securimage_show.php', alt='captcha image')
+                            a#reload_captcha.btn(title='Reload Code')
+                              i.fas.fa-sync-alt
+                        .col-md-6
+                          br
+                          br
+                          input.form-control.required(type='text', name='captcha_code', value='', placeholder='Security Code')
+                          br
+                          small The code is case-sensitive
+                  .row
+                    .col-md-12
+                      input#submit.mb-3.btn.btn-primary.text-uppercase.submit(type='submit', value='Submit', name='submit')
+                      .spacer
+            .col-sm-3.col-md-3.col-lg-3
+              .rightBlockSection
+                h4.section-title SEND US AN EMAIL
+                ul.list
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#')
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise ASEAN
+                    .country
+                      a(href='mailto:asean@dezshira.com') asean@dezshira.com
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#') 
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise Belt &amp; Road 
+                    .country
+                      a(href='mailto:silkroad@dezshira.com') silkroad@dezshira.com
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#')
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise China
+                    .country
+                      a(href='mailto:china@dezshira.com') china@dezshira.com
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#')
+                        | 
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise Hong Kong
+                    .country
+                      a(href='mailto:hongkong@dezshira.com') hongkong@dezshira.com
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#')
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise India
+                    .country
+                      a(href='mailto:india@dezshira.com') india@dezshira.com
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#')
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise Indonesia
+                    .country
+                      a(href='mailto:indonesia@dezshira.com') indonesia@dezshira.com
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#')
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise Russia
+                    .country
+                      a(href='mailto:russia@dezshira.com') russia@dezshira.com
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#')
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise Singapore
+                    .country
+                      a(href='mailto:singapore@dezshira.com') singapore@dezshira.com
+                  li
+                    .social.pull-right
+                      a.ml-1(href='#')
+                        i.far.fa-arrow-alt-circle-right
+                    .expertise Vietnam
+                    .country
+                      a(href='mailto:china@dezshira.com') vietnam@dezshira.com
+                  li
+                    a.btn-link(href='https://www.dezshira.com/office') Show me all &gt;
+
+
+    // End Content
+
+block js
+    |
+    |
+    script(src='https://www.dezshira.com/themes/dsa/js/fontawesome-all.min.js')
+
+block modal
+    |
+    |
+    // Start modal
+    #quickViewModal.modal.fade(role='dialog', tabindex='-1', aria-labelledby='gridModalLabel')
+        .modal-dialog(role='document')
+            .modal-content.radius-none
+                .modal-header.section-title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#gridSystemModalLabel.modal-title Our Regional Publications
+                .modal-body.top-bg-contain.book-detail-bg-banner
+                    #iframeContainer
+
+    #Loginpopup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog.modal-md
+            .modal-content
+                .modal-header.text-center
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    a(href='https://www.dezshira.com/library')
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-center A place to share knowledge and better understand Asia
+                .modal-body
+                    .row
+                        .col-sm-6.col-md-6.col-lg-6
+                            h4#myModalLabel.modal-title.text-center Log In
+                            form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="far fa-envelope"></i>
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="fas fa-lock"></i>
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                        small Forgot Password?
+                                .form-group.text-center
+                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                .form-group.text-center
+                                    small
+                                        | Don't have an account? 
+                                        a(href='https://www.dezshira.com/register') Sign Up
+                        .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                            .subscriptionBlock
+                                #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                        li(data-target='#subscriptionCarousel', data-slide-to='0')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                        .item.next.left
+                                            h4.modal-title.text-center Publication
+                                            i.sprite.sprite-retina.icon-publications
+                                            .carousel-caption
+                                                p Download our FREE magazines and guides
+                                        .item
+                                            h4.modal-title.text-center News 
+                                            i.sprite.sprite-retina.icon-news
+                                            .carousel-caption
+                                                p
+                                                    | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                        .item
+                                            h4.modal-title.text-center Multimedia
+                                            i.sprite.sprite-retina.icon-ksp
+                                            .carousel-caption
+                                                p Access presentations, webinars, podcasts, reports, Q&As and more
+                                        .item.active.left
+                                            h4.modal-title.text-center Dashboard
+                                            i.sprite.sprite-retina.icon-dashboard
+                                            .carousel-caption
+                                                p Track paid orders and connect with our support team
+                                    // Carousel controls
+
+    #logoDownload.modal.fade.logoDownload(role='dialog')
+        .modal-dialog
+            // Modal content
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal') ×
+                    a(href='https://www.dezshira.com/')
+                        img.logo.center-block.margin20Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png 2x')
+                .modal-body
+                    h4.section-title Dezan Shira & Associates logos
+                    table.table.table-striped
+                        tbody
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank') Dezan Shira & Associates logo_vertical(EPS)
+                                td.lightgreyColor 254KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
+                                td.lightgreyColor 14KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
+                                td.lightgreyColor 566KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
+                                td.lightgreyColor 49KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
+                                td.lightgreyColor 305KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
+                                td.lightgreyColor 18KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+
+
+    // End modal

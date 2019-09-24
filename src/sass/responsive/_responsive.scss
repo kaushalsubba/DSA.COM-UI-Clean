@@ -29,13 +29,15 @@
             position: relative;
             z-index: 11;
             #accordion {
-                width: auto;
+				width: auto;
+				.panel{ background: transparent;}
             }
         }
         .logo {
             width: 100%;
             max-width: 100%;
-        }
+		}
+		.panelTab{ border: none;}
 	}
 
     ///navigation
@@ -57,7 +59,7 @@
 		border-top: 0;
 	}
 	.navbar-inverse {
-		background: 0 0;
+		background: #ebebeb;
 		z-index: 10;
 		border-top: solid 3px #1a2940;
 		.navbar-toggle {
@@ -216,4 +218,40 @@
 		}
 			}
 	}
+
+	//contact form
+	.kform {
+		.btn-primary{ float:inherit; margin-top: 30px; }
+	}
+
+	//asiapedia
+	.TopBanner.asiapedia-banner{
+		height: auto;
+		.BannerCaption{
+			margin-top: 0px;
+		}
+	}
+	.asiapedia_page{
+		.locationThumbnail{ width: 100%;}
+	}
+	.services_link { margin-top: 15px;
+		margin-left: 15px;
+		li{ float: none;
+			&:first-child{ list-style:inherit ;}
+		}
+	}
+
+	//service contact form
+	form#contact_form #loading {width:100%;left:0;}
+	.list-inline.research {
+	li{ width:100%;}
+	}
+	.rightBlockPosition{ display:none;}
+	.leftBlockSection{ display:none;}
+	section.contact.service_cta {
+	.fa-envelope{ text-align:left; float:none;}
+	.submit_btn{ margin-top:30px; float:none;}
+}
+
+.text-align{ text-align:left;}
 }

@@ -60,10 +60,10 @@
     color: #fff;
     background-color: #1D74CE;
     border-color: #1D74CE;
-    &:hover {
+    &:hover,&:focus {
         color: #fff;
-        background-color: #1D74CE;
-        border-color: #1D74CE;
+        background-color: #314d77;
+        border-color: #314d77;
     }
 }
 
@@ -88,6 +88,18 @@
         border-color: #6c757d;
     }
 }
+
+.btn-white {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    &:hover {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+}
+
 .btn-outline-white {
     color: #ffffff;
     background-color: transparent;

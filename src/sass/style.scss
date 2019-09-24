@@ -22,8 +22,11 @@
 @import "layout/left-navbar";
 
 // End Page ------------------------------------------------------------
-// start responsive ----------------------------------------------------------------
-@import "responsive/responsive";
+
 // start pages ----------------------------------------------------------------
 @import "pages/home";
+@import "pages/asiapedia";
 // end page  ---------------------------------------------------------
+
+// start responsive ----------------------------------------------------------------
+@import "responsive/responsive";

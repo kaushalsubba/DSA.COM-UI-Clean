@@ -1,4 +1,83 @@
 
+//for material
+	$(document).ready(function(){
+		$('form.material').materialForm(); // Apply material
+		$('form.material').each(function(i, obj) {
+			$(this).validate({
+			errorPlacement:function(error, element) {
+					var name = element.attr('name');	
+			}
+			}); // Apply validator with no error messages but classes only
+		});
+
+	});
+
+	//mini contact form submit
+    var frm = $('form#contact_form');
+
+    frm.submit(function (e) {
+		e.preventDefault();
+		var isvalid = $("form.material").valid();
+		if (isvalid) {
+		$('#loading').show();
+		$('#message').html('<i class="fas fa-spinner"></i>');
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+				
+				$('#message').removeClass("alert alert-danger alert-success");
+				if(data=="invalid_code"){
+					$('#message').addClass("alert alert-danger").html('Invalid Security Code.');
+					$('#loading').hide();
+					$("#reload_captcha").click();
+				} else if(data=="invalid_token"){
+					$('#message').addClass("alert alert-danger").html('Invalid Form Token.');
+					$('#loading').hide();
+					$("#reload_captcha").click();
+				} else {
+					$('#message').addClass("alert alert-success").html('Thank you for your message.');
+					
+					
+					//frm.find('input, textarea').each(function(i){
+					//	$(this).val();
+					//});
+					document.getElementById("contact_form").reset();
+					$("#reload_captcha").click();
+					$('#loading').hide();
+				}
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+				$('#loading').hide();
+				$('#message').html('Sorry, response from the POST URL is empty: <br />'+xhr.status);
+				$("#reload_captcha").click();
+		  },
+        });
+		}
+    });
+	
+		$("#reload_captcha").click(function(){
+			$("#siimage").attr("src","");
+			d = new Date();
+			$("#siimage").attr("src", "https://www.dezshira.com/includes/modules/securimage/securimage_show_mini.php?"+d.getTime());
+		});
+	
+	$("#btn_mini_contact_form").click(function() {
+		$('html, body').animate({
+			scrollTop: ($("#mini_contact_form").offset().top)-300
+		}, 2000);
+	});
+	
+$('select#country').on('change', function() {
+  if ($(this).val()) {
+return $(this).css('color', '#333333');
+  } else {
+return $(this).css('color', 'gray');
+  }
+});
+
+
 $(document).ready(function(){					   
     /*scrollTop*/
       $('body').scroll({target: ".section", offset: 50});   
@@ -158,5 +237,39 @@ if (width >= 1024) {
 		return "";
 	}
 
+ //service scroll on click CTA button and online enquiry button
+  $(".CTAscrollTo").on('click', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: ($(target).offset().top)
+    }, 1000);
+ });
  
- 
+//service inner right side CTA block 
+$(window).scroll(function() {
+ if(!$('body').hasClass( "mobile")){
+   var scroll = $(window).scrollTop();
+   var sectionOffset=500;
+   var sectionResearchTop=($('section.research-block').offset().top)-sectionOffset;
+
+   if (scroll > sectionOffset) {
+     $(".rightBlockSection").addClass("rightBlockPosition");
+   } else {
+     $(".rightBlockSection").removeClass("rightBlockPosition");
+   }
+   
+   if (scroll > sectionResearchTop) {
+      $(".rightBlockSection").removeClass("rightBlockPosition");
+   }
+ }
+});
+//service inner page collapse
+$('.panel-collapse').on('show.bs.collapse', function () {
+ $(this).parent('.panel').find('.fa-chevron-up').show();
+ $(this).parent('.panel').find('.fa-chevron-right').hide();
+})
+$('.panel-collapse').on('hide.bs.collapse', function () {
+ $(this).parent('.panel').find('.fa-chevron-up').hide();
+ $(this).parent('.panel').find('.fa-chevron-right').show();
+});

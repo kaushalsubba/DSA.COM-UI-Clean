@@ -1,0 +1,227 @@
+extends layouts/_layout_default
+
+block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
+    - title = "Dezan shira"
+
+
+
+block content
+    // Start Content
+    section.privacy-policy.pt-5.pb-5
+        .container
+          .row
+            .col-sm-12.col-md-12.col-lg-12
+              h2.display-4
+                u Privacy statement
+              h3 About this statement
+              p
+                | This privacy policy statement sets out the data processing practices carried out through your use of this web site by Dezan Shira &amp; Associates and its subsidiaries.
+              p
+                | Please read this Privacy Policy carefully to understand how we will treat your information before you start to use our Services or communicate with us about them. By using our Services, or communicating with us about them, you are accepting and consenting to the practices described in this Privacy Policy, including any updates and amendments. If you do not agree to the terms of this Privacy Policy, you must not access or use our Services or communicate with us about them. Your use of our Services and any dispute over privacy is subject to this Privacy Policy and any applicable 
+                a(href='http://www.dezshira.com/terms-of-use.html', target='_blank') Terms of Use
+                | , including any terms available at 
+                a(href='http://www.dezshira.com') http://www.dezshira.com
+                |  and/or any other agreements. In the event that the provisions of any such agreements differ from or conflict with the provisions of this Privacy Policy, the applicable terms or agreement will apply.
+              p
+                | If you have any requests concerning your personal information or any queries with regard to these practices please contact us.
+              h3 Links
+              p
+                | This privacy policy only covers Dezan Shira &amp; Associates web site at www.dezshira.com. Additional web sites under our subsidiary Asia Briefing, has its own respective privacy statements. We are not responsible for the data policies or procedures or the content of other linked web sites outside of Dezan Shira &amp; Associates.
+              h3 Information collected
+              p
+                | We collect personal information from visitors to this web site through the use of enquiry forms and every time you e-mail us your details. Other than this, we do not store or capture personal information but simply log your IP address (this is the technical standard which ensures messages get from one host to another and that the messages are understood) which is automatically recognised by the web server.
+              h3 Use of personal information
+              p
+                | We process personal information collected via this web site for certain legitimate business purposes, which include some or all of the following:
+              ul
+                li Identifying potential customers or subscribers.
+                li Dealing with your requests and enquiries.
+                li
+                  | Providing you with information about services offered by Dezan Shira &amp; Associates.
+                li Processing your application for employment at Dezan Shira &amp; Associates.
+                li
+                  | Determining and better understanding the performance of our website and promotional campaigns.
+              h3 Cookies
+              p
+                | Cookies may be used by us to provide you with customised information from our web site. A cookie is an element of data that a web site can send to your browser, which may then store it on your system. Cookies allow us to understand who has seen which pages and advertisements, to determine how frequently particular pages are visited and to determine the most popular areas of our web site. Cookies may also allow us to make our web site more user friendly by, for example, allowing us to save your password so that you do not have to re-enter it every time to visit our web site.
+              p
+                | We use cookies so that we can give you a better experience when you return to our web site. Most web browsers automatically accept cookies. You do not have to accept cookies, and you should read the information that came with your browser software to see how you can set up your browser to notify you when you receive a cookie, this will give you the opportunity to decide whether to accept it. If you disable cookies from your browser you may not be able to access certain features of a particular web site.
+              h3 Security
+              p
+                | We endeavor to take all reasonable steps to protect your personal information. All the data collected by us is stored on a secure server. The secure server software encrypts all information you input before it is sent to us.
+              h3 Disclosures
+              p
+                | We will only disclose personal information to reputable companies and suppliers we engage to process data on our behalf, (which may include companies within the Group).
+              h2 Internet-based Transfers
+              p
+                | Given that the Internet is a global environment, using the Internet to collect and process personal data necessarily involves the transmission of data on an international basis. Therefore, by browsing this web site and communicating electronically with us you acknowledge and agree to our processing of personal data in this way.
+              h3 Careers
+              p
+                | By registering on our careers site, you are deemed to consent to our processing personal data about you where necessary for the above purposes, including the processing of any sensitive personal data about you.
+              p Personal Data and your rights
+              p
+                | If we collect any personal data from you, you have the right to receive information about the personal data we hold about you.
+              p
+                | If at any time you no longer wish to receive any of our emails or other information for which you have subscribed via this website, then please contact us so that we can remove your relevant details.
+              h3 Changes to this Privacy Policy
+              p
+                | We may make changes to this Privacy Policy from time to time. You should check this page regularly to see our most up to date policy. We will tell you about any changes to this Privacy policy by showing the date of the changes in the &apos;Last updated&apos; section below. By using the website after the date we make any changes, you are agreeing to the changes.
+              p Last updated: May 2018
+
+
+
+    // End Content
+
+block js
+    |
+    |
+    script(src='https://www.dezshira.com/themes/dsa/js/fontawesome-all.min.js')
+
+block modal
+    |
+    |
+    // Start modal
+    #quickViewModal.modal.fade(role='dialog', tabindex='-1', aria-labelledby='gridModalLabel')
+        .modal-dialog(role='document')
+            .modal-content.radius-none
+                .modal-header.section-title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#gridSystemModalLabel.modal-title Our Regional Publications
+                .modal-body.top-bg-contain.book-detail-bg-banner
+                    #iframeContainer
+
+    #Loginpopup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog.modal-md
+            .modal-content
+                .modal-header.text-center
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    a(href='https://www.dezshira.com/library')
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-center A place to share knowledge and better understand Asia
+                .modal-body
+                    .row
+                        .col-sm-6.col-md-6.col-lg-6
+                            h4#myModalLabel.modal-title.text-center Log In
+                            form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="far fa-envelope"></i>
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="fas fa-lock"></i>
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                        small Forgot Password?
+                                .form-group.text-center
+                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                .form-group.text-center
+                                    small
+                                        | Don't have an account? 
+                                        a(href='https://www.dezshira.com/register') Sign Up
+                        .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                            .subscriptionBlock
+                                #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                        li(data-target='#subscriptionCarousel', data-slide-to='0')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                        .item.next.left
+                                            h4.modal-title.text-center Publication
+                                            i.sprite.sprite-retina.icon-publications
+                                            .carousel-caption
+                                                p Download our FREE magazines and guides
+                                        .item
+                                            h4.modal-title.text-center News 
+                                            i.sprite.sprite-retina.icon-news
+                                            .carousel-caption
+                                                p
+                                                    | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                        .item
+                                            h4.modal-title.text-center Multimedia
+                                            i.sprite.sprite-retina.icon-ksp
+                                            .carousel-caption
+                                                p Access presentations, webinars, podcasts, reports, Q&As and more
+                                        .item.active.left
+                                            h4.modal-title.text-center Dashboard
+                                            i.sprite.sprite-retina.icon-dashboard
+                                            .carousel-caption
+                                                p Track paid orders and connect with our support team
+                                    // Carousel controls
+
+    #logoDownload.modal.fade.logoDownload(role='dialog')
+        .modal-dialog
+            // Modal content
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal') ×
+                    a(href='https://www.dezshira.com/')
+                        img.logo.center-block.margin20Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png 2x')
+                .modal-body
+                    h4.section-title Dezan Shira & Associates logos
+                    table.table.table-striped
+                        tbody
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank') Dezan Shira & Associates logo_vertical(EPS)
+                                td.lightgreyColor 254KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
+                                td.lightgreyColor 14KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
+                                td.lightgreyColor 566KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
+                                td.lightgreyColor 49KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
+                                td.lightgreyColor 305KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
+                                td.lightgreyColor 18KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+
+
+    // End modal

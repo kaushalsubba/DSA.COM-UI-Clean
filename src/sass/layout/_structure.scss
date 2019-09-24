@@ -917,3 +917,254 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 	line-height: 10px;
 }
 
+//service page inner
+.material {
+	.material-select {
+		margin-bottom: 30px;
+		z-index: 1;
+	}
+}
+label {
+	&:after {
+		position: absolute;
+		top: 3px;
+		right: -15px;
+		content: "*";
+		color: #ff0000;
+	}
+}
+
+.contactBlockSmall.serviceRight_cta {
+	text-align: center;
+	background-image: none;
+	background-color: #0d2740;
+	height: auto !important;
+	width: 262px;
+	.BannerCaption {
+		h3 {
+			font-size: 20px;
+			text-align: center;
+			padding-bottom: 10px;
+			padding-top: 20px;
+			line-height: 24px;
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+	.btn {
+		width: 142px;
+		margin: 20px auto 0 auto;
+	}
+	.lightBlue-btn {
+		height: inherit;
+		text-transform: uppercase;
+	}
+}
+section.contact.service_cta {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 55px;
+	padding-top: 55px;
+	background-color: #316aa3;
+	color: #FFFFFF;
+	h4 {
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.fa-envelope {
+		font-size: 70px;
+		vertical-align: middle;
+		padding-right: 10px;
+		text-align: right;
+		float: right;
+		&:hover {
+			color: #FFFFFF;
+		}
+	}
+	.btn-outline.blue-btn {
+		height: 40px;
+		padding: 0px 15px;
+		vertical-align: middle;
+	}
+	.submit_btn {
+		float: right;
+		height: 40px;
+		padding-left: 35px;
+		margin-top: 60px;
+		padding-right: 35px;
+	}
+	.captcha_block {
+		.captcha_right_block {
+			margin-top: 20px;
+		}
+	}
+}
+.research-block {
+	h2 {
+		color: #4a4a4a;
+		font-size: 24px;
+		font-weight: normal;
+	}
+}
+.research {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 40px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	a {
+		color: #595959;
+	}
+	img {
+		display: block;
+		margin: 0px auto 15px auto;
+	}
+	.research_title {
+		font-size: 15px;
+		color: #595959;
+		font-weight: bold;
+		padding-top: 20px;
+	}
+	span {
+		font-size: 13px;
+		color: #595959;
+		padding: 0px;
+		margin: 2px 0px 0px 0px;
+		line-height: 16px;
+		display: block;
+		text-transform: none;
+		font-weight: normal;
+	}
+	&:hover {
+		background-color: #2981d1;
+		color: #FFFFFF;
+		a {
+			color: #FFFFFF;
+		}
+		span {
+			color: #FFFFFF;
+		}
+		.research_title {
+			color: #FFFFFF;
+		}
+		.brochureIcon {
+			width: auto;
+			height: 62px;
+			display: block;
+			background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-w.png) no-repeat top center;
+		}
+		.locationIcon {
+			width: auto;
+			height: 62px;
+			display: block;
+			background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-w.png) no-repeat top center;
+		}
+		.publicationsIcon {
+			width: auto;
+			height: 62px;
+			display: block;
+			background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/publications-icon-w.png) no-repeat top center;
+		}
+		.asiapediaIcon {
+			width: auto;
+			height: 62px;
+			display: block;
+			background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-w.png) no-repeat top center;
+		}
+	}
+	.brochureIcon {
+		width: auto;
+		height: 62px;
+		display: block;
+		background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-blue.png) no-repeat top center;
+	}
+	.locationIcon {
+		width: auto;
+		height: 62px;
+		display: block;
+		background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-blue.png) no-repeat top center;
+	}
+	.publicationsIcon {
+		width: auto;
+		height: 62px;
+		display: block;
+		background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/publications-icon-blue.png) no-repeat top center;
+	}
+	.asiapediaIcon {
+		width: auto;
+		height: 62px;
+		display: block;
+		background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-blue.png) no-repeat top center;
+	}
+}
+#service_accordion {
+	.panel-default {
+		>.panel-heading {
+			position: relative;
+			padding: 0px;
+			color: #58595b;
+			background-color: #e9ecef;
+			border-color: #e9ecef;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			.fa-chevron-right {
+				position: absolute;
+				right: 10px;
+				top: 13px;
+			}
+		}
+	}
+	.panel {
+		border: none;
+		box-shadow: none;
+	}
+	.panel-title {
+		font-size: 14px;
+		font-weight: normal;
+		>a {
+			display: block;
+		}
+		a {
+			background-color: #2981d1;
+			padding: 10px 30px 10px 15px;
+			color: #FFFFFF;
+		}
+		a.collapsed {
+			background-color: #e9ecef;
+			color: #58595b;
+			&:hover {
+				background-color: #2981d1;
+				color: #FFFFFF;
+			}
+		}
+	}
+}
+.panel-default {
+	>.panel-heading {
+		.fa-chevron-up {
+			position: absolute;
+			right: 10px;
+			top: 13px;
+		}
+	}
+}
+.rightBlockSection {
+	position: relative;
+}
+.rightBlockPosition {
+	position: fixed;
+	top: 145px;
+	z-index: 2;
+}
+.text_white {
+	color: #FFFFFF;
+}
+.help_icon {
+	height: 36px;
+	float: left;
+	margin-right: 10px;
+}
+.text-align {
+	text-align: right;
+}

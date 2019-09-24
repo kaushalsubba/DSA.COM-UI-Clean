@@ -6219,6 +6219,9 @@ a {
     .dark-light-blue-bg a:hover {
       text-decoration: none; }
 
+.grey-bg {
+  background-color: #e9ecef; }
+
 .gray-light-bg {
   background: #eee; }
 
@@ -6604,10 +6607,10 @@ figure {
   color: #fff;
   background-color: #1D74CE;
   border-color: #1D74CE; }
-  .btn-secondary:hover {
+  .btn-secondary:hover, .btn-secondary:focus {
     color: #fff;
-    background-color: #1D74CE;
-    border-color: #1D74CE; }
+    background-color: #314d77;
+    border-color: #314d77; }
 
 .btn-outline-secondary {
   color: #1D74CE;
@@ -6623,6 +6626,15 @@ figure {
   background-color: #6c757d;
   border-color: #6c757d; }
   .btn-gray:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d; }
+
+.btn-white {
+  color: #000;
+  background-color: #fff;
+  border-color: #000; }
+  .btn-white:hover {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d; }
@@ -6657,6 +6669,171 @@ figure {
   color: #0D2338;
   border-right: none;
   padding-right: 0px; }
+
+.required-field {
+  color: red; }
+
+.kform .btn-primary {
+  float: right;
+  padding: 10px 30px; }
+
+.material .material-select.filled > .material-title {
+  padding-left: 15px;
+  color: #306cb5; }
+
+.material .material-select {
+  padding-top: 0 !important;
+  background: #f6f6f6;
+  padding-right: 0;
+  padding-bottom: 0;
+  z-index: auto;
+  margin-bottom: 30px; }
+  .material .material-select > input:checked + .material-title {
+    padding-left: 15px;
+    color: #306cb5; }
+  .material .material-select > input:checked ~ ul {
+    padding-top: 5px; }
+  .material .material-select select {
+    font-size: 16px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: #f6f6f6;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: gray;
+    height: 57px; }
+  .material .material-select select.error {
+    color: red;
+    border-bottom: solid 2px red; }
+  .material .material-select > label {
+    padding-left: 15px; }
+  .material .material-select > .material-title {
+    left: 15px;
+    color: #2d6cb5;
+    font-weight: 400;
+    font-size: 14px; }
+  .material .material-select ul li {
+    padding-bottom: 0; }
+    .material .material-select ul li label {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      line-height: 18px; }
+
+.material .material-group {
+  padding-top: 0; }
+  .material .material-group label {
+    z-index: 1; }
+
+.material .material-checkbox {
+  z-index: auto;
+  margin-top: -11px; }
+
+.material .material-radio {
+  z-index: auto;
+  margin-top: -11px; }
+
+.material .material-input {
+  height: auto !important; }
+  .material .material-input textarea {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    background-color: #f6f6f6;
+    color: #464646;
+    font-weight: 400; }
+  .material .material-input label {
+    top: 13px; }
+  .material .material-input input {
+    height: 33px;
+    color: #464646;
+    font-weight: 400; }
+
+.material .material-group-item {
+  width: 100%; }
+
+.margin15Bottom {
+  margin-bottom: 15px; }
+
+.helper {
+  font-size: 12px;
+  color: #fff;
+  padding-left: 15px;
+  font-weight: 400;
+  font-family: Roboto,sans-serif;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  min-height: 5px; }
+
+.contact input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset; }
+  .contact input:-webkit-autofill:focus input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset; }
+  .contact input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset; }
+
+.labelText {
+  color: #344c70;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: 700; }
+
+.btn-outline.grey-btn {
+  border-color: #ebebeb;
+  background-color: #ebebeb; }
+  .btn-outline.grey-btn:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #333; }
+
+form#contact_form {
+  position: relative; }
+  form#contact_form #loading {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    z-index: 1;
+    padding: 50px;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    line-height: 500px; }
+
+.captcha_block {
+  background-color: #FFF;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px; }
+  .captcha_block .captcha_left_block {
+    width: 250px;
+    float: left; }
+    .captcha_block .captcha_left_block span {
+      font-size: 14px;
+      color: #818181;
+      padding-bottom: 10px;
+      display: block; }
+  .captcha_block .captcha_right_block {
+    width: 250px;
+    float: left; }
+    .captcha_block .captcha_right_block span {
+      font-size: 14px;
+      color: #818181; }
+
+.submit_btn {
+  height: 40px;
+  padding-left: 35px;
+  margin-top: 60px;
+  padding-right: 35px; }
+
+.fa-envelope_font70 {
+  font-size: 70px; }
+
+.padd_top_bottom35 {
+  padding-top: 35px;
+  padding-bottom: 30px; }
 
 #header {
   padding: 0;
@@ -7810,6 +7987,207 @@ section.TopBanner.get-in-touch .BannerCaption {
   float: right;
   line-height: 10px; }
 
+.material .material-select {
+  margin-bottom: 30px;
+  z-index: 1; }
+
+label:after {
+  position: absolute;
+  top: 3px;
+  right: -15px;
+  content: "*";
+  color: #ff0000; }
+
+.contactBlockSmall.serviceRight_cta {
+  text-align: center;
+  background-image: none;
+  background-color: #0d2740;
+  height: auto !important;
+  width: 262px; }
+  .contactBlockSmall.serviceRight_cta .BannerCaption h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff; }
+  .contactBlockSmall.serviceRight_cta .btn {
+    width: 142px;
+    margin: 20px auto 0 auto; }
+  .contactBlockSmall.serviceRight_cta .lightBlue-btn {
+    height: inherit;
+    text-transform: uppercase; }
+
+section.contact.service_cta {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 55px;
+  padding-top: 55px;
+  background-color: #316aa3;
+  color: #FFFFFF; }
+  section.contact.service_cta h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold; }
+  section.contact.service_cta .fa-envelope {
+    font-size: 70px;
+    vertical-align: middle;
+    padding-right: 10px;
+    text-align: right;
+    float: right; }
+    section.contact.service_cta .fa-envelope:hover {
+      color: #FFFFFF; }
+  section.contact.service_cta .btn-outline.blue-btn {
+    height: 40px;
+    padding: 0px 15px;
+    vertical-align: middle; }
+  section.contact.service_cta .submit_btn {
+    float: right;
+    height: 40px;
+    padding-left: 35px;
+    margin-top: 60px;
+    padding-right: 35px; }
+  section.contact.service_cta .captcha_block .captcha_right_block {
+    margin-top: 20px; }
+
+.research-block h2 {
+  color: #4a4a4a;
+  font-size: 24px;
+  font-weight: normal; }
+
+.research {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  text-transform: uppercase; }
+  .research a {
+    color: #595959; }
+  .research img {
+    display: block;
+    margin: 0px auto 15px auto; }
+  .research .research_title {
+    font-size: 15px;
+    color: #595959;
+    font-weight: bold;
+    padding-top: 20px; }
+  .research span {
+    font-size: 13px;
+    color: #595959;
+    padding: 0px;
+    margin: 2px 0px 0px 0px;
+    line-height: 16px;
+    display: block;
+    text-transform: none;
+    font-weight: normal; }
+  .research:hover {
+    background-color: #2981d1;
+    color: #FFFFFF; }
+    .research:hover a {
+      color: #FFFFFF; }
+    .research:hover span {
+      color: #FFFFFF; }
+    .research:hover .research_title {
+      color: #FFFFFF; }
+    .research:hover .brochureIcon {
+      width: auto;
+      height: 62px;
+      display: block;
+      background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-w.png) no-repeat top center; }
+    .research:hover .locationIcon {
+      width: auto;
+      height: 62px;
+      display: block;
+      background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-w.png) no-repeat top center; }
+    .research:hover .publicationsIcon {
+      width: auto;
+      height: 62px;
+      display: block;
+      background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/publications-icon-w.png) no-repeat top center; }
+    .research:hover .asiapediaIcon {
+      width: auto;
+      height: 62px;
+      display: block;
+      background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-w.png) no-repeat top center; }
+  .research .brochureIcon {
+    width: auto;
+    height: 62px;
+    display: block;
+    background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-blue.png) no-repeat top center; }
+  .research .locationIcon {
+    width: auto;
+    height: 62px;
+    display: block;
+    background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-blue.png) no-repeat top center; }
+  .research .publicationsIcon {
+    width: auto;
+    height: 62px;
+    display: block;
+    background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/publications-icon-blue.png) no-repeat top center; }
+  .research .asiapediaIcon {
+    width: auto;
+    height: 62px;
+    display: block;
+    background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-blue.png) no-repeat top center; }
+
+#service_accordion .panel-default > .panel-heading {
+  position: relative;
+  padding: 0px;
+  color: #58595b;
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+  #service_accordion .panel-default > .panel-heading .fa-chevron-right {
+    position: absolute;
+    right: 10px;
+    top: 13px; }
+
+#service_accordion .panel {
+  border: none;
+  box-shadow: none; }
+
+#service_accordion .panel-title {
+  font-size: 14px;
+  font-weight: normal; }
+  #service_accordion .panel-title > a {
+    display: block; }
+  #service_accordion .panel-title a {
+    background-color: #2981d1;
+    padding: 10px 30px 10px 15px;
+    color: #FFFFFF; }
+  #service_accordion .panel-title a.collapsed {
+    background-color: #e9ecef;
+    color: #58595b; }
+    #service_accordion .panel-title a.collapsed:hover {
+      background-color: #2981d1;
+      color: #FFFFFF; }
+
+.panel-default > .panel-heading .fa-chevron-up {
+  position: absolute;
+  right: 10px;
+  top: 13px; }
+
+.rightBlockSection {
+  position: relative; }
+
+.rightBlockPosition {
+  position: fixed;
+  top: 145px;
+  z-index: 2; }
+
+.text_white {
+  color: #FFFFFF; }
+
+.help_icon {
+  height: 36px;
+  float: left;
+  margin-right: 10px; }
+
+.text-align {
+  text-align: right; }
+
 div#sidebarnav {
   background-color: #fff;
   min-height: 430px; }
@@ -7910,141 +8288,6 @@ div#sidebarnav ul li.level1.active a.main-menu {
 
 div#sidebarnav ul > li.level1.active, div#sidebarnav ul > li.level2.active, div#sidebarnav ul > li.level3.active > a {
   background-color: #fff; }
-
-@media (min-width: 768px) {
-  ul.nav li:hover > ul.dropdown-menu {
-    display: block; } }
-
-@media screen and (max-width: 768px) {
-  #header .btn-primary {
-    width: auto;
-    margin-top: 18px;
-    padding: 4px 10px;
-    font-size: 24px;
-    vertical-align: middle;
-    height: 39px;
-    margin-right: 0px; }
-    #header .btn-primary span {
-      font-size: 0px; }
-  #header .btn-primary#agree_cookie_terms {
-    position: inherit;
-    float: inherit;
-    display: block;
-    margin: 15px auto 5px auto;
-    right: 0;
-    top: 0; }
-  #header .top-right-links {
-    width: auto;
-    position: relative;
-    z-index: 11; }
-    #header .top-right-links #accordion {
-      width: auto; }
-  #header .logo {
-    width: 100%;
-    max-width: 100%; }
-  .navbar-header {
-    width: 64px;
-    float: left; }
-  .navbar-toggle {
-    float: left;
-    right: 0px;
-    background-color: #FFF;
-    width: auto;
-    top: 5px;
-    margin-left: 15px; }
-  .navbar {
-    margin-top: -50px;
-    min-height: 55px;
-    border-top: 0; }
-  .navbar-inverse {
-    background: 0 0;
-    z-index: 10;
-    border-top: solid 3px #1a2940; }
-    .navbar-inverse .navbar-toggle {
-      border-radius: 0;
-      border: solid 1px #e7e7e7; }
-      .navbar-inverse .navbar-toggle .icon-bar {
-        background-color: #1a2940; }
-      .navbar-inverse .navbar-toggle:focus {
-        background-color: transparent; }
-      .navbar-inverse .navbar-toggle:hover {
-        background-color: transparent; }
-    .navbar-inverse .navbar-collapse {
-      border-color: #1a2940;
-      border-color: #1a2940;
-      border-color: #939598;
-      margin-top: 50px; }
-    .navbar-inverse .navbar-form {
-      border-color: #1a2940;
-      border-color: #1a2940;
-      border-color: #939598;
-      margin-top: 50px; }
-    .navbar-inverse .navbar-nav.navbar-right > li > a {
-      float: left;
-      padding: 10px 10px 10px 30px; }
-  #HomeBannerSlide .carousel-inner .carousel-caption {
-    left: 5%;
-    width: 90%;
-    right: 0; }
-  .featureResources .carousel-inner > .item > a img {
-    height: auto;
-    margin: 0 auto; }
-  .carousel-inner > .item > a > img {
-    height: 100%; }
-  .carousel-inner > .item > img {
-    height: 100%; }
-  .bannerSlide .carousel-caption {
-    width: 90%;
-    top: 10%; }
-  .viewOnHover-first img {
-    width: 100%;
-    height: auto; }
-  .viewOnHover {
-    height: auto; }
-  section.TopBanner {
-    height: auto; }
-    section.TopBanner img {
-      height: 100%; }
-    section.TopBanner .BannerCaption {
-      margin-top: 0px;
-      padding-top: 30px;
-      padding-bottom: 30px; }
-  .panelTab a.disable-links {
-    pointer-events: auto; }
-  .multimediaLargeThumbnail {
-    height: auto;
-    width: 100%;
-    margin-bottom: 10px; }
-    .multimediaLargeThumbnail img {
-      height: auto;
-      width: 100%; }
-  .locationThumbnail.smallThumbnail {
-    width: 100%; }
-  .locationThumbnail {
-    width: 100%; }
-  .hoverImage figure img {
-    width: 100%; }
-  .listRightContent {
-    padding-left: 0px; }
-  #cookiesModal {
-    display: none; }
-  .footer {
-    text-align: center; }
-    .footer .footer-copyright .links ul.list-inline {
-      text-align: center; }
-    .footer .footer-social {
-      padding-top: 35px;
-      padding-bottom: 35px; }
-  .international-desks {
-    min-height: 100%;
-    padding-bottom: 20px; }
-  .internship, .fullTime {
-    padding-left: 15px;
-    padding-right: 15px; }
-  .MeetOurPeople p {
-    padding-right: 15px; }
-  .MeetOurPeople .carousel-inner .item img {
-    height: auto; } }
 
 .asiapedia_homepage .list-inline {
   margin-left: 0;
@@ -8208,3 +8451,311 @@ div#sidebarnav ul > li.level1.active, div#sidebarnav ul > li.level2.active, div#
 
 .sec-block h2 {
   font-size: 24px; }
+
+.asiapedia_page .locationThumbnail {
+  width: 371px;
+  height: 222px; }
+  .asiapedia_page .locationThumbnail img {
+    opacity: 0.7;
+    height: 244px; }
+  .asiapedia_page .locationThumbnail .title {
+    width: 100%;
+    text-align: center;
+    top: 50%; }
+
+.asiapedia_page .list-inline {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 0px; }
+
+.asiapedia_page .btn-outline {
+  border-color: #2180d4;
+  color: #2180d4;
+  background-color: transparent;
+  height: auto;
+  padding: 10px 40px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-size: 17px; }
+
+.asiapedia_page form {
+  overflow: hidden; }
+
+.asiapedia_page .languageField select {
+  width: 74%;
+  padding-right: 0px;
+  padding-left: 10px;
+  float: right;
+  color: #000000; }
+
+.asiapedia_page .input-group-addon {
+  padding-right: 0px;
+  border: 0px;
+  background-color: #FFFFFF;
+  color: #7a7a7a;
+  border-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.asiapedia_page .form-control {
+  height: 36px;
+  border: none;
+  font-size: 13px;
+  color: #8d8d8d; }
+
+.asiapedia_page h3 {
+  color: #FFFFFF; }
+
+.asiapedia_page .btn-outline-secondary {
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-size: 18px; }
+
+.services_link {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 0px; }
+  .services_link li {
+    padding-left: 0px;
+    padding-right: 23px;
+    float: left;
+    color: #FFFFFF;
+    font-size: 12px; }
+    .services_link li:first-child {
+      list-style: none; }
+    .services_link li a {
+      color: #FFFFFF;
+      text-decoration: none; }
+
+.search_addon {
+  background-image: url("https://www.asiabriefing.com/mockups/dsa-mockup/asiapedia/images/search-icon.jpg");
+  background-position: 10px 6px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px; }
+
+.asiapedia-resources .list-inline li {
+  width: 25px;
+  height: 25px;
+  background-color: #1e71bd;
+  color: #FFFFFF;
+  border-radius: 50%;
+  text-align: center;
+  padding: 3px;
+  margin-left: 5px;
+  margin-right: 5px; }
+  .asiapedia-resources .list-inline li a {
+    color: #FFFFFF; }
+
+#resourcesSearchForm .btn-secondary {
+  padding: 9px 27px; }
+
+.TopBanner.asiapedia-banner {
+  height: 390px; }
+  .TopBanner.asiapedia-banner .BannerCaption {
+    margin-top: 120px; }
+    .TopBanner.asiapedia-banner .BannerCaption .btn-secondary, .TopBanner.asiapedia-banner .BannerCaption .btn-white {
+      padding: 15px 20px;
+      text-transform: uppercase; }
+
+.asiapedia-desks {
+  border-bottom: solid 1px #d8d8d8;
+  padding-bottom: 10px;
+  margin-bottom: 40px; }
+  .asiapedia-desks .eventBody {
+    height: 320px;
+    overflow: hidden; }
+    .asiapedia-desks .eventBody h3 {
+      font-size: 22px;
+      line-height: 24px; }
+    .asiapedia-desks .eventBody p a {
+      font-weight: normal; }
+    .asiapedia-desks .eventBody .event_lable {
+      color: #eb2127;
+      padding-top: 10px;
+      font-size: 14px; }
+    .asiapedia-desks .eventBody .dateTime {
+      padding-top: 5px;
+      font-size: 12px;
+      padding-bottom: 15px; }
+  .asiapedia-desks .credit {
+    padding-top: 20px;
+    color: #7a7a7a;
+    font-size: 12px;
+    line-height: 25px; }
+    .asiapedia-desks .credit .list-inline {
+      color: #CCCCCC; }
+
+.asiapedia_homepage h2 {
+  color: #000; }
+
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block; } }
+
+@media screen and (max-width: 768px) {
+  #header .btn-primary {
+    width: auto;
+    margin-top: 18px;
+    padding: 4px 10px;
+    font-size: 24px;
+    vertical-align: middle;
+    height: 39px;
+    margin-right: 0px; }
+    #header .btn-primary span {
+      font-size: 0px; }
+  #header .btn-primary#agree_cookie_terms {
+    position: inherit;
+    float: inherit;
+    display: block;
+    margin: 15px auto 5px auto;
+    right: 0;
+    top: 0; }
+  #header .top-right-links {
+    width: auto;
+    position: relative;
+    z-index: 11; }
+    #header .top-right-links #accordion {
+      width: auto; }
+      #header .top-right-links #accordion .panel {
+        background: transparent; }
+  #header .logo {
+    width: 100%;
+    max-width: 100%; }
+  #header .panelTab {
+    border: none; }
+  .navbar-header {
+    width: 64px;
+    float: left; }
+  .navbar-toggle {
+    float: left;
+    right: 0px;
+    background-color: #FFF;
+    width: auto;
+    top: 5px;
+    margin-left: 15px; }
+  .navbar {
+    margin-top: -50px;
+    min-height: 55px;
+    border-top: 0; }
+  .navbar-inverse {
+    background: #ebebeb;
+    z-index: 10;
+    border-top: solid 3px #1a2940; }
+    .navbar-inverse .navbar-toggle {
+      border-radius: 0;
+      border: solid 1px #e7e7e7; }
+      .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #1a2940; }
+      .navbar-inverse .navbar-toggle:focus {
+        background-color: transparent; }
+      .navbar-inverse .navbar-toggle:hover {
+        background-color: transparent; }
+    .navbar-inverse .navbar-collapse {
+      border-color: #1a2940;
+      border-color: #1a2940;
+      border-color: #939598;
+      margin-top: 50px; }
+    .navbar-inverse .navbar-form {
+      border-color: #1a2940;
+      border-color: #1a2940;
+      border-color: #939598;
+      margin-top: 50px; }
+    .navbar-inverse .navbar-nav.navbar-right > li > a {
+      float: left;
+      padding: 10px 10px 10px 30px; }
+  #HomeBannerSlide .carousel-inner .carousel-caption {
+    left: 5%;
+    width: 90%;
+    right: 0; }
+  .featureResources .carousel-inner > .item > a img {
+    height: auto;
+    margin: 0 auto; }
+  .carousel-inner > .item > a > img {
+    height: 100%; }
+  .carousel-inner > .item > img {
+    height: 100%; }
+  .bannerSlide .carousel-caption {
+    width: 90%;
+    top: 10%; }
+  .viewOnHover-first img {
+    width: 100%;
+    height: auto; }
+  .viewOnHover {
+    height: auto; }
+  section.TopBanner {
+    height: auto; }
+    section.TopBanner img {
+      height: 100%; }
+    section.TopBanner .BannerCaption {
+      margin-top: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+  .panelTab a.disable-links {
+    pointer-events: auto; }
+  .multimediaLargeThumbnail {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px; }
+    .multimediaLargeThumbnail img {
+      height: auto;
+      width: 100%; }
+  .locationThumbnail.smallThumbnail {
+    width: 100%; }
+  .locationThumbnail {
+    width: 100%; }
+  .hoverImage figure img {
+    width: 100%; }
+  .listRightContent {
+    padding-left: 0px; }
+  #cookiesModal {
+    display: none; }
+  .footer {
+    text-align: center; }
+    .footer .footer-copyright .links ul.list-inline {
+      text-align: center; }
+    .footer .footer-social {
+      padding-top: 35px;
+      padding-bottom: 35px; }
+  .international-desks {
+    min-height: 100%;
+    padding-bottom: 20px; }
+  .internship, .fullTime {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .MeetOurPeople p {
+    padding-right: 15px; }
+  .MeetOurPeople .carousel-inner .item img {
+    height: auto; }
+  .kform .btn-primary {
+    float: inherit;
+    margin-top: 30px; }
+  .TopBanner.asiapedia-banner {
+    height: auto; }
+    .TopBanner.asiapedia-banner .BannerCaption {
+      margin-top: 0px; }
+  .asiapedia_page .locationThumbnail {
+    width: 100%; }
+  .services_link {
+    margin-top: 15px;
+    margin-left: 15px; }
+    .services_link li {
+      float: none; }
+      .services_link li:first-child {
+        list-style: inherit; }
+  form#contact_form #loading {
+    width: 100%;
+    left: 0; }
+  .list-inline.research li {
+    width: 100%; }
+  .rightBlockPosition {
+    display: none; }
+  .leftBlockSection {
+    display: none; }
+  section.contact.service_cta .fa-envelope {
+    text-align: left;
+    float: none; }
+  section.contact.service_cta .submit_btn {
+    margin-top: 30px;
+    float: none; }
+  .text-align {
+    text-align: left; } }
