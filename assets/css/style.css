@@ -6835,6 +6835,95 @@ form#contact_form {
   padding-top: 35px;
   padding-bottom: 30px; }
 
+.subscription-bg {
+  background-image: url(https://www.dezshira.com/userfiles/image/subscription/subcription_form_lightBG.jpg);
+  background-size: cover; }
+  .subscription-bg input {
+    border: 1px solid #C6C6C6;
+    padding: 0px 15px;
+    height: auto;
+    height: 49px;
+    text-align: left;
+    background-color: white;
+    border-radius: 0;
+    padding-left: 0px;
+    padding-right: 15px;
+    text-indent: 15px; }
+  .subscription-bg select {
+    border: 1px solid #C6C6C6;
+    padding: 0px 15px;
+    height: auto;
+    height: 49px;
+    text-align: left;
+    background-color: white;
+    border-radius: 0;
+    padding-left: 0px;
+    padding-right: 15px;
+    text-indent: 15px; }
+  .subscription-bg input[type='checkbox'] {
+    height: auto;
+    margin-right: 0px;
+    margin-left: 0px; }
+  .subscription-bg input.error {
+    border: 1px solid #e1001a; }
+  .subscription-bg select.error {
+    border: 1px solid #e1001a; }
+  .subscription-bg .greetings {
+    padding: 30px 10px;
+    text-align: center; }
+    .subscription-bg .greetings h3 {
+      color: #326aa3;
+      font-size: 36px;
+      padding-bottom: 10px; }
+    .subscription-bg .greetings h4 {
+      color: #344c70;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 24px;
+      font-family: 'Roboto', sans-serif; }
+  .subscription-bg .labelText {
+    color: #316AA3;
+    font-weight: bold;
+    padding: 15px 0 10px 0; }
+  .subscription-bg .row.action {
+    text-align: center;
+    margin: 40px 0; }
+  .subscription-bg .input-group-btn {
+    float: left;
+    z-index: 1; }
+    .subscription-bg .input-group-btn .btn {
+      height: 49px;
+      background-color: #1e71bd;
+      border-color: #1e71bd;
+      font-weight: bold;
+      color: #FFFFFF;
+      padding-left: 10px;
+      padding-right: 9px;
+      border-radius: 0px; }
+  .subscription-bg .col-sm-12 .fields_plus {
+    width: 95% !important;
+    float: left; }
+  .subscription-bg .col-sm-6 .fields_plus {
+    width: 90% !important;
+    float: left; }
+  .subscription-bg .error {
+    color: #e1001a;
+    font-weight: 100;
+    font-size: 12px; }
+  .subscription-bg .btn-primary {
+    padding: 10px 30px 5px 30px;
+    font-size: 18px;
+    height: 50px; }
+
+#topic_of_interest_1 {
+  margin-bottom: 60px; }
+
+#topic_of_interest_2 {
+  margin-bottom: 60px; }
+
+#topic_of_interest_3 {
+  margin-bottom: 60px; }
+
 #header {
   padding: 0;
   background-color: #FFF; }
@@ -8187,6 +8276,126 @@ section.contact.service_cta {
 
 .text-align {
   text-align: right; }
+
+#brochure.brochure_dropdown {
+  padding-top: 0;
+  background-color: #8f9eb3;
+  margin-top: 0;
+  height: 340px;
+  overflow: inherit;
+  top: 0; }
+  #brochure.brochure_dropdown .brochureCaption {
+    padding: 60px 60px 25px; }
+    #brochure.brochure_dropdown .brochureCaption h2 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 700;
+      padding: 15px 0 0;
+      margin: 0;
+      font-family: Roboto,sans-serif; }
+      #brochure.brochure_dropdown .brochureCaption h2 a {
+        color: #FFF; }
+        #brochure.brochure_dropdown .brochureCaption h2 a:hover {
+          color: #FFF; }
+    #brochure.brochure_dropdown .brochureCaption h3 {
+      font-size: 18px;
+      color: #fff;
+      padding: 0;
+      margin: 0; }
+      #brochure.brochure_dropdown .brochureCaption h3 a {
+        color: #FFF; }
+        #brochure.brochure_dropdown .brochureCaption h3 a:hover {
+          color: #FFF; }
+    #brochure.brochure_dropdown .brochureCaption .downloadIcon {
+      float: left;
+      height: 170px;
+      margin-right: 25px;
+      width: 66px; }
+    #brochure.brochure_dropdown .brochureCaption img {
+      background-size: inherit;
+      position: inherit;
+      height: auto;
+      width: 100%; }
+  #brochure.brochure_dropdown .brochureDropdown {
+    position: relative; }
+    #brochure.brochure_dropdown .brochureDropdown .open > .dropdown-menu {
+      width: 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      padding-top: 0; }
+      #brochure.brochure_dropdown .brochureDropdown .open > .dropdown-menu li {
+        padding-bottom: 0; }
+  #brochure.brochure_dropdown .list-inline {
+    margin-top: 20px; }
+    #brochure.brochure_dropdown .list-inline > li {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0; }
+  #brochure.brochure_dropdown .BannerCaption {
+    margin-top: 0; }
+  #brochure.brochure_dropdown img {
+    height: auto;
+    width: auto;
+    right: 9%; }
+  #brochure.brochure_dropdown .btn-outline {
+    background-color: transparent;
+    color: #FFF;
+    border-color: #FFF; }
+
+section.grey.padding-Overwrite {
+  background-color: #FFF; }
+
+.asiapedia.servicesFlyers {
+  min-height: 300px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  position: relative; }
+  .asiapedia.servicesFlyers .downloadflyersBrochures {
+    margin: 0 20px; }
+    .asiapedia.servicesFlyers .downloadflyersBrochures .list-unstyled {
+      height: 110px;
+      padding-top: 20px; }
+      .asiapedia.servicesFlyers .downloadflyersBrochures .list-unstyled li {
+        overflow: hidden; }
+  .asiapedia.servicesFlyers .open > .dropdown-menu a {
+    white-space: normal;
+    overflow: hidden; }
+  .asiapedia.servicesFlyers .open .dropdown-toggle.btn-outline {
+    border-color: #f0eef0;
+    background-color: #f0eef0; }
+  .asiapedia.servicesFlyers .moreBtn .dropdown-menu li {
+    margin-bottom: 0 !important;
+    padding-bottom: 0; }
+  .asiapedia.servicesFlyers .btn-outline {
+    background-color: #f6f6f6;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top-color: #e6e7e8;
+    color: #848284;
+    margin-top: 0; }
+    .asiapedia.servicesFlyers .btn-outline:active {
+      color: #848284;
+      background-color: #f0eef0; }
+    .asiapedia.servicesFlyers .btn-outline:focus {
+      color: #848284;
+      background-color: #f0eef0; }
+    .asiapedia.servicesFlyers .btn-outline:hover {
+      color: #848284;
+      background-color: #f0eef0; }
+  .asiapedia.servicesFlyers .btn-outline.active {
+    color: #848284;
+    background-color: #f0eef0; }
+  .asiapedia.servicesFlyers .dropdown-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%; }
+  .asiapedia.servicesFlyers .eventBody {
+    padding-bottom: 0;
+    position: absolute;
+    top: 80px; }
+    .asiapedia.servicesFlyers .eventBody h4 a {
+      color: #FFF; }
 
 div#sidebarnav {
   background-color: #fff;

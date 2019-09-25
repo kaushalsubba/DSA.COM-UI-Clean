@@ -1168,3 +1168,167 @@ section.contact.service_cta {
 .text-align {
 	text-align: right;
 }
+//brochures page
+#brochure.brochure_dropdown {
+	padding-top: 0;
+	background-color: #8f9eb3;
+	margin-top: 0;
+	height: 340px;
+	overflow: inherit;
+	top: 0;
+	.brochureCaption {
+		h2 {
+			font-size: 24px;
+			color: #fff;
+			font-weight: 700;
+			padding: 15px 0 0;
+			margin: 0;
+			font-family: Roboto,sans-serif;
+			a {
+				color: #FFF;
+				&:hover {
+					color: #FFF;
+				}
+			}
+		}
+		h3 {
+			font-size: 18px;
+			color: #fff;
+			padding: 0;
+			margin: 0;
+			a {
+				color: #FFF;
+				&:hover {
+					color: #FFF;
+				}
+			}
+		}
+		.downloadIcon {
+			float: left;
+			height: 170px;
+			margin-right: 25px;
+			width: 66px;
+		}
+		padding: 60px 60px 25px;
+		img {
+			background-size: inherit;
+			position: inherit;
+			height: auto;
+			width: 100%;
+		}
+	}
+	.brochureDropdown {
+		position: relative;
+		.open {
+			>.dropdown-menu {
+				width: 100%;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				padding-top: 0;
+				li {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+	.list-inline {
+		margin-top: 20px;
+		>li {
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+		}
+	}
+	.BannerCaption {
+		margin-top: 0;
+	}
+	img {
+		height: auto;
+		width: auto;
+		right: 9%;
+	}
+	.btn-outline {
+		background-color: transparent;
+		color: #FFF;
+		border-color: #FFF;
+	}
+}
+section.grey.padding-Overwrite {
+	background-color: #FFF;
+}
+.asiapedia.servicesFlyers {
+	.downloadflyersBrochures {
+		.list-unstyled {
+			li {
+				overflow: hidden;
+			}
+			height: 110px;
+			padding-top: 20px;
+		}
+		margin: 0 20px;
+	}
+	min-height: 300px;
+	margin-top: 0;
+	margin-bottom: 25px;
+	position: relative;
+	.open {
+		>.dropdown-menu {
+			a {
+				white-space: normal;
+				overflow: hidden;
+			}
+		}
+		.dropdown-toggle.btn-outline {
+			border-color: #f0eef0;
+			background-color: #f0eef0;
+		}
+	}
+	.moreBtn {
+		.dropdown-menu {
+			li {
+				margin-bottom: 0 !important;
+				padding-bottom: 0;
+			}
+		}
+	}
+	.btn-outline {
+		background-color: #f6f6f6;
+		border-bottom: 0;
+		border-left: 0;
+		border-right: 0;
+		border-top-color: #e6e7e8;
+		color: #848284;
+		margin-top: 0;
+		&:active {
+			color: #848284;
+			background-color: #f0eef0;
+		}
+		&:focus {
+			color: #848284;
+			background-color: #f0eef0;
+		}
+		&:hover {
+			color: #848284;
+			background-color: #f0eef0;
+		}
+	}
+	.btn-outline.active {
+		color: #848284;
+		background-color: #f0eef0;
+	}
+	.dropdown-menu {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		width: 100%;
+	}
+	.eventBody {
+		padding-bottom: 0;
+		position: absolute;
+		top: 80px;
+		h4 {
+			a {
+				color: #FFF;
+			}
+		}
+	}
+}

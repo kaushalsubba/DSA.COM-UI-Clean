@@ -1,0 +1,406 @@
+extends layouts/_layout_default
+
+block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
+    - title = "Dezan shira"
+
+
+
+block content
+    // Start Content
+    section.TopBanner.brochure_dropdown
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/brochures/Download-brochure-Background.jpg')
+        .BannerCaption
+          .container
+            .row
+              .col-ms-6.col-md-6.col-lg-6
+                .brochureCaption
+                  .downloadIcon
+                    a(href='https://www.dezshira.com/brochure_download_status/english')
+                      img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Download.png', srcset='https://www.dezshira.com/themes/dsa/images/icons/Download.png 2x')
+                  h3
+                    a(href='https://www.dezshira.com/brochure_download_status/english') DOWNLOAD BROCHURE
+                  h2
+                    a(href='https://www.dezshira.com/brochure_download_status/english') Learn more about how we can support your business in Asia
+                  ul.list-inline
+                    li.brochureDropdown
+                      div
+                        a#download.dropdown-toggle.btn.btn-lg.btn-outline(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                          | Choose Your Language 
+                          span.caret
+                        ul#download-menu.dropdown-menu(aria-labelledby='download', style='margin-top: 0px;')
+                          li
+                            a(href='https://www.dezshira.com/brochure_download_status/english', target='_blank') English
+                          li
+                            a(href='https://www.dezshira.com/brochure_download_status/german', target='_blank') Deutsch
+                          li
+                            a(href='https://www.dezshira.com/brochure_download_status/french', target='_blank') Fran&ccedil;ais
+                          li
+                            a(href='https://www.dezshira.com/brochure_download_status/italian', target='_blank') Italiano
+                          li
+                            a(href='https://www.dezshira.com/brochure_download_status/spanish', target='_blank') Espa&ntilde;ol
+                          li
+                            a(href='https://www.dezshira.com/brochure_download_status/chinese', target='_blank') &#x4E2D;&#x6587;&#x5BA3;&#x4F20;&#x624B;&#x518C;
+                          li
+                            a(href='https://www.dezshira.com/brochure_download_status/russian', target='_blank') &Rcy;&ucy;&scy;&scy;&kcy;&ocy;&mcy;
+
+    section.breadcrumbBlock
+        .container
+            .row
+                .col-sm-12.col-md-12.col-lg-12
+                    ol.breadcrumb
+                       
+                        
+                        li.active(aria-current='page') Our Services Flyers
+
+    section.pt-5.pb-5
+        .container
+          .row
+            .col-lg-4.col-md-4.col-sm-4
+              .asiapedia.servicesFlyers
+                .ThumbBlock.hoverImage
+                  figure
+                    img(src='https://www.dezshira.com/themes/dsa/images/brochures/business-intelligence-solutions.jpg', itemprop='image')
+                .eventBody
+                  h4
+                    a(title='Business Intelligence', href='#') Business Intelligence
+                .downloadflyersBrochures
+                  ul.list-unstyled
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~BI?5', target='_blank')
+                        span.pull-left Location Analysis and Site
+                        i.fas.fa-cloud-download-alt.pull-right
+              // /flyer
+            // /col
+            .col-lg-4.col-md-4.col-sm-4
+              .asiapedia.servicesFlyers
+                .ThumbBlock.hoverImage
+                  figure
+                    img(src='https://www.dezshira.com/themes/dsa/images/brochures/legal-financial-due-diligence.jpg', itemprop='image')
+                .eventBody
+                  h4
+                    a(title='Due Diligence', href='#') Due Diligence
+                .downloadflyersBrochures
+                  ul.list-unstyled
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~DD brochure-Legal, Financial, and HR Due Diligence?5', target='_blank')
+                        span.pull-left Legal, Financial, and HR Due Diligence
+                        i.fas.fa-cloud-download-alt.pull-right
+            .col-lg-4.col-md-4.col-sm-4
+              .asiapedia.servicesFlyers
+                .ThumbBlock.hoverImage
+                  figure
+                    img(src='https://www.dezshira.com/themes/dsa/images/brochures/audit-financial-review.jpg', itemprop='image')
+                .eventBody
+                  h4
+                    a(title='Audit and Risk Advisory', href='#') Audit and Risk Advisory
+                .downloadflyersBrochures
+                  ul.list-unstyled
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Audit brochure-Internal Audit, Risk and Compliance?1', target='_blank')
+                        span.pull-left Internal Audit, Risk and Compliance
+                        i.fas.fa-cloud-download-alt.pull-right
+              // /flyer
+            // /col
+            .col-lg-4.col-md-4.col-sm-4
+              .asiapedia.servicesFlyers
+                .ThumbBlock.hoverImage
+                  figure
+                    img(src='https://www.dezshira.com/themes/dsa/images/brochures/payroll-human-resource-administration.jpg', itemprop='image')
+                .eventBody
+                  h4
+                    a(title='HR and Payroll', href='#') HR and Payroll
+                .downloadflyersBrochures
+                  ul.list-unstyled
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Human%20Resources%20Payroll%20brochure-Payroll?3', target='_blank')
+                        span.pull-left Human Resources &amp; Payroll - Payroll
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Human%20Resources%20Payroll%20brochure-Recruitment?2', target='_blank')
+                        span.pull-left Human Resources &amp; Payroll - Recruitment
+                        i.fas.fa-cloud-download-alt.pull-right
+              // /flyer
+            // /col
+            .col-lg-4.col-md-4.col-sm-4
+              .asiapedia.servicesFlyers
+                .ThumbBlock.hoverImage
+                  figure
+                    img(src='https://www.dezshira.com/themes/dsa/images/brochures/outbound-direct-investment.jpg', itemprop='image')
+                .eventBody
+                  h4
+                    a(title='Outbound Direct Investment', href='#') Outbound Direct Investment
+                .downloadflyersBrochures
+                  ul.list-unstyled
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~China%20Outbound%20Direct%20Investment-CN?5', target='_blank')
+                        span.pull-left China Outbound Direct Investment-CN&#x4E2D;&#x6587;
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~China%20Outbound%20Direct%20Investment%20to%20France-CN?1', target='_blank')
+                        span.pull-left China Outbound Direct Investment to France-CN&#x4E2D;&#x6587;
+                        i.fas.fa-cloud-download-alt.pull-right
+                .moreBtn
+                  a#download.dropdown-toggle.btn.btn-lg.btn-outline.btn-block(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | MORE 
+                    i.fas.fa-angle-down
+                  ul#download-menu.dropdown-menu(aria-labelledby='download', style='margin-top: 0px;')
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~China%20Outbound%20Direct%20Investment%20to%20Chile-CN?3', target='_blank')
+                        span.pull-left China Outbound Direct Investment to Chile-CN&#x4E2D;&#x6587;
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~China%20Outbound%20Direct%20Investment%20to%20Italy-CN?8', target='_blank')
+                        span.pull-left China Outbound Direct Investment to Italy-CN&#x4E2D;&#x6587;
+                        i.fas.fa-cloud-download-alt.pull-right
+              // /flyer
+            // /col
+            .col-lg-4.col-md-4.col-sm-4
+              .asiapedia.servicesFlyers
+                .ThumbBlock.hoverImage
+                  figure
+                    img(src='https://www.dezshira.com/themes/dsa/images/brochures/tax.jpg', itemprop='image')
+                .eventBody
+                  h4
+                    a(title='Tax', href='#') Tax
+                .downloadflyersBrochures
+                  ul.list-unstyled
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Tax%20brochure-International%20Tax%20and%20cross%20border%20transactions?7', target='_blank')
+                        span.pull-left International Tax and Cross Border Transaction
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Tax%20brochure-Transfer%20pricing?4', target='_blank')
+                        span.pull-left Transfer pricing
+                        i.fas.fa-cloud-download-alt.pull-right
+                .moreBtn
+                  a#download.dropdown-toggle.btn.btn-lg.btn-outline.btn-block(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | MORE 
+                    i.fas.fa-angle-down
+                  ul#download-menu.dropdown-menu(aria-labelledby='download', style='margin-top: 0px;')
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Tax%20brochure-Tax%20in%20China?5', target='_blank')
+                        span.pull-left Tax in China
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Tax%20brochure-IIT?6', target='_blank')
+                        span.pull-left Individual Income Tax in China
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Tax%20brochure-VAT?4', target='_blank')
+                        span.pull-left Value Added Tax in China
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~Tax%20brochure-Transfer%20pricing%20in%20Vietnam?4', target='_blank')
+                        span.pull-left Transfer Pricing in Vietnam
+                        i.fas.fa-cloud-download-alt.pull-right
+              // /flyer
+            // /col
+            .col-lg-4.col-md-4.col-sm-4
+              .asiapedia.servicesFlyers
+                .ThumbBlock.hoverImage
+                  figure
+                    img(src='https://www.dezshira.com/themes/dsa/images/brochures/information-technology-solutions.jpg', itemprop='image')
+                .eventBody
+                  h4
+                    a(title='Technology', href='#') Technology
+                .downloadflyersBrochures
+                  ul.list-unstyled
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~IT-Cloud%20Application%20Design?9', target='_blank')
+                        span.pull-left Cloud Application Design
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~IT-Cloud%20Migration?8', target='_blank')
+                        span.pull-left Cloud Migration
+                        i.fas.fa-cloud-download-alt.pull-right
+                .moreBtn
+                  a#download.dropdown-toggle.btn.btn-lg.btn-outline.btn-block(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | MORE 
+                    i.fas.fa-angle-down
+                  ul#download-menu.dropdown-menu(aria-labelledby='download', style='margin-top: 0px;')
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~IT-ERP%20Implementation%20and%20Support?4', target='_blank')
+                        span.pull-left ERP Implementation and Support
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~IT-ERP%20Integration?1', target='_blank')
+                        span.pull-left ERP Integration
+                        i.fas.fa-cloud-download-alt.pull-right
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/services~IT-Infrastructure?9', target='_blank')
+                        span.pull-left IT Infrastructure
+                        i.fas.fa-cloud-download-alt.pull-right
+              // /flyer
+            // /col
+            .col-lg-4.col-md-4.col-sm-4
+              .asiapedia.servicesFlyers
+                .ThumbBlock.hoverImage
+                  figure
+                    img(src='https://www.dezshira.com/themes/dsa/images/brochures/industries.jpg', itemprop='image')
+                .eventBody
+                  h4
+                    a(title='Industries', href='#') Industries
+                .downloadflyersBrochures
+                  ul.list-unstyled
+                    li
+                      a(href='https://www.dezshira.com/brochure_download_status/industries~DSA-Manufacturing-Brochure?1', target='_blank')
+                        span.pull-left Industry: Manufacturing
+                        i.fas.fa-cloud-download-alt.pull-right
+
+
+
+    // End Content
+
+block js
+    |
+    |
+    script(src='https://www.dezshira.com/themes/dsa/js/fontawesome-all.min.js')
+
+block modal
+    |
+    |
+    // Start modal
+    #quickViewModal.modal.fade(role='dialog', tabindex='-1', aria-labelledby='gridModalLabel')
+        .modal-dialog(role='document')
+            .modal-content.radius-none
+                .modal-header.section-title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#gridSystemModalLabel.modal-title Our Regional Publications
+                .modal-body.top-bg-contain.book-detail-bg-banner
+                    #iframeContainer
+
+    #Loginpopup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog.modal-md
+            .modal-content
+                .modal-header.text-center
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    a(href='https://www.dezshira.com/library')
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-center A place to share knowledge and better understand Asia
+                .modal-body
+                    .row
+                        .col-sm-6.col-md-6.col-lg-6
+                            h4#myModalLabel.modal-title.text-center Log In
+                            form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="far fa-envelope"></i>
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="fas fa-lock"></i>
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                        small Forgot Password?
+                                .form-group.text-center
+                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                .form-group.text-center
+                                    small
+                                        | Don't have an account? 
+                                        a(href='https://www.dezshira.com/register') Sign Up
+                        .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                            .subscriptionBlock
+                                #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                        li(data-target='#subscriptionCarousel', data-slide-to='0')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                        .item.next.left
+                                            h4.modal-title.text-center Publication
+                                            i.sprite.sprite-retina.icon-publications
+                                            .carousel-caption
+                                                p Download our FREE magazines and guides
+                                        .item
+                                            h4.modal-title.text-center News 
+                                            i.sprite.sprite-retina.icon-news
+                                            .carousel-caption
+                                                p
+                                                    | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                        .item
+                                            h4.modal-title.text-center Multimedia
+                                            i.sprite.sprite-retina.icon-ksp
+                                            .carousel-caption
+                                                p Access presentations, webinars, podcasts, reports, Q&As and more
+                                        .item.active.left
+                                            h4.modal-title.text-center Dashboard
+                                            i.sprite.sprite-retina.icon-dashboard
+                                            .carousel-caption
+                                                p Track paid orders and connect with our support team
+                                    // Carousel controls
+
+    #logoDownload.modal.fade.logoDownload(role='dialog')
+        .modal-dialog
+            // Modal content
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal') ×
+                    a(href='https://www.dezshira.com/')
+                        img.logo.center-block.margin20Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png 2x')
+                .modal-body
+                    h4.section-title Dezan Shira & Associates logos
+                    table.table.table-striped
+                        tbody
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank') Dezan Shira & Associates logo_vertical(EPS)
+                                td.lightgreyColor 254KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
+                                td.lightgreyColor 14KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
+                                td.lightgreyColor 566KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
+                                td.lightgreyColor 49KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
+                                td.lightgreyColor 305KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
+                                td.lightgreyColor 18KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+
+
+    // End modal
