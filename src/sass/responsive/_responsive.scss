@@ -254,4 +254,17 @@
 }
 
 .text-align{ text-align:left;}
+
+//brochure
+#brochure.brochure_dropdown .brochureCaption{ padding: 0px;}
+.asiapedia.servicesFlyers{ min-height: auto;}
+//newspage
+#related_reading.list{
+	li{
+		.listRightContent{ padding-left: 0px;}
+	}	
+}
+
+.publications-thumb{ float: inherit;}
+
 }

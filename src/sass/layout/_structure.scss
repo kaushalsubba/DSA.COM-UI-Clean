@@ -56,6 +56,30 @@ ul.list li .articleThumbnail {
 
 }
 
+// news inner page
+div.wp-caption{
+	display: block;
+	padding: 5px;
+	margin: 10px 0 20px 0;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+	.wp-caption-text {
+		padding: 10px;
+		font-size: 11px;
+		color: #333;
+		text-align: center;
+	}
+}
+.Next{ text-align: right;}
+#related_reading.list{
+		li{
+			.listRightContent{ padding-left: 170px;}
+		}	
+}
+.meta {
+    border-bottom: solid #e6e7e8 1px;
+    border-top: 1px solid #e6e7e8;
+    padding: 10px 0px;
+}
 // pagination
 .page {
 	border-bottom: solid 1px #e6e7e8;
