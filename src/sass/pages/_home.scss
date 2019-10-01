@@ -117,7 +117,7 @@
 			}
 		}
 	}
-	#logoDownload,#Loginpopup{
+	#logoDownload,#Loginpopup,#loginForm{
 		.modal-content{ border-radius: $border-radius-none;
 			
 		}
@@ -134,7 +134,7 @@
 		
 		}
 	}
-	#Loginpopup{
+	#Loginpopup,#loginForm{
 		.modal-header{ border-top: solid 3px $bluedark; }
 		.modal-title{ color: $bluedark;}
 		.subscriptionBlock {
@@ -149,12 +149,12 @@
 		.carousel-indicators  { bottom: 0;
 			.active {
 				background-color: #b7b8bb;
+				margin: 0px 2px;
 				}
 			li {
 				background-color: #d6d6d6;
 				height: 12px;
 				width: 12px;
-				margin: 0;
 			}
 		
 		}

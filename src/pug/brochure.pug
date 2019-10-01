@@ -285,7 +285,7 @@ block modal
                 .modal-body
                     .row
                         .col-sm-6.col-md-6.col-lg-6
-                            h4#myModalLabel.modal-title.text-center Log In
+                            h4#myModalLabel.modal-title.text-center.mb-2 Log In
                             form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
                                 input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
                                 .form-group.input-group
@@ -302,7 +302,7 @@ block modal
                                     a(href='http://www.asiabriefing.com/customer/forgot-password')
                                         small Forgot Password?
                                 .form-group.text-center
-                                    input.btn.btn-lg.btn-outline.blue-btn.btnNormalWidth(type='submit', value='LOGIN')
+                                    input.btn.btn-primary(type='submit', value='LOGIN')
                                 .form-group.text-center
                                     small
                                         | Don't have an account? 
@@ -319,23 +319,23 @@ block modal
                                     // Wrapper for carousel items
                                     .carousel-inner
                                         .item.next.left
-                                            h4.modal-title.text-center Publication
+                                            h4.modal-title.text-center.mb-2 Publication
                                             i.sprite.sprite-retina.icon-publications
                                             .carousel-caption
                                                 p Download our FREE magazines and guides
                                         .item
-                                            h4.modal-title.text-center News 
+                                            h4.modal-title.text-center.mb-2 News 
                                             i.sprite.sprite-retina.icon-news
                                             .carousel-caption
                                                 p
                                                     | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
                                         .item
-                                            h4.modal-title.text-center Multimedia
+                                            h4.modal-title.text-center.mb-2 Multimedia
                                             i.sprite.sprite-retina.icon-ksp
                                             .carousel-caption
                                                 p Access presentations, webinars, podcasts, reports, Q&As and more
                                         .item.active.left
-                                            h4.modal-title.text-center Dashboard
+                                            h4.modal-title.text-center.mb-2 Dashboard
                                             i.sprite.sprite-retina.icon-dashboard
                                             .carousel-caption
                                                 p Track paid orders and connect with our support team

@@ -267,4 +267,11 @@
 
 .publications-thumb{ float: inherit;}
 
+//bottom banner
+section.TopBanner.bottom-banner{
+	height: auto;
+
+	.BannerCaption{ padding: 20px 0px;}
+}
+
 }

@@ -1,0 +1,545 @@
+extends layouts/_layout_default
+
+block setting
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    - title = "Dezan shira"
+    - title = "Dezan shira"
+
+
+
+block content
+    // Start Content
+    section#global_locations.pb-7.pt-7
+      .container
+        .row
+          .col-sm-5.col-md-4.col-lg-3
+            .leftBlockSection
+              h4.section-title
+                a(href='#') CHOOSE REGION
+              #sidebarnav.block.no-padding
+                ul.collapsible.with_landing
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/china')
+                      i.sprite.sprite-retina.icon-chinaMap
+                      |  China 
+                      i.fa.fa-angle-down(aria-hidden='true')
+                    ul
+                      li
+                        a(href='https://www.dezshira.com/office/china/beijing.html') Beijing
+                      li
+                        a(href='https://www.dezshira.com/office/china/dalian.html') Dalian
+                      li
+                        a(href='https://www.dezshira.com/office/china/dongguan.html') Dongguan
+                      li
+                        a(href='https://www.dezshira.com/office/china/guangzhou.html') Guangzhou
+                      li
+                        a(href='https://www.dezshira.com/office/china/hangzhou.html') Hangzhou
+                      li
+                        a(href='https://www.dezshira.com/office/china/ningbo.html') Ningbo
+                      li
+                        a(href='https://www.dezshira.com/office/china/qingdao.html') Qingdao
+                      li
+                        a(href='https://www.dezshira.com/office/china/shanghai.html') Shanghai
+                      li
+                        a(href='https://www.dezshira.com/office/china/shenzhen.html') Shenzhen
+                      li
+                        a(href='https://www.dezshira.com/office/china/suzhou.html') Suzhou
+                      li
+                        a(href='https://www.dezshira.com/office/china/tianjin.html') Tianjin
+                      li
+                        a(href='https://www.dezshira.com/office/china/zhongshan.html') Zhongshan
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/silk-belt-road.html')
+                      i.sprite.sprite-retina.icon-slikroadMap
+                      |  Belt &amp; Road Initiative
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/hong-kong.html')
+                      i.sprite.sprite-retina.icon-hong-kongMap
+                      |  Hong Kong
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/india')
+                      i.sprite.sprite-retina.icon-indiaMap
+                      |  India 
+                      i.fa.fa-angle-down(aria-hidden='true')
+                    ul
+                      li
+                        a(href='https://www.dezshira.com/office/india/bengaluru.html') Bengaluru 
+                      li
+                        a(href='https://www.dezshira.com/office/india/delhi.html') Delhi
+                      li
+                        a(href='https://www.dezshira.com/office/india/mumbai.html') Mumbai
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/indonesia.html')
+                      i.sprite.sprite-retina.icon-indonesiaMap
+                      |  Indonesia
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/malaysia.html')
+                      i.sprite.sprite-retina.icon-malaysiaMap
+                      |  Malaysia
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/philippines.html')
+                      i.sprite.sprite-retina.icon-philippinesMap
+                      |  Philippines
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/russia')
+                      i.sprite.sprite-retina.icon-russiaMap
+                      |  Russia 
+                      i.fa.fa-angle-down(aria-hidden='true')
+                    ul
+                      li
+                        a(href='https://www.dezshira.com/office/russia/moscow.html') Moscow Office
+                      li
+                        a(href='https://www.dezshira.com/office/russia/st-petersburg.html') St.Petersburg Office
+                      li
+                        a(href='https://www.dezshira.com/office/russia/irkutsk.html') Irkutsk Office
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/singapore.html')
+                      i.sprite.sprite-retina.icon-singaporeMap
+                      |  Singapore
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/thailand.html')
+                      i.sprite.sprite-retina.icon-thailandMap
+                      |  Thailand
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/vietnam')
+                      i.sprite.sprite-retina.icon-vietnamMap
+                      |  Vietnam 
+                      i.fa.fa-angle-down(aria-hidden='true')
+                    ul
+                      li
+                        a(href='https://www.dezshira.com/office/vietnam/da-nang.html') Danang
+                      li
+                        a(href='https://www.dezshira.com/office/vietnam/hanoi.html') Hanoi
+                      li
+                        a(href='https://www.dezshira.com/office/vietnam/ho-chi-minh-city.html') Ho Chi Minh City
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/italy')
+                      i.sprite.sprite-retina.icon-italyMap
+                      |  Italian Liaison Offices 
+                      i.fa.fa-angle-down(aria-hidden='true')
+                    ul
+                      li
+                        a(href='https://www.dezshira.com/office/italy/conegliano.html') Conegliano Office
+                      li
+                        a(href='https://www.dezshira.com/office/italy/eurolink-udine.html') Udine Office
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/germany')
+                      i.sprite.sprite-retina.icon-germanMap
+                      |  German Liaison Offices 
+                      i.fa.fa-angle-down(aria-hidden='true')
+                    ul
+                      li
+                        a(href='https://www.dezshira.com/office/germany/essen.html') Essen
+                      li
+                        a(href='https://www.dezshira.com/office/germany/cologne.html') Cologne
+                      li
+                        a(href='https://www.dezshira.com/office/germany/stuttgart.html') Stuttgart
+                  li.level1
+                    a.main-menu(href='https://www.dezshira.com/office/usa')
+                      i.sprite.sprite-retina.icon-usaMap
+                      |  USA Liaison Offices 
+                      i.fa.fa-angle-down(aria-hidden='true')
+                    ul
+                      li
+                        a(href='https://www.dezshira.com/office/usa/boston.html') Boston Office
+                      li
+                        a(href='https://www.dezshira.com/office/usa/san-diego.html') San Diego Office
+                      li
+                        a(href='https://www.dezshira.com/office/usa/salt-lake-city.html') Salt Lake City Office
+          .col-sm-7.col-md-8.col-lg-9
+            h4.section-title
+              a(href='#') China
+            iframe(width='100%', height='500px', frameborder='0', src='https://www.dezshira.com/office/map?global_zoom=30.00000,110.00000,4', scrolling='no', seamless='seamless')
+            h4.section-title
+              a(href='#') China Offices
+            .row.officeList.mt-2
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/beijing/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/beijing.html') Beijing Office
+                      p
+                        span Tel: 
+                        | +86 (0)10 6566 0088
+                        br
+                        span Fax:
+                        | +86 (0)10 6566 0288
+                        br
+                        span Email:
+                        a(href='mailto:beijing@dezshira.com') beijing@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/beijing.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/dalian/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/dalian.html') Dalian Office
+                      p
+                        span Tel: 
+                        | +86 (0) 411 3957 3311
+                        br
+                        span Fax:
+                        | +86 (0) 411 3957 3311 - 8088
+                        br
+                        span Email:
+                        a(href='mailto:dalian@dezshira.com') dalian@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/dalian.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/dongguan/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/dongguan.html') Dongguan Office
+                      p
+                        span Tel: 
+                        | +86 (0)769 3381 8020
+                        br
+                        span Fax:
+                        | +86 (0)769 2288 8435
+                        br
+                        span Email:
+                        a(href='mailto:dongguan@dezshira.com') dongguan@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/dongguan.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/guangzhou/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/guangzhou.html') Guangzhou Office
+                      p
+                        span Tel: 
+                        | +86 (0)20 3825 1581
+                        br
+                        span Fax:
+                        | +86 (0)20 3825 1367
+                        br
+                        span Email:
+                        a(href='mailto:guangzhou@dezshira.com') guangzhou@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/guangzhou.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/hangzhou/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/hangzhou.html') Hangzhou Office
+                      p
+                        span Tel: 
+                        | +86 (0) 571 5685 9956
+                        br
+                        span Fax:
+                        | +86 (0) 571 5600 1122
+                        br
+                        span Email:
+                        a(href='mailto:hangzhou@dezshira.com') hangzhou@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/hangzhou.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/ningbo/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/ningbo.html') Ningbo Office
+                      p
+                        span Tel: 
+                        | +86 (0) 574 8733 8682
+                        br
+                        span Fax:
+                        | +86 (0) 574 8733 9179
+                        br
+                        span Email:
+                        a(href='mailto:ningbo@dezshira.com') ningbo@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/ningbo.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/qingdao/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/qingdao.html') Qingdao Office
+                      p
+                        span Tel: 
+                        | +86 (0) 532 8610 2237
+                        br
+                        span Email:
+                        a(href='mailto:qingdao@dezshira.com') qingdao@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/qingdao.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/shanghai/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/shanghai.html') Shanghai Office
+                      p
+                        span Tel: 
+                        | +86 (0)21 6358 8686
+                        br
+                        span Fax:
+                        | +86 (0)21 6358 9899
+                        br
+                        span Email:
+                        a(href='mailto:shanghai@dezshira.com') shanghai@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/shanghai.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/shenzhen/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/shenzhen.html') Shenzhen Office
+                      p
+                        span Tel: 
+                        | +86 (0)755 8366 4120
+                        br
+                        span Fax:
+                        | +86 (0)755 8366 4122
+                        br
+                        span Email:
+                        a(href='mailto:shenzhen@dezshira.com') shenzhen@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/shenzhen.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/suzhou/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/suzhou.html') Suzhou Office
+                      p
+                        span Tel: 
+                        | +86 (0)512 8686 8717
+                        br
+                        span Fax:
+                        | +86 (0)512 8686 8717 ext. 811
+                        br
+                        span Email:
+                        a(href='mailto:suzhou@dezshira.com') suzhou@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/suzhou.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/tianjin/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/tianjin.html') Tianjin Office
+                      p
+                        span Tel: 
+                        | +86 (0)22 5830 7666
+                        br
+                        span Fax:
+                        | +86 (0)22 5830 7889
+                        br
+                        span Email:
+                        a(href='mailto:tianjin@dezshira.com') tianjin@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/tianjin.html', target='_blank') show more &gt;
+              .col-lg-6.col-md-12.col-sm-12
+                .boxContent.border.p-0.mb-2
+                  .contactDetail.pt-2.pb-2.pr-2.pl-2.border-bottom
+                    .thmb80.pull-left
+                      img.img-responsive(alt='', src='http://www.dezshira.com/userfiles/staticpage-assets/office/zhongshan/thumb.jpg', width='80', height='80')
+                    .content-display
+                      h4
+                        a(href='https://www.dezshira.com/office/china/zhongshan.html') Zhongshan Office
+                      p
+                        span Tel: 
+                        | +86 (0)760 8826 9592
+                        br
+                        span Fax:
+                        | +86 (0)760 8830 7592
+                        br
+                        span Email:
+                        a(href='mailto:zhongshan@dezshira.com') zhongshan@dezshira.com
+                  a.btn.btn-link.text-uppercase(href='https://www.dezshira.com/office/china/zhongshan.html', target='_blank') show more &gt;
+
+            .clearfix
+          // /col
+        // /row
+      // /container
+    section.TopBanner.bottom-banner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/Briefings-Ads-SRB.jpg')
+        .BannerCaption
+            .container
+                .row
+                  .col-sm-2.col-md-2.col-lg-2.col-sm-offset-2.col-md-offset-2.col-lg-offset-2.text-right
+                    a(href='http://www.china-briefing.com/', target='_blank')
+                      img(alt='', src='https://www.dezshira.com/themes/dsa/images/briefing-logos/cbLogoS.png', srcset='https://www.dezshira.com/themes/dsa/images/briefing-logos/cb-2x.png 2x', width='85', height='85')
+                  .col-sm-6.col-md-6.col-lg-6
+                    h4.text-uppercase
+                      strong
+                        a(href='http://www.china-briefing.com/', target='_blank') China
+                    h2 
+                      strong 
+                        a(href='http://www.china-briefing.com/', target='_blank') Visit our China business and investment website: www.china-briefing.com 
+
+
+
+
+    // End Content
+
+block js
+    |
+    |
+    script(src='https://www.dezshira.com/themes/dsa/js/fontawesome-all.min.js')
+
+block modal
+    |
+    |
+    // Start modal
+    #quickViewModal.modal.fade(role='dialog', tabindex='-1', aria-labelledby='gridModalLabel')
+        .modal-dialog(role='document')
+            .modal-content.radius-none
+                .modal-header.section-title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#gridSystemModalLabel.modal-title Our Regional Publications
+                .modal-body.top-bg-contain.book-detail-bg-banner
+                    #iframeContainer
+
+    #Loginpopup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog.modal-md
+            .modal-content
+                .modal-header.text-center
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    a(href='https://www.dezshira.com/library')
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-center A place to share knowledge and better understand Asia
+                .modal-body
+                    .row
+                        .col-sm-6.col-md-6.col-lg-6
+                            h4#myModalLabel.modal-title.text-center.mb-2 Log In
+                            form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                input(type='hidden', name='dsa_login_token', value='5643e57dfd6544a0243c8b6f26f7e85c529b77080ccdd61c4209401cfe01ce58')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="far fa-envelope"></i>
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        
+                                        <i class="fas fa-lock"></i>
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                        small Forgot Password?
+                                .form-group.text-center
+                                    input.btn.btn-primary(type='submit', value='LOGIN')
+                                .form-group.text-center
+                                    small
+                                        | Don't have an account? 
+                                        a(href='https://www.dezshira.com/register') Sign Up
+                        .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                            .subscriptionBlock
+                                #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                        li(data-target='#subscriptionCarousel', data-slide-to='0')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                        li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                        .item.next.left
+                                            h4.modal-title.text-center.mb-2 Publication
+                                            i.sprite.sprite-retina.icon-publications
+                                            .carousel-caption
+                                                p Download our FREE magazines and guides
+                                        .item
+                                            h4.modal-title.text-center.mb-2 News 
+                                            i.sprite.sprite-retina.icon-news
+                                            .carousel-caption
+                                                p
+                                                    | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                        .item
+                                            h4.modal-title.text-center.mb-2 Multimedia
+                                            i.sprite.sprite-retina.icon-ksp
+                                            .carousel-caption
+                                                p Access presentations, webinars, podcasts, reports, Q&As and more
+                                        .item.active.left
+                                            h4.modal-title.text-center.mb-2 Dashboard
+                                            i.sprite.sprite-retina.icon-dashboard
+                                            .carousel-caption
+                                                p Track paid orders and connect with our support team
+                                    // Carousel controls
+
+    #logoDownload.modal.fade.logoDownload(role='dialog')
+        .modal-dialog
+            // Modal content
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal') ×
+                    a(href='https://www.dezshira.com/')
+                        img.logo.center-block.margin20Top(alt='', src='https://www.dezshira.com/themes/dsa/images/logo.png', srcset='https://www.dezshira.com/themes/dsa/images/logo-2X.png 2x')
+                .modal-body
+                    h4.section-title Dezan Shira & Associates logos
+                    table.table.table-striped
+                        tbody
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank') Dezan Shira & Associates logo_vertical(EPS)
+                                td.lightgreyColor 254KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank') Dezan Shira & Associates logo_vertical(PNG)
+                                td.lightgreyColor 14KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_vertical (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank') Dezan Shira & Associates logo_horizontal(EPS)
+                                td.lightgreyColor 566KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank') Dezan Shira & Associates logo_horizontal(PNG)
+                                td.lightgreyColor 49KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira & Associates logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank') Dezan Shira Asian Alliance(EPS)
+                                td.lightgreyColor 305KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (EPS).eps', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+                            tr
+                                td
+                                    a(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank') Dezan Shira Asian Alliance(PNG)
+                                td.lightgreyColor 18KB
+                                td
+                                    a.lightgreyColor(href='https://www.dezshira.com/themes/dsa/images/dsa-logo/Dezan Shira Asian Alliance logo_horizontal (PNG).png', target='_blank')
+                                        
+                                        <i class="fas fa-cloud-download-alt"></i>
+
+
+    // End modal

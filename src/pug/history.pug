@@ -12,173 +12,118 @@ block setting
 block content
     // Start Content
     section.TopBanner
-        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg')
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/LocationsBanner.jpg')
         .BannerCaption
             .container
                 .row
                     .col-sm-12.col-md-10.col-lg-10
-                        h1.text-left Careers
-                        h4 Working at Dezan Shira & Associates is about growth. That means developing skills, making a difference, and achieving goals to help colleagues and clients reach new heights.
+                        h1.text-left History
 
-    section#featuredOffers
+
+    section#history.pb-7.pt-7
         .container
-            h1.text-center.display-4.mb-4 Featured Offers
-            .row
-                .col-lg-4.col-md-4.col-sm-4
-                    .boxContent.border
-                        h4
-                            a(href='https://www.dezshira.com/career/details/singapore/junior-company-secretary-178.html') Junior Company Secretary
-                        h5 Associate | Business Advisory Services  
-                        h6 Singapore | Singapore
-                .col-lg-4.col-md-4.col-sm-4
-                    .boxContent.border
-                        h4
-                            a(href='https://www.dezshira.com/career/details/vietnam/business-intelligence-intern-176.html') Business Intelligence Intern
-                        h5 Assistant (Intern) | Business Intelligence  
-                        h6 HCMC / Hanoi | Vietnam
-                .col-lg-4.col-md-4.col-sm-4
-                    .boxContent.border
-                        h4
-                            a(href='https://www.dezshira.com/career/details/india/graphic-designer-asia-briefing-175.html') Graphic Designer, Asia Briefing
-                        h5 Associate | Marketing  
-                        h6 Delhi | India
-    section#jobs
-        .container-fluid
-            .row
-                .col-sm-6.col-md-6.col-lg-6.internship
-                    h2 Internship program
-                    p
-                        | Find your fit in an environment where you can explore new skills and interests. We offer a flexible internship for personal and professional growth.
-                    a.btn.btn-outline-white.text-uppercase(href='https://www.dezshira.com/career/search?role=Assistant+%28Intern%29') see OFFERS
-                .col-sm-6.col-md-6.col-lg-6.banner.fullTime
-                    h2 Full time jobs
-                    p
-                        | Make your next move with a growing team of entrepreneurial professionals from across the world. We provide the platform for success.
-                    a.btn.btn-outline-white.text-uppercase(href='https://www.dezshira.com/career/search?type=permanent') SEE OFFERS
+          .row
+            .col-sm-12.col-md-12.col-lg-12
+              #carousel-history.carousel.slide(data-ride='carousel')
+                // Indicators
+                .container
+                  .row
+                    .col-sm-12.col-md-12.col-lg-12
+                      ol.carousel-indicators
+                        li.active(data-target='#carousel-history', data-slide-to='0')
+                        li(data-target='#carousel-history', data-slide-to='1')
+                        li(data-target='#carousel-history', data-slide-to='2')
+                        li(data-target='#carousel-history', data-slide-to='3')
+                        li(data-target='#carousel-history', data-slide-to='4')
+                // Wrapper for slides
+                .carousel-inner(role='listbox')
+                  .item.active
+                    .container
+                      .row
+                        .col-sm-7.col-md-7.col-lg-7
+                          .carousel-caption
+                            h1 1992
+                            h2 Founding of Dezan Shira &amp; Associates
+                            p
+                              | Dezan Shira Business Management Services (China) Ltd. is formed in 
+                              a(href='http://www.dezshira.com/office/hong-kong.html') Hong Kong
+                              |  with a remit to provide business advisory services to foreign investors in mainland China, including both post and pre-incorporation assistance, trademark registration, and related advice. The new company also opens a small office in Shekou, the deep water port of 
+                              a(href='http://www.dezshira.com/office/china/shenzhen.html') Shenzhen
+                              | , which has become a focal point for foreign investment due to its special status as China&lsquo;s first &rdquo;Special Economic Zone.&quot;
+                        .col-sm-5.col-md-5.col-lg-5
+                          img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/history/1992-Founding of Dezan Shira & Associates.jpg', width='400')
+                      // row
+                    // conatiner
+                  .item
+                    .container
+                      .row
+                        .col-sm-7.col-md-7.col-lg-7
+                          .carousel-caption
+                            h1 1993
+                            h2 Dezan Shira acquires its first clients.
+                            p
+                              | The firm services its first clients, which involved various China trademark applications, representative office establishments and joint venture contractual reviews, mainly within the offshore oil industry. The practice hires its first Chinese staff.
+                        .col-sm-5.col-md-5.col-lg-5
+                          img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/history/1993-Dezan Shira acquires its first clients..jpg', width='400')
+                      // row
+                    // conatiner
+                  .item
+                    .container
+                      .row
+                        .col-sm-7.col-md-7.col-lg-7
+                          .carousel-caption
+                            h1 1994
+                            h2 Beijing and Shanghai offices open.
+                            p
+                              | The firm changes its name to Dezan Shira &amp; Associates, moves its Shekou office to downtown Shenzhen, and opens additional offices in Beijing at the Lufthansa Center and in Shanghai in the Sen Mao Tower.
+                        .col-sm-5.col-md-5.col-lg-5
+                          img.img-responsive.center-block(src='https://www.dezshira.com/themes/dsa/images/history/1994-Beijing Shanghai offices.jpg', width='400')
+                      // row
+                    // conatiner
+                  .item
+                    .container
+                      .row
+                        .col-sm-7.col-md-7.col-lg-7
+                          .carousel-caption
+                            h1 1999
+                            h2 First issue of China Briefing Magazine published.
+                            p
+                              | To better promote the firm and to bring all marketing needs directly under its own control, Dezan Shira &amp; Associates launches its first magazine: 
+                              a(href='http://www.china-briefing.com', target='_blank') China Briefing
+                              | . The issue is distributed throughout five-star hotels in Shenzhen and Guangzhou and immediately runs out of the 1,000 copies printed. Over the next decade, distribution becomes national with circulation reaching 25,000 copies a month.
+                        .col-sm-5.col-md-5.col-lg-5
+                          img.img-responsive.center-block(src='https://www.dezshira.com/themes/dsa/images/history/1999-China Briefing.jpg', width='400')
+                      // row
+                    // conatiner
+                  .item
+                    .container
+                      .row
+                        .col-sm-7.col-md-7.col-lg-7
+                          .carousel-caption
+                            h1 2004
+                            h2 Opening of Dezan Shira&apos;s Dalian office
+                            p
+                              | Dezan Shira &amp; Associates opens its office in 
+                              a(href='http://www.dezshira.com/office/china/dalian.html') Dalian
+                              | .
+                        .col-sm-5.col-md-5.col-lg-5
+                          img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/history/2004-Dalian offices.jpg', width='400')
+                      // row
+                    // conatiner
+                // Controls
+                a.left.carousel-control(href='#carousel-history', role='button', data-slide='prev')
+                  span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                  span.sr-only Previous
+                a.right.carousel-control(href='#carousel-history', role='button', data-slide='next')
+                  span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                  span.sr-only Next
 
-    section#OurCoreValues
-        .container
-            .row
-                .col-sm-12.col-md-12.col-lg-12
-                    h1.text-center.heading.mb-2 Our Core Values
-                    p.text-center
-                        | We are motivated by our core values. These values have enabled our continued success as 
-                        br
-                        | trusted advisors for international businesses across Asia.
-            .row
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    h2
-                        i.sprite.sprite-retina.icon-innoCreat
-                        |  Innovation and Creativity
-                    p
-                        | We are always looking to expand our boundaries, knowing that an environment of sharing and collaboration will foster the continual development of our practice.
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    h2
-                        i.sprite.sprite-retina.icon-ethics
-                        |  Ethics
-                    p
-                        | We act with highest standards of personal and professional integrity; our business is run honestly, without cutting corners.
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    h2
-                        i.sprite.sprite-retina.icon-culturaldiver
-                        |  Cultural Diversity
-                    p
-                        | Our clients come from all over the world, and so do we. We are proud to attract and retain diverse talent to ensure our offices have multiple perspectives and global insight.
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    h2
-                        i.sprite.sprite-retina.icon-diligence
-                        |  Diligence
-                    p
-                        | We love what we do, and our commitment to quality means that we approach our work with unmatched enthusiasm and dedication, to our people and to our clients.
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    h2
-                        i.sprite.sprite-retina.icon-prudence
-                        |  Prudence
-                    p
-                        | We take our work seriously, which is why our clients feel confident that we will provide sound advice in increasingly complex emerging markets.
-                .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    h2
-                        i.sprite.sprite-retina.icon-perseverance
-                        |  Perseverance
-                    p
-                        | We know that the best solutions don&rsquo;t always come easily. Our employees are empowered to challenge their assumptions in an environment where they have the freedom to reach their full potential.
 
-    section.MeetOurPeople
-        .container
-            .row
-                .col-xs-12.col-sm-6.col-md-6.col-lg-6
-                    h2.heading Meet Our People
-                    p
-                        | Since its establishment in 1992, Dezan Shira &amp; Associates has grown into one of Asia&apos;s most versatile full-service consultancies with operational offices across China, Hong Kong, India, Singapore and Vietnam as well as liaison offices in Italy and the United States. By joining our international team, you will be one of many business professionals committed to improving the understanding and transparency of investing in emerging Asia.
-                    a.btn.btn-outline-dark.text-uppercase.mb-2(href='#testimonial') see testimonies
-                .col-xs-12.col-sm-6.col-md-6.col-lg-6
-                    #meetOurPeople.carousel.slide(data-ride='carousel')
-                        // Indicators
-                        ol.carousel-indicators
-                            li(data-target='#meetOurPeople', data-slide-to='0')
-                            li.active(data-target='#meetOurPeople', data-slide-to='1')
-                            li(data-target='#meetOurPeople', data-slide-to='2')
-                            li(data-target='#meetOurPeople', data-slide-to='3')
-                            li(data-target='#meetOurPeople', data-slide-to='4')
-                            li(data-target='#meetOurPeople', data-slide-to='5')
-                            li(data-target='#meetOurPeople', data-slide-to='6')
-                        // Wrapper for slides
-                        .carousel-inner
-                            .item
-                                img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/career/slide1.jpg')
-                            .item.active
-                                img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/career/slide2.jpg')
-                            .item
-                                img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/career/slide3.jpg')
-                            .item
-                                img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/career/slide4.jpg')
-                            .item
-                                img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/career/slide5.jpg')
-                            .item
-                                img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/career/slide6.jpg')
-                            .item
-                                img.img-responsive(alt='', src='https://www.dezshira.com/themes/dsa/images/career/slide7.jpg')
 
-    section.TopBanner.get-in-touch
-        img(alt='', src='https://www.dezshira.com/themes/dsa/images/Resources-Foreign-Investors.jpg')
-        .BannerCaption
-            .container
-                .row
-                    .col-xs-12.col-sm-8.col-md-8.col-lg-8.col-lg-offset-2.col-md-offset-2.col-sm-offset-2.text-center
-                        h1.text-center.heading Get in touch
-                        p.text-center.mb-2 We want to connect with professionals that have a diverse array of experiences, skills, and goals. Log-in to our career portal so that we can start a conversation.
-                        a.btn.btn-outline-white.mr-2.text-uppercase(href='https://www.dezshira.com/login') Log in now
-                        a.btn.btn-outline-white.text-uppercase(href='https://www.dezshira.com/register.html') SIGN UP 
+            // /col
+          // /row
+        // /container
 
-    section#testimonial
-        .container
-            .row
-                .col-sm-4.col-md-4.col-lg-4
-                    .testimonial-wrapper
-                        .testimonial
-                            | &ldquo; For a company that values talent and provides the environment for it to be developed, putting in hard work and taking your career seriously would ensure that your roles and responsibilities will grow each year. &rdquo;
-                        .media
-                            .media-left.d-flex.mr-3
-                                img(src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Hannah_Feng200200.jpg', alt='')
-                            .media-body
-                                .overview
-                                    .name
-                                        b Hannah Feng
-                                    .details
-                                        | Senior Manager | Corporate Accounting Services | Beijing
-                .col-sm-4.col-md-4.col-lg-4
-                    .testimonial-wrapper
-                        .testimonial
-                            | &ldquo;  I am very proud of my Dalian HR and payroll team, which has grown to be more proficient in coping with the demands of clients from multinational backgrounds. &rdquo;
-                        .media
-                            .media-left.d-flex.mr-3
-                                img(src='//www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Helen_kong_200x200.jpg', alt='')
-                            .media-body
-                                .overview
-                                 .name
-                                    b Helen Kong
-                                .details
-                                    | Manager | Human Resources | Dalian Office
 
     // End Content
 

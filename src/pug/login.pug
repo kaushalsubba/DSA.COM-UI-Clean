@@ -11,120 +11,74 @@ block setting
 
 block content
     // Start Content
-    section.TopBanner
-        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/das-events-banner.jpg')
-        .BannerCaption
-            .container
-                .row
-                    .col-sm-12.col-md-10.col-lg-10
-                        h1.text-left Eastern Economic Forum 2019
-                        p.text-left Vladivostok | 4-6 September, 2019
-
-    section.breadcrumbBlock
+    section.login.pt-5.pb-5
         .container
             .row
-                .col-sm-12.col-md-12.col-lg-12
-                    ol.breadcrumb
-                        li
-                            a(href='#') Events
-                        li.active(aria-current='page') Event Detai
-
-    section.pb-5.pt-5
-        .container
-            .row
-                .col-sm-8.col-md-8.col-lg-8.col-xl-8
-                    p
-                        a(href='https://www.dezshira.com/personnel/chris-devonshire-ellis.html')
-                            strong Chris Devonshire-Ellis,
-                        | &nbsp;Chairman and Founding Partner at Dezan Shira &amp; Associates, and&nbsp;
-                        a(href='https://www.dezshira.com/personnel/maria-kotova.html')
-                            strong Maria Kotova,
-                        | &nbsp;Global Business Development Manager and Head of Russian Desk, will be attending the 
-                        strong
-                            a(href='https://forumvostok.ru/en/') Eastern Economic Forum
-                        |  (EEF) on 4-6 of September, 2019 and meeting with key partners and local clients in Vladivostok, Russia.
-                    p
-                        | The Eastern Economic Forum was established by Decree of the President of the Russian Federation Vladimir Putin in 2015. In accordance with the Decree, the Eastern Economic Forum takes place each year in Vladivostok.
-                    p
-                        | Over the years, EEF has become the biggest international platform for discussing the strategy for developing political, economic and cultural ties between Russia and Asia Pacific.
-                    p
-                        | The gathering of leading politicians, businessmen, scientists, and experts from almost all the countries of the Asia-Pacific Region at a single platform creates a unique basis for international cooperation.
-                    p
-                        strong
-                            a(href='https://www.dezshira.com/international-desk/russian.html') Russian Desk
-                        | within DSA supports Russian businesses with market entry strategies, corporate structuring and ongoing compliance in China and other locations in South-East Asia.
-                    p
-                        | If you would like to discuss investment into China or other business interests in Asia, please&nbsp;
-                        a(href='mailto:russia@dezshira.com') contact us
-                        |  to arrange a meeting.
-                    
-                    h4.section-title.mt-4 Attender
-                    ul.list
-                        li
-                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='http://www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/chris-devonshire-ellis.jpg', width='120')
-                            .social_media.pull-right
-                                a(href='https://www.dezshira.com/contact')
-                                    i.fa.fa-envelope
-                                a.ml-3(href='http://cn.linkedin.com/pub/christopher-devonshire-ellis/b/608/a97', target='_blank')
-                                    i.fab.fa-linkedin-in
-                            .name.mt-2
-                                a(href='https://www.dezshira.com/personnel/chris-devonshire-ellis.html') Chris Devonshire-Ellis 
-                            .dec
-                                | Chairman &amp; Founding Partner
-                                br
-                                |       Russia &amp; China Belt Road Initiative Office
-                                br
-                            .clearfix
-                        li
-                            img.img-circle.img-thumbnail.pull-left.mr-4(alt='', src='http://www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/maria-kotova.jpg', width='120')
-                            .social_media.pull-right
-                                a(href='https://www.dezshira.com/contact')
-                                    i.fa.fa-envelope
-                                a.ml-3(href='https://www.linkedin.com/pub/maria-kotova/28/189/781', target='_blank')
-                                    i.fab.fa-linkedin-in
-                            .name.mt-2
-                                a(href='https://www.dezshira.com/personnel/maria-kotova.html') Maria Kotova 
-                            .dec
-                                | Head of Russian Desk
-                                br
-                                |       Shanghai Office
-                                br
-                            .clearfix
+                .col-sm-12.col-md-12.col-lg-lg
+                      #loginForm.modal-dialog.modal-md(style='display:block;')
+                        .modal-content
+                          .modal-header.text-center
+                            a(href='https://www.dezshira.com/library')
+                              img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                            p.text-center A place to share knowledge and better understand Asia
+                          .modal-body
+                            .row
+                              .col-sm-6.col-md-6.col-lg-6
+                                h4#myModalLabel.modal-title.text-center.mb-2 Log In
+                                form#loginForm.padd15.padd-TopNone(action='https://www.dezshira.com/login?action=post_form', method='POST')
+                                  input(type='hidden', name='dsa_login_token', value='')
+                                  .form-group.input-group
+                                    span.input-group-addon
+                                      i.far.fa-envelope
+                                    input.form-control(type='text', name='email', placeholder='email')
+                                  .form-group.input-group
+                                    span.input-group-addon
+                                      i.fas.fa-lock
+                                    input.form-control(type='password', name='password', placeholder='password')
+                                  p.text-right
+                                    a(href='http://www.asiabriefing.com/customer/forgot-password')
+                                      small Forgot Password?
+                                  .form-group.text-center
+                                    input.btn.btn-primary(type='submit', value='LOGIN')
+                                  .form-group.text-center
+                                    small
+                                      | Don&apos;t have an account? 
+                                      a(href='https://www.dezshira.com/register') Sign Up
+                              .col-sm-6.col-md-6.col-lg-6.greyLeftBorder
+                                .subscriptionBlock
+                                  #subscriptionCarousel.carousel.slide(data-ride='carousel')
+                                    // Carousel indicators
+                                    ol.carousel-indicators
+                                      li.active(data-target='#subscriptionCarousel', data-slide-to='0')
+                                      li(data-target='#subscriptionCarousel', data-slide-to='1')
+                                      li(data-target='#subscriptionCarousel', data-slide-to='2')
+                                      li(data-target='#subscriptionCarousel', data-slide-to='3')
+                                    // Wrapper for carousel items
+                                    .carousel-inner
+                                      .item.next.left
+                                        h4.modal-title.text-center.mb-2 Publication
+                                        i.sprite.sprite-retina.icon-publications
+                                        .carousel-caption
+                                          p Download our FREE magazines and guides
+                                      .item
+                                        h4.modal-title.text-center.mb-2 News 
+                                        i.sprite.sprite-retina.icon-news
+                                        .carousel-caption
+                                          p
+                                            | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                      .item
+                                        h4.modal-title.text-center.mb-2 Multimedia
+                                        i.sprite.sprite-retina.icon-ksp
+                                        .carousel-caption
+                                          p Access presentations, webinars, podcasts, reports, Q&amp;As and more
+                                      .item.active.left
+                                        h4.modal-title.text-center.mb-2 Dashboard
+                                        i.sprite.sprite-retina.icon-dashboard
+                                        .carousel-caption
+                                          p Track paid orders and connect with our support team
+                                    // Carousel controls
 
 
-                    
-       
-
-                .col-sm-4.col-md-4.col-lg-4.col-lg-4
-                    .rightBlockSection
-                        h4.section-title Event Info
-                        .eventsBlock.pt-4.pb-4.pl-4.pr-4
-                            .dateEvent Sep 04, 2019
-                            .timeEvent.mt-3
-                                span Location &amp; Time
-                                | Vladivostok | 4-6 September, 2019
-            // /col
-            // /row
-
-    
-
-   
-    
-
-
-    
-        // /container
-        
-    section.blue.pt-5.pb-5
-        .container
-            .row
-                .col-sm-2.col-md-2.col-lg-2.col-sm-offset-1.col-md-offset-1.col-lg-offset-1.text-right
-                    a(href='http://dezshira.in/register.html')
-                    img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Subscribe.png', srcset='https://www.dezshira.com/themes/dsa/images/icons/Subscribe@2x.png 2x')
-                .col-sm-8.col-md-8.col-lg-8
-                    h5 SUBSCRIBE
-                    h1
-                        a(href='https://www.dezshira.com/register.html') Join over thousands of people who receive weekly foreign investment news in Asia
 
     // End Content
 
