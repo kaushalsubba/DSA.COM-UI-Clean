@@ -7354,6 +7354,12 @@ section.TopBanner.bottom-banner {
       width: auto;
       position: relative; }
 
+#carousel-history .carousel-inner .item {
+  margin-top: 50px;
+  min-height: 350px; }
+  #carousel-history .carousel-inner .item .item {
+    margin-top: 0px; }
+
 #carousel-history .carousel-caption {
   position: relative;
   bottom: inherit;
@@ -7361,10 +7367,22 @@ section.TopBanner.bottom-banner {
   right: inherit;
   text-align: left;
   color: inherit;
-  text-shadow: none; }
+  text-shadow: none;
+  padding-top: 0px; }
 
-#carousel-history .carousel-control.left, #carousel-history .carousel-control.right {
-  background-image: inherit; }
+#carousel-history .carousel-control.left {
+  background-image: url(https://www.india-briefing.com/themes/ib/images/left-indicator.png);
+  background-repeat: no-repeat;
+  width: 18px;
+  left: 15%;
+  top: 50%; }
+
+#carousel-history .carousel-control.right {
+  background-image: url(https://www.india-briefing.com/themes/ib/images/right-indicator.png);
+  background-repeat: no-repeat;
+  width: 18px;
+  right: 15%;
+  top: 50%; }
 
 #carousel-history .carousel-indicators {
   left: 0;
@@ -7375,14 +7393,65 @@ section.TopBanner.bottom-banner {
   position: relative;
   padding-bottom: 20px;
   padding-top: 20px; }
+  #carousel-history .carousel-indicators li {
+    width: 100px;
+    background-color: inherit;
+    text-indent: inherit;
+    background: url(https://www.dezshira.com/themes/dsa/images/timeline-dot.png) repeat-x center 90% transparent;
+    height: 42px;
+    font-size: 18px;
+    text-align: center;
+    color: #58595b;
+    margin: 0px; }
+    #carousel-history .carousel-indicators li a {
+      color: #58595b; }
+  #carousel-history .carousel-indicators .dotInner {
+    transition: all .35s ease-out;
+    border-radius: 10px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: #1a2940; }
+  #carousel-history .carousel-indicators .dotOuter {
+    transition: all .35s ease-out;
+    border-radius: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    padding: 0; }
+  #carousel-history .carousel-indicators a:focus {
+    outline: 0;
+    text-decoration: none; }
+  #carousel-history .carousel-indicators .active .dotOuter,
+  #carousel-history .carousel-indicators a:hover .dotOuter {
+    border: 1px solid #1a2940; }
+  #carousel-history .carousel-indicators a:hover .dotInner {
+    background-color: #1a2940; }
 
-#carousel-history #next {
-  right: 0;
-  background-image: url(https://www.india-briefing.com/themes/ib/images/right-indicator.png); }
-
-#carousel-history #prev {
-  left: 0;
-  background-image: url(https://www.india-briefing.com/themes/ib/images/left-indicator.png); }
+#carousel-history #carousel-history-2005 .carousel-indicators {
+  position: absolute;
+  bottom: 10%;
+  left: 15px;
+  background-image: none; }
+  #carousel-history #carousel-history-2005 .carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #b7b7b7;
+    border: 1px solid #b7b7b7;
+    border-radius: 10px; }
+  #carousel-history #carousel-history-2005 .carousel-indicators .active {
+    background-color: #d5d5d5;
+    border: 0;
+    margin-top: 0; }
 
 @font-face {
   font-family: 'Roboto';
@@ -9180,4 +9249,19 @@ div#sidebarnav ul > li.level1 .main-menu {
   section.TopBanner.bottom-banner {
     height: auto; }
     section.TopBanner.bottom-banner .BannerCaption {
-      padding: 20px 0px; } }
+      padding: 20px 0px; }
+  #carousel-history .carousel-indicators {
+    display: none; }
+  #carousel-history .carousel-control.right {
+    top: 10%;
+    right: 2%; }
+  #carousel-history .carousel-control.left {
+    top: 10%;
+    right: 10%;
+    left: inherit; }
+  #carousel-history .carousel-inner .item {
+    margin-top: 85px;
+    min-height: 500px; }
+  #carousel-history #carousel-history-2005 .carousel-indicators {
+    display: block;
+    bottom: 0%; } }

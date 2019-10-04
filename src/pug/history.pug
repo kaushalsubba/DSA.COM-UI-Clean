@@ -12,7 +12,7 @@ block setting
 block content
     // Start Content
     section.TopBanner
-        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/LocationsBanner.jpg')
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/DSA-History-banner.jpg')
         .BannerCaption
             .container
                 .row
@@ -21,26 +21,55 @@ block content
 
 
     section#history.pb-7.pt-7
-        .container
+        .container-fluid.p-0
           .row
             .col-sm-12.col-md-12.col-lg-12
               #carousel-history.carousel.slide(data-ride='carousel')
                 // Indicators
-                .container
+                .container-fluid
                   .row
                     .col-sm-12.col-md-12.col-lg-12
-                      ol.carousel-indicators
-                        li.active(data-target='#carousel-history', data-slide-to='0')
-                        li(data-target='#carousel-history', data-slide-to='1')
-                        li(data-target='#carousel-history', data-slide-to='2')
-                        li(data-target='#carousel-history', data-slide-to='3')
-                        li(data-target='#carousel-history', data-slide-to='4')
+                      .container
+                        .row
+                          .col-sm-10.col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1.col-sm-offset-1
+                            ol.carousel-indicators.mb-4
+                              li.active(data-target='#carousel-history', data-slide-to='0')
+                                a(href='#1992')
+                                  | 1992 
+                                  span.dotOuter
+                                    span.dotInner
+                              li(data-target='#carousel-history', data-slide-to='1')
+                                a(href='#1993')
+                                  | 1993 
+                                  span.dotOuter
+                                    span.dotInner
+                              li(data-target='#carousel-history', data-slide-to='2')
+                                a(href='#1994')
+                                  | 1994 
+                                  span.dotOuter
+                                    span.dotInner
+                              li(data-target='#carousel-history', data-slide-to='3')
+                                a(href='#1999')
+                                  | 1999 
+                                  span.dotOuter
+                                    span.dotInner
+                              li(data-target='#carousel-history', data-slide-to='4')
+                                a(href='#2004')
+                                  | 2004 
+                                  span.dotOuter
+                                    span.dotInner
+                              li(data-target='#carousel-history', data-slide-to='5')
+                                a(href='#2005')
+                                  | 2005 
+                                  span.dotOuter
+                                    span.dotInner                                    
+
                 // Wrapper for slides
-                .carousel-inner(role='listbox')
+                .carousel-inner.borderTopDarkblue.mt-4(role='listbox')
                   .item.active
                     .container
                       .row
-                        .col-sm-7.col-md-7.col-lg-7
+                        .col-sm-5.col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-1.col-sm-offset-1
                           .carousel-caption
                             h1 1992
                             h2 Founding of Dezan Shira &amp; Associates
@@ -51,26 +80,26 @@ block content
                               a(href='http://www.dezshira.com/office/china/shenzhen.html') Shenzhen
                               | , which has become a focal point for foreign investment due to its special status as China&lsquo;s first &rdquo;Special Economic Zone.&quot;
                         .col-sm-5.col-md-5.col-lg-5
-                          img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/history/1992-Founding of Dezan Shira & Associates.jpg', width='400')
+                          img.img-responsive.center-block(src='https://www.dezshira.com/themes/dsa/images/history/1992-Founding of Dezan Shira & Associates.jpg', width='400')
                       // row
                     // conatiner
                   .item
                     .container
                       .row
-                        .col-sm-7.col-md-7.col-lg-7
+                        .col-sm-5.col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-1.col-sm-offset-1
                           .carousel-caption
                             h1 1993
                             h2 Dezan Shira acquires its first clients.
                             p
                               | The firm services its first clients, which involved various China trademark applications, representative office establishments and joint venture contractual reviews, mainly within the offshore oil industry. The practice hires its first Chinese staff.
                         .col-sm-5.col-md-5.col-lg-5
-                          img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/history/1993-Dezan Shira acquires its first clients..jpg', width='400')
+                          img.img-responsive.center-block(src='https://www.dezshira.com/themes/dsa/images/history/1993-Dezan Shira acquires its first clients..jpg', width='400')
                       // row
                     // conatiner
                   .item
                     .container
                       .row
-                        .col-sm-7.col-md-7.col-lg-7
+                        .col-sm-5.col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-1.col-sm-offset-1
                           .carousel-caption
                             h1 1994
                             h2 Beijing and Shanghai offices open.
@@ -83,7 +112,7 @@ block content
                   .item
                     .container
                       .row
-                        .col-sm-7.col-md-7.col-lg-7
+                        .col-sm-5.col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-1.col-sm-offset-1
                           .carousel-caption
                             h1 1999
                             h2 First issue of China Briefing Magazine published.
@@ -98,7 +127,7 @@ block content
                   .item
                     .container
                       .row
-                        .col-sm-7.col-md-7.col-lg-7
+                        .col-sm-5.col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-1.col-sm-offset-1
                           .carousel-caption
                             h1 2004
                             h2 Opening of Dezan Shira&apos;s Dalian office
@@ -107,16 +136,56 @@ block content
                               a(href='http://www.dezshira.com/office/china/dalian.html') Dalian
                               | .
                         .col-sm-5.col-md-5.col-lg-5
-                          img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/history/2004-Dalian offices.jpg', width='400')
+                          img.img-responsive.center-block(src='https://www.dezshira.com/themes/dsa/images/history/2004-Dalian offices.jpg', width='400')
+                  .item
+                    .container
+                      .row
+                        .col-sm-10.col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1.col-sm-offset-1
+                          .item
+                            .inner_carousel
+                              #carousel-history-2005
+                                ol.carousel-indicators
+                                  li.active(data-target='#01', data-toggle='tab', aria-expanded='false')
+                                  li(data-target='#02', data-toggle='tab', aria-expanded='false')
+                                .tab-content
+                                  #01.tab-pane.tab-pane1.active
+                                    .row
+                                      .col-sm-6.col-md-6.col-lg-6
+                                        .caption
+                                          h1 2005
+                                          h2 Guangzhou office opens
+                                          p
+                                            | The practice embarks on a specific campaign to establish offices throughout China. An immediate result of this is the establishment of an office in downtown 
+                                            a(href='http://www.dezshira.com/office/china/guangzhou.html') Guangzhou
+                                            | .
+                                      .col-sm-6.col-md-6.col-lg-6
+                                        img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/history/2005-Guangzhou offices.jpg', width='400')
+
+                                  #02.tab-pane.tab-pane1
+                                    .row
+                                      .col-sm-6.col-md-6.col-lg-6
+                                        .caption
+                                          h1 2005
+                                          h2 Dezan Shira &amp; Associates joins Leading Edge Alliance of Global Auditors.
+                                          p
+                                            | The firm is invited to join the 
+                                            a(href='http://www.leadingedgealliance.com/', target='_blank') Leading Edge Alliance
+                                            | , a significant global network of international accountants and auditors, with a combined annual turnover of US$2.3 billion among its members.
+                                      .col-sm-6.col-md-6.col-lg-6
+                                        .historyThumb
+                                          img.img-responsive(src='https://www.dezshira.com/themes/dsa/images/history/2005-LEA.jpg', width='400')
+
+                        // row
+                      // conatiner
+                  
                       // row
                     // conatiner
                 // Controls
                 a.left.carousel-control(href='#carousel-history', role='button', data-slide='prev')
-                  span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                  span.sr-only Previous
+
                 a.right.carousel-control(href='#carousel-history', role='button', data-slide='next')
-                  span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                  span.sr-only Next
+
+                  
 
 
 

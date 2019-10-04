@@ -274,4 +274,10 @@ section.TopBanner.bottom-banner{
 	.BannerCaption{ padding: 20px 0px;}
 }
 
+#carousel-history .carousel-indicators{ display: none;}
+#carousel-history .carousel-control.right{ top: 10%; right: 2%;}
+#carousel-history .carousel-control.left{ top: 10%; right: 10%; left: inherit;}
+#carousel-history .carousel-inner .item{ margin-top: 85px; min-height: 500px;}
+#carousel-history #carousel-history-2005 .carousel-indicators{ display: block; bottom: 0%;}
+
 }
