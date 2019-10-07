@@ -162,6 +162,9 @@ section.TopBanner.bottom-banner{
 	.carousel-caption{ 
 		position: relative; bottom: inherit; left: inherit; right: inherit; text-align: left; color: inherit;
 		text-shadow:none; padding-top: 0px;
+		h1{ color: #939598; font-size: 48px;}
+		h2{ color: #000;font-size: 30px; }
+		h1,h2{margin-bottom: 20px;font-weight: normal;}
 	}
 	.carousel-control.left{ background-image:url(https://www.india-briefing.com/themes/ib/images/left-indicator.png);background-repeat: no-repeat;
 	width: 18px; left: 15%; top: 50%;}
@@ -221,9 +224,17 @@ section.TopBanner.bottom-banner{
 	}
 	}
 	
-	#carousel-history-2005{
+	#carousel-history-2005,#carousel-history-2007,#carousel-history-2008,#carousel-history-2012,#carousel-history-2014,#carousel-history-2018{
+
+		.caption{ 
+			
+			h1{ color: #939598; font-size: 48px;}
+			h2{ color: #000;font-size: 30px; }
+			h1,h2{margin-bottom: 20px;font-weight: normal;}
+		}
 
 		.carousel-indicators{ position: absolute; bottom: 10%; left: 15px;
+
 			li{
 				display: inline-block;
 				width: 12px;
@@ -235,7 +246,7 @@ section.TopBanner.bottom-banner{
 				border: 1px solid #b7b7b7;
 				border-radius: 10px;}
 				.active {
-					background-color: #d5d5d5;
+					background-color: #a3a3a3;
 					border: 0;
 					margin-top: 0;
 				}

@@ -7369,6 +7369,15 @@ section.TopBanner.bottom-banner {
   color: inherit;
   text-shadow: none;
   padding-top: 0px; }
+  #carousel-history .carousel-caption h1 {
+    color: #939598;
+    font-size: 48px; }
+  #carousel-history .carousel-caption h2 {
+    color: #000;
+    font-size: 30px; }
+  #carousel-history .carousel-caption h1, #carousel-history .carousel-caption h2 {
+    margin-bottom: 20px;
+    font-weight: normal; }
 
 #carousel-history .carousel-control.left {
   background-image: url(https://www.india-briefing.com/themes/ib/images/left-indicator.png);
@@ -7433,12 +7442,24 @@ section.TopBanner.bottom-banner {
   #carousel-history .carousel-indicators a:hover .dotInner {
     background-color: #1a2940; }
 
-#carousel-history #carousel-history-2005 .carousel-indicators {
+#carousel-history #carousel-history-2005 .caption h1, #carousel-history #carousel-history-2007 .caption h1, #carousel-history #carousel-history-2008 .caption h1, #carousel-history #carousel-history-2012 .caption h1, #carousel-history #carousel-history-2014 .caption h1, #carousel-history #carousel-history-2018 .caption h1 {
+  color: #939598;
+  font-size: 48px; }
+
+#carousel-history #carousel-history-2005 .caption h2, #carousel-history #carousel-history-2007 .caption h2, #carousel-history #carousel-history-2008 .caption h2, #carousel-history #carousel-history-2012 .caption h2, #carousel-history #carousel-history-2014 .caption h2, #carousel-history #carousel-history-2018 .caption h2 {
+  color: #000;
+  font-size: 30px; }
+
+#carousel-history #carousel-history-2005 .caption h1, #carousel-history #carousel-history-2005 .caption h2, #carousel-history #carousel-history-2007 .caption h1, #carousel-history #carousel-history-2007 .caption h2, #carousel-history #carousel-history-2008 .caption h1, #carousel-history #carousel-history-2008 .caption h2, #carousel-history #carousel-history-2012 .caption h1, #carousel-history #carousel-history-2012 .caption h2, #carousel-history #carousel-history-2014 .caption h1, #carousel-history #carousel-history-2014 .caption h2, #carousel-history #carousel-history-2018 .caption h1, #carousel-history #carousel-history-2018 .caption h2 {
+  margin-bottom: 20px;
+  font-weight: normal; }
+
+#carousel-history #carousel-history-2005 .carousel-indicators, #carousel-history #carousel-history-2007 .carousel-indicators, #carousel-history #carousel-history-2008 .carousel-indicators, #carousel-history #carousel-history-2012 .carousel-indicators, #carousel-history #carousel-history-2014 .carousel-indicators, #carousel-history #carousel-history-2018 .carousel-indicators {
   position: absolute;
   bottom: 10%;
   left: 15px;
   background-image: none; }
-  #carousel-history #carousel-history-2005 .carousel-indicators li {
+  #carousel-history #carousel-history-2005 .carousel-indicators li, #carousel-history #carousel-history-2007 .carousel-indicators li, #carousel-history #carousel-history-2008 .carousel-indicators li, #carousel-history #carousel-history-2012 .carousel-indicators li, #carousel-history #carousel-history-2014 .carousel-indicators li, #carousel-history #carousel-history-2018 .carousel-indicators li {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -7448,8 +7469,8 @@ section.TopBanner.bottom-banner {
     background-color: #b7b7b7;
     border: 1px solid #b7b7b7;
     border-radius: 10px; }
-  #carousel-history #carousel-history-2005 .carousel-indicators .active {
-    background-color: #d5d5d5;
+  #carousel-history #carousel-history-2005 .carousel-indicators .active, #carousel-history #carousel-history-2007 .carousel-indicators .active, #carousel-history #carousel-history-2008 .carousel-indicators .active, #carousel-history #carousel-history-2012 .carousel-indicators .active, #carousel-history #carousel-history-2014 .carousel-indicators .active, #carousel-history #carousel-history-2018 .carousel-indicators .active {
+    background-color: #a3a3a3;
     border: 0;
     margin-top: 0; }
 
