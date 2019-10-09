@@ -191,21 +191,47 @@ block content
                         a.twitter-timeline(data-height='310', href='https://twitter.com/DezanShira?ref_src=twsrc%5Etfw') Tweets by DezanShira
                         script(async='', src='https://platform.twitter.com/widgets.js', charset='utf-8')
                         a(name='mini_contact_form')
-            // /col
-            // /row
+    section#partners.gray-light-bg.pb-5.pt-5
+      .container
+        .row
+          .col-sm-12.col-md-12.col-lg-12
+            .owl-carousel.owl-theme#partners-carousel
+              .item
+                .view.view-first
+                  img(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/BPM_4.png', srcset='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/BPM_4.png 2x')
+              .item
+                .view.view-first
+                  img(src='https:https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/28cceuv57ku8wsogw8.jpg', srcset='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/28cceuv57ku8wsogw8.jpg 2x')
+              .item
+                .view.view-first
+                  img(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/11vxf88kyuuoogw8ww.png', srcset='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/11vxf88kyuuoogw8ww.png 2x')
+              .item
+                .view.view-first
+                  img(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/qanmgnx9xuogc0kgw.png', srcset='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/qanmgnx9xuogc0kgw.png 2x')
+              .item
+                .view.view-first
+                  img(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/f.png', srcset='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/f.png 2x')
+              .item
+                .view.view-first
+                  img(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/Screen_Shot_2013-05-06_at_10.01.30.png', srcset='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/Screen_Shot_2013-05-06_at_10.01.30.png 2x')
+              .item
+                .view.view-first
+                  img(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/sikich_logo_1.jpg', srcset='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/sikich_logo_1.jpg 2x')
+              .item
+                .view.view-first
+                  img(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/SwensonAdvisors_Logo_FINAL_COLOR.jpg', srcset='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/partners/SwensonAdvisors_Logo_FINAL_COLOR.jpg 2x')
+          // /carousel-inner
+          .row
+            #mini_contact_form.row
+            .text-center.col-sm-6.col-md-6.col-lg-6.col-lg-offset-3.col-md-offset-3.col-sm-offset-3.mt-4
+              p
+                | We partner with organisations across the world to give us a truly global presence. Discover our region&rsquo;s key partners above.
+      
+        // /row
+      // /books_carousel
+      // /container
 
 
-
-
-
-    
-
-   
-    
-
-
-    
-        // /container
 
         
     section.contact.service_cta
@@ -517,6 +543,81 @@ block content
               p.text-align.mt-1.mb-1.text_white * Required
         br
         #message.text-center.bg-danger.radius-none(style='max-width:800px;margin:auto; font-size:12px; line-height:normal; font-weight:normal;')
+    section#books_carousel.pb-5.pt-5
+      .container
+        .row
+          .col-sm-12.col-md-12.col-lg-12
+            h4.section-title Publications
+        .row
+          ul.list-inline
+            li.col-sm-3.col-md-3.col-lg-3
+              .desc
+                h3
+                  a(href='http://www.asiabriefing.com/store/search?language=21', target='_blank') Asia Briefing Publications
+                p
+                  | Download magazines and guides on doing business in China, Vietnam, ASEAN, India, and other Asian countries from our on-the-ground experts.
+                a.btn.btn-outline-dark.text-uppercase.mt-3(href='http://www.asiabriefing.com/store/search', target='_blank')
+                  i.fa.fa-shopping-cart(aria-hidden='true')
+                  |  GO TO STORE
+            li.col-sm-9.col-md-9.col-lg-9
+              .owl-carousel.owl-theme#publication-carousel
+                .item
+                  .view.view-first
+                    img(src='//resource.dezshira.com/resize/200x275/Publications/8465/CB_Guide_Tax_and_Accounting_11_Edition_Cover.jpg')
+                    .mask
+                      h2
+                        a(href='http://www.asiabriefing.com/store/book/tax-accounting-audit-china-2019.html') Tax, Accounting and Audit in China 2019 (11th Edition)
+                      a.info(href='#', data-toggle='modal', data-target='#quickViewModal', onclick="bookView('http://www.asiabriefing.com/store/book-preview/tax-accounting-audit-china-2019.html')") Quick View
+                .item
+                  .view.view-first
+                    img(src='//resource.dezshira.com/resize/200x275/Publications/8325/CB_Mag_2019_06_issue_Cover.jpg')
+                    .mask
+                      h2
+                        a(href='http://www.asiabriefing.com/store/book/new-foreign-investment-law-china.html') The New Foreign Investment Law in China 
+                      a.info(href='#', data-toggle='modal', data-target='#quickViewModal', onclick="bookView('http://www.asiabriefing.com/store/book-preview/new-foreign-investment-law-china.html')") Quick View
+                .item
+                  .view.view-first
+                    img(src='//resource.dezshira.com/resize/200x275/Publications/8317/VB_2019_07_issue_Cover.jpg')
+                    .mask
+                      h2
+                        a(href='http://www.asiabriefing.com/store/book/importing-exporting-vietnam.html') Import and Export in Vietnam
+                      a.info(href='#', data-toggle='modal', data-target='#quickViewModal', onclick="bookView('http://www.asiabriefing.com/store/book-preview/importing-exporting-vietnam.html')") Quick View
+                .item
+                  .view.view-first
+                    img(src='//resource.dezshira.com/resize/200x275/Publications/8325/CB_Mag_2019_06_issue_Cover.jpg')
+                    .mask
+                      h2
+                        a(href='http://www.asiabriefing.com/store/book/new-foreign-investment-law-china.html') The New Foreign Investment Law in China 
+                      a.info(href='#', data-toggle='modal', data-target='#quickViewModal', onclick="bookView('http://www.asiabriefing.com/store/book-preview/new-foreign-investment-law-china.html')") Quick View
+                .item
+                  .view.view-first
+                    img(src='//resource.dezshira.com/resize/200x275/Publications/8317/VB_2019_07_issue_Cover.jpg')
+                    .mask
+                      h2
+                        a(href='http://www.asiabriefing.com/store/book/importing-exporting-vietnam.html') Import and Export in Vietnam
+                      a.info(href='#', data-toggle='modal', data-target='#quickViewModal', onclick="bookView('http://www.asiabriefing.com/store/book-preview/importing-exporting-vietnam.html')") Quick View
+                .item
+                  .view.view-first
+                    img(src='//resource.dezshira.com/resize/200x275/Publications/8301/IB_2019_06_issue_Cover.jpg')
+                    .mask
+                      h2
+                        a(href='http://www.asiabriefing.com/store/book/goods-services-tax-india.html') The Goods and Services Tax in India
+                      a.info(href='#', data-toggle='modal', data-target='#quickViewModal', onclick="bookView('http://www.asiabriefing.com/store/book-preview/goods-services-tax-india.html')") Quick View
+                .item
+                  .view.view-first
+                    img(src='//resource.dezshira.com/resize/200x275/Publications/8317/VB_2019_07_issue_Cover.jpg')
+                    .mask
+                      h2
+                        a(href='http://www.asiabriefing.com/store/book/importing-exporting-vietnam.html') Import and Export in Vietnam
+                      a.info(href='#', data-toggle='modal', data-target='#quickViewModal', onclick="bookView('http://www.asiabriefing.com/store/book-preview/importing-exporting-vietnam.html')") Quick View
+                .item
+                  .view.view-first
+                    img(src='//resource.dezshira.com/resize/200x275/Publications/8301/IB_2019_06_issue_Cover.jpg')
+                    .mask
+                      h2
+                        a(href='http://www.asiabriefing.com/store/book/goods-services-tax-india.html') The Goods and Services Tax in India
+                      a.info(href='#', data-toggle='modal', data-target='#quickViewModal', onclick="bookView('http://www.asiabriefing.com/store/book-preview/goods-services-tax-india.html')") Quick View
+            .clearfix
 
 
 

@@ -254,3 +254,151 @@ section.TopBanner.bottom-banner{
 		}
 	}
 }
+
+.owl-carousel#partners-carousel {
+	.view {
+		img {
+			box-shadow: none;
+			margin: 0 auto;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			width: 120px;
+			top: 50%;
+			left: 50%;
+		}
+		background-color: #FFF;
+		height: 120px;
+		float: none;
+		margin: 0 auto;
+		position: relative;
+		width: 150px;
+	}
+	.owl-nav {
+		button.owl-next {
+			position: absolute;
+			top: 30%;
+			right: 0px;
+			font-size: 0 !important;
+			color: #FFF;
+			background: url(//www.dezshira.com/themes/dsa/images/angle-right.png) no-repeat left top;
+			height: 42px;
+			width: 18px;
+			outline: 0;
+			text-shadow:0 1px 2px rgba(0,0,0,.6);
+			background-color:rgba(0,0,0,0);
+			filter:alpha(opacity=50);
+			opacity:.5;
+
+		}
+		button.owl-prev {
+			position: absolute;
+			top: 30%;
+			left: 0px;
+			font-size: 0 !important;
+			color: #FFF;
+			background: url(//www.dezshira.com/themes/dsa/images/angle-left.png) no-repeat left top;
+			height: 42px;
+			width: 18px;
+			outline: 0;
+			text-shadow:0 1px 2px rgba(0,0,0,.6);
+			background-color:rgba(0,0,0,0);
+			filter:alpha(opacity=50);
+			opacity:.5;
+			
+		}
+	}
+}
+
+
+#books_carousel {
+	.list-inline {
+		border-bottom: 1px solid #e6e7e8; margin-left: 0; padding-top: 30px; padding-bottom: 30px;
+		>li {
+			h4 {
+				padding: 10px 40px;
+				margin: 0;
+				a {
+					color: #000;
+					font-weight: 400;
+				}
+			}
+			padding: 0;
+		}
+	}
+	.list-inline.borderNone {
+		border-bottom: 0;
+	}
+	.carousel-control {
+		width: 10%;
+		right: 0;
+	}
+	li {
+		.desc {
+			background-color: #fff;
+			padding: 10px 35px;
+			h3 {
+				font-size: 24px;
+				
+				a {
+					color: #000;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+			h4 {
+				padding-left: 0;
+				a {
+					font-weight: 400;
+					color: #1a2940;
+				}
+			}
+		}
+	}
+
+	.owl-carousel#publication-carousel {
+		.view {
+			img {
+				box-shadow: none;
+				margin: 0 auto;
+				position: absolute;
+				transform: translate(-50%,-50%);
+				top: 50%;
+				left: 50%;
+				width: 200px;
+			}
+			background-color: #FFF;
+			float: none;
+			margin: 0 auto;
+			position: relative;
+			height: 320px;
+		
+		}
+		.owl-nav {
+			button.owl-next {
+				position: absolute;
+				top: 0;
+				right: 0px;
+				font-size:80px ;
+				color: #FFF;
+				background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.1) 100%);
+				height: 100%;
+				width: 40px;
+				outline: 0;
+				text-shadow: 0 1px 1px rgba(0,0,0,.4);
+			}
+			button.owl-prev {
+				position: absolute;
+				top: 0;
+				left: 0px;
+				font-size:80px ;
+				color: #FFF;
+				background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.1) 100%);
+				height: 100%;
+				width: 40px;
+				outline: 0;
+				text-shadow: 0 1px 1px rgba(0,0,0,.4);
+			}
+		}
+	}
+}

@@ -8,7 +8,7 @@ var uglify = require('gulp-uglify');
 var clean = require('gulp-clean-css');
 var babel = require('gulp-babel');
 var plumber = require('gulp-plumber');
-var gulpCopy = require('gulp-copy');
+var flatten = require('gulp-flatten');
 
 
 
@@ -90,9 +90,17 @@ gulp.task('minifyImg', function(){
 });
 
 // Fonts
-gulp.task('gulpcopy', function() {
+gulp.task('copy', function() {
 	return gulp.src('src/fonts/**/*')
-            .pipe(gulp.dest('assets/fonts'))
+			.pipe(gulp.dest('assets/fonts'))
+			
+	
+});
+// copy js
+gulp.task('flatten', function(){
+	return gulp.src('./node_modules/owl.carousel/docs/assets/owlcarousel/owl.carousel.min.js')
+		.pipe(flatten())
+        .pipe(gulp.dest('assets/js'))
 });
 
 // Minifies the javascript
@@ -136,7 +144,8 @@ gulp.task('watch', function () {
 	gulp.watch(paths.img.src, gulp.series('minifyImg', 'reloadBrowser'));
 	gulp.watch(paths.css.src, gulp.series('minifyCss', 'reloadBrowser'));
 	gulp.watch(paths.js.src, gulp.series('minifyJs', 'reloadBrowser'));
-	gulp.watch(paths.fonts.src, gulp.series('gulpcopy', 'reloadBrowser'));
+	gulp.watch(paths.fonts.src, gulp.series('copy', 'reloadBrowser'));
+	gulp.watch(paths.js.src, gulp.series('flatten', 'reloadBrowser'));
 });
 
 // Starts the development server

@@ -153,6 +153,57 @@ $(window).scroll(function() {
         header.removeClass('navbar-fixed-top');
     }
 });	  
+/*owl-carousel*/
+$('#partners-carousel').owlCarousel({
+  loop:false,
+  autoplay: true,
+  autoplayTimeout:5000,
+  margin: 10,
+  responsiveClass: true,
+  dots:false,
+  ltr:true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    600: {
+      items: 3,
+      nav: true
+    },
+    1000: {
+      items: 6,
+      nav: true,
+
+    }
+  }
+})
+
+
+$('#publication-carousel').owlCarousel({
+  loop:false,
+  autoplay: true,
+  autoplayTimeout:5000,
+  margin: 10,
+  responsiveClass: true,
+  dots:false,
+  ltr:true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    600: {
+      items: 3,
+      nav: true
+    },
+    1000: {
+      items: 3,
+      nav: true,
+
+    }
+  }
+})
     });
  
  $(function(){
