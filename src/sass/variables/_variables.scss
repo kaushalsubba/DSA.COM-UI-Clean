@@ -9,12 +9,26 @@ $gray-600: #6c757d !default;
 $gray-700: #4A4A4A !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$bright-gray:#58595B !default;
+$bluish-gray:#94a2ad !default;
+$soft-bluish-gray:#e6e7e8 !default;
 
+$black:    #000 !default;
+$deep-blue:#1a2940 !default;
+$cyan-blue:#344E70 !default;
 $bluedark:#0D2338 !default;
 $blue:    #1D74CE !default;
+
 $primary:  $blue !default;
 $grey:     $gray-400 !default;
+
+// social-media-colors
+$facebook:#3b5998;
+$twitter:#26a7de;
+$youtube:#ff0000 ;
+$linkedIn: #007bb5;
+$weixin:#7BB32E;
+
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;

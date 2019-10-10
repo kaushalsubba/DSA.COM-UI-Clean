@@ -270,14 +270,35 @@
 //bottom banner
 section.TopBanner.bottom-banner{
 	height: auto;
-
 	.BannerCaption{ padding: 20px 0px;}
 }
+//history carousel
+#carousel-history {
+	.carousel-indicators{ display: none;}
+	.carousel-control.right{ top: 10%; right: 2%;}
+	.carousel-control.left{ top: 10%; right: 10%; left: inherit;}
+	.carousel-inner {
+		.item{ margin-top: 85px; min-height: 500px;}
+	}
+	#carousel-history-2005, #carousel-history-2007, #carousel-history-2008, #carousel-history-2012, #carousel-history-2014, #carousel-history-2018 {
+		.carousel-indicators{ display: block; bottom: 0%;}
+		.tab-content {
+			.tab-pane{ padding-bottom: 50px;}
+		}
+	}
+}
 
-#carousel-history .carousel-indicators{ display: none;}
-#carousel-history .carousel-control.right{ top: 10%; right: 2%;}
-#carousel-history .carousel-control.left{ top: 10%; right: 10%; left: inherit;}
-#carousel-history .carousel-inner .item{ margin-top: 85px; min-height: 500px;}
-#carousel-history #carousel-history-2005 .carousel-indicators{ display: block; bottom: 0%;}
+//publication carousel
+#books_carousel {
+	.owl-carousel#publication-carousel {
+		.owl-nav {
+			button.owl-next{ left: 300px;}
+		}
+	}
+}
+.material {
+	.material-select{ margin-bottom: 40px!important;}
+}
 
 }
+

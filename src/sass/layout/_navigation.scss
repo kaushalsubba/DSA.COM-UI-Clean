@@ -1,29 +1,29 @@
 .navbar{min-height: 46px;}
 .navbar-inverse {
 	background-color: #ebebeb;
-    border-color: #1a2940;
-    border-top: solid 3px #1a2940;
+    border-color: $deep-blue;
+    border-top: solid 3px $deep-blue;
     border-bottom: none;
     border-radius: 0;
     margin-bottom: 0px;
 	.navbar-nav {
 		>.open{
 			a{
-				&:hover{ background-color:#1a2940; }
+				&:hover{ background-color:$deep-blue; }
 			}
 		}
 		>li { font-family: $font-family-head;
 			>a {
-				color: #59595b;
+				color: $bright-gray;
 				text-transform: uppercase;
 				padding: 12px 30px; 
 				&:hover {
-					color: #fff;
-					background-color: #1a2940;
+					color: $white;
+					background-color: $deep-blue;
 				}
 				&:focus {
-					color: #fff;
-					background-color: #1a2940;
+					color: $white;
+					background-color: $deep-blue;
 				}
 			}
 		}
@@ -68,12 +68,12 @@
 	width: 35%;
 	box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	left: inherit;
-	background: #FFFFFF;
+	background: $white;
 	>li {
 		>ul {
 			padding: 0;
 			margin: 0;
-			background: #fff;
+			background: $white;
 			padding-top: 0px;
 			>li {
 				list-style: none;
@@ -93,12 +93,12 @@
 					&:hover {
 						text-decoration: none;
 						font-size: 14px;
-						color: #1e71bd;
+						color: $blue;
 					}
 					&:focus {
 						text-decoration: none;
 						font-size: 14px;
-						color: #1e71bd;
+						color: $blue;
 					}
 				}
 			}
@@ -110,7 +110,7 @@ ul.nav {
 	li.dropdown {
 		&:hover {
 			>ul.dropdown-menu.mega-dropdown-menu {
-				background-color: #fff;
+				background-color: $white;
 				padding-top: 0px;
 			}
 		}
@@ -123,22 +123,22 @@ ul.nav {
 			>a {
 				&:hover {
 					.fa-linkedin-in {
-						color: #3B5998;
+						color: $linkedIn;
 					}
 					&:focus {
 						.fa-linkedin-in {
-							color: #3B5998;
+							color: $linkedIn;
 						}
 				}
 			}
 
 			&:hover {
 				.fa-youtube {
-					color: #b00;
+					color: $youtube;
 				}
 				&:focus {
 					.fa-youtube {
-						color: #b00;
+						color: $youtube;
 					}
 			}
 		}
@@ -146,33 +146,33 @@ ul.nav {
 
 		&:hover {
 			.fa-facebook-f {
-				color: #3B5998;
+				color: $facebook;
 			}
 			&:focus {
 				.fa-facebook-f {
-					color: #3B5998;
+					color: $facebook;
 				}
 		}
 	}
 
 	&:hover {
 		.fa-twitter {
-			color: #55ACEE;
+			color: $twitter;
 		}
 		&:focus {
 			.fa-twitter {
-				color: #55ACEE;
+				color: $twitter;
 			}
 	}
 			}
 
 			&:hover {
 				.fa-weixin {
-					color: #5bb947;
+					color: $weixin;
 				}
 				&:focus {
 					.fa-weixin {
-						color: #5bb947;
+						color: $weixin;
 					}
 			}
 					}

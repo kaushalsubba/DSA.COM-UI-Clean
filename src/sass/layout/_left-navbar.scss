@@ -1,25 +1,142 @@
-div#sidebarnav  {  background-color: #fff;     min-height: 430px;}
-div#sidebarnav ul { padding:0px; margin:0px; list-style:none;}
-div#sidebarnav ul > li { display:block; color:#fff; font-weight:normal;line-height:normal;position:relative; text-transform:capitalize; font-size:14px; padding-bottom:0px;}
-div#sidebarnav ul > li.firstChildpadd{ padding-top:10px;}
-div#sidebarnav ul > li a { text-decoration:none; display:block;  padding:10px 19px 10px 19px; color: #344c70;border-bottom: solid 1px #f1f2f2;    font-weight: 400;}
-div#sidebarnav ul > li > ul > li a { color:#fff; padding-left:10px; font-weight:normal;}
-div#sidebarnav ul > li > ul > li a { color:#fff; font-weight:normal; padding-left:20px;}
-div#sidebarnav ul > li > ul > li a { color:#58595b; font-weight:normal; padding-left:30px;}
-div#sidebarnav ul > li > ul > li a { color: #58595b;    border-bottom: solid 1px #f1f2f2;}
-div#sidebarnav ul > li.level3.active > a {  color: #2981d1;}
-div#sidebarnav ul > li > ul > li a:hover{color:#2981d1;}
-body.script div#sidebarnav ul.collapsible li ul{display:none;}
-div#sidebarnav ul.collapsible li.active > ul{display:block;}
-body.script div#sidebarnav ul > li > ul > ul { padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;display:none;}
-div#sidebarnav ul > li.active > a, div#sidebarnav ul.news li.current-cat{ color:#2981d1;}
-div#sidebarnav ul > li > ul > li.active  > a ,div#sidebarnav ul.news li.current-cat { color:#2981d1;background-color:#231f20;}
-div#sidebarnav ul > li.level1.active a{color:#2981d1;}
-div#sidebarnav ul > li.level1 a:hover{color:#2981d1;}
-div#sidebarnav ul > li a:hover{color:#2981d1;}
-div#sidebarnav ul > li.level1 li a:hover{color:#2981d1;}
-div#sidebarnav ul > li.active > a, div#sidebarnav ul.news li.current-cat{ color:#2981d1;}
-div#sidebarnav ul > li > ul > li.active > a, div#sidebarnav ul.news li.current-cat{ background-color:#2981d1; color:#fff;}
-div#sidebarnav ul>li.level1:hover, div#sidebarnav ul>li.level2:hover {    background-color: #f8f8f8;}
-div#sidebarnav ul li.level1.active a.main-menu {background-color: #FFF;}
-div#sidebarnav ul>li.level1.active, div#sidebarnav ul>li.level2.active, div#sidebarnav ul>li.level3.active> a { background-color: #fff;}
+div#sidebarnav {
+	background-color: $white;
+	min-height: 430px;
+	ul {
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		 li {
+			display: block;
+			color: $white;
+			font-weight: normal;
+			line-height: normal;
+			position: relative;
+			text-transform: capitalize;
+			padding-bottom: 0px;
+			a {
+				text-decoration: none;
+				display: block;
+				padding: 10px 19px 10px 19px;
+				color: $cyan-blue;
+				border-bottom: solid 1px #f1f2f2;
+				font-weight: 400;
+				&:hover {
+					color: $blue;
+				}
+			}
+			 ul {
+				li {
+					a {
+						color: $bright-gray;
+						font-weight: normal;
+						padding-left: 30px;
+						border-bottom: solid 1px #f1f2f2;
+						&:hover {
+							color: $blue;
+						}
+					}
+				}
+				 li.active {
+					a {
+						background-color: $gray-800;
+						color: $white;
+					}
+				}
+			}
+		}
+		 li.level3.active {
+			a {
+				color: $blue;
+				background-color: $white;
+			}
+		}
+		 li.active {
+			a {
+				color: $blue;
+			}
+		}
+		 li.level1.active {
+			a {
+				color: $blue;
+			}
+            background-color: $white;
+            ul{
+                li{
+                    a{ color: $bright-gray;}
+                }
+            }
+		}
+		 li.level1 {
+			a {
+				&:hover {
+					color: $blue;
+				}
+			}
+			li {
+				a {
+					&:hover {
+						color: $blue;
+					}
+				}
+			}
+			&:hover {
+				background-color: #f8f8f8;
+			}
+		}
+		li.level2 {
+			&:hover {
+				background-color: #f8f8f8;
+            }
+            ul{
+                li{
+                    a{ color: $bright-gray;}
+                }
+            }
+		}
+		li.level1.active {
+			a.main-menu {
+                background-color: $white;
+                color: $blue;
+			}
+		}
+		li.level2.active {
+            background-color: $white;
+            color: $blue;
+		}
+	}
+	ul.collapsible {
+		li.active {
+			ul {
+				display: block;
+			}
+		}
+	}
+	ul.news {
+		li.current-cat {
+			background-color: $gray-900;
+			color: $white;
+		}
+	}
+}
+body.script {
+	div#sidebarnav {
+		ul.collapsible {
+			li {
+				ul {
+					display: none;
+				}
+			}
+		}
+		ul {
+			li {
+				ul {
+					ul {
+						padding:0px;
+						margin: 0px;
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

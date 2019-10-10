@@ -1,4 +1,4 @@
-.footer{ color: #fff;
+.footer{ color: $white;
     .footer-menu{
         ul.list-inline {
             padding: 0;
@@ -11,7 +11,7 @@
                     padding-left: 0;
                 }
                 a {
-                    color: #fff;
+                    color: $white;
                     font-size: 16px;
                     font-weight: 400;
                 }
@@ -27,7 +27,7 @@
            ul.list-inline li {
             padding:0 5px;
             margin:0;
-            color:#94a2ad;
+            color:$bluish-gray;
            }
            ul.list-inline li:first-child {
             padding-left:0;
@@ -40,9 +40,9 @@
         font-size:12px;
         color:#94a2ad;
         margin:0;
-        border-bottom:solid 1px #94a2ad
+        border-bottom:solid 1px $bluish-gray
        }
-    .footer-copyright{ color:#94a2ad;
+    .footer-copyright{ color:$bluish-gray;
         .copyright{ font-size: 11px;}
         .links{
             ul.list-inline {
@@ -52,7 +52,7 @@
                 li {
                     padding: 0;
                     margin: 0;
-                    border-right: solid 1px #94a2ad;
+                    border-right: solid 1px $bluish-gray;
                     padding-left: 10px;
                     padding-right: 10px;
                     &:last-child {
@@ -60,7 +60,7 @@
                         padding-right: 0;
                     }
                     a {
-                        color: #94a2ad;
+                        color: $bluish-gray;
                         font-size: 11px;
                         font-weight: 400;
                     }

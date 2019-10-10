@@ -12,7 +12,8 @@
 @import "global/buttons";     
 // End Page ------------------------------------------------------------
 // Start form  ---------------------------------------------------------
-@import "forms/forms"; 
+@import "forms/forms";
+@import 'forms/jquery.material.form'; 
 // Start layout  ---------------------------------------------------------
 @import "layout/header";
 @import "layout/footer";

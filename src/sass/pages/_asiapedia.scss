@@ -18,8 +18,8 @@
 		margin-left: 0px;
 	}
 	.btn-outline {
-		border-color: #2180d4;
-		color: #2180d4;
+		border-color: $blue;
+		color: $blue;
 		background-color: transparent;
 		height: auto;
 		padding: 10px 40px;
@@ -37,13 +37,13 @@
 			padding-right: 0px;
 			padding-left: 10px;
 			float: right;
-			color: #000000;
+			color: $black;
 		}
 	}
 	.input-group-addon {
 		padding-right: 0px;
 		border: 0px;
-		background-color: #FFFFFF;
+		background-color: $white;
 		color: #7a7a7a;
 		border-radius: 2px;
 		border-top-right-radius: 0;
@@ -55,7 +55,7 @@
 		font-size: 13px;
 		color: #8d8d8d;
     }
-    h3{ color: #FFFFFF;}
+    h3{ color: $white;}
     .btn-outline-secondary{
          padding: 10px 40px; text-transform: uppercase; font-size: 18px;
     }
@@ -68,13 +68,13 @@
 		padding-left: 0px;
 		padding-right: 23px;
 		float: left;
-		color: #FFFFFF;
+		color: $white;
 		font-size: 12px;
 		&:first-child {
 			list-style: none;
 		}
 		a {
-			color: #FFFFFF;
+			color: $white;
 			text-decoration: none;
 		}
 	}
@@ -91,15 +91,15 @@
 		li {
 			width: 25px;
 			height: 25px;
-			background-color: #1e71bd;
-			color: #FFFFFF;
+			background-color: $blue;
+			color: $white;
 			border-radius: 50%;
 			text-align: center;
 			padding: 3px;
 			margin-left: 5px;
 			margin-right: 5px;
 			a {
-				color: #FFFFFF;
+				color: $white;
 			}
 		}
 	}
@@ -152,5 +152,5 @@
 	}
 }
 .asiapedia_homepage{
-    h2{ color: #000;}
+    h2{ color: $black;}
 }

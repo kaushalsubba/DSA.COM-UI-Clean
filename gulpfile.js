@@ -98,7 +98,7 @@ gulp.task('copy', function() {
 });
 // copy js
 gulp.task('flatten', function(){
-	return gulp.src('./node_modules/owl.carousel/docs/assets/owlcarousel/owl.carousel.min.js')
+	return gulp.src(['./node_modules/owl.carousel/docs/assets/owlcarousel/owl.carousel.min.js','./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'])
 		.pipe(flatten())
         .pipe(gulp.dest('assets/js'))
 });

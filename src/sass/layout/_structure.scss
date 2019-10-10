@@ -13,7 +13,7 @@
 	.newsTitle {
 		font-size: 24px;
 		line-height: 28px;
-		a{ color: white;}
+		a{ color: $white;}
 	}
 }
 .relatedNews {
@@ -30,13 +30,13 @@
 	.newsTitle {
 		font-size: 18px;
 		line-height: 22px;
-		a{ color: white;}
+		a{ color: $white;}
 	}
 }
 .newsTitle {
 	position: absolute;
 	bottom: 0;
-	color: #FFF;
+	color: $white;
 	font-weight: 700;
 	padding: 0 20px 20px;
 	background: -moz-linear-gradient(top,rgba(0,0,0,0) 1%,rgba(0,0,0,.38) 50%,rgba(0,0,0,.76) 100%);
@@ -76,14 +76,14 @@ div.wp-caption{
 		}	
 }
 .meta {
-    border-bottom: solid #e6e7e8 1px;
-    border-top: 1px solid #e6e7e8;
+    border-bottom: solid $soft-bluish-gray 1px;
+    border-top: 1px solid $soft-bluish-gray;
     padding: 10px 0px;
 }
 // pagination
 .page {
-	border-bottom: solid 1px #e6e7e8;
-	border-top: solid 1px #e6e7e8;
+	border-bottom: solid 1px $soft-bluish-gray;
+	border-top: solid 1px $soft-bluish-gray;
 	background-color: #f1f2f2;
 	padding: 0px 0px;
 	margin-top: 20px;
@@ -222,7 +222,7 @@ div.wp-caption{
 	}
 	.panel-default {
 		>.panel-heading {
-			background-color: #FFF;
+			background-color: $white;
 			border-top: solid 3px #1a2940;
 			border-bottom: 0;
 			border-left: 0;
@@ -280,7 +280,7 @@ div.wp-caption{
 	padding: 3px;
 	border-bottom: solid 1px #E4E4E4;
 	border-radius: 2px;
-	background-color: #fff;
+	background-color: $white;
 	margin-top: 0;
 	padding-left: 18px;
 	z-index: 1;
@@ -358,15 +358,15 @@ div.wp-caption{
 		position: relative;
 		text-align: left;
 		margin-left: 30px;
-		color: #fff;
+		color: $white;
 		font-size: 24px;
 		font-weight: 300;
 		a {
-			color: #FFFFFF;
+			color: $white;
 		}
 	}
 	h2 {
-		color: #fff;
+		color: $white;
 		text-align: left;
 		position: relative;
 		font-size: 22px;
@@ -377,7 +377,7 @@ div.wp-caption{
 	p {
 		font-size: 14px;
 		position: relative;
-		color: #fff;
+		color: $white;
 		padding: 0px 0px 10px 0px;
 		text-align: left;
 	}
@@ -386,7 +386,7 @@ div.wp-caption{
 		text-decoration: none;
 		padding: 7px 0px;
 		background: transparent;
-		color: #fff;
+		color: $white;
 		text-transform: uppercase;
 		box-shadow: none;
 		border: none;
@@ -397,7 +397,7 @@ div.wp-caption{
 		}
 	}
 	.info {
-		color: #FFFFFF;
+		color: $white;
 		font-size: 12px;
 		text-transform: uppercase;
 		font-weight: bold;
@@ -496,12 +496,12 @@ section.TopBanner.services-banner{
 }
 #jobs {
 	h2 {
-		color: #FFF;
+		color: $white;
 		padding-bottom: 20px;
 		margin: 0;
 	}
 	p {
-		color: #FFF;
+		color: $white;
 		padding-bottom: 20px;
 		margin: 0;
 	}
@@ -565,7 +565,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 		color: #77787b;
 		position: relative;
 		padding: 25px;
-		background: #fff;
+		background: $white;
 		border: 1px solid #e1e1e1;
 		border-radius: 3px;
 		margin-bottom: 15px;
@@ -577,7 +577,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 			width: 15px;
 			height: 15px;
 			display: block;
-			background: #fff;
+			background: $white;
 			border: 1px solid #e1e1e1;
 			border-width: 0 0 1px 1px;
 			position: absolute;
@@ -616,7 +616,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 		padding-left: 0;
 	}
 	.media-left {
-		background: #FFF;
+		background: $white;
 		padding: 0;
 	}
 }
@@ -638,7 +638,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 			font-size: 14px;
 			display: block;
 			padding-top: 36px;
-			color: #FFF;
+			color: $white;
 			text-transform: uppercase;
 			span {
 				font-size: 36px;
@@ -688,7 +688,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 .eventsBlock {
     background-color: #1a2940;
     min-height: 200px;
-    color: #fff;
+    color: $white;
 	.dateEvent {
 		font-size: 24px;
 		text-transform: uppercase;
@@ -714,7 +714,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 			min-height: inherit;
 			margin-bottom: 10px;
 			a {
-				color: #FFF;
+				color: $white;
 			}
 		}
 		padding-bottom: 0;
@@ -876,7 +876,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 			position: absolute;
 			z-index: 1;
 			padding: 2px 20px;
-			color: #FFF;
+			color: $white;
 			bottom: 25px;
 			left: 15px;
 			background-color: #1a2940;
@@ -972,7 +972,7 @@ label {
 			padding-top: 20px;
 			line-height: 24px;
 			font-weight: bold;
-			color: #fff;
+			color: $white;
 		}
 	}
 	.btn {
@@ -990,7 +990,7 @@ section.contact.service_cta {
 	padding-bottom: 55px;
 	padding-top: 55px;
 	background-color: #316aa3;
-	color: #FFFFFF;
+	color: $white;
 	h4 {
 		text-transform: uppercase;
 		font-size: 20px;
@@ -1003,7 +1003,7 @@ section.contact.service_cta {
 		text-align: right;
 		float: right;
 		&:hover {
-			color: #FFFFFF;
+			color: $white;
 		}
 	}
 	.btn-outline.blue-btn {
@@ -1062,15 +1062,15 @@ section.contact.service_cta {
 	}
 	&:hover {
 		background-color: #2981d1;
-		color: #FFFFFF;
+		color: $white;
 		a {
-			color: #FFFFFF;
+			color: $white;
 		}
 		span {
-			color: #FFFFFF;
+			color: $white;
 		}
 		.research_title {
-			color: #FFFFFF;
+			color: $white;
 		}
 		.brochureIcon {
 			width: auto;
@@ -1152,14 +1152,14 @@ section.contact.service_cta {
 		a {
 			background-color: #2981d1;
 			padding: 10px 30px 10px 15px;
-			color: #FFFFFF;
+			color: $white;
 		}
 		a.collapsed {
 			background-color: #e9ecef;
 			color: #58595b;
 			&:hover {
 				background-color: #2981d1;
-				color: #FFFFFF;
+				color: $white;
 			}
 		}
 	}
@@ -1182,7 +1182,7 @@ section.contact.service_cta {
 	z-index: 2;
 }
 .text_white {
-	color: #FFFFFF;
+	color: $white;
 }
 .help_icon {
 	height: 36px;
@@ -1203,27 +1203,27 @@ section.contact.service_cta {
 	.brochureCaption {
 		h2 {
 			font-size: 24px;
-			color: #fff;
+			color: $white;
 			font-weight: 700;
 			padding: 15px 0 0;
 			margin: 0;
 			font-family: Roboto,sans-serif;
 			a {
-				color: #FFF;
+				color: $white;
 				&:hover {
-					color: #FFF;
+					color: $white;
 				}
 			}
 		}
 		h3 {
 			font-size: 18px;
-			color: #fff;
+			color: $white;
 			padding: 0;
 			margin: 0;
 			a {
-				color: #FFF;
+				color: $white;
 				&:hover {
-					color: #FFF;
+					color: $white;
 				}
 			}
 		}
@@ -1273,12 +1273,12 @@ section.contact.service_cta {
 	}
 	.btn-outline {
 		background-color: transparent;
-		color: #FFF;
-		border-color: #FFF;
+		color: $white;
+		border-color: $white;
 	}
 }
 section.grey.padding-Overwrite {
-	background-color: #FFF;
+	background-color: $white;
 }
 .asiapedia.servicesFlyers {
 	.downloadflyersBrochures {
@@ -1351,7 +1351,7 @@ section.grey.padding-Overwrite {
 		top: 80px;
 		h4 {
 			a {
-				color: #FFF;
+				color: $white;
 			}
 		}
 	}
