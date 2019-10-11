@@ -120,15 +120,18 @@
 	input {
 		&:-webkit-autofill {
 			-webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset;
+			box-shadow: 0 0 0 1000px #f5f5f5 inset;
 			&:focus {
 				input {
 					&:-webkit-autofill {
 						-webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset;
+						box-shadow: 0 0 0 1000px #f5f5f5 inset;
 					}
 				}
 			}
 			&:hover {
 				-webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset;
+				box-shadow: 0 0 0 1000px #f5f5f5 inset;
 			}
 		}
 	}

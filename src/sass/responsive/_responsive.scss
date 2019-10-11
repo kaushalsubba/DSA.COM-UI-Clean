@@ -48,7 +48,7 @@
 	.navbar-toggle {
 		float: left;
 		right: 0px;
-		background-color: #FFF;
+		background-color: $white;
 		width: auto;
         top: 5px;
         margin-left: 15px;
@@ -61,11 +61,11 @@
 	.navbar-inverse {
 		background: #ebebeb;
 		z-index: 10;
-		border-top: solid 3px #1a2940;
+		border-top: solid 3px $deep-blue;
 		.navbar-toggle {
             border-radius: 0;
 			.icon-bar {
-				background-color: #1a2940;
+				background-color: $deep-blue;
 			}
 			border: solid 1px #e7e7e7;
 			&:focus {
@@ -76,15 +76,13 @@
 			}
 		}
 		.navbar-collapse {
-			border-color: #1a2940;
-			border-color: #1a2940;
-			border-color: #939598;
+			border-color: $deep-blue;
+			border-color: $light-gray;
 			margin-top: 50px;
 		}
 		.navbar-form {
-			border-color: #1a2940;
-			border-color: #1a2940;
-			border-color: #939598;
+			border-color: $deep-blue;
+			border-color: $light-gray;
 			margin-top: 50px;
 		}
 		.navbar-nav.navbar-right {

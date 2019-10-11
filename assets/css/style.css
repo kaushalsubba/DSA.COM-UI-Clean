@@ -6389,7 +6389,7 @@ i {
     background-size: 2913px 90px; } }
 
 a {
-  color: #344c70; }
+  color: #344E70; }
   a:hover {
     text-decoration: none; }
 
@@ -6400,7 +6400,7 @@ a {
   background: #316aa3; }
 
 .dark-light-blue-bg {
-  background: #344c70;
+  background: #344E70;
   color: #fff; }
   .dark-light-blue-bg a {
     color: #fff; }
@@ -6559,7 +6559,7 @@ a {
     padding: 18px;
     border-bottom: solid 1px #e7e7e7; }
     .list li a {
-      color: #344c70;
+      color: #344E70;
       font-weight: 400; }
 
 .list-hover li {
@@ -6575,7 +6575,7 @@ a {
   font-size: 14px;
   text-transform: uppercase;
   padding: 12px 18px;
-  color: #58595b;
+  color: #58595B;
   font-weight: 400;
   margin-bottom: 0px;
   margin-bottom: 0px; }
@@ -6631,7 +6631,7 @@ a {
     .contactUs .BannerCaption h3 {
       margin: 0;
       padding: 30px 20px 0 0;
-      color: #FFF;
+      color: #fff;
       font-size: 22px;
       font-style: normal; }
       .contactUs .BannerCaption h3 a {
@@ -6656,13 +6656,13 @@ a {
 
 .light-blue-bg {
   background-color: #316aa3;
-  color: #FFF; }
+  color: #fff; }
   .light-blue-bg .BannerCaption {
     padding: 30px 29px 30px 30px; }
     .light-blue-bg .BannerCaption h3 {
       margin: 0;
       padding: 10px 0 0;
-      color: #FFF;
+      color: #fff;
       font-weight: 400;
       font-size: 16px;
       font-style: normal; }
@@ -6682,17 +6682,17 @@ a {
 section.blue {
   background-color: #316aa3;
   padding: 35px 0;
-  color: #FFF;
+  color: #fff;
   line-height: 36px; }
   section.blue h5 {
     font-size: 18px;
-    color: #FFF;
+    color: #fff;
     line-height: 20px;
     font-weight: 400; }
   section.blue h1 {
-    color: white; }
+    color: #fff; }
     section.blue h1 a {
-      color: white; }
+      color: #fff; }
 
 .listRightContent {
   padding-left: 150px; }
@@ -6713,7 +6713,7 @@ section.blue {
     left: 4%;
     bottom: 10%;
     z-index: 1;
-    color: #FFF; }
+    color: #fff; }
   .locationThumbnail img {
     width: 100%;
     height: 204px;
@@ -6743,11 +6743,11 @@ figure {
     color: #d1d3d4 !important; }
 
 .expertise {
-  color: #58595b;
+  color: #58595B;
   font-weight: 600; }
 
 .designation {
-  color: #344c70;
+  color: #344E70;
   font-size: 18px;
   font-weight: 500; }
   .designation a {
@@ -6819,7 +6819,7 @@ figure {
     background: 0 0;
     color: #fff;
     text-transform: uppercase;
-    border: solid 1px #FFF;
+    border: solid 1px #fff;
     font-size: 12px;
     font-weight: 700;
     border-radius: 2px; }
@@ -6929,8 +6929,8 @@ figure {
   border-color: #343a40; }
   .btn-dark:hover {
     color: #fff;
-    background-color: #23272b;
-    border-color: #1d2124; }
+    background-color: #212529;
+    border-color: #212529; }
 
 .btn-outline-dark {
   color: #343a40;
@@ -6979,10 +6979,10 @@ figure {
     border-color: #6c757d; }
 
 .btn-outline-white {
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
   background-image: none;
-  border-color: #ffffff; }
+  border-color: #fff; }
   .btn-outline-white:hover {
     color: #fff;
     background-color: #1D74CE;
@@ -7104,11 +7104,11 @@ figure {
   min-height: 5px; }
 
 .contact input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset; }
+  box-shadow: 0 0 0 1000px #f5f5f5 inset; }
   .contact input:-webkit-autofill:focus input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset; }
+    box-shadow: 0 0 0 1000px #f5f5f5 inset; }
   .contact input:-webkit-autofill:hover {
-    -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset; }
+    box-shadow: 0 0 0 1000px #f5f5f5 inset; }
 
 .labelText {
   color: #344c70;
@@ -7277,7 +7277,6 @@ form#contact_form {
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -7290,7 +7289,6 @@ form#contact_form {
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -7767,29 +7765,39 @@ form#contact_form {
   border-bottom: none;
   border-radius: 0;
   margin-bottom: 0px; }
-  .navbar-inverse .navbar-nav > .open a:hover {
-    background-color: #1a2940; }
-  .navbar-inverse .navbar-nav > li {
+  .navbar-inverse .navbar-nav li.open a:hover {
+    background-color: #1a2940;
+    color: #fff; }
+  .navbar-inverse .navbar-nav li.open a:focus {
+    background-color: #1a2940;
+    color: #fff; }
+  .navbar-inverse .navbar-nav li {
     font-family: "Hind", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-    .navbar-inverse .navbar-nav > li > a {
+    .navbar-inverse .navbar-nav li a {
       color: #58595B;
       text-transform: uppercase;
       padding: 12px 30px; }
-      .navbar-inverse .navbar-nav > li > a:hover {
-        color: #fff;
-        background-color: #1a2940; }
-      .navbar-inverse .navbar-nav > li > a:focus {
-        color: #fff;
-        background-color: #1a2940; }
+      .navbar-inverse .navbar-nav li a:hover {
+        color: #1D74CE;
+        background-color: #f8f9fa; }
+      .navbar-inverse .navbar-nav li a:focus {
+        color: #1D74CE;
+        background-color: #f8f9fa; }
   .navbar-inverse .navbar-nav.navbar-right {
     margin-right: 0px; }
-    .navbar-inverse .navbar-nav.navbar-right > li > a {
+    .navbar-inverse .navbar-nav.navbar-right li a {
       padding: 10px 10px 11px 10px;
       font-size: 20px;
       color: #d1d3d4; }
+  .navbar-inverse .navbar-nav li a:focus {
+    color: #fff;
+    outline: 0;
+    background-color: #1a2940; }
 
 .dropdown-menu {
   margin-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
   border: none;
   border-radius: 0px; }
   .dropdown-menu li a {
@@ -7811,61 +7819,64 @@ form#contact_form {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     left: inherit;
     background: #fff; }
-    .mega-dropdown .mega-dropdown-menu > li > ul {
+    .mega-dropdown .mega-dropdown-menu li ul {
       padding: 0;
       margin: 0;
       background: #fff;
       padding-top: 0px; }
-      .mega-dropdown .mega-dropdown-menu > li > ul > li {
+      .mega-dropdown .mega-dropdown-menu li ul li {
         list-style: none; }
-        .mega-dropdown .mega-dropdown-menu > li > ul > li > a {
+        .mega-dropdown .mega-dropdown-menu li ul li a {
           display: block;
           color: #222;
           padding: 10px 10px;
           font-size: 14px;
           border-bottom: solid 1px #ececec;
           font-family: Hind,sans-serif; }
-    .mega-dropdown .mega-dropdown-menu > li ul > li > a:hover {
+    .mega-dropdown .mega-dropdown-menu li ul li a:hover {
       text-decoration: none;
       font-size: 14px;
       color: #1D74CE; }
-    .mega-dropdown .mega-dropdown-menu > li ul > li > a:focus {
+    .mega-dropdown .mega-dropdown-menu li ul li a:focus {
       text-decoration: none;
       font-size: 14px;
       color: #1D74CE; }
 
-ul.nav li.dropdown:hover > ul.dropdown-menu.mega-dropdown-menu {
+ul.nav li.dropdown:hover ul.dropdown-menu.mega-dropdown-menu {
   background-color: #fff;
   padding-top: 0px; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover .fa-linkedin-in {
+.navbar-inverse .navbar-nav.navbar-right li .dropdown-menu {
+  text-align: center; }
+
+.navbar-inverse .navbar-nav.navbar-right li a:hover .fa-linkedin-in {
   color: #007bb5; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover:focus .fa-linkedin-in {
+.navbar-inverse .navbar-nav.navbar-right li a:hover:focus .fa-linkedin-in {
   color: #007bb5; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover .fa-youtube {
+.navbar-inverse .navbar-nav.navbar-right li a:hover .fa-youtube {
   color: #ff0000; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover:focus .fa-youtube {
+.navbar-inverse .navbar-nav.navbar-right li a:hover:focus .fa-youtube {
   color: #ff0000; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover .fa-facebook-f {
+.navbar-inverse .navbar-nav.navbar-right li a:hover .fa-facebook-f {
   color: #3b5998; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover:focus .fa-facebook-f {
+.navbar-inverse .navbar-nav.navbar-right li a:hover:focus .fa-facebook-f {
   color: #3b5998; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover .fa-twitter {
+.navbar-inverse .navbar-nav.navbar-right li a:hover .fa-twitter {
   color: #26a7de; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover:focus .fa-twitter {
+.navbar-inverse .navbar-nav.navbar-right li a:hover:focus .fa-twitter {
   color: #26a7de; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover .fa-weixin {
+.navbar-inverse .navbar-nav.navbar-right li a:hover .fa-weixin {
   color: #7BB32E; }
 
-.navbar-inverse .navbar-nav.navbar-right > li > a:hover:focus .fa-weixin {
+.navbar-inverse .navbar-nav.navbar-right li a:hover:focus .fa-weixin {
   color: #7BB32E; }
 
 #HomeBannerSlide .carousel-inner > .item > img {
@@ -7924,7 +7935,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu.mega-dropdown-menu {
   bottom: 50px;
   text-shadow: none;
   padding: 0 18px;
-  color: #58595b; }
+  color: #58595B; }
 
 .featureResources .carousel-indicators {
   bottom: 0;
@@ -8048,10 +8059,10 @@ section.TopBanner.bottom-banner {
     height: 42px;
     font-size: 18px;
     text-align: center;
-    color: #58595b;
+    color: #9399a5;
     margin: 0px; }
     #carousel-history .carousel-indicators li a {
-      color: #58595b; }
+      color: #58595B; }
   #carousel-history .carousel-indicators .dotInner {
     transition: all .35s ease-out;
     border-radius: 10px;
@@ -8113,7 +8124,7 @@ section.TopBanner.bottom-banner {
     margin-top: 0; }
 
 .owl-carousel#partners-carousel .view {
-  background-color: #FFF;
+  background-color: #fff;
   height: 120px;
   float: none;
   margin: 0 auto;
@@ -8133,7 +8144,7 @@ section.TopBanner.bottom-banner {
   top: 30%;
   right: 0px;
   font-size: 0 !important;
-  color: #FFF;
+  color: #fff;
   background: url(//www.dezshira.com/themes/dsa/images/angle-right.png) no-repeat left top;
   height: 42px;
   width: 18px;
@@ -8148,7 +8159,7 @@ section.TopBanner.bottom-banner {
   top: 30%;
   left: 0px;
   font-size: 0 !important;
-  color: #FFF;
+  color: #fff;
   background: url(//www.dezshira.com/themes/dsa/images/angle-left.png) no-repeat left top;
   height: 42px;
   width: 18px;
@@ -8195,19 +8206,14 @@ section.TopBanner.bottom-banner {
       color: #1a2940; }
 
 #books_carousel .owl-carousel#publication-carousel .view {
-  background-color: #FFF;
+  background-color: #fff;
   float: none;
   margin: 0 auto;
   position: relative;
   height: 315px; }
   #books_carousel .owl-carousel#publication-carousel .view img {
-    box-shadow: none;
     margin: 0 auto;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 200px; }
+    width: 195px; }
   #books_carousel .owl-carousel#publication-carousel .view .mask {
     width: 277px;
     left: 0px; }
@@ -8217,7 +8223,7 @@ section.TopBanner.bottom-banner {
   top: 0;
   right: 0px;
   font-size: 80px;
-  color: #FFF;
+  color: #fff;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.1) 100%);
   height: 100%;
   width: 45px;
@@ -8230,7 +8236,7 @@ section.TopBanner.bottom-banner {
   top: 0;
   left: 0px;
   font-size: 80px;
-  color: #FFF;
+  color: #fff;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.1) 100%);
   height: 100%;
   width: 45px;
@@ -8348,7 +8354,7 @@ div.wp-caption {
   .pagination .current {
     background: #d1d3d4;
     color: #939598; }
-  .pagination > li > a {
+  .pagination li a {
     border: none;
     background: none;
     padding-left: 15px;
@@ -8357,13 +8363,13 @@ div.wp-caption {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-weight: bold; }
-    .pagination > li > a:focus {
+    .pagination li a:focus {
       background: #d1d3d4;
       color: #939598; }
-    .pagination > li > a:hover {
+    .pagination li a:hover {
       background: #d1d3d4;
       color: #939598; }
-  .pagination > li > span {
+  .pagination li span {
     border: none;
     background: none;
     padding-left: 15px;
@@ -8372,44 +8378,44 @@ div.wp-caption {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-weight: bold; }
-    .pagination > li > span:focus {
+    .pagination li span:focus {
       background: #d1d3d4;
       color: #939598; }
-    .pagination > li > span:hover {
+    .pagination li span:hover {
       background: #d1d3d4;
       color: #939598; }
-  .pagination > li:last-child > a {
+  .pagination li:last-child a {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px; }
-  .pagination > li:last-child > span {
+  .pagination li:last-child span {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px; }
-  .pagination > li:first-child > a {
+  .pagination li:first-child a {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px; }
-  .pagination > li:first-child > span {
+  .pagination li:first-child span {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px; }
-  .pagination > .active > a {
+  .pagination .active a {
     background: #d1d3d4;
     color: #939598; }
-    .pagination > .active > a:focus {
+    .pagination .active a:focus {
       background: #d1d3d4;
       color: #939598; }
-    .pagination > .active > a:hover {
+    .pagination .active a:hover {
       background: #d1d3d4;
       color: #939598; }
-  .pagination > .active > span {
+  .pagination .active span {
     background: #d1d3d4;
     color: #939598; }
-    .pagination > .active > span:focus {
+    .pagination .active span:focus {
       background: #d1d3d4;
       color: #939598; }
-    .pagination > .active > span:hover {
+    .pagination .active span:hover {
       background: #d1d3d4;
       color: #939598; }
 
@@ -8434,7 +8440,7 @@ div.wp-caption {
 
 #socialMedia .panel-default {
   border: 0; }
-  #socialMedia .panel-default > .panel-heading {
+  #socialMedia .panel-default .panel-heading {
     background-color: #fff;
     border-top: solid 3px #1a2940;
     border-bottom: 0;
@@ -8457,17 +8463,17 @@ div.wp-caption {
   padding-top: 0;
   padding-bottom: 0;
   font-size: 14px;
-  color: #344c70; }
+  color: #344E70; }
   #socialMedia .panel-body .table {
     margin-bottom: 0; }
     #socialMedia .panel-body .table a {
       color: #aaa;
       word-break: break-word; }
       #socialMedia .panel-body .table a:hover {
-        color: #2981d1; }
+        color: #1D74CE; }
     #socialMedia .panel-body .table > tbody > tr > td {
       padding-left: 18px; }
-  #socialMedia .panel-body .table-striped > tbody > tr:nth-of-type(2n+1) {
+  #socialMedia .panel-body .table-striped tbody tr:nth-of-type(2n+1) {
     background-color: #f8f8f8; }
 
 #quick_search {
@@ -8577,7 +8583,7 @@ div.wp-caption {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Hind', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal; }
 
 .viewOnHover-first img {
@@ -8655,9 +8661,9 @@ section.TopBanner.services-banner .BannerCaption {
     font-weight: normal; }
   .boxContent h4 {
     font-size: 18px;
-    color: #344c70; }
+    color: #344E70; }
     .boxContent h4 a {
-      color: #344c70; }
+      color: #344E70; }
   .boxContent h5 {
     font-size: 16px; }
   .boxContent h6 {
@@ -8786,7 +8792,7 @@ section.TopBanner.get-in-touch .BannerCaption {
     text-align: center;
     vertical-align: middle;
     margin-right: 48px;
-    background-color: #344c70;
+    background-color: #344E70;
     float: left; }
     .event_block .date_block .date {
       font-size: 14px;
@@ -8919,7 +8925,7 @@ section.TopBanner.get-in-touch .BannerCaption {
       border: 0;
       margin-top: 0; }
 
-.featureResources .active > div {
+.featureResources .active div {
   display: block; }
 
 .featureResources .carousel-indicators {
@@ -8941,7 +8947,6 @@ section.TopBanner.get-in-touch .BannerCaption {
 .asiapedia {
   min-height: 200px;
   display: block;
-  vertical-align: top;
   margin: 25px 0 0;
   border: solid 1px #e6e7e8; }
   .asiapedia .eventBody {
@@ -8980,7 +8985,7 @@ section.TopBanner.get-in-touch .BannerCaption {
       font-size: 18px;
       color: #e7ebf5; }
       .asiapedia .ThumbBlock .pediashare a {
-        color: #FFF; }
+        color: #fff; }
       .asiapedia .ThumbBlock .pediashare .saveFavourite {
         color: #f5454b; }
   .asiapedia .hoverImage {
@@ -9037,7 +9042,7 @@ label:after {
 .contactBlockSmall.serviceRight_cta {
   text-align: center;
   background-image: none;
-  background-color: #0d2740;
+  background-color: #1a2940;
   height: auto !important;
   width: 262px; }
   .contactBlockSmall.serviceRight_cta .BannerCaption h3 {
@@ -9099,18 +9104,18 @@ section.contact.service_cta {
   text-align: center;
   text-transform: uppercase; }
   .research a {
-    color: #595959; }
+    color: #58595B; }
   .research img {
     display: block;
     margin: 0px auto 15px auto; }
   .research .research_title {
     font-size: 15px;
-    color: #595959;
+    color: #58595B;
     font-weight: bold;
     padding-top: 20px; }
   .research span {
     font-size: 13px;
-    color: #595959;
+    color: #58595B;
     padding: 0px;
     margin: 2px 0px 0px 0px;
     line-height: 16px;
@@ -9118,7 +9123,7 @@ section.contact.service_cta {
     text-transform: none;
     font-weight: normal; }
   .research:hover {
-    background-color: #2981d1;
+    background-color: #1D74CE;
     color: #fff; }
     .research:hover a {
       color: #fff; }
@@ -9167,15 +9172,15 @@ section.contact.service_cta {
     display: block;
     background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-blue.png) no-repeat top center; }
 
-#service_accordion .panel-default > .panel-heading {
+#service_accordion .panel-default .panel-heading {
   position: relative;
   padding: 0px;
-  color: #58595b;
+  color: #58595B;
   background-color: #e9ecef;
   border-color: #e9ecef;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px; }
-  #service_accordion .panel-default > .panel-heading .fa-chevron-right {
+  #service_accordion .panel-default .panel-heading .fa-chevron-right {
     position: absolute;
     right: 10px;
     top: 13px; }
@@ -9190,14 +9195,14 @@ section.contact.service_cta {
   #service_accordion .panel-title > a {
     display: block; }
   #service_accordion .panel-title a {
-    background-color: #2981d1;
+    background-color: #1D74CE;
     padding: 10px 30px 10px 15px;
     color: #fff; }
   #service_accordion .panel-title a.collapsed {
     background-color: #e9ecef;
-    color: #58595b; }
+    color: #58595B; }
     #service_accordion .panel-title a.collapsed:hover {
-      background-color: #2981d1;
+      background-color: #1D74CE;
       color: #fff; }
 
 .panel-default > .panel-heading .fa-chevron-up {
@@ -9265,16 +9270,16 @@ section.contact.service_cta {
       width: 100%; }
   #brochure.brochure_dropdown .brochureDropdown {
     position: relative; }
-    #brochure.brochure_dropdown .brochureDropdown .open > .dropdown-menu {
+    #brochure.brochure_dropdown .brochureDropdown .open .dropdown-menu {
       width: 100%;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       padding-top: 0; }
-      #brochure.brochure_dropdown .brochureDropdown .open > .dropdown-menu li {
+      #brochure.brochure_dropdown .brochureDropdown .open .dropdown-menu li {
         padding-bottom: 0; }
   #brochure.brochure_dropdown .list-inline {
     margin-top: 20px; }
-    #brochure.brochure_dropdown .list-inline > li {
+    #brochure.brochure_dropdown .list-inline li {
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0; }
@@ -9304,7 +9309,7 @@ section.grey.padding-Overwrite {
       padding-top: 20px; }
       .asiapedia.servicesFlyers .downloadflyersBrochures .list-unstyled li {
         overflow: hidden; }
-  .asiapedia.servicesFlyers .open > .dropdown-menu a {
+  .asiapedia.servicesFlyers .open .dropdown-menu a {
     white-space: normal;
     overflow: hidden; }
   .asiapedia.servicesFlyers .open .dropdown-toggle.btn-outline {
@@ -9510,7 +9515,6 @@ div#sidebarnav ul > li.level1 .main-menu {
     word-wrap: break-word; }
     .mapboxgl-popup-content p img {
       float: left;
-      display: inline;
       margin-top: 3px;
       margin-left: 5px; }
 
@@ -9867,7 +9871,7 @@ div#sidebarnav ul > li.level1 .main-menu {
   .navbar-toggle {
     float: left;
     right: 0px;
-    background-color: #FFF;
+    background-color: #fff;
     width: auto;
     top: 5px;
     margin-left: 15px; }
@@ -9890,11 +9894,9 @@ div#sidebarnav ul > li.level1 .main-menu {
         background-color: transparent; }
     .navbar-inverse .navbar-collapse {
       border-color: #1a2940;
-      border-color: #1a2940;
       border-color: #939598;
       margin-top: 50px; }
     .navbar-inverse .navbar-form {
-      border-color: #1a2940;
       border-color: #1a2940;
       border-color: #939598;
       margin-top: 50px; }

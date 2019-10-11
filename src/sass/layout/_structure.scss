@@ -88,7 +88,7 @@ div.wp-caption{
 	padding: 0px 0px;
 	margin-top: 20px;
 	overflow: hidden;
-	color: #939598;
+	color: $light-gray;
 	font-size: 12px;
 	padding-left: 10px;
 	line-height: 28px;
@@ -103,53 +103,53 @@ div.wp-caption{
 	padding-right: 10px;
 	.current {
 		background: #d1d3d4;
-		color: #939598;
+		color: $light-gray;
 	}
-	>li {
-		>a {
+	 li {
+		 a {
 			border: none;
 			background: none;
 			padding-left: 15px;
 			padding-right: 15px;
-			color: #1a2940;
+			color: $deep-blue;
 			font-family: $font-family-base;
 			font-size: 12px;
 			font-weight: bold;
 			&:focus {
 				background: #d1d3d4;
-				color: #939598;
+				color: $light-gray;
 			}
 			&:hover {
 				background: #d1d3d4;
-				color: #939598;
+				color: $light-gray;
 			}
 		}
-		>span {
+		 span {
 			border: none;
 			background: none;
 			padding-left: 15px;
 			padding-right: 15px;
-			color: #1a2940;
+			color: $deep-blue;
 			font-family:$font-family-base;
 			font-size: 12px;
 			font-weight: bold;
 			&:focus {
 				background: #d1d3d4;
-				color: #939598;
+				color: $light-gray;
 			}
 			&:hover {
 				background: #d1d3d4;
-				color: #939598;
+				color: $light-gray;
 			}
 		}
 		&:last-child {
-			>a {
+			 a {
 				border-top-left-radius: 0px;
 				border-bottom-left-radius: 0px;
 				border-top-right-radius: 0px;
 				border-bottom-right-radius: 0px;
 			}
-			>span {
+			 span {
 				border-top-left-radius: 0px;
 				border-bottom-left-radius: 0px;
 				border-top-right-radius: 0px;
@@ -157,39 +157,39 @@ div.wp-caption{
 			}
 		}
 		&:first-child {
-			>a {
+			 a {
 				border-top-left-radius: 0px;
 				border-bottom-left-radius: 0px;
 			}
-			>span {
+			 span {
 				border-top-left-radius: 0px;
 				border-bottom-left-radius: 0px;
 			}
 		}
 	}
-	>.active {
-		>a {
+	 .active {
+		 a {
 			background: #d1d3d4;
-			color: #939598;
+			color: $light-gray;
 			&:focus {
 				background: #d1d3d4;
-				color: #939598;
+				color: $light-gray;
 			}
 			&:hover {
 				background: #d1d3d4;
-				color: #939598;
+				color: $light-gray;
 			}
 		}
-		>span {
+		 span {
 			background: #d1d3d4;
-			color: #939598;
+			color: $light-gray;
 			&:focus {
 				background: #d1d3d4;
-				color: #939598;
+				color: $light-gray;
 			}
 			&:hover {
 				background: #d1d3d4;
-				color: #939598;
+				color: $light-gray;
 			}
 		}
 	}
@@ -197,7 +197,7 @@ div.wp-caption{
 .page-numbers {
 	padding-left: 12px;
 	padding-right: 12px;
-	color: #1a2940;
+	color: $deep-blue;
 	font-family: $font-family-base;
 	font-size: 12px;
 	font-weight: bold;
@@ -221,9 +221,9 @@ div.wp-caption{
 		}
 	}
 	.panel-default {
-		>.panel-heading {
+		 .panel-heading {
 			background-color: $white;
-			border-top: solid 3px #1a2940;
+			border-top: solid 3px $deep-blue;
 			border-bottom: 0;
 			border-left: 0;
 			border-right: 0;
@@ -237,7 +237,7 @@ div.wp-caption{
 		border: 0;
 		box-shadow: none;
 		margin-top: 40px;
-		border-bottom: solid 1px #e6e7e8;
+		border-bottom: solid 1px $soft-bluish-gray;
 	}
 	.panel-body {
 		border: 0;
@@ -246,14 +246,14 @@ div.wp-caption{
 		padding-top: 0;
 		padding-bottom: 0;
 		font-size: 14px;
-		color: #344c70;
+		color: $cyan-blue;
 		.table {
 			margin-bottom: 0;
 			a {
 				color: #aaa;
 				word-break: break-word;
 				&:hover {
-					color: #2981d1;
+					color: $blue;
 				}
 			}
 			>tbody {
@@ -265,8 +265,8 @@ div.wp-caption{
 			}
 		}
 		.table-striped {
-			>tbody {
-				>tr {
+			 tbody {
+				 tr {
 					&:nth-of-type(2n+1) {
 						background-color: #f8f8f8;
 					}
@@ -314,7 +314,7 @@ div.wp-caption{
 	.eventBody {
 		h3 { font-weight: normal;
 			a {
-				color: #000;
+				color: $black;
 			}
 		}
 	}
@@ -401,7 +401,7 @@ div.wp-caption{
 		font-size: 12px;
 		text-transform: uppercase;
 		font-weight: bold;
-		font-family: 'Hind', sans-serif;
+		font-family: $font-family-base;
 		font-style: normal;
 	}
 }
@@ -475,7 +475,7 @@ section.TopBanner.services-banner{
 #featuredOffers {
     padding-bottom: 80px;
 	padding-top: 80px;
-	.display-4{ color: #000;}
+	.display-4{ color: $black;}
 }
 .boxContent {
     border-top: solid 3px #2f2f46 !important;
@@ -484,8 +484,8 @@ section.TopBanner.services-banner{
     padding: 15px;
 	width: 100%;
 	h4, h5, h6{ font-weight: normal}
-	h4{ font-size: 18px; color: #344c70;
-		a{ color: #344c70; }
+	h4{ font-size: 18px; color: $cyan-blue;
+		a{ color: $cyan-blue; }
 	}
 	h5{ font-size: 16px; }
 	h6{  font-size: 12px;}
@@ -525,7 +525,7 @@ section.TopBanner.services-banner{
 		margin-bottom: 20px;
 		font-size: 24px;
 	}
-	.heading{ color: #000;}
+	.heading{ color: $black;}
 }
 .MeetOurPeople {
 	background-color: #f5f5f5;
@@ -539,7 +539,7 @@ section.TopBanner.services-banner{
 		padding-bottom: 30px;
 		padding-right: 100px;
 	}
-	.heading{ color: #000;}
+	.heading{ color: $black;}
 }
 
 section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 80px;
@@ -632,7 +632,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 		text-align: center;
 		vertical-align: middle;
 		margin-right: 48px;
-		background-color: #344c70;
+		background-color: $cyan-blue;
 		float: left;
 		.date {
 			font-size: 14px;
@@ -659,11 +659,11 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 		.title {
 			font-size: 18px;
 			line-height: 24px;
-			color: #000;
+			color: $black;
 			padding: 0;
 			margin: 0;
 			a {
-				color: #000;
+				color: $black;
 			}
 		}
 		.dec {
@@ -686,7 +686,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 }
 
 .eventsBlock {
-    background-color: #1a2940;
+    background-color: $deep-blue;
     min-height: 200px;
     color: $white;
 	.dateEvent {
@@ -737,7 +737,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 	}
 }
 .seeMoreLink {
-	border-top: solid 1px #e6e7e8;
+	border-top: solid 1px $soft-bluish-gray;
 	text-transform: uppercase;
 	a {
 		font-size: 11px;
@@ -822,7 +822,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 }
 .featureResources {
 	.active {
-		>div {
+		 div {
 			display: block;
 		}
 	}
@@ -848,15 +848,14 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 .asiapedia {
 	min-height: 200px;
 	display: block;
-	vertical-align: top;
 	margin: 25px 0 0;
-	border: solid 1px #e6e7e8;
+	border: solid 1px $soft-bluish-gray;
 	.eventBody {
 		padding: 20px 20px 10px;
 		text-align: left;
 		h4 {
 			a {
-				color: #000;
+				color: $black;
 				font-weight: 400;
 			}
 			margin-top: 0;
@@ -864,14 +863,14 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 			font-size: 18px;
 			min-height: 60px;
 			line-height: 22px;
-			color: #000;
+			color: $black;
 			font-style: normal;
 			font-weight: 300;
 		}
 	}
 	.ThumbBlock {
 		position: relative;
-		background-color: #e6e7e8;
+		background-color: $soft-bluish-gray;
 		.eventLable {
 			position: absolute;
 			z-index: 1;
@@ -879,7 +878,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 			color: $white;
 			bottom: 25px;
 			left: 15px;
-			background-color: #1a2940;
+			background-color: $deep-blue;
 			font-size: 13px;
 		}
 		.pediashare {
@@ -891,7 +890,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 			font-size: 18px;
 			color: #e7ebf5;
 			a {
-				color: #FFF;
+				color: $white;
 			}
 			.saveFavourite {
 				color: #f5454b;
@@ -902,7 +901,7 @@ section.TopBanner.get-in-touch .BannerCaption{ margin-top: 80px; margin-bottom: 
 		height: 146px;
 	}
 	.credit {
-		border-top: solid 1px #e6e7e8;
+		border-top: solid 1px $soft-bluish-gray;
 		padding: 5px 20px;
 		font-size: 11px;
 		text-transform: uppercase;
@@ -961,7 +960,7 @@ label {
 .contactBlockSmall.serviceRight_cta {
 	text-align: center;
 	background-image: none;
-	background-color: #0d2740;
+	background-color: $deep-blue;
 	height: auto !important;
 	width: 262px;
 	.BannerCaption {
@@ -989,7 +988,7 @@ section.contact.service_cta {
 	margin-top: 0px;
 	padding-bottom: 55px;
 	padding-top: 55px;
-	background-color: #316aa3;
+	background-color: $light-blue;
 	color: $white;
 	h4 {
 		text-transform: uppercase;
@@ -1038,7 +1037,7 @@ section.contact.service_cta {
 	text-align: center;
 	text-transform: uppercase;
 	a {
-		color: #595959;
+		color: $bright-gray;
 	}
 	img {
 		display: block;
@@ -1046,13 +1045,13 @@ section.contact.service_cta {
 	}
 	.research_title {
 		font-size: 15px;
-		color: #595959;
+		color: $bright-gray;
 		font-weight: bold;
 		padding-top: 20px;
 	}
 	span {
 		font-size: 13px;
-		color: #595959;
+		color: $bright-gray;
 		padding: 0px;
 		margin: 2px 0px 0px 0px;
 		line-height: 16px;
@@ -1061,7 +1060,7 @@ section.contact.service_cta {
 		font-weight: normal;
 	}
 	&:hover {
-		background-color: #2981d1;
+		background-color: $blue;
 		color: $white;
 		a {
 			color: $white;
@@ -1124,10 +1123,10 @@ section.contact.service_cta {
 }
 #service_accordion {
 	.panel-default {
-		>.panel-heading {
+		 .panel-heading {
 			position: relative;
 			padding: 0px;
-			color: #58595b;
+			color: $bright-gray;
 			background-color: #e9ecef;
 			border-color: #e9ecef;
 			border-top-left-radius: 0px;
@@ -1150,15 +1149,15 @@ section.contact.service_cta {
 			display: block;
 		}
 		a {
-			background-color: #2981d1;
+			background-color: $blue;
 			padding: 10px 30px 10px 15px;
 			color: $white;
 		}
 		a.collapsed {
 			background-color: #e9ecef;
-			color: #58595b;
+			color: $bright-gray;
 			&:hover {
-				background-color: #2981d1;
+				background-color: $blue;
 				color: $white;
 			}
 		}
@@ -1244,7 +1243,7 @@ section.contact.service_cta {
 	.brochureDropdown {
 		position: relative;
 		.open {
-			>.dropdown-menu {
+			 .dropdown-menu {
 				width: 100%;
 				border-top-left-radius: 0;
 				border-top-right-radius: 0;
@@ -1257,7 +1256,7 @@ section.contact.service_cta {
 	}
 	.list-inline {
 		margin-top: 20px;
-		>li {
+		 li {
 			padding-left: 0;
 			padding-right: 0;
 			padding-bottom: 0;
@@ -1296,7 +1295,7 @@ section.grey.padding-Overwrite {
 	margin-bottom: 25px;
 	position: relative;
 	.open {
-		>.dropdown-menu {
+		 .dropdown-menu {
 			a {
 				white-space: normal;
 				overflow: hidden;
@@ -1320,7 +1319,7 @@ section.grey.padding-Overwrite {
 		border-bottom: 0;
 		border-left: 0;
 		border-right: 0;
-		border-top-color: #e6e7e8;
+		border-top-color: $soft-bluish-gray;
 		color: #848284;
 		margin-top: 0;
 		&:active {
